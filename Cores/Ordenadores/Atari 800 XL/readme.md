@@ -1,5 +1,5 @@
 ## Jepalza http://forofpga.es/viewtopic.php?f=160&t=41
-![Atari_800XL_Plain_White](https://user-images.githubusercontent.com/31018768/70315889-cca80080-181a-11ea-9ab2-36a3dcfb21a6.jpg)
+![Atari_800XL_Plain_White](https://user-images.githubusercontent.com/31018768/70316102-3de7b380-181b-11ea-9102-cb2bd3c59bbd.jpg)
 ### Instrucciones
 Teclas especiales en el teclado extendido numérico:
 "*" cambia entre NTSC y PAL
