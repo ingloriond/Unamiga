@@ -3,11 +3,17 @@
 
 ## Instrucciones :
 
-Copiar el *.RBF o el *.MC2 depende la version del MC que tengais instalada en la SD del STM32 junto con el fichero XXXX.rom
+Copiar el *.RBF o el *.MC2 depende la version del MC que tengais instalada en la SD del STM32 junto con el fichero gng.dat
 
 Insert coin -- Tecla numérica 5 
+
 Player one  -- Tecla numérica 1
+
 Player Two  -- Tecla numérica 2
+
 Reset       -- F3
+
 Desac fondo -- F6
+
 Desac Sprts -- F10
+
