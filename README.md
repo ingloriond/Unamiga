@@ -72,4 +72,3 @@ ___________________________________________________________________________
 Mas información sobre los cores en:
 https://docs.google.com/spreadsheets/d/17hZXSHI0DEu3Ogu8j5hL5vgmA5lfU2u4wq8c1MVX_2M/edit#gid=0
 
-For more information, visit ForoFPGA pages.
