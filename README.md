@@ -1,2 +1,2 @@
 # Unamiga
-Todo lo relacionado sobre la Fpga Unamiga
+UnAmiga en una FPGA genérica CICLONE IV E22. El core principal es un core minimig de MiST portado por Jepalza. Sin embargo gracias a una comunidad muy activa e innovadora se le ha dotado de un addon que la convierte en multicore. Gracias a Fernando Mosquera(@benitoss). También se le ha añadido soporte para mandos de Sega Megadrive con 6 Botones mediante sus puertos DB9, gracias de nuevo a @benitoss. Aunque su core principal sea la conversión del core del MIST en versión AGA(Amiga 1200).
