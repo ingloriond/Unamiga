@@ -23,3 +23,7 @@ New Rally X - Jose Manuel @delgrom | MrX para mister |adaptación de Victor Truc
 Moon Patrol - ManuFerHi , https://github.com/ManuFerHi | port to MiST by Gehstock | http://www.forofpga.es/viewtopic.php?f=175&t=157
 
 Pacman - ManuFerhi, https://github.com/ManuFerHi| http://www.forofpga.es/viewtopic.php?f=175&t=153
+
+Amstrad cpc464 Sorgelig - Jose Manuel @delgrom Código original de Sorgelig modificando el core de Renaud Helias.
+La versión unamiga proviene del port a multicore 2 realizado por Victor Trucco. http://www.forofpga.es/viewtopic.php?t=314
+
