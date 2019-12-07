@@ -10,5 +10,7 @@ Ghost&Goblins - Port por Jose Manuel @delgrom | Fernando Mosquera @benitoss | Jo
 
 Centipede - Jose Manuel @delgrom | Centipede port to MiST by Gehstock
 
-Time Pilot - Jose Manuel @delgrom | Port por Jose Manuel @delgrom | Dar(darfpga@aol.fr) http://darfpga.blogspot.fr
+Time Pilot - Jose Manuel @delgrom | Port por Jose Manuel @delgrom | Dar(darfpga@aol.fr) http://darfpga.blogspot
+
+Dig Dug - Jose Manuel @delgrom | MrX para MIster | Adaptación del Victor Trucco
 
