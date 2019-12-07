@@ -8,7 +8,7 @@ Msx 1 - Jose Manuel @delgrom
 
 Ghost&Goblins - Port por Jose Manuel @delgrom | Fernando Mosquera @benitoss | Jotego (Mist)
 
-Centipede - Jose Manuel @delgrom
+Centipede - Jose Manuel @delgrom | Centipede port to MiST by Gehstock
 
 Time Pilot - Jose Manuel @delgrom | Port por Jose Manuel @delgrom | Dar(darfpga@aol.fr) http://darfpga.blogspot.fr
 
