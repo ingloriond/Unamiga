@@ -6,7 +6,9 @@ Teclas:
 F1: 1P START/COIN
 
 ESC: RESET
+
 BLOQ DESP: Cambio entre VGA y 15KHZ
+
 F4: Scanlines (alternando entre no scanlines, 25%, 50% y 75%)
 
 Controles:
