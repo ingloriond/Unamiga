@@ -1,0 +1,20 @@
+Port por Jose Manuel @delgrom
+
+Versión para unamiga del arcade descrito por Darfpga.
+Esta versión proviene de la adaptación de Victor Trucco a Multicore 2. Se ha cambiado el scandoubler para que acepte scanlines y se han definido teclas para un amiga (Reset, Scanlines, Cambio 15khz/VGA)
+
+Teclas:
+F1: 1P START
+F2: 2P START
+F3: INSERT COIN
+
+ESC: RESET
+BLOQ DESP: Cambio entre VGA y 15KHZ
+F4: Scanlines (alternando entre no scanlines, 25%, 50% y 75%)
+
+Controles:
+Teclado: Cursores y espacio para disparo
+Joystick
+
+Se adjunta en formato RBF,MC2 para el multicore y SOF.: time_pilot_VGA inicia primero en modo VGA y time_pilot_15khz inicia en RGB
+Requiere el archivo timepilo.dat en la tarjeta SD del addon STM32.
