@@ -23,6 +23,6 @@ Controles:
 Teclado: Cursores y espacio para disparo
 Joystick
 
-Se adjunta en formato RBF para el multicore y SOF.: RallyX_VGA inicia primero en modo VGA y RallyX_15khz inicia en RGB
+Se adjunta en formato RBF,MC2 para el multicore y SOF.: RallyX_VGA inicia primero en modo VGA y RallyX_15khz inicia en RGB
 
 Agradecimientos a todos los que posteais en el foro (gracias por compartir conocimientos) y a Fernando Mosquera por el apoyo en telegram.
