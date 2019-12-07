@@ -12,6 +12,6 @@ Centipede - Jose Manuel @delgrom | Centipede port to MiST by Gehstock | http://w
 
 Time Pilot - Jose Manuel @delgrom | Port por Jose Manuel @delgrom | Dar(darfpga@aol.fr) http://darfpga.blogspot | http://www.forofpga.es/viewtopic.php?f=175&t=315
 
-Dig Dug - Jose Manuel @delgrom | MrX para MIster | Adaptación del Victor Trucco http://www.forofpga.es/viewtopic.php?f=175&t=310
+Dig Dug - Jose Manuel @delgrom | MrX para MIster | Adaptación del Victor Trucco http://www.forofpga.es/viewtopic.php?f=175&t=CV
 
-
+Crazy Climber http://www.forofpga.es/viewtopic.php?f=175&t=305
