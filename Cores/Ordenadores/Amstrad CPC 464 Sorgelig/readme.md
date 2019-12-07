@@ -6,6 +6,8 @@ La versión unamiga proviene del port a multicore 2 realizado por Victor Trucco.
 #### Fuente imagen: https://commons.wikimedia.org/wiki/File:Amstrad_CPC464_keyboard.jpg
 
 ### Intrucciones:
+Atención, algunos teclados no funcionan.
+
 Descomprima y copie en archivo .rbf y el fichero "Amstrad.dat" en la raíz de la tarjeta SD del addon STM32.
 
 Teclas del core
