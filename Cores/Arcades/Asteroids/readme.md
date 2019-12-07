@@ -1,4 +1,4 @@
-## Port por Jose Manuel @delgom | Victor Trucco | adaptado por by James Sweet
+### Port por Jose Manuel @delgom | Victor Trucco | adaptado por by James Sweet
 
 ## Asteroids Deluxe
 
