@@ -6,7 +6,7 @@ CBS Colecovisioin - Fernando Mosquera http://forofpga.es/viewtopic.php?f=184&t=2
 
 Msx 1 - Jose Manuel @delgrom
 
-Ghost&Goblins - Port por Jose Manuel @delgrom | Fernando Mosquera @benitoss | Jotego (Mist)
+Ghost&Goblins - Jose Manuel @delgrom | Fernando Mosquera @benitoss | Jotego (Mist)
 
 Centipede - Jose Manuel @delgrom | Centipede port to MiST by Gehstock | http://www.forofpga.es/viewtopic.php?f=175&t=309
 
@@ -16,5 +16,6 @@ Dig Dug - Jose Manuel @delgrom | MrX para MIster | Adaptación del Victor Trucco
 
 Crazy Climber - Jose Manuel @delgrom | llevado a fpga por Dar | portado a mist por Gehstock| adaptación de Victor Trucco http://www.forofpga.es/viewtopic.php?f=175&t=305
 
-Crazy Kong (Falcon) - Port por Jose Manuel @delgrom| fpga por Dar | Mist por Gehstock @ adaptación Victor Trucco. Agradecimientos a Fernando (@benitoss) por arreglar el fallo de imagen duplicada en 15khz http://www.forofpga.es/viewtopic.php?f=175&t=304
+Crazy Kong (Falcon) - Jose Manuel @delgrom| fpga por Dar | Mist por Gehstock @ adaptación Victor Trucco. Agradecimientos a Fernando (@benitoss) por arreglar el fallo de imagen duplicada en 15khz http://www.forofpga.es/viewtopic.php?f=175&t=304
 
+New Rally X - Jose Manuel @delgrom | MrX para mister |adaptación de Victor Trucco | Agradecimientos a a Fernando Mosquera (@benitoss) por el apoyo en telegram http://www.forofpga.es/viewtopic.php?f=175&t=300
