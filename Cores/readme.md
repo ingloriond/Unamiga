@@ -14,5 +14,5 @@ Time Pilot - Jose Manuel @delgrom | Port por Jose Manuel @delgrom | Dar(darfpga@
 
 Dig Dug - Jose Manuel @delgrom | MrX para MIster | Adaptación del Victor Trucco http://www.forofpga.es/viewtopic.php?f=175&t=CV
 
-Crazy Climber - Jose Manuel @delgrom | llevado a fpga por Dar | portado a mist por Gehstock| adaptación de Victor Truccohttp://www.forofpga.es/viewtopic.php?f=175&t=305
+Crazy Climber - Jose Manuel @delgrom | llevado a fpga por Dar | portado a mist por Gehstock| adaptación de Victor Trucco http://www.forofpga.es/viewtopic.php?f=175&t=305
 
