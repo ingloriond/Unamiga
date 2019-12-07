@@ -1,5 +1,5 @@
 ## Port por Jose Manuel @delgrom 
-
+![MSX-Hit_Bit_HB-75P](https://user-images.githubusercontent.com/31018768/70371967-bd3bbc80-18d9-11ea-9076-ad9fdc1f91ef.jpg)
 ##### foto procedente de : CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=169595
 ## Especificaciones:
 
