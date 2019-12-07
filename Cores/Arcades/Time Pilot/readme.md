@@ -1,4 +1,4 @@
-## Port por Jose Manuel @delgrom
+## Port por Jose Manuel @delgrom | Dar(darfpga@aol.fr) http://darfpga.blogspot.fr
 ![Time_Pilot_Flyer](https://user-images.githubusercontent.com/31018768/70372300-89fb2c80-18dd-11ea-9077-35099b5bb976.png)
 
 Versión para unamiga del arcade descrito por Darfpga.
