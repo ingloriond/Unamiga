@@ -8,9 +8,10 @@ Msx 1 - Jose Manuel @delgrom
 
 Ghost&Goblins - Port por Jose Manuel @delgrom | Fernando Mosquera @benitoss | Jotego (Mist)
 
-Centipede - Jose Manuel @delgrom | Centipede port to MiST by Gehstock
+Centipede - Jose Manuel @delgrom | Centipede port to MiST by Gehstock | http://www.forofpga.es/viewtopic.php?f=175&t=309
 
-Time Pilot - Jose Manuel @delgrom | Port por Jose Manuel @delgrom | Dar(darfpga@aol.fr) http://darfpga.blogspot
+Time Pilot - Jose Manuel @delgrom | Port por Jose Manuel @delgrom | Dar(darfpga@aol.fr) http://darfpga.blogspot | http://www.forofpga.es/viewtopic.php?f=175&t=315
 
-Dig Dug - Jose Manuel @delgrom | MrX para MIster | Adaptación del Victor Trucco
+Dig Dug - Jose Manuel @delgrom | MrX para MIster | Adaptación del Victor Trucco http://www.forofpga.es/viewtopic.php?f=175&t=310
+
 
