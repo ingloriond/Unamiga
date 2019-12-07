@@ -7,3 +7,8 @@ CBS Colecovisioin - Fernando Mosquera http://forofpga.es/viewtopic.php?f=184&t=2
 Msx 1 - Jose Manuel @delgrom
 
 Ghost&Goblins - Port por Jose Manuel @delgrom | Fernando Mosquera @benitoss | Jotego (Mist)
+
+Centipede - Jose Manuel @delgrom
+
+Time Pilot - Jose Manuel @delgrom | Port por Jose Manuel @delgrom | Dar(darfpga@aol.fr) http://darfpga.blogspot.fr
+
