@@ -1,4 +1,7 @@
-# Especificaciones:
+## Port por Jose Manuel @delgrom 
+
+##### foto procedente de : CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=169595
+## Especificaciones:
 
 - MSX1
 - Memoria mapeada: 128K (ZX-Uno de 512 KB) o 1024K (ZX-Uno de 2MB) 
