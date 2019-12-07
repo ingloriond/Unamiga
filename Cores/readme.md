@@ -19,3 +19,5 @@ Crazy Climber - Jose Manuel @delgrom | llevado a fpga por Dar | portado a mist p
 Crazy Kong (Falcon) - Jose Manuel @delgrom| fpga por Dar | Mist por Gehstock @ adaptación Victor Trucco. Agradecimientos a Fernando (@benitoss) por arreglar el fallo de imagen duplicada en 15khz http://www.forofpga.es/viewtopic.php?f=175&t=304
 
 New Rally X - Jose Manuel @delgrom | MrX para mister |adaptación de Victor Trucco | Agradecimientos a a Fernando Mosquera (@benitoss) por el apoyo en telegram http://www.forofpga.es/viewtopic.php?f=175&t=300
+
+Moon Patrol - ManuFerHi , https://github.com/ManuFerHi | port to MiST by Gehstock
