@@ -1,5 +1,8 @@
-Port por Jose Manuel @delgom | Victor Trucco | adapatado por by James Sweet
-#Asteroids Deluxe
+## Port por Jose Manuel @delgom | Victor Trucco | adaptado por by James Sweet
+
+## Asteroids Deluxe
+
+![Asteroids-arcadegame](https://user-images.githubusercontent.com/31018768/70372433-486b8100-18df-11ea-8611-9cc06ce7e68e.jpg)
 
 ##Requerimientos: Asteroids (VGA, SRAM)
 
