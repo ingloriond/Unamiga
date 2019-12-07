@@ -26,4 +26,4 @@ Controles:
 Teclado: Cursores.
 Joystick
 
-Se adjunta en formato RBF para el multicore y SOF.: CClimber_VGA inicia primero en modo VGA y CClimber_15Khz inicia en RGB
+Se adjunta en formato RBF,MC2  para el multicore y SOF.: CClimber_VGA inicia primero en modo VGA y CClimber_15Khz inicia en RGB
