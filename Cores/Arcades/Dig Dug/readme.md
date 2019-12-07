@@ -1,6 +1,7 @@
 ### Port por Jose Manuel @delgrom | MrX para MIster | Adaptación del Victor Trucco
 
 # Dig Dug 
+![220px-Dig_Dug_Flyer](https://user-images.githubusercontent.com/31018768/70372887-e4e45200-18e4-11ea-80e4-0129da21c27c.png)
 
 
 ### Requerimientos: Addon STM32, SRAM
