@@ -1,5 +1,6 @@
 ### Port por Jose Manuel @delgrom | MrX para mister |adaptación de Victor Trucco | Agradecimientos a a Fernando Mosquera (@benitoss) por el apoyo en telegram
 
+![crazy_arcade](https://user-images.githubusercontent.com/31018768/70373421-8b7e2200-18e8-11ea-8b01-80fda31cff09.jpg)
 
 ### Instrucciones:
 
