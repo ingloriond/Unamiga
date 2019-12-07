@@ -4,7 +4,7 @@
 
 ![Asteroids-arcadegame](https://user-images.githubusercontent.com/31018768/70372433-486b8100-18df-11ea-8611-9cc06ce7e68e.jpg)
 
-##Requerimientos: Asteroids (VGA, SRAM)
+## Requerimientos: Asteroids (VGA, SRAM)
 
 Versión para unamiga con addon SRAM del arcade recreado en FPGA por James Sweet.
 Esta versión proviene de la adaptación de Victor Trucco a su multicore 2.
