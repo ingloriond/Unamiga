@@ -21,3 +21,5 @@ Crazy Kong (Falcon) - Jose Manuel @delgrom| fpga por Dar | Mist por Gehstock @ a
 New Rally X - Jose Manuel @delgrom | MrX para mister |adaptación de Victor Trucco | Agradecimientos a a Fernando Mosquera (@benitoss) por el apoyo en telegram http://www.forofpga.es/viewtopic.php?f=175&t=300
 
 Moon Patrol - ManuFerHi , https://github.com/ManuFerHi | port to MiST by Gehstock | http://www.forofpga.es/viewtopic.php?f=175&t=157
+
+Pacman - ManuFerhi, https://github.com/ManuFerHi| http://www.forofpga.es/viewtopic.php?f=175&t=153
