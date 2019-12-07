@@ -24,6 +24,7 @@ Moon Patrol - ManuFerHi , https://github.com/ManuFerHi | port to MiST by Gehstoc
 
 Pacman - ManuFerhi, https://github.com/ManuFerHi| http://www.forofpga.es/viewtopic.php?f=175&t=153
 
-Amstrad cpc464 Sorgelig - Jose Manuel @delgrom Código original de Sorgelig modificando el core de Renaud Helias.
+Amstrad CPC 464 Sorgelig - Jose Manuel @delgrom Código original de Sorgelig modificando el core de Renaud Helias.
 La versión unamiga proviene del port a multicore 2 realizado por Victor Trucco. http://www.forofpga.es/viewtopic.php?t=314
 
+Amstrad CPC 464 McLeod - Fernando Mosquera @benitoss port y soporte añadido para txzduino del core original de Mcleod @mcleod_ideafix
