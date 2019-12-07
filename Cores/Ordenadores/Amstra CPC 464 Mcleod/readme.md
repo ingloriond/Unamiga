@@ -13,5 +13,5 @@ Teclas :
 
 Fin: Fósforo Verde/Color
 
-Para cargar juesos seleccior en juego en vuestro txzduino, teclear run" presinar enter. dar al play al tzxduino y cualquier tecla.
+Para cargar juesos seleccior en juego en vuestro txzduino, teclear run" presiOnar enter. dar al play al tzxduino y después cualquier tecla.
 
