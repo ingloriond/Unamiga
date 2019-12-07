@@ -2,6 +2,7 @@
 
 # Moon Patrol
 
+![retro-review-de-moon-patrol_1875288291](https://user-images.githubusercontent.com/31018768/70373683-920d9900-18ea-11ea-9789-be5205f911ea.jpg)
 
 ### Instrucciones:
 
