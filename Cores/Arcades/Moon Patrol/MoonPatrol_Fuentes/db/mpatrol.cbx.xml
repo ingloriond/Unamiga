@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="mpatrol">
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|Clock:Clock_inst|altpll:altpll_component" CBX_FILE_NAME="Clock_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|Graphics:graphics_inst|pace_video_controller:pace_video_controller_inst|altshift_taps:\BLK_VIDEO_O:video_o_proc:hsync_v_r[0]_rtl_0" CBX_FILE_NAME="shift_taps_1jm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|sprom:\BLK_CPU_ROMS:GEN_CPU_ROMS:2:rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_rga1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|video_mist:video_mist_inst|scandoubler:scandoubler|Hq2x:Hq2x|hq2x_in:hq2x_in|hq2x_buf:buf0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tbo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|sprom:\BLK_CPU_ROMS:GEN_CPU_ROMS:3:rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_sga1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|moon_patrol_sound_board:moon_patrol_sound_board|moon_patrol_sound_prog:cpu_prog_rom|altsyncram:rom_data_rtl_0" CBX_FILE_NAME="altsyncram_uk81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|video_mist:video_mist_inst|scandoubler:scandoubler|Hq2x:Hq2x|hq2x_in:hq2x_in|hq2x_buf:buf1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tbo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|video_mist:video_mist_inst|scandoubler:scandoubler|Hq2x:Hq2x|hq2x_out:hq2x_out|hq2x_buf:buf0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_teo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|dpram:cram_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tgd2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|sprom:\BLK_CPU_ROMS:GEN_CPU_ROMS:1:rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_qga1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|sprom:\BLK_GFX_ROMS:GEN_CHAR_ROMS:1:char_rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_uga1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|moon_patrol_sound_board:moon_patrol_sound_board|spram:cpu_ram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_45g1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|video_mist:video_mist_inst|scandoubler:scandoubler|Hq2x:Hq2x|hq2x_out:hq2x_out|hq2x_buf:buf1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_teo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|dprom_2r:\BLK_GFX_ROMS:GEN_SPRITE_ROMS:0:sprite_rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_b682.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|sprom:\BLK_GFX_ROMS:GEN_BG_ROMS:0:bg_rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vga1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|video_mist:video_mist_inst|scandoubler:scandoubler|Hq2x:Hq2x|hq2x_out:hq2x_out|hq2x_buf:buf2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_teo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|Graphics:graphics_inst|TILEMAP_1:foreground_mapctl_inst|altsyncram:Mux0_rtl_0" CBX_FILE_NAME="altsyncram_tlv.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|dprom_2r:\BLK_GFX_ROMS:GEN_SPRITE_ROMS:1:sprite_rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_c682.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|sprom:\BLK_GFX_ROMS:GEN_BG_ROMS:1:bg_rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0ha1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|video_mist:video_mist_inst|scandoubler:scandoubler|Hq2x:Hq2x|hq2x_out:hq2x_out|hq2x_buf:buf3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_teo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|dpram:vram_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tgd2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|spram:wram_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_28g1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|sprom:\BLK_CPU_ROMS:GEN_CPU_ROMS:0:rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_pga1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|sprom:\BLK_GFX_ROMS:GEN_BG_ROMS:2:bg_rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_1ha1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mpatrol|PACE:pace_inst|platform:platform_inst|sprom:\BLK_GFX_ROMS:GEN_CHAR_ROMS:0:char_rom_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tga1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
