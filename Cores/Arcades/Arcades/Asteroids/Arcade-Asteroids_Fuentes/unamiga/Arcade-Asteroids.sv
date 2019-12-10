@@ -1,0 +1,222 @@
+//============================================================================
+//  Arcade: Asteroids
+//
+//  Port to MiSTer
+//  Copyright (C) 2019 
+//
+//  This program is free software; you can redistribute it and/or modify it
+//  under the terms of the GNU General Public License as published by the Free
+//  Software Foundation; either version 2 of the License, or (at your option)
+//  any later version.
+//
+//  This program is distributed in the hope that it will be useful, but WITHOUT
+//  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+//  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+//  more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+//============================================================================
+
+//---------------------------------------------------------------------------------//
+//
+//  Top for Multicore 2
+//  2019 - Victor Trucco
+//
+//---------------------------------------------------------------------------------//
+//  unamiga - 06/11/2019 delgrom
+//---------------------------------------------------------------------------------//
+
+`default_nettype none
+
+module Asteroids_mc2 (
+// Clocks
+	input wire	clock_50_i,
+
+	// Buttons
+	input wire [4:1]	btn_n_i,
+
+	// SRAMs (AS7C34096)
+	output wire	[18:0]sram_addr_o  = 18'b0000000000000000000,
+	inout wire	[7:0]sram_data_io	= 8'bzzzzzzzz,
+	output wire	sram_we_n_o		= 1'b1,
+	output wire	sram_oe_n_o		= 1'b1,
+		
+	// SDRAM	(H57V256)
+	output wire	[12:0]sdram_ad_o= 12'b0000000000000000000,
+	inout wire	[15:0]sdram_da_io,
+	output wire	[1:0]sdram_ba_o,
+	output wire	[1:0]sdram_dqm_o,
+	output wire	sdram_ras_o,
+	output wire	sdram_cas_o,
+	output wire	sdram_cke_o,
+	output wire	sdram_clk_o,
+	output wire	sdram_cs_o,
+	output wire	sdram_we_o,
+
+	// PS2
+	inout wire	ps2_clk_io			= 1'bz,
+	inout wire	ps2_data_io			= 1'bz,
+	inout wire	ps2_mouse_clk_io  = 1'bz,
+	inout wire	ps2_mouse_data_io = 1'bz,
+
+	// SD Card
+	output wire	sd_cs_n_o			= 1'b1,
+	output wire	sd_sclk_o			= 1'b0,
+	output wire	sd_mosi_o			= 1'b0,
+	input wire	sd_miso_i,
+
+	// Joysticks
+	input wire	joy1_up_i,
+	input wire	joy1_down_i,
+	input wire	joy1_left_i,
+	input wire	joy1_right_i,
+	input wire	joy1_p6_i,
+	input wire	joy1_p9_i,
+	input wire	joy2_up_i,
+	input wire	joy2_down_i,
+	input wire	joy2_left_i,
+	input wire	joy2_right_i,
+	input wire	joy2_p6_i,
+	input wire	joy2_p9_i,
+	output wire	joyX_p7_o			= 1'b1,
+
+	// Audio
+	output wire	dac_l_o				= 1'b0,
+	output wire	dac_r_o				= 1'b0,
+	input wire	ear_i,
+	output wire	mic_o					= 1'b0,
+
+		// VGA
+	output wire	[4:0]vga_r_o,
+	output wire	[4:0]vga_g_o,
+	output wire	[4:0]vga_b_o,
+	output wire	vga_hsync_n_o,
+	output wire	vga_vsync_n_o
+);
+
+
+
+wire clk_6, clk_25,clk_50;
+wire pll_locked;
+
+
+pll pll(
+	.inclk0(clock_50_i),
+	.c0(clk_6),
+	.c1(clk_25),
+	.c2(clk_50),
+	.locked(pll_locked)
+	);
+
+
+wire [31:0] status;
+wire  [1:0] buttons;
+
+// delgrom joysticks 2 botones
+wire btn_right = joyBCPPFRLDU[3] | ~joy1_right_i;
+wire btn_left = joyBCPPFRLDU[2] | ~joy1_left_i;
+wire btn_one_player = joyBCPPFRLDU[5];
+wire btn_two_players = joyBCPPFRLDU[6];
+wire btn_fire = joyBCPPFRLDU[4] | ~joy1_p6_i;
+wire btn_coin = joyBCPPFRLDU[7];
+wire btn_thrust = joyBCPPFRLDU[0] | ~joy1_up_i;
+wire btn_shield = joyBCPPFRLDU[8] | ~joy1_p9_i;
+wire btn_start_1=0;
+// delgrom Fin joysticks ---------------------------
+
+
+
+// delgrom asignacion a botones
+//wire [7:0] BUTTONS = {~btn_right & joy1_s[3],~btn_left & joy1_s[2],~(btn_one_player|btn_start_1) & joy1_s[7],~btn_two_players,~btn_fire & joy1_s[4],~btn_coin,~btn_thrust & joy1_s[0],~btn_shield & joy1_s[5]};
+wire [7:0] BUTTONS = {~btn_right, ~btn_left, ~btn_one_player, ~btn_two_players, ~btn_fire, ~btn_coin, ~btn_thrust, ~btn_shield};
+
+
+wire hblank, vblank;
+
+wire ce_vid = 1; 
+wire hs, vs;
+wire [2:0] r,g;
+wire [2:0] b;
+
+
+assign vga_r_o    = {r,r,r[2]};
+assign vga_g_o    = {g,g,g[2]};
+assign vga_b_o    = {b,b,b[2]};
+assign vga_hsync_n_o   = ~hs;
+assign vga_vsync_n_o   = ~vs;
+
+wire reset = ~btn_n_i[4]; 
+
+wire [7:0] audio;
+assign dac_l_o = {audio, audio};
+assign dac_r_o = {audio, audio};
+
+wire [1:0] lang = status[4:3];
+wire  ships = ~status[6];
+
+wire vgade;
+
+ASTEROIDS_TOP ASTEROIDS_TOP
+(
+
+	.BUTTON(BUTTONS),
+	.SELF_TEST_SWITCH_L(~status[7]), 
+	.LANG(lang),
+	.SHIPS(ships),
+	.AUDIO_OUT(audio),
+
+	.VIDEO_R_OUT(r),
+	.VIDEO_G_OUT(g),
+	.VIDEO_B_OUT(b),
+	.HSYNC_OUT(hs),
+	.VSYNC_OUT(vs),
+	.VGA_DE(vgade),
+	.VID_HBLANK(hblank),
+	.VID_VBLANK(vblank),
+//	.RESET_L (~reset),	 delgrom rest con tecla ESC
+	.RESET_L (~w_reset),	
+	.clk_6(clk_6),
+	.clk_25(clk_25),
+	.clk_50(clk_50),
+
+	.sram_addr  (sram_addr_o),
+	.sram_data  (sram_data_io),  
+	.sram_we_n  (sram_we_n_o)
+);
+
+assign sram_oe_n_o = 1'b0;
+
+
+wire kbd_intr;
+wire [8:0] joyBCPPFRLDU;
+wire [7:0] kbd_scancode;
+
+//get scancode from keyboard
+io_ps2_keyboard keyboard 
+ (
+  .clk       ( clk_25 ),
+  .kbd_clk   ( ps2_clk_io ),
+  .kbd_dat   ( ps2_data_io ),
+  .interrupt ( kbd_intr ),
+  .scancode  ( kbd_scancode )
+);
+
+//translate scancode to joystick
+kbd_joystick k_joystick
+(
+  .clk         	(  clk_25 ),
+  .kbdint      	(  kbd_intr ),
+  .kbdscancode 	(  kbd_scancode ), 
+  .joyBCPPFRLDU   ( joyBCPPFRLDU ),
+  // delgrom
+  .reset          (w_reset)    
+);
+
+// delgrom reset
+wire w_reset;
+	
+
+
+endmodule

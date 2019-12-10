@@ -1,0 +1,389 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -16.451
+TNS   : -3855.358
+
+Type  : Slow 1200mV 85C Model Setup 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -12.439
+TNS   : -515.024
+
+Type  : Slow 1200mV 85C Model Setup 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -9.720
+TNS   : -118.073
+
+Type  : Slow 1200mV 85C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -7.991
+TNS   : -285.635
+
+Type  : Slow 1200mV 85C Model Setup 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : -2.609
+TNS   : -2083.441
+
+Type  : Slow 1200mV 85C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_1|env_reset'
+Slack : -2.503
+TNS   : -4.057
+
+Type  : Slow 1200mV 85C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_2|env_reset'
+Slack : -2.056
+TNS   : -4.010
+
+Type  : Slow 1200mV 85C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -2.018
+TNS   : -100.103
+
+Type  : Slow 1200mV 85C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -1.911
+TNS   : -3.421
+
+Type  : Slow 1200mV 85C Model Hold 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.254
+TNS   : -0.487
+
+Type  : Slow 1200mV 85C Model Hold 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_1|env_reset'
+Slack : 0.712
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_2|env_reset'
+Slack : 1.415
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -0.158
+TNS   : -5.005
+
+Type  : Slow 1200mV 85C Model Recovery 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : 0.054
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.678
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 4.851
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 28.877
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -1.333
+TNS   : -304.581
+
+Type  : Slow 1200mV 85C Model Removal 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -1.071
+TNS   : -34.246
+
+Type  : Slow 1200mV 85C Model Removal 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1.608
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.682
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.809
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -3.201
+TNS   : -69.991
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -1.487
+TNS   : -892.200
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_1|env_reset'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_2|env_reset'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_27'
+Slack : 9.864
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 12.160
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 16.329
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 139.246
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -15.526
+TNS   : -3592.815
+
+Type  : Slow 1200mV 0C Model Setup 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -11.349
+TNS   : -466.895
+
+Type  : Slow 1200mV 0C Model Setup 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -8.722
+TNS   : -106.549
+
+Type  : Slow 1200mV 0C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -7.381
+TNS   : -262.035
+
+Type  : Slow 1200mV 0C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_1|env_reset'
+Slack : -2.282
+TNS   : -3.611
+
+Type  : Slow 1200mV 0C Model Setup 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : -2.008
+TNS   : -1001.457
+
+Type  : Slow 1200mV 0C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_2|env_reset'
+Slack : -1.842
+TNS   : -3.579
+
+Type  : Slow 1200mV 0C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -1.803
+TNS   : -82.985
+
+Type  : Slow 1200mV 0C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -1.722
+TNS   : -3.075
+
+Type  : Slow 1200mV 0C Model Hold 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.346
+TNS   : -0.680
+
+Type  : Slow 1200mV 0C Model Hold 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_1|env_reset'
+Slack : 0.667
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_2|env_reset'
+Slack : 1.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -0.179
+TNS   : -5.698
+
+Type  : Slow 1200mV 0C Model Recovery 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : 0.029
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.023
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 5.191
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 29.244
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -1.204
+TNS   : -275.200
+
+Type  : Slow 1200mV 0C Model Removal 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -0.954
+TNS   : -30.504
+
+Type  : Slow 1200mV 0C Model Removal 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1.441
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.517
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -3.201
+TNS   : -69.991
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -1.487
+TNS   : -892.200
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_1|env_reset'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_2|env_reset'
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_27'
+Slack : 9.866
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 12.138
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 16.301
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 139.224
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -6.588
+TNS   : -1370.116
+
+Type  : Fast 1200mV 0C Model Setup 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -5.109
+TNS   : -205.931
+
+Type  : Fast 1200mV 0C Model Setup 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -4.572
+TNS   : -54.966
+
+Type  : Fast 1200mV 0C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -3.332
+TNS   : -118.115
+
+Type  : Fast 1200mV 0C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_1|env_reset'
+Slack : -0.591
+TNS   : -0.735
+
+Type  : Fast 1200mV 0C Model Setup 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_2|env_reset'
+Slack : -0.332
+TNS   : -0.625
+
+Type  : Fast 1200mV 0C Model Setup 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 3.329
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -1.239
+TNS   : -81.394
+
+Type  : Fast 1200mV 0C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -1.170
+TNS   : -4.259
+
+Type  : Fast 1200mV 0C Model Hold 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.027
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_1|env_reset'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_2|env_reset'
+Slack : 0.595
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : 0.098
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.524
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 6.691
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 31.237
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -0.835
+TNS   : -190.184
+
+Type  : Fast 1200mV 0C Model Removal 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -0.737
+TNS   : -23.563
+
+Type  : Fast 1200mV 0C Model Removal 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.667
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.198
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1.281
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[1]'
+Slack : -1.000
+TNS   : -600.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|clock_div[0]'
+Slack : -1.000
+TNS   : -39.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_1|env_reset'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'moon_patrol_sound_board:moon_patrol_sound_board|YM2149:ay_3_8910_2|env_reset'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_27'
+Slack : 9.413
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock_inst|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 12.244
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 16.415
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 139.365
+TNS   : 0.000
+
+------------------------------------------------------------
