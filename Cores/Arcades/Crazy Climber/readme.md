@@ -4,8 +4,17 @@
 
 ![Crazy-climber-flyer](https://user-images.githubusercontent.com/31018768/70372938-c894e500-18e5-11ea-8071-a84d725d814d.jpg)
 
-Versión para unamiga de este arcade llevado a fpga por Dar, y portado a Mist por Gehstock.
-Esta versión proviene de la adaptación de Victor Trucco a su multicore 2.
+### Requerimientos:
+
+#### SRAM: NO
+
+#### MULTICORE: NO
+
+#### SOPORTE PAD 6 BOTONES: NO
+
+#### SALIDA DE VIDEO : VGA, 15KHZ
+
+Versión arcade llevado a fpga por Dar, y portado a Mist por Gehstock.Esta versión proviene de la adaptación de Victor Trucco a su multicore 2.
 
 Teclas:
 
@@ -23,7 +32,4 @@ F4: Scanlines (alternando entre no scanlines, 25%, 50% y 75%)
 
 Controles:
 
-Teclado: Cursores.
-Joystick
-
-Se adjunta en formato RBF,MC2  para el multicore y SOF.: CClimber_VGA inicia primero en modo VGA y CClimber_15Khz inicia en RGB
+Teclado: Cursores y Joystick
