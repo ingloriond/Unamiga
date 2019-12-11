@@ -2,6 +2,15 @@
 
 ![New_Rally-X_Coverart](https://user-images.githubusercontent.com/31018768/70373485-b1a3c200-18e8-11ea-887e-56c976b317c5.png)
 
+### Requerimientos:
+
+#### SRAM: NO
+
+#### MULTICORE: NO
+
+#### SOPORTE PAD 6 BOTONES: NO
+
+#### SALIDA DE VIDEO : VGA
 
 ### Instrucciones:
 
@@ -22,8 +31,7 @@ F4: Scanlines (alternando entre no scanlines, 25%, 50% y 75%)
 Controles:
 
 Teclado: Cursores y espacio para disparo
-Joystick
 
-Se adjunta en formato RBF,MC2 para el multicore y SOF.: RallyX_VGA inicia primero en modo VGA y RallyX_15khz inicia en RGB
+Joystick: si
 
 Agradecimientos a todos los que posteais en el foro (gracias por compartir conocimientos) y a Fernando Mosquera por el apoyo en telegram.
