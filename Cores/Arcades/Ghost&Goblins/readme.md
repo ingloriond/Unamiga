@@ -1,9 +1,10 @@
 ## Port por Jose Manuel @delgrom | Fernando Mosquera @benitoss | Jose Tejada Jotego https://www.patreon.com/topapate
 ![Gng](https://user-images.githubusercontent.com/31018768/70318513-881f6380-1820-11ea-9b02-4da83773d88d.jpg)
 
+
 ## Instrucciones :
 
-Copiar el *.RBF o el *.MC2 depende la version del MC que tengais instalada en la SD del STM32 junto con el fichero gng.dat
+Requiere el archivo gng.dat en la tarjeta SD del addon STM32
 
 Insert coin -- Tecla numérica 5 
 
