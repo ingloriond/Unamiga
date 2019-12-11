@@ -12,6 +12,8 @@
 
 #### SALIDA DE VIDEO : VGA, 15KHZ, PAL(50), NTSC(60)
 
+#### Requiere el archivo Commando.dat en la tarjeta SD del addon STM32
+
 ### Instrucciones
 
 F3      Game reset
