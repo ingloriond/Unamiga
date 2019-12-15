@@ -1,7 +1,8 @@
-### Port por Jose Manuel @delgom | Victor Trucco | adaptado por by James Sweet
+## Speed Coin
 
-## The End
+### Port por Jose Manuel @delgom | sorgelig desde MIST
 
+![spdcoin_screenshot](https://user-images.githubusercontent.com/31018768/70871075-744fcc00-1f9b-11ea-90e0-b0ed36cebe9b.png)
 
 #### Requerimientos: 
 
