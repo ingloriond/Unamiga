@@ -2,7 +2,7 @@
 
 ## The End
 
-![Asteroids-arcadegame](https://user-images.githubusercontent.com/31018768/70372433-486b8100-18df-11ea-8611-9cc06ce7e68e.jpg)
+http://www.forofpga.es/viewtopic.php?f=175&t=324
 
 #### Requerimientos: 
 
@@ -12,7 +12,7 @@
 
 #### SOPORTE PAD 6 BOTONES: NO
 
-#### SALIDA DE VIDEO : VGA
+#### SALIDA DE VIDEO : VGA, 15KHZ
 
 Version arcade recreado en FPGA por James Sweet.
 Esta versión proviene de la adaptación de Victor Trucco a su multicore 2.
