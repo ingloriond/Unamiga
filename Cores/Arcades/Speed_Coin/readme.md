@@ -1,21 +1,18 @@
 ## Speed Coin
 
-### Port por Jose Manuel @delgom | sorgelig desde MIST
+### Port por Jose Manuel @delgom | sorgelig desde MIST | adaptación de SCramble de Victor Trucco
 
 ![spdcoin_screenshot](https://user-images.githubusercontent.com/31018768/70871075-744fcc00-1f9b-11ea-90e0-b0ed36cebe9b.png)
 
-#### Requerimientos: 
+### Requerimientos: 
 
-#### SRAM: SI
+SRAM:
 
-#### MULTICORE: NO
+MULTICORE: NO
 
-#### SOPORTE PAD 6 BOTONES: NO
+SOPORTE PAD 6 BOTONES: NO
 
-#### SALIDA DE VIDEO : VGA, 15KHZ
-
-Versión para unamiga de este arcade portado a Mister por Sorgelig.
-Esta versión proviene de la versión de MIST con ayuda de la adaptación de SCramble de Victor Trucco a su multicore 2.
+SALIDA DE VIDEO : VGA, 15KHZ
 
 Teclas:
 
@@ -35,6 +32,6 @@ Controles:
 
 Teclado: Cursores
 
-Joystick
+Joystick: Soportado
 
 Se adjunta en formato RBF para el multicore y SOF.: SpeedCoin_VGA inicia primero en modo VGA y SpeedCoin_15Khz inicia en RGB
