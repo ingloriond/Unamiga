@@ -2,9 +2,10 @@
 
 ### Portado por Jose Manuel @Delgrom | Sintetizado en fpga por MikeJ, portado a Mist por Gehstock. Adaptación de Victor Trucco
 
-Imagen
+![Super-Cobra](https://user-images.githubusercontent.com/31018768/70986579-778fa880-20be-11ea-9481-d213ac1078bd.png)
 
-Requerimientos:
+#### Requerimientos:
+
 SRAM: 
 
 MULTICORE: 
