@@ -3,6 +3,7 @@ Esta versión proviene de la adaptación de Victor Trucco
 
 # Scramble
 
+![scramble](https://user-images.githubusercontent.com/31018768/70987533-63e54180-20c0-11ea-94f8-cabd0c3a5ec9.jpg)
 
 ### Requerimientos:
 
