@@ -3,11 +3,13 @@ Esta versión proviene de la adaptación de Victor Trucco
 
 # Frogger
 
+![Frogger_Arcade](https://user-images.githubusercontent.com/31018768/70987229-be31d280-20bf-11ea-9c12-06a350e33c26.png)
+
 ### Requerimientos:
 
-SRAM: SI
+SRAM:
 
-MULTICORE: SI
+MULTICORE:
 
 SOPORTE PAD 6 BOTONES: NO
 
