@@ -2,6 +2,8 @@
 
 ### Core portado por Jose Manuel @delgrom | https://github.com/fbelavenuto/msx1fpga
 
+![MSX-Hit_Bit_HB-75P](https://user-images.githubusercontent.com/31018768/71131502-2b934f80-21f5-11ea-99fc-b63d1a5d30c3.jpg)
+
 MSX1 cloned in FPGA
 
 Este projecto es un MSx1 clonado a FPGA, con algunas partes del projecto OCM
