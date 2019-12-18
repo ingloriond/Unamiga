@@ -1,6 +1,6 @@
 # Msx1Fpga
 
-### Core portado por Jose Manuel @delgrom
+### Core portado por Jose Manuel @delgrom | https://github.com/fbelavenuto/msx1fpga
 
 MSX1 cloned in FPGA
 
@@ -67,47 +67,47 @@ En BASIC usa las teclas "CTRL + STOP" para parar la ejecución de un programa. L
 Para cambiar del modo de video de 50HZ a 60HZ, y jugar a la velocidad correcta juegos PAL, como " La Invasion de  los Mounstraos 
 Zombies", por VGA tienes que usar el programa "DISPLAY.COM", lo podeis bajar de este hilo (https://www.msx.org/forum/msx-talk/software/dos-tool-to-switch-from-50-to-60hz).
 
-SOFTWARE LOADING:
-A.- .ROM files
-They are dumps of programs in cartridges.
+CARGA DE SOFTWARE:
+A.- ficheros .ROM
+Son volcados de programas en cartuchos.
 
-Uses the SROM.COM utility to load the ROMs file. Ex: SROM NEMESIS1.ROM
+Usa la utilidad SROM.COM para cargar las ROMs. Ex: SROM NEMESIS1.ROM
 
-B.- .DSK files
-They are dumps of programs in disketes.
+B.- ficheros .DSK
+Son volcados de  programas en disketes.
 
-Uses the SRI.COM utility to emulate a disk. Ex: SRI GAME.DSK
+Usa la utilidad SRI.COM para emular un disco. Ex: SRI GAME.DSK
 
 C.- .CAS files
-They are images with the content of the audio tapes. The way to use them is very well explained in the article Load CAS files with MegaFlashROM and an MSX-2 (hhttps://programbytes48k.wordpress.com/2015/11/19/cargar-archivos-cas-con-megaflashrom-y-un-msx-2/).
+Son imágenes con el contenido de cintas de audio. La manera de usarlas esta muy bien explicado en  el artículo "Load CAS files with MegaFlashROM and an MSX-2" (https://programbytes48k.wordpress.com/2015/11/19/cargar-archivos-cas-con-megaflashrom-y-un-msx-2/).
 
-The LOADCAX and LOADCAXX files are located in the BIN folder on the diskette http://www.msxcartridgeshop.com/bin/ROMDISK.DSK of the MegaFlashROM SCC+ SD.
+Los ficheros LOADCAX y LOADCAXX se encuentran en la carpeta BIN del diskette http://www.msxcartridgeshop.com/bin/ROMDISK.DSK del MegaFlashROM SCC+ SD.
 
-D.- .BAS files
-They are programs in BASIC that we can record in the SD, and also load them to execute them. From inside the BASIC we can type:
+D.- ficheros .BAS
+Son programas en BASICque pueden ser grabados en la SD, y también cargarlos y ejecutarlos. Desde BASIC podemos teclear:
 
 SAVE "A:HOLA.BAS"
-to save the program, and with
+para grabar un programa, y con
 
 LOAD "A:HOLA.BAS"
-we recover it.
+recuperarlo.
 
-To know the differences between CSAVE, BSAVE and SAVE, or other commands to store and retrieve the information, you can consult this section (https://www.msx.org/wiki/Category:Disk_BASIC) with the Disk BASIC commands of the wiki from msx.org (https://www.msx.org/wiki/).
+Para saber las diferencias entre los comandos CSAVE, BSAVE and SAVE, y otros comandos para almacenar y recuperar informacion, puedes consultar esta secciñon (https://www.msx.org/wiki/Category:Disk_BASIC) with the Disk BASIC commands of the wiki from msx.org (https://www.msx.org/wiki/).
 
-To load a .BAS file from Nextor-DOS, simply write its name with or without extension and press ENTER.
+Para cargar un fichero .BAS desde Nextor-DOS, simplemente esribe su nombre con o sin  extensión y presiona ENTER.
 
-E.- AUDIO IN
-The core allows the loading of programs by audio. The way to do it is from BASIC with the commands:
+E.- Entrada de AUDIO
+El core permite la carga de programas de audio. La manera de hacerlo es mediante los siguientes comandos de BASIC:
 
 RUN”CAS:”
-or well:
+o mejor:
 
 BLOAD”CAS:”,R
-or well:
+o mejor:
 
 LOAD”CAS:”,R
-Do not forget to disable TURBO to load a real K7 audio.
+No olvidar deshabilitar el TURBO para cargar audio K7 real.
 
-It is perfectly explained in the article How to load programs in MSX (https://programbytes48k.wordpress.com/2012/01/04/como-cargar-programas-en-msx/).
+Esto esta perfectamente explicado en el artículo "How to load programs in MSX" (https://programbytes48k.wordpress.com/2012/01/04/como-cargar-programas-en-msx/).
 
-In the (http://www.vintagenarios.com/hilo-oficial-wavs-msx-t1997.html) forum of Vintagenarios you can find many MSX programs in WAV format that can be loaded by audio.
+En el foro de (http://www.vintagenarios.com/hilo-oficial-wavs-msx-t1997.html)Vintagenarios puedes encontrart muchos programas de MSX en formato WAV y cargarlos via audio.
