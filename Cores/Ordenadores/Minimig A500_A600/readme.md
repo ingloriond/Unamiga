@@ -4,6 +4,8 @@
 
 ![Amiga500_system](https://user-images.githubusercontent.com/31018768/71216316-77f49300-22ba-11ea-937a-9e4053472e94.jpg)
 
+# Características:
+
 CPU CISC Motorola 68000 a 7,16 MHz la versión NTSC, o 7,1 MHz la PAL. Aunque implementa un modelo de 32 bits y tiene registros de 32 bits, así como un bus interno de datos de 32 bits, su ALU es de 16 bits, su bus externo de datos es de 16 bits y su bus de direcciones es de 24 bits, por lo que sólo puede direccionar 16 MB de RAM.
 ROM: de 512 KB conteniendo el Kickstart.
 RAM: 512 KB de CHIP RAM por defecto (buffers de sonido, memoria gráfica y software coexisten en el mismo espacio), ampliables a 1 MB de CHIP RAM y hasta 8 MB de Fast RAM3​ (direccionable sólo por el microprocesador, sin compartirla con el resto del chipset). Ulteriormente la Fast RAM podía ser ampliada hasta 128 MB con tarjeta aceleradora.4​
