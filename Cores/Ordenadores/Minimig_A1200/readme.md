@@ -3,8 +3,7 @@
 ![a1200foto](https://user-images.githubusercontent.com/31018768/71215821-17188b00-22b9-11ea-8033-4ef7fa745241.jpg)
 
 
-## Core por Jepalza, @NeuroRulez y Edu @eduarana preparando el entorno de compilacion para el osd y la traducción.
-Mención especial las ultimas correcciones AGA por @NeuroRulez
+## Core por Jepalza, @NeuroRulez y Edu @eduarana preparando el entorno de compilacion para el osd y la traducción. Mención especial las ultimas correcciones AGA por @NeuroRulez
 
 #### Características
 
