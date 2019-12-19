@@ -45,3 +45,5 @@ Tamaño: 9.5" profundo x 18.5" ancho x 3" alto (250 x 490 x 70 mm)
 Teclado estándar Amiga QWERTY/QWERTZ/AZERTY integrado con 96 teclas (incluyendo 19 teclas de función y el keypad numérico)
 Software (incluido):
 Sistema operativo AmigaOS 3.0-3.1. (Kickstart 3.0-3.1/Workbench 3.0-3.1)
+
+##### Fuente: Wikipedia https://es.wikipedia.org/wiki/Commodore_Amiga_1200
