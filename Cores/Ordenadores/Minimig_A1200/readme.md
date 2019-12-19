@@ -1,6 +1,6 @@
 # Amiga A1200
 
-## Core por Jepalza, @NeuroRulez (https://github.com/neurorulez) y Edu Arana @eduarana (https://arananet.net/) preparando el entorno de compilacion para el osd y la traducción. Mención especial las ultimas correcciones AGA por @NeuroRulez
+## Core por Jepalza, @NeuroRulez (https://github.com/neurorulez) y Edu Arana @eduarana (https://arananet.net/) preparando el entorno de compilación para el osd y la traducción. Mención especial las ultimas correcciones AGA por @NeuroRulez
 
 ![a1200foto](https://user-images.githubusercontent.com/31018768/71215821-17188b00-22b9-11ea-8033-4ef7fa745241.jpg)
 
