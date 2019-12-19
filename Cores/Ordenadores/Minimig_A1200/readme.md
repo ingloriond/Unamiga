@@ -47,3 +47,10 @@ Software (incluido):
 Sistema operativo AmigaOS 3.0-3.1. (Kickstart 3.0-3.1/Workbench 3.0-3.1)
 
 ##### Fuente: Wikipedia https://es.wikipedia.org/wiki/Commodore_Amiga_1200
+
+## Intrucciones:
+
+El fichero de1_boot.bin (es el encargado de mostrar el menú OSD de selección de ficheros) debe estar en la tarjeta SD junto a una Rom valida, por defecto nombrada KICK.rom (KickStart 1.3 para el A500 ECS o kickstart 3.1 para el A1200 AGA) no suminstrada por temas de copyright. con la tecla F12 podemos acceder al menú OSD en cualquier momento. Con la tecla SCROLL-LOCK elegimos entre modo 15khz y modo VGA. Por defecto entra en modo VGA.
+
+En esta versión del código AGA, se han hecho varias mejoras, como poder emplear hasta 16+4 megas de RAM formato "FAST" (dos ampliaciones tipo ZORRO-II y III de 4mb mas 16mb). Ademas, se ha traducido el menú a Español.
+
