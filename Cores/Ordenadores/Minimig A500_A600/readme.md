@@ -41,6 +41,4 @@ Fuente Wikipedia: https://es.wikipedia.org/wiki/Commodore_Amiga_500
 
 ### Instrucciones:
 
-## Intrucciones:
-
 El fichero de1_boot.bin (es el encargado de mostrar el menú OSD de selección de ficheros) debe estar en la tarjeta SD junto a una Rom valida, por defecto nombrada KICK.rom (KickStart 1.3 para el A500 ECS) no suminstrada por temas de copyright. con la tecla F12 podemos acceder al menú OSD en cualquier momento. Con la tecla SCROLL-LOCK elegimos entre modo 15khz y modo VGA. Por defecto entra en modo VGA.
