@@ -1,6 +1,6 @@
 # Bomb Jack
 
-Port por Jose Manuel @delgrom
+Port por Jose Manuel @delgrom | vhdl por d18c7db | proviene de adaptación de Victor Trucco a su multicore2
 
 ![bombjack](https://user-images.githubusercontent.com/31018768/71326969-8cc36780-2502-11ea-98b4-a97e80e44dee.jpeg)
 
