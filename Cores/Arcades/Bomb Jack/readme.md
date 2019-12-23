@@ -26,3 +26,5 @@ F4: SCANLINES (sólo VGA)
 
 F5: BLEND (sólo VGA)
 
+Se adjunta en formato RBF para el multicore y SOF.: BombJack_VGA inicia primero en modo VGA y BombJack_15khz inicia en RGB
+Requiere el archivo BombJack.dat en la tarjeta SD del addon STM32.
