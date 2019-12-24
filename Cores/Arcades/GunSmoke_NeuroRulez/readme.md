@@ -1,5 +1,6 @@
 # GunSmoke
 
+### Core portado por @NeuroRulez (Twitter @Neuro_999, Github: https://github.com/neurorulez) | proviene de Jose Tejada Jotego https://www.patreon.com/topapate
 
 ### Requerimientos:
 
