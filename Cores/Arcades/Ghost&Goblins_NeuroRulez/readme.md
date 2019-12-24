@@ -15,3 +15,5 @@ SOPORTE PAD 6 BOTONES: NO
 SALIDA DE VIDEO : VGA , 15KHZ
 
 Instrucciones:
+
+Requiere copiar el fichero jtgng.rom en la raiz del ta tarjeta sd principal del Unamiga (no en la del STM32)
