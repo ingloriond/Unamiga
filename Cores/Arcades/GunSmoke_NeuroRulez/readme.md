@@ -17,4 +17,4 @@ SALIDA DE VIDEO : VGA , 15KHZ
 
 Instrucciones:
 
-Necesita copiar el fichero jtgun.rom en la raiz del ta tarjeta sd principal del Unamiga (no en la del STM32)
+Requiere copiar el fichero jtgun.rom en la raiz del ta tarjeta sd principal del Unamiga (no en la del STM32)
