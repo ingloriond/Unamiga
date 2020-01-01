@@ -1,6 +1,14 @@
 # Pleiads | Capitol
 ### Port por Jose Manuel @delgrom, adaptado desde MIST
 
+Requerimientos:
+SRAM: SI
+
+MULTICORE: SI
+
+SOPORTE PAD 6 BOTONES: NO
+
+SALIDA DE VIDEO : VGA , 15KHZ
 
 Teclas:
 
