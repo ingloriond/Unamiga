@@ -4,32 +4,34 @@
 
 ![phoenix](https://user-images.githubusercontent.com/31018768/71305489-5fc56680-23d5-11ea-9907-6efd00547446.jpg)
 
-#### SRAM:
+####  Requerimientos
 
-#### MULTICORE:
+SRAM:
 
-#### SOPORTE PAD 6 BOTONES: NO
+MULTICORE:
 
-#### SALIDA DE VIDEO : VGA , 15KHZ
+SOPORTE PAD 6 BOTONES: NO
+
+SALIDA DE VIDEO : VGA , 15KHZ
 
 ### Instrucciones:
 
-#### Teclas:
+Teclas:
 
-#### F1: 1P START
+F1: 1P START
 
-#### F2: 2P START
+F2: 2P START
 
-#### F3: COIN
+F3: COIN
 
-#### ESC: RESET
+ESC: RESET
 
-#### BLOQ DESP: Cambio entre VGA y 15KHZ
+BLOQ DESP: Cambio entre VGA y 15KHZ
 
-#### F4: Scanlines sólo VGA (alternando entre no scanlines, 25%, 50% y 75%)
+F4: Scanlines sólo VGA (alternando entre no scanlines, 25%, 50% y 75%)
 
 ### Controles:
 
-#### Teclado: Cursores, espacio disparo.
+Teclado: Cursores, espacio disparo.
 
-#### Joystick: Soportado
+ Joystick: Soportado
