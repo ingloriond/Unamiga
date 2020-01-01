@@ -1,12 +1,14 @@
 # Pleiads | Capitol
 ### Port por Jose Manuel @delgrom, adaptado desde MIST
 
+![capitolpleiads](https://user-images.githubusercontent.com/31018768/71640046-30d7ac00-2c83-11ea-932e-fc9dadf203f8.png)
+
 Requerimientos:
 SRAM: SI
 
 MULTICORE: SI
 
-SOPORTE PAD 6 BOTONES: NO
+SOPORTE PAD 6 BOTONES: SI
 
 SALIDA DE VIDEO : VGA , 15KHZ
 
