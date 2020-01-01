@@ -2,6 +2,7 @@
 
 #### Port por Jose Manuel @delgrom, proviene de la adaptación a MIST.
 
+![tazzmania](https://user-images.githubusercontent.com/31018768/71640399-97f85f00-2c89-11ea-8e32-c44b583c23ce.jpg)
 
 #### Instrucciones:
 
