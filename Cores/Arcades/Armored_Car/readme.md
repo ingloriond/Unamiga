@@ -2,6 +2,8 @@
 
 ### Port por Jose Manuel @delgrom, proviene de la adaptación a MIST.
 
+![Armored_Car](https://user-images.githubusercontent.com/31018768/71640434-1fde6900-2c8a-11ea-9ce5-59982f51356f.png)
+
 #### Instrucciones:
 
 Teclas:
