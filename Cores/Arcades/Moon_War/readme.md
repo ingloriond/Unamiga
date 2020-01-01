@@ -5,6 +5,16 @@
 ![moomwar](https://user-images.githubusercontent.com/31018768/71640359-b14cdb80-2c88-11ea-8392-3729ae22ae56.jpg)
 
 
+#### Requerimientos:
+
+SRAM: 
+
+MULTICORE: SI
+
+SOPORTE PAD 6 BOTONES: SI
+
+SALIDA DE VIDEO : VGA, 15KHZ
+
 #### Intrucciones
 
 Teclas:
