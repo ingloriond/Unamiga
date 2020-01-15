@@ -1,6 +1,8 @@
 # Woodpecker
 
-### Port por Jose Manuel @delgrom |
+### Port por Jose Manuel @delgrom 
+
+![woodpecker](https://user-images.githubusercontent.com/31018768/72459666-89529180-37cb-11ea-8219-80eaf10f5b0d.jpg)
 
 ### Requerimientos:
 
