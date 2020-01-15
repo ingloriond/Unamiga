@@ -1,6 +1,8 @@
 # Ponpoko
 
-### Port por Jose Manuel @delgrom |
+### Port por Jose Manuel @delgrom 
+
+![ponpoko](https://user-images.githubusercontent.com/31018768/72459507-3547ad00-37cb-11ea-83de-8721dadacec7.jpg)
 
 ### Requerimientos:
 
