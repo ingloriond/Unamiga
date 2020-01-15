@@ -1,8 +1,8 @@
 # Ms Pacman
 
-![ms pacman](https://user-images.githubusercontent.com/31018768/72459236-9f138700-37ca-11ea-9a66-989e38a23660.jpg)
+### Port por Jose Manuel @delgrom 
 
-### Port por Jose Manuel @delgrom |
+![ms pacman](https://user-images.githubusercontent.com/31018768/72459236-9f138700-37ca-11ea-9a66-989e38a23660.jpg)
 
 ### Requerimientos:
 
