@@ -6,9 +6,9 @@
 
 ### Requerimientos:
 
-#### SRAM: 
+#### SRAM: NO
 
-#### MULTICORE: SI
+#### MULTICORE: NO
 
 #### SOPORTE PAD 6 BOTONES: 
 
