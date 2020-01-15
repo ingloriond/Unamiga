@@ -1,8 +1,8 @@
 # Maniac Miner
 
-![ManiacMiner](https://user-images.githubusercontent.com/31018768/72459270-b6527480-37ca-11ea-82e5-fb864a8560d0.jpg)
+### Port por Jose Manuel @delgrom 
 
-### Port por Jose Manuel @delgrom |
+![ManiacMiner](https://user-images.githubusercontent.com/31018768/72459270-b6527480-37ca-11ea-82e5-fb864a8560d0.jpg)
 
 ### Requerimientos:
 
