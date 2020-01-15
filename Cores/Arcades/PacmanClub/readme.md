@@ -1,6 +1,8 @@
 # Pac-Man Club
 
-### Port por Jose Manuel @delgrom |
+### Port por Jose Manuel @delgrom 
+
+![pacmanclub](https://user-images.githubusercontent.com/31018768/72459365-ee59b780-37ca-11ea-9e2d-de66ac19e829.png)
 
 ### Requerimientos:
 
