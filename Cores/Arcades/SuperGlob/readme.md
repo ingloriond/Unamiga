@@ -1,6 +1,8 @@
 # SuperGlob
 
-### Port por Jose Manuel @delgrom |
+### Port por Jose Manuel @delgrom 
+
+![puperglob](https://user-images.githubusercontent.com/31018768/72459560-59a38980-37cb-11ea-9ea6-0b2e3c75cbc3.jpg)
 
 ### Requerimientos:
 
