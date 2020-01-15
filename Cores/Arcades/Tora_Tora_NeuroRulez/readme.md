@@ -1,5 +1,7 @@
 # Tora Tora
 
+![toratora](https://user-images.githubusercontent.com/31018768/72457790-a84f2480-37c7-11ea-8660-9588f14c8cd0.jpg)
+
 #### Core portado por @NeuroRulez (Twitter @Neuro_999, Github: https://github.com/neurorulez) | proviene de Jose Tejada Jotego https://www.patreon.com/topapate
 
 Requerimientos:
