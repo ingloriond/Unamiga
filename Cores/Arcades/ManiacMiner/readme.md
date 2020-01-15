@@ -1,4 +1,4 @@
-# Maniac MinerManiac Miner
+# Maniac Miner
 
 ### Port por Jose Manuel @delgrom |
 
