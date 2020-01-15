@@ -2,6 +2,8 @@
 
 ### Port por Jose Manuel @delgrom |
 
+![pacman-plus-arcade](https://user-images.githubusercontent.com/31018768/72459417-07faff00-37cb-11ea-90f1-4f87adf83c36.jpg)
+
 ### Requerimientos:
 
 #### SRAM: 
