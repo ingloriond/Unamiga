@@ -1,6 +1,6 @@
 # 1942
 
-### Port por Jose Manuel @delgom @ adaptación de SCramble de Victor Trucco a su multicore 2.
+### Port por Jose Manuel @delgom @ adaptación de Scramble de Victor Trucco a su multicore 2.
 
 ![1942](https://user-images.githubusercontent.com/31018768/71418274-0164e600-266a-11ea-89dd-e3a148b3f355.jpg)
 
