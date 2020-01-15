@@ -2,7 +2,7 @@
 
 ### Port por Jose Manuel @delgrom |
 
-### Requerimientos: Necesita el archivo popeye.dat en la tarjeta del stm32
+### Requerimientos: 
 
 #### SRAM: SI
 
