@@ -2,6 +2,8 @@
 
 #### Core portado por @NeuroRulez (Twitter @Neuro_999, Github: https://github.com/neurorulez) | proviene de Jose Tejada Jotego https://www.patreon.com/topapate
 
+![f1dream](https://user-images.githubusercontent.com/31018768/72457391-c9634580-37c6-11ea-91b3-df82e06a4695.jpg)
+
 Requerimientos:
 SRAM: NO
 
