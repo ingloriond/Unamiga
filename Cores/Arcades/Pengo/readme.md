@@ -1,6 +1,8 @@
 # Pengo
 
-### Port por Jose Manuel @delgrom |
+### Port por Jose Manuel @delgrom 
+
+![pengo](https://user-images.githubusercontent.com/31018768/72459470-206b1980-37cb-11ea-84f7-2b7816bd1434.png)
 
 ### Requerimientos:
 
