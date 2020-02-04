@@ -2,6 +2,8 @@
 
 ### Port por Jose Manuel @delgrom |
 
+![donkey](https://user-images.githubusercontent.com/31018768/73795769-bfbc7480-47ab-11ea-9071-9b34a94cfcf6.jpg)
+
 ### Requerimientos: 
 
 #### SRAM: SI
