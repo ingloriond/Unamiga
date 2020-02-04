@@ -2,6 +2,8 @@
 
 ### Port por Jose Manuel @delgrom |
 
+![donkeyjr](https://user-images.githubusercontent.com/31018768/73795705-900d6c80-47ab-11ea-80f0-980f66ed668f.jpg)
+
 ### Requerimientos: Necesita el archivo popeye.dat en la tarjeta del stm32
 
 #### SRAM: SI
