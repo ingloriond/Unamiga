@@ -1,5 +1,18 @@
-Por por Jose Manuel @delgrom (Port de Mist Fpga)
-No hace falta SRAM ni STM32 
+# Galaga
+
+### Port por Jose Manuel @delgrom (Port de Mist Fpga)
+
+
+
+### Requerimientos: No hace falta ni SRAM ni STM32
+
+#### SRAM: NO
+
+#### MULTICORE: NO
+
+#### SOPORTE PAD 6 BOTONES: NO
+
+#### SALIDA DE VIDEO : VGA, 15KHZ
 
 Teclas:
 F1: 1P START
