@@ -1,6 +1,6 @@
 # MemTest - Utility to test the Unamiga
 
-### Port por Jose Manuel @delgrom proviniente de Multicore 2 de Victor Trucco ( https://gitlab.com/victor.trucco/Multicore_Bitstreams/-/tree/master/Multicore%202%2FSDRAM%20Test#memtest-screen )
+### Port por Jose Manuel @delgrom proviniente del Multicore 2 de Victor Trucco ( https://gitlab.com/victor.trucco/Multicore_Bitstreams/-/tree/master/Multicore%202%2FSDRAM%20Test#memtest-screen )
 
 Memtest:
 
