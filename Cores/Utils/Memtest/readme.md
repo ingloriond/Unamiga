@@ -7,18 +7,26 @@ Memtest:
 ![memtest](https://user-images.githubusercontent.com/31018768/75568746-230c9000-5a54-11ea-82d9-d43881caeeb2.png)
 
 1 Indicador de Modo Automático (animado),
+
 2 Tiempo que lleva el test expresado en minutos
+
 3 Frecuencia actual a la que trabaja el módulo in Mhz
+
 4 Sin uso en el Unamiga
+
 5 Número de pasadas efectuadas por el test (cada ciclo son 32 MB)
+
 6 Número de test fallados
 
 
 Controles (Teclado)
 
 Arriba - Incrementa la Frecuencia
+
 Abajo - Decrece la Frecuencia
+
 Enter - resetea el test
+
 A - Modo Automatico, detecta la frecuencia máxima de módulo para testearlo. El test comienza a máxima frecuencia.
 Con cada error la frecuencia baja.
 
