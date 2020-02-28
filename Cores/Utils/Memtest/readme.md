@@ -4,6 +4,7 @@ Port por Jose Manuel @delgrom proviniente de Multicore 2 de Victor Trucco.
 
 Memtest screen:
 
+![memtest](https://user-images.githubusercontent.com/31018768/75568746-230c9000-5a54-11ea-82d9-d43881caeeb2.png)
 
 Auto mode indicator (animated),
 Test time passed in minutes,
