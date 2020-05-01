@@ -2,7 +2,7 @@
 
 ## Port por Jose Manuel @delgrom |  Jose Tejada Jotego https://www.patreon.com/topapate
 
-![Portada](https://user-images.githubusercontent.com/31018768/80795477-e3217080-8b9c-11ea-9902-53b5b653b5d2.jpg)
+![Portada2](https://user-images.githubusercontent.com/31018768/80795820-e537ff00-8b9d-11ea-9bb3-74d3595399f5.jpg)
 
 ### Requerimientos:
 
