@@ -27,7 +27,10 @@ a tu gusto ( 50 Hz lo recomendable) pulsas ENTER, aparecerá el logo de ZXDOS en
 
 Ahora aparecerás el menu de las opciones
 
+![photo_2020-05-01_09-30-55](https://user-images.githubusercontent.com/31018768/80793644-f5e57680-8b97-11ea-8dce-77c1eb36cbe8.jpg)
 
+Modifica el PS a Keyb. 
+Int. Beep en NO y pulsas ENTER
+se reiniciara solo y estará configurado.
 
-cambias el PS en Keyb. 
-Int. Beep en NO y pulsas ENTER y se acabó , reiniciara solo y estará configurado.
+A disfrutar!!!!!
