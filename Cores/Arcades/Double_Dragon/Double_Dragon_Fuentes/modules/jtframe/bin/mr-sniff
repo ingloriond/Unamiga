@@ -1,0 +1,3 @@
+#/bin/bash
+stty -F /dev/ttyUSB0 115200 cs8 -cstopb -parenb -ixoff -ixon
+cat /dev/ttyUSB0 | tee mr.log

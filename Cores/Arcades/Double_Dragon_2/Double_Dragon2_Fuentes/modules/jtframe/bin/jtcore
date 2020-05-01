@@ -1,0 +1,400 @@
+#!/bin/bash
+
+function show_usage() {
+    cat << EOF
+JTCORE compilation tool. (c) Jose Tejada 2019, @topapate
+    First argument is the project name, like gng, or 1943
+
+    -skip       skips compilation and goes directly to prepare the release file
+                using the RBF file available.
+    -d          Defines a verilog macro. Macros are removed from qsf file after
+                compilation.
+                Useful macros:
+                    NOSOUND             the core is compiled without sound (faster)
+                    MISTER_VIDEO_MIXER  uses the Mr video modules
+                    JTFRAME_SCAN2X      uses simple scan doubler from JTFRAME
+                    MISTER_NOHDMI       skips MiSTer HDMI related logic. Speeds up compilation.
+    -qq         very quick compilation. Defines NOSUND and MISTER_NOHDMI. Does not alter compilation target.
+    -q | -quick quick compilation. Defines NOSUND.
+    -git        adds the release file to git
+    -mister     compiles MiSTer version. Default is MiST.
+    -seed       sets random seed for compilation
+    -sidi       compiles SIDI version. This uses MiST's folders and settings but different pinout
+    -prog       programs the FPGA
+    -prog-only  skips compilations and directly programs the FPGA
+    -zip | -z   Create zip file
+    -add        all arguments from that point on will be used as inputs to the
+                zip file. All files must be referred to $JTROOT path
+    -sim        prepare quartus simulation
+    -help       displays this message
+EOF
+   exit 0
+}
+
+# Is the root folder environment variable set
+
+if [ "$JTROOT" = "" ]; then
+    echo "ERROR: Missing JTROOT environment variable. Define it to"
+    echo "point to the root folder of the project to compile."
+    exit 1
+fi
+
+cd $JTROOT
+MODULES=$JTROOT/modules
+JTFRAME=$MODULES/jtframe
+SIDI=0
+
+if [ ! -e "$JTFRAME" ]; then
+    echo "ERROR: cannot locate jtframe folder."
+    echo "       It should be at $JTFRAME"
+    exit 1
+fi
+
+# Is the project defined?
+PRJ=$1
+
+case "$PRJ" in
+    "")
+        echo "ERROR: Missing project name."
+        show_usage
+        exit 1;;
+    -help | -h | --help)
+        show_usage;;
+esac
+
+if [ -e $JTROOT/cores/$PRJ ]; then
+    PRJPATH=$JTROOT/cores/$PRJ
+elif [ -e $JTROOT/$PRJ ]; then
+    PRJPATH=$JTROOT/$PRJ
+elif [ -e $JTROOT/hdl ]; then
+    PRJPATH=$JTROOT
+else
+    echo "ERROR: Cannot find a valid project path"
+    exit 1
+fi
+shift
+
+ZIP=FALSE
+SIM=FALSE
+GIT=FALSE
+PROG=FALSE
+MIST=mist
+SKIP_COMPILE=FALSE
+
+# Verilog macros
+MACROS=
+SEED=1
+
+while [ $# -gt 0 ]; do
+    case "$1" in
+        -skip | -s) SKIP_COMPILE=TRUE;;
+        -git | -g) GIT=TRUE;;
+        -prog | -p) PROG=TRUE;;
+        -prog-only | -w)
+            PROG=TRUE
+            SKIP_COMPILE=TRUE;;
+        -mister | -mr)
+            MIST=mister;;
+        -mist)
+            MIST=mist;;
+        -sidi)
+            MIST=mist
+            SIDI=1;;            
+        -add)
+            ZIP=TRUE
+            shift
+            break;;
+        -sim)
+            SIM=TRUE;;
+        -seed | -s)
+            shift
+            SEED=$1;;
+        -gngvga)
+            MACROS="JTFRAME_VGA SCAN2X_TYPE=1 $MACROS";;
+        -d)
+            shift
+            MACROS="$1 $MACROS"
+            ;;
+        -q|-quick)
+            MACROS="$MACROS NOSOUND";;
+        -qq|-veryquick)
+            MACROS="$MACROS NOSOUND MISTER_NOHDMI";;
+        -zip | -z)
+            ZIP=TRUE;;
+        -help | -h)
+            show_usage;;
+        *)  echo "ERROR: Unknown option $1";
+            exit 1;;
+    esac
+    shift
+done
+
+# Check Quartus path
+case $MIST in
+    mister)
+        if ! (which quartus_sh|grep 17 -q); then
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.
+            PATH=$PATH:$HOME/intelFPGA_lite/17.1/quartus/bin
+            export PATH
+        fi;;
+    mist)
+        if ! (which quartus_sh|grep 13 -q); then
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.
+            PATH=$PATH:$HOME/altera/13.1/quartus/bin
+            export PATH
+        fi;;
+esac
+
+if [[ "$SIDI" = 1 && "MIST" = mister ]]; then
+    echo "ERROR: You cannot select MiSTer and SIDI at the same time"
+    exit 1
+fi
+
+function escape_bars {
+    echo ${1//\//\\/}
+}
+
+# qsf line to disable SOUND synthesis
+# set_global_assignment -name VERILOG_MACRO "NOSOUND=<None>"
+function copy_templates {
+    datestr=$(date "+%H:%M:%S %B %e, %Y")
+    # Replace core name and path to modules
+    sedstr='s/${CORENAME}/'${PRJ}'/g;s/${DATE}/'${datestr}'/g;s/${MODULES}/'$(escape_bars ${MODULES})'/g;s/${PRJPATH}/'$(escape_bars ${PRJPATH})'/g'
+    sed "$sedstr" $JTFRAME/hdl/$MIST/$MIST.qpf > $PRJPATH/$MIST/jt${PRJ}.qpf
+    sed "$sedstr" $JTFRAME/hdl/$MIST/$MIST.qsf > $PRJPATH/$MIST/jt${PRJ}.qsf
+    # TCL in HDL folder is always appended
+    TCL=$PRJPATH/hdl/jt${PRJ}.tcl
+    if [ ! -e $TCL ]; then
+        echo "WARNING: No project TCL file. Creating one empty."
+        touch $TCL
+    fi
+    cat $TCL >> $PRJPATH/$MIST/jt${PRJ}.qsf
+    # TCL in platform folder is added if it exists
+    if [ -e $PRJPATH/$MIST/jt${PRJ}.tcl ]; then
+        cat $PRJPATH/$MIST/jt${PRJ}.tcl >> $PRJPATH/$MIST/jt${PRJ}.qsf            
+    fi
+}
+
+function sidi_pins {
+    sed -i 's/Cyclone III/Cyclone IV E/g' $1
+    sed -i 's/EP3C25E144C8/EP4CE22F17C8/g' $1
+    sed -i 's/PIN_7 /PIN_G1 /g' $1
+    sed -i 's/PIN_54 /PIN_E1 /g' $1
+    sed -i 's/PIN_55 /PIN_M2 /g' $1 #two pines same clock
+    sed -i 's/PIN_144 /PIN_P16 /g' $1
+    sed -i 's/PIN_143 /PIN_P15 /g' $1
+    sed -i 's/PIN_142 /PIN_R16 /g' $1
+    sed -i 's/PIN_141 /PIN_R14 /g' $1
+    sed -i 's/PIN_137 /PIN_T15 /g' $1
+    sed -i 's/PIN_135 /PIN_T14 /g' $1
+    sed -i 's/PIN_133 /PIN_J16 /g' $1
+    sed -i 's/PIN_132 /PIN_J15 /g' $1
+    sed -i 's/PIN_125 /PIN_J14 /g' $1
+    sed -i 's/PIN_121 /PIN_K16 /g' $1
+    sed -i 's/PIN_120 /PIN_K15 /g' $1
+    sed -i 's/PIN_115 /PIN_J13 /g' $1
+    sed -i 's/PIN_114 /PIN_F16 /g' $1
+    sed -i 's/PIN_113 /PIN_F15 /g' $1
+    sed -i 's/PIN_112 /PIN_L16 /g' $1
+    sed -i 's/PIN_111 /PIN_L15 /g' $1
+    sed -i 's/PIN_110 /PIN_N15 /g' $1
+    sed -i 's/PIN_106 /PIN_N16 /g' $1
+    sed -i 's/PIN_136 /PIN_T10 /g' $1
+    sed -i 's/PIN_119 /PIN_T11 /g' $1
+    sed -i 's/PIN_65 /PIN_T12 /g' $1
+    sed -i 's/PIN_80 /PIN_T13 /g' $1
+    sed -i 's/PIN_105 /PIN_T2 /g' $1
+    sed -i 's/PIN_88 /PIN_R1 /g' $1
+    sed -i 's/PIN_126 /PIN_T3 /g' $1
+    sed -i 's/PIN_127 /PIN_T4 /g' $1
+    sed -i 's/PIN_91 /PIN_G15 /g' $1
+    sed -i 's/PIN_13 /PIN_H2 /g' $1
+
+    sed -i 's/PIN_49 /PIN_B14 /g' $1
+    sed -i 's/PIN_44 /PIN_C14 /g' $1
+    sed -i 's/PIN_42 /PIN_C15 /g' $1
+    sed -i 's/PIN_39 /PIN_C16 /g' $1
+    sed -i 's/PIN_4 /PIN_B16 /g' $1
+    sed -i 's/PIN_6 /PIN_A15 /g' $1
+    sed -i 's/PIN_8 /PIN_A14 /g' $1
+    sed -i 's/PIN_10 /PIN_A13 /g' $1
+    sed -i 's/PIN_11 /PIN_A12 /g' $1
+    sed -i 's/PIN_28 /PIN_D16 /g' $1
+    sed -i 's/PIN_50 /PIN_B13 /g' $1
+    sed -i 's/PIN_30 /PIN_D15 /g' $1
+    sed -i 's/PIN_32 /PIN_D14 /g' $1
+    sed -i 's/PIN_83 /PIN_C3 /g' $1
+    sed -i 's/PIN_79 /PIN_C2 /g' $1
+    sed -i 's/PIN_77 /PIN_A4 /g' $1
+    sed -i 's/PIN_76 /PIN_B4 /g' $1
+    sed -i 's/PIN_72 /PIN_A6 /g' $1
+    sed -i 's/PIN_71 /PIN_D6 /g' $1
+    sed -i 's/PIN_69 /PIN_A7 /g' $1
+    sed -i 's/PIN_68 /PIN_B7 /g' $1
+    sed -i 's/PIN_86 /PIN_E6 /g' $1
+    sed -i 's/PIN_87 /PIN_C6 /g' $1
+    sed -i 's/PIN_98 /PIN_B6 /g' $1
+    sed -i 's/PIN_99 /PIN_B5 /g' $1
+    sed -i 's/PIN_100 /PIN_A5 /g' $1
+    sed -i 's/PIN_101 /PIN_B3 /g' $1
+    sed -i 's/PIN_103 /PIN_A3 /g' $1
+    sed -i 's/PIN_104 /PIN_A2 /g' $1
+    sed -i 's/PIN_58 /PIN_A11 /g' $1
+    sed -i 's/PIN_51 /PIN_B12 /g' $1
+    sed -i 's/PIN_85 /PIN_C9 /g' $1
+    sed -i 's/PIN_67 /PIN_C8 /g' $1
+    sed -i 's/PIN_60 /PIN_A10 /g' $1
+    sed -i 's/PIN_64 /PIN_B10 /g' $1
+    sed -i 's/PIN_66 /PIN_D8 /g' $1
+    sed -i 's/PIN_59 /PIN_B11 /g' $1
+    sed -i 's/PIN_33 /PIN_C11 /g' $1
+    sed -i 's/PIN_43 /PIN_R4 /g' $1
+    sed -i 's/PIN_31 /PIN_B1 /g' $1
+    sed -i 's/PIN_46 /PIN_D1 /g' $1
+    sed -i 's/PIN_90 /PIN_G16 /g' $1
+    echo set_instance_assignment -name GLOBAL_SIGNAL \"GLOBAL CLOCK\" -to SPI_SCK >> $1
+}
+
+echo ==============================================
+echo jt$PRJ $MIST compilation starts at $(date +%T) with seed $SEED
+if [ "$MACROS" != "" ]; then
+    echo INFO: Macros used: $MACROS
+else
+    echo INFO: No macros.
+fi
+
+################ compilation
+if [ $SKIP_COMPILE = FALSE ]; then
+    if ! which quartus_sh; then 
+        echo "ERROR: cannot find quartus_sh in the path. Please add the correct path"
+        echo "to the PATH environment variable"
+        exit 1
+    fi
+    # Create MiST(er) folders if they don't exist
+    mkdir -p $PRJPATH/mist
+    mkdir -p $PRJPATH/mister
+    # Update message file
+    if [ -e bin/jt${PRJ}_msg.py ]; then
+        cd bin
+        jt${PRJ}_msg.py || echo "WARNING: No message file"
+    fi
+    cd $PRJPATH/$MIST || exit 1
+    # if [ ! -e $PRJPATH/$MIST/rom_loadv.hex ]; then
+    #     ln -s $JTROOT/modules/rom_loadv.hex
+    # fi
+    echo "Moved to folder " $(pwd)
+    ############################################3
+    # Credits via jtframe_credits:
+    if [[ -e $PRJPATH/patrons/msg && ! -e msg ]]; then
+        ln -sr $PRJPATH/patrons/msg
+    fi
+    if [ -e msg ]; then
+        $JTFRAME/bin/msg2hex msg
+    fi
+    # Update Avatars
+    if [ -e lut ]; then
+        $JTFRAME/bin/lut2hex lut
+        if [ -e $PRJPATH/patrons/avatars ]; then
+            avatar.py $PRJ > /tmp/avatar_$PRJ.log || ( cat /tmp/avatar_$PRJ.log; exit 1 )
+        fi
+    fi
+    if [ ! -e font0.hex ]; then
+        ln -s $JTFRAME/bin/font0.hex
+    fi
+    ############################################3
+    # Recompile
+    rm -rf db incremental_db output_files
+    mkdir -p $JTROOT/log/$MIST
+    LOG="$JTROOT/log/$MIST/jt$PRJ.log"
+    echo Log file: $LOG
+    copy_templates
+    if [ "$SIDI" = 1 ]; then
+        sidi_pins jt${PRJ}.qsf
+    fi
+    # Prepare macros
+    for m in $MACROS; do
+        echo -e "\n" set_global_assignment -name VERILOG_MACRO \"$m\" >> jt$PRJ.qsf
+    done
+    echo -e "\nset_global_assignment -name seed $SEED" >> jt$PRJ.qsf
+    if [ $SIM = FALSE ]; then
+        # Compilation
+        quartus_sh --flow compile jt$PRJ > "$LOG"
+        if ! grep "Full Compilation was successful" "$LOG"; then
+            grep -i error "$LOG" -A 2
+            echo "ERROR while compiling the project. Aborting"
+            exit 1
+        fi
+        grep Worst-case "$LOG"
+    else
+        # Simulation
+        echo Preparing simulation netlist. Logfile:
+        echo $LOG
+        quartus_map jt$PRJ --64bit --parallel=1 --efort=fast > "$LOG"
+        exit $?
+    fi
+fi
+
+function append_if_exists {
+    val=
+    while [ $# -gt 0 ]; do
+        if [ -e "$1" ]; then
+            val="$val $1"
+        fi
+        shift
+    done
+    echo $val
+}
+
+################# Create zip file
+if [ $ZIP = TRUE ]; then
+    # Rename output file
+    cd $JTROOT
+    mkdir -p releases
+    RELEASE=jt${PRJ}_$(date +"%Y%m%d")
+    if [ $MIST = mister ]; then
+        RBF=$PRJPATH/${MIST}/output_files/jt$PRJ.rbf
+    else
+        RBF=$PRJPATH/${MIST}/jt$PRJ.rbf
+    fi
+    if [ ! -e $RBF ]; then
+        echo "ERROR: file $RBF does not exist. You need to recompile."
+        exit 1
+    fi
+    cp $RBF $RELEASE.rbf
+    ZIPFOLDER=$MIST
+    if [ "$SIDI" = 1 ]; then
+        ZIPFOLDER=sidi
+    fi
+    mkdir -p releases/$ZIPFOLDER
+    # zip --update --junk-paths releases/$ZIPFOLDER/${RELEASE}.zip ${RELEASE}.rbf README.txt $* \
+    #     $(append_if_exists rom/{$PRJ/build_rom.sh,$PRJ/build_rom.ini,build_rom_$PRJ.bat} doc/jt$PRJ.txt )
+    if [ -e $JTROOT/../jtbin ]; then
+        BINFOLDER=$JTROOT/../jtbin/$ZIPFOLDER/$PRJ
+        mkdir -p $BINFOLDER
+        mkdir -p $BINFOLDER/releases
+        cp $RELEASE.rbf $BINFOLDER/releases
+        OTHER=$(append_if_exists rom/{$PRJ/build_rom.sh,$PRJ/build_rom.ini,build_rom_$PRJ.bat} doc/jt$PRJ.txt )
+        if [ "$OTHER" != "" ]; then cp $OTHER $BINFOLDER; fi
+    fi
+    rm $RELEASE.rbf
+fi
+
+# Add to git
+if [ $GIT = TRUE ]; then
+    git add -f $PRJ/${MIST}/msg.hex
+    git add -f releases/$MIST/$RELEASE.zip
+fi
+
+if [ $PROG = TRUE ]; then
+    if [ $MIST = mister ]; then
+        CABLE="DE-SoC"
+        cd $PRJPATH/mister
+        FILE=jtag.cdf
+    else
+        CABLE="USB-Blaster(Altera)"
+        FILE=$PRJPATH/${MIST}/jt$PRJ.cdf
+    fi
+    quartus_pgm -c "$CABLE" $FILE
+fi
+
+echo completed at $(date)

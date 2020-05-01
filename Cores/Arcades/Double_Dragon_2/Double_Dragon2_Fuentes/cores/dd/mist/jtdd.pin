@@ -1,0 +1,326 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		3.3V
+ --					Bank 2:		3.3V
+ --					Bank 3:		3.3V
+ --					Bank 4:		3.3V
+ --					Bank 5:		3.3V
+ --					Bank 6:		3.3V
+ --					Bank 7:		3.3V
+ --					Bank 8:		3.3V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+CHIP  "jtdd"  ASSIGNED TO AN: EP4CE22F17C8
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A1        : power  :                   : 3.3V    : 8         :                
+SDRAM_DQ[0]                  : A2        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_DQ[2]                  : A3        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_DQ[4]                  : A4        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_DQ[6]                  : A5        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_DQML                   : A6        : output : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_nCAS                   : A7        : output : 3.3-V LVTTL       :         : 8         : Y              
+GND+                         : A8        :        :                   :         : 8         :                
+GND+                         : A9        :        :                   :         : 7         :                
+SDRAM_A[10]                  : A10       : output : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_A[1]                   : A11       : output : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_A[3]                   : A12       : output : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_DQ[10]                 : A13       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_DQ[8]                  : A14       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_CKE                    : A15       : output : 3.3-V LVTTL       :         : 7         : Y              
+VCCIO7                       : A16       : power  :                   : 3.3V    : 7         :                
+ps2_mouse_clk_io             : B1        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND                          : B2        : gnd    :                   :         :           :                
+SDRAM_DQ[1]                  : B3        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_DQ[3]                  : B4        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_DQ[5]                  : B5        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_DQ[7]                  : B6        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_nWE                    : B7        : output : 3.3-V LVTTL       :         : 8         : Y              
+GND+                         : B8        :        :                   :         : 8         :                
+GND+                         : B9        :        :                   :         : 7         :                
+SDRAM_A[0]                   : B10       : output : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_A[2]                   : B11       : output : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_DQ[11]                 : B12       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_DQ[9]                  : B13       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_CLK                    : B14       : output : 3.3-V LVTTL       :         : 7         : Y              
+GND                          : B15       : gnd    :                   :         :           :                
+VGA_HS                       : B16       : output : 3.3-V LVTTL       :         : 6         : Y              
+RESERVED_INPUT               : C1        :        :                   :         : 1         :                
+sram_addr_o[18]              : C2        : output : 3.3-V LVTTL       :         : 1         : Y              
+SDRAM_DQ[14]                 : C3        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+VCCIO8                       : C4        : power  :                   : 3.3V    : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+SDRAM_A[12]                  : C6        : output : 3.3-V LVTTL       :         : 8         : Y              
+VCCIO8                       : C7        : power  :                   : 3.3V    : 8         :                
+SDRAM_A[11]                  : C8        : output : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_A[9]                   : C9        : output : 3.3-V LVTTL       :         : 7         : Y              
+VCCIO7                       : C10       : power  :                   : 3.3V    : 7         :                
+SDRAM_A[8]                   : C11       : output : 3.3-V LVTTL       :         : 7         : Y              
+GND                          : C12       : gnd    :                   :         :           :                
+VCCIO7                       : C13       : power  :                   : 3.3V    : 7         :                
+SDRAM_A[7]                   : C14       : output : 3.3-V LVTTL       :         : 7         : Y              
+sram_addr_o[0]               : C15       : output : 3.3-V LVTTL       :         : 6         : Y              
+VGA_VS                       : C16       : output : 3.3-V LVTTL       :         : 6         : Y              
+ps2_mouse_data_io            : D1        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+RESERVED_INPUT               : D2        :        :                   :         : 1         :                
+SDRAM_DQ[15]                 : D3        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
+SDRAM_DQ[13]                 : D5        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_DQ[12]                 : D6        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+GND                          : D7        : gnd    :                   :         :           :                
+SDRAM_nRAS                   : D8        : output : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_BA[1]                  : D9        : output : 3.3-V LVTTL       :         : 7         : Y              
+GND                          : D10       : gnd    :                   :         :           :                
+SDRAM_A[6]                   : D11       : output : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_A[5]                   : D12       : output : 3.3-V LVTTL       :         : 7         : Y              
+VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
+SDRAM_A[4]                   : D14       : output : 3.3-V LVTTL       :         : 7         : Y              
+sram_addr_o[1]               : D15       : output : 3.3-V LVTTL       :         : 6         : Y              
+VGA_B[1]                     : D16       : output : 3.3-V LVTTL       :         : 6         : Y              
+clock_50_i                   : E1        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND                          : E2        : gnd    :                   :         :           :                
+VCCIO1                       : E3        : power  :                   : 3.3V    : 1         :                
+GND                          : E4        : gnd    :                   :         :           :                
+GNDA3                        : E5        : gnd    :                   :         :           :                
+sram_data_io[6]              : E6        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+sram_data_io[7]              : E7        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_nCS                    : E8        : output : 3.3-V LVTTL       :         : 8         : Y              
+SDRAM_BA[0]                  : E9        : output : 3.3-V LVTTL       :         : 7         : Y              
+VGA_G[3]                     : E10       : output : 3.3-V LVTTL       :         : 7         : Y              
+SDRAM_DQMH                   : E11       : output : 3.3-V LVTTL       :         : 7         : Y              
+GNDA2                        : E12       : gnd    :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+VCCIO6                       : E14       : power  :                   : 3.3V    : 6         :                
+GND+                         : E15       :        :                   :         : 6         :                
+GND+                         : E16       :        :                   :         : 6         :                
+ps2_data_io                  : F1        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+sram_addr_o[17]              : F2        : output : 3.3-V LVTTL       :         : 1         : Y              
+ps2_clk_io                   : F3        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+nSTATUS                      : F4        :        :                   :         : 1         :                
+VCCA3                        : F5        : power  :                   : 2.5V    :           :                
+GND                          : F6        : gnd    :                   :         :           :                
+VCCINT                       : F7        : power  :                   : 1.2V    :           :                
+sram_data_io[5]              : F8        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+sram_data_io[3]              : F9        : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+GND                          : F10       : gnd    :                   :         :           :                
+VCCINT                       : F11       : power  :                   : 1.2V    :           :                
+VCCA2                        : F12       : power  :                   : 2.5V    :           :                
+VGA_B[4]                     : F13       : output : 3.3-V LVTTL       :         : 6         : Y              
+sram_data_io[0]              : F14       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+sram_addr_o[2]               : F15       : output : 3.3-V LVTTL       :         : 6         : Y              
+VGA_B[2]                     : F16       : output : 3.3-V LVTTL       :         : 6         : Y              
+sram_addr_o[15]              : G1        : output : 3.3-V LVTTL       :         : 1         : Y              
+sram_addr_o[16]              : G2        : output : 3.3-V LVTTL       :         : 1         : Y              
+VCCIO1                       : G3        : power  :                   : 3.3V    : 1         :                
+GND                          : G4        : gnd    :                   :         :           :                
+sram_addr_o[12]              : G5        : output : 3.3-V LVTTL       :         : 1         : Y              
+VCCINT                       : G6        : power  :                   : 1.2V    :           :                
+VCCINT                       : G7        : power  :                   : 1.2V    :           :                
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+VCCINT                       : G10       : power  :                   : 1.2V    :           :                
+GND                          : G11       : gnd    :                   :         :           :                
+MSEL2                        : G12       :        :                   :         : 6         :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO6                       : G14       : power  :                   : 3.3V    : 6         :                
+sram_addr_o[3]               : G15       : output : 3.3-V LVTTL       :         : 6         : Y              
+RESERVED_INPUT               : G16       :        :                   :         : 6         :                
+~ALTERA_DCLK~ / RESERVED_INPUT : H1        : input  : 3.3-V LVTTL       :         : 1         : N              
+RESERVED_INPUT               : H2        :        :                   :         : 1         :                
+TCK                          : H3        : input  :                   :         : 1         :                
+TDI                          : H4        : input  :                   :         : 1         :                
+nCONFIG                      : H5        :        :                   :         : 1         :                
+VCCINT                       : H6        : power  :                   : 1.2V    :           :                
+GND                          : H7        : gnd    :                   :         :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+VCCINT                       : H11       : power  :                   : 1.2V    :           :                
+MSEL1                        : H12       :        :                   :         : 6         :                
+MSEL0                        : H13       :        :                   :         : 6         :                
+CONF_DONE                    : H14       :        :                   :         : 6         :                
+GND                          : H15       : gnd    :                   :         :           :                
+GND                          : H16       : gnd    :                   :         :           :                
+sram_addr_o[13]              : J1        : output : 3.3-V LVTTL       :         : 2         : Y              
+sram_addr_o[10]              : J2        : output : 3.3-V LVTTL       :         : 2         : Y              
+nCE                          : J3        :        :                   :         : 1         :                
+TDO                          : J4        : output :                   :         : 1         :                
+TMS                          : J5        : input  :                   :         : 1         :                
+VCCINT                       : J6        : power  :                   : 1.2V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+GND                          : J11       : gnd    :                   :         :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+sram_addr_o[4]               : J13       : output : 3.3-V LVTTL       :         : 5         : Y              
+VGA_G[1]                     : J14       : output : 3.3-V LVTTL       :         : 5         : Y              
+sram_we_n_o                  : J15       : output : 3.3-V LVTTL       :         : 5         : Y              
+sram_addr_o[5]               : J16       : output : 3.3-V LVTTL       :         : 5         : Y              
+sram_addr_o[11]              : K1        : output : 3.3-V LVTTL       :         : 2         : Y              
+AUDIO_R                      : K2        : output : 3.3-V LVTTL       :         : 2         : Y              
+VCCIO2                       : K3        : power  :                   : 3.3V    : 2         :                
+GND                          : K4        : gnd    :                   :         :           :                
+VGA_G[0]                     : K5        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND                          : K6        : gnd    :                   :         :           :                
+VCCINT                       : K7        : power  :                   : 1.2V    :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCCINT                       : K10       : power  :                   : 1.2V    :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCIO5                       : K14       : power  :                   : 3.3V    : 5         :                
+VGA_G[2]                     : K15       : output : 3.3-V LVTTL       :         : 5         : Y              
+sram_data_io[1]              : K16       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
+joy2_p9_i                    : L1        : input  : 3.3-V LVTTL       :         : 2         : Y              
+joy2_right_i                 : L2        : input  : 3.3-V LVTTL       :         : 2         : Y              
+sram_addr_o[14]              : L3        : output : 3.3-V LVTTL       :         : 2         : Y              
+sram_data_io[4]              : L4        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+VCCA1                        : L5        : power  :                   : 2.5V    :           :                
+VCCINT                       : L6        : power  :                   : 1.2V    :           :                
+VGA_B[0]                     : L7        : output : 3.3-V LVTTL       :         : 3         : Y              
+sram_oe_n_o                  : L8        : output : 3.3-V LVTTL       :         : 3         : Y              
+GND                          : L9        : gnd    :                   :         :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCA4                        : L12       : power  :                   : 2.5V    :           :                
+VGA_R[1]                     : L13       : output : 3.3-V LVTTL       :         : 5         : Y              
+VGA_G[4]                     : L14       : output : 3.3-V LVTTL       :         : 5         : Y              
+VGA_R[3]                     : L15       : output : 3.3-V LVTTL       :         : 5         : Y              
+VGA_R[2]                     : L16       : output : 3.3-V LVTTL       :         : 5         : Y              
+GND+                         : M1        :        :                   :         : 2         :                
+GND+                         : M2        :        :                   :         : 2         :                
+VCCIO2                       : M3        : power  :                   : 3.3V    : 2         :                
+GND                          : M4        : gnd    :                   :         :           :                
+GNDA1                        : M5        : gnd    :                   :         :           :                
+joy1_p6_i                    : M6        : input  : 3.3-V LVTTL       :         : 3         : Y              
+joy1_down_i                  : M7        : input  : 3.3-V LVTTL       :         : 3         : Y              
+joyX_p7_o                    : M8        : output : 3.3-V LVTTL       :         : 3         : Y              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+VGA_R[0]                     : M10       : output : 3.3-V LVTTL       :         : 4         : Y              
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GNDA4                        : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCIO5                       : M14       : power  :                   : 3.3V    : 5         :                
+GND+                         : M15       :        :                   :         : 5         :                
+GND+                         : M16       :        :                   :         : 5         :                
+joy2_left_i                  : N1        : input  : 3.3-V LVTTL       :         : 2         : Y              
+joy2_down_i                  : N2        : input  : 3.3-V LVTTL       :         : 2         : Y              
+RESERVED_INPUT               : N3        :        :                   :         : 3         :                
+VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
+mic_o                        : N5        : output : 3.3-V LVTTL       :         : 3         : Y              
+SPI_DI                       : N6        : input  : 3.3-V LVTTL       :         : 3         : Y              
+GND                          : N7        : gnd    :                   :         :           :                
+joy1_up_i                    : N8        : input  : 3.3-V LVTTL       :         : 3         : Y              
+stm_rst_o                    : N9        : output : 3.3-V LVTTL       :         : 4         : Y              
+GND                          : N10       : gnd    :                   :         :           :                
+SPI_DO                       : N11       : output : 3.3-V LVTTL       :         : 4         : Y              
+VGA_R[4]                     : N12       : output : 3.3-V LVTTL       :         : 4         : Y              
+VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
+sram_addr_o[6]               : N14       : output : 3.3-V LVTTL       :         : 5         : Y              
+tmds_o[5]                    : N15       : output : 3.3-V LVTTL       :         : 5         : Y              
+tmds_o[4]                    : N16       : output : 3.3-V LVTTL       :         : 5         : Y              
+joy2_p6_i                    : P1        : input  : 3.3-V LVTTL       :         : 2         : Y              
+joy2_up_i                    : P2        : input  : 3.3-V LVTTL       :         : 2         : Y              
+RESERVED_INPUT               : P3        :        :                   :         : 3         :                
+VCCIO3                       : P4        : power  :                   : 3.3V    : 3         :                
+GND                          : P5        : gnd    :                   :         :           :                
+AUDIO_L                      : P6        : output : 3.3-V LVTTL       :         : 3         : Y              
+VCCIO3                       : P7        : power  :                   : 3.3V    : 3         :                
+RESERVED_INPUT               : P8        :        :                   :         : 3         :                
+RESERVED_INPUT               : P9        :        :                   :         : 4         :                
+VCCIO4                       : P10       : power  :                   : 3.3V    : 4         :                
+SPI_SCK                      : P11       : input  : 3.3-V LVTTL       :         : 4         : Y              
+GND                          : P12       : gnd    :                   :         :           :                
+VCCIO4                       : P13       : power  :                   : 3.3V    : 4         :                
+tmds_o[1]                    : P14       : output : 3.3-V LVTTL       :         : 4         : Y              
+sram_addr_o[7]               : P15       : output : 3.3-V LVTTL       :         : 5         : Y              
+tmds_o[2]                    : P16       : output : 3.3-V LVTTL       :         : 5         : Y              
+RESERVED_INPUT               : R1        :        :                   :         : 2         :                
+GND                          : R2        : gnd    :                   :         :           :                
+sd_cs_n_o                    : R3        : output : 3.3-V LVTTL       :         : 3         : Y              
+sd_mosi_o                    : R4        : output : 3.3-V LVTTL       :         : 3         : Y              
+stm_b8_io                    : R5        : bidir  : 3.3-V LVTTL       :         : 3         : Y              
+RESERVED_INPUT               : R6        :        :                   :         : 3         :                
+joy1_right_i                 : R7        : input  : 3.3-V LVTTL       :         : 3         : Y              
+btn_n_i[4]                   : R8        : input  : 3.3-V LVTTL       :         : 3         : Y              
+btn_n_i[2]                   : R9        : input  : 3.3-V LVTTL       :         : 4         : Y              
+stm_tx_i                     : R10       : input  : 3.3-V LVTTL       :         : 4         : Y              
+sram_data_io[2]              : R11       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+sd_miso_i                    : R12       : input  : 3.3-V LVTTL       :         : 4         : Y              
+tmds_o[7]                    : R13       : output : 3.3-V LVTTL       :         : 4         : Y              
+tmds_o[0]                    : R14       : output : 3.3-V LVTTL       :         : 4         : Y              
+GND                          : R15       : gnd    :                   :         :           :                
+tmds_o[3]                    : R16       : output : 3.3-V LVTTL       :         : 5         : Y              
+VCCIO3                       : T1        : power  :                   : 3.3V    : 3         :                
+RESERVED_INPUT               : T2        :        :                   :         : 3         :                
+sd_sclk_o                    : T3        : output : 3.3-V LVTTL       :         : 3         : Y              
+stm_b9_io                    : T4        : bidir  : 3.3-V LVTTL       :         : 3         : Y              
+stm_rx_o                     : T5        : output : 3.3-V LVTTL       :         : 3         : Y              
+joy1_p9_i                    : T6        : input  : 3.3-V LVTTL       :         : 3         : Y              
+joy1_left_i                  : T7        : input  : 3.3-V LVTTL       :         : 3         : Y              
+btn_n_i[3]                   : T8        : input  : 3.3-V LVTTL       :         : 3         : Y              
+btn_n_i[1]                   : T9        : input  : 3.3-V LVTTL       :         : 4         : Y              
+SPI_SS2                      : T10       : input  : 3.3-V LVTTL       :         : 4         : Y              
+VGA_B[3]                     : T11       : output : 3.3-V LVTTL       :         : 4         : Y              
+ear_i                        : T12       : input  : 3.3-V LVTTL       :         : 4         : Y              
+tmds_o[6]                    : T13       : output : 3.3-V LVTTL       :         : 4         : Y              
+sram_addr_o[9]               : T14       : output : 3.3-V LVTTL       :         : 4         : Y              
+sram_addr_o[8]               : T15       : output : 3.3-V LVTTL       :         : 4         : Y              
+VCCIO4                       : T16       : power  :                   : 3.3V    : 4         :                

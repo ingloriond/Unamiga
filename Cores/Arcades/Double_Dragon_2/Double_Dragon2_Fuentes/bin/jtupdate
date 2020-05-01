@@ -1,0 +1,4 @@
+#!/bin/bash
+
+parallel jtcore {1} {2} -z ::: dd dd2 ::: -mist -mister
+parallel jtcore {1} -sidi -z ::: dd dd2
