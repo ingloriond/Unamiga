@@ -1,6 +1,8 @@
+# Double Dragon
+
 ## Port por Jose Manuel @delgrom |  Jose Tejada Jotego https://www.patreon.com/topapate
 
-![Gng](https://user-images.githubusercontent.com/31018768/70318513-881f6380-1820-11ea-9b02-4da83773d88d.jpg)
+![Portada](https://user-images.githubusercontent.com/31018768/80795477-e3217080-8b9c-11ea-9902-53b5b653b5d2.jpg)
 
 ### Requerimientos:
 
