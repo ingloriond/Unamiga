@@ -14,13 +14,19 @@ portado por...
 
 #### Teclas :
 
-#### F1 es el reset total
+#### F1 HARD RESET
 
-#### F2 VGA / RGB
+#### F2 SCANDOUBLER
 
-#### F4 el reset en caliente
+#### F3 50HZ/60HZ VF
 
-#### F9 es MNI
+#### F4 SOFT RESET
+
+#### F7 SCANLINES ( 0,25,50,75)
+
+#### F9 NMI (MULTIFACE)
+
+#### F10 divMMC NMI (Drive) Simula presionar el botón de la unidad (duvMMC NMI -- usado con esxDOS). Si pulasa a la vez Caps Shift fuerza a reescanear las unidades y recargar la pantalla de carga bajo esxDOS
 
 ### Instrucciones
 
