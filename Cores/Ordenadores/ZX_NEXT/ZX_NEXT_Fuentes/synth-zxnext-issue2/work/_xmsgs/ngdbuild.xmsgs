@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;PERIOD = 60 ns;&gt; [D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera-transitiom/zxnext/src/synth-ZXDos-issue2/pines_zxdos_lx16.ucf(352)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;PERIOD = 120 ns;&gt; [D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera-transitiom/zxnext/src/synth-ZXDos-issue2/pines_zxdos_lx16.ucf(353)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;PERIOD = 240 ns;&gt; [D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera-transitiom/zxnext/src/synth-ZXDos-issue2/pines_zxdos_lx16.ucf(356)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;PERIOD = 7680 ns;&gt; [D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera-transitiom/zxnext/src/synth-ZXDos-issue2/pines_zxdos_lx16.ucf(357)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;PERIOD = 3840 ns;&gt; [D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera-transitiom/zxnext/src/synth-ZXDos-issue2/pines_zxdos_lx16.ucf(358)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+</messages>
+

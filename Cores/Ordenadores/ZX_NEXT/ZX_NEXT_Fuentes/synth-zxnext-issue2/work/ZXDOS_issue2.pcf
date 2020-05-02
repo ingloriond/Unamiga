@@ -1,0 +1,3225 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Apr 27 22:16:26 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ram2_data_io_zxdos<0>" LOCATE = SITE "A8" LEVEL 1;
+COMP "ram2_data_io_zxdos<1>" LOCATE = SITE "A7" LEVEL 1;
+COMP "ram2_data_io_zxdos<2>" LOCATE = SITE "C6" LEVEL 1;
+COMP "ram2_data_io_zxdos<3>" LOCATE = SITE "M6" LEVEL 1;
+COMP "ram2_data_io_zxdos<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "ram2_data_io_zxdos<5>" LOCATE = SITE "P9" LEVEL 1;
+COMP "ram2_data_io_zxdos<6>" LOCATE = SITE "B8" LEVEL 1;
+COMP "ram2_data_io_zxdos<7>" LOCATE = SITE "C9" LEVEL 1;
+COMP "ps2_data_io" LOCATE = SITE "P12" LEVEL 1;
+COMP "ram_addr_o<10>" LOCATE = SITE "L14" LEVEL 1;
+COMP "ram_addr_o<11>" LOCATE = SITE "M14" LEVEL 1;
+COMP "ram_addr_o<12>" LOCATE = SITE "K14" LEVEL 1;
+COMP "ram_addr_o<13>" LOCATE = SITE "L13" LEVEL 1;
+COMP "ram_addr_o<14>" LOCATE = SITE "J12" LEVEL 1;
+COMP "ram_addr_o<15>" LOCATE = SITE "T14" LEVEL 1;
+COMP "ram_addr_o<16>" LOCATE = SITE "T15" LEVEL 1;
+COMP "ram_addr_o<17>" LOCATE = SITE "R14" LEVEL 1;
+COMP "ram_addr_o<18>" LOCATE = SITE "R16" LEVEL 1;
+COMP "ps2_pin2_io" LOCATE = SITE "P11" LEVEL 1;
+COMP "ps2_pin6_io" LOCATE = SITE "M10" LEVEL 1;
+COMP "hsync_o" LOCATE = SITE "G12" LEVEL 1;
+COMP "btn_multiface_n_i" LOCATE = SITE "R7" LEVEL 1;
+COMP "ram1_we_n_o" LOCATE = SITE "M16" LEVEL 1;
+COMP "csync_o" LOCATE = SITE "E13" LEVEL 1;
+COMP "ram2_we_n_o" LOCATE = SITE "N5" LEVEL 1;
+COMP "ram2_addr_o<0>" LOCATE = SITE "B14" LEVEL 1;
+COMP "ram2_addr_o<1>" LOCATE = SITE "A13" LEVEL 1;
+COMP "ram2_addr_o<2>" LOCATE = SITE "A12" LEVEL 1;
+COMP "ram2_addr_o<3>" LOCATE = SITE "A11" LEVEL 1;
+COMP "ram2_addr_o<4>" LOCATE = SITE "A9" LEVEL 1;
+COMP "ram2_addr_o<5>" LOCATE = SITE "N6" LEVEL 1;
+COMP "ram2_addr_o<6>" LOCATE = SITE "P6" LEVEL 1;
+COMP "ram2_addr_o<7>" LOCATE = SITE "L7" LEVEL 1;
+COMP "ram2_addr_o<8>" LOCATE = SITE "T4" LEVEL 1;
+COMP "ram2_addr_o<9>" LOCATE = SITE "R5" LEVEL 1;
+COMP "joy_clk" LOCATE = SITE "R12" LEVEL 1;
+COMP "ear_port_i" LOCATE = SITE "A14" LEVEL 1;
+COMP "clock_50_i" LOCATE = SITE "A10" LEVEL 1;
+PIN clock_50_i_pin<0> = BEL "clock_50_i" PINNAME PAD;
+PIN "clock_50_i_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "sd_miso_i" LOCATE = SITE "T7" LEVEL 1;
+COMP "sd_sclk_o" LOCATE = SITE "T6" LEVEL 1;
+PIN sd_sclk_o_pin<0> = BEL "sd_sclk_o" PINNAME PAD;
+PIN "sd_sclk_o_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "sd_mosi_o" LOCATE = SITE "M9" LEVEL 1;
+COMP "ps2_clk_io" LOCATE = SITE "M11" LEVEL 1;
+COMP "ram_addr_o<0>" LOCATE = SITE "H14" LEVEL 1;
+COMP "ram_addr_o<1>" LOCATE = SITE "J16" LEVEL 1;
+COMP "ram_addr_o<2>" LOCATE = SITE "J11" LEVEL 1;
+COMP "ram_addr_o<3>" LOCATE = SITE "J13" LEVEL 1;
+COMP "ram_addr_o<4>" LOCATE = SITE "K16" LEVEL 1;
+COMP "ram_addr_o<5>" LOCATE = SITE "K11" LEVEL 1;
+COMP "ram_addr_o<6>" LOCATE = SITE "L12" LEVEL 1;
+COMP "ram_addr_o<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "ram_addr_o<8>" LOCATE = SITE "M15" LEVEL 1;
+COMP "ram_addr_o<9>" LOCATE = SITE "N14" LEVEL 1;
+COMP "btn_divmmc_n_i" LOCATE = SITE "T8" LEVEL 1;
+COMP "audioext_l_o" LOCATE = SITE "H11" LEVEL 1;
+COMP "vsync_o" LOCATE = SITE "H16" LEVEL 1;
+COMP "audioext_r_o" LOCATE = SITE "H13" LEVEL 1;
+COMP "ram2_addr_o<10>" LOCATE = SITE "P5" LEVEL 1;
+COMP "ram2_addr_o<11>" LOCATE = SITE "M7" LEVEL 1;
+COMP "ram2_addr_o<12>" LOCATE = SITE "P4" LEVEL 1;
+COMP "ram2_addr_o<13>" LOCATE = SITE "D6" LEVEL 1;
+COMP "ram2_addr_o<14>" LOCATE = SITE "F7" LEVEL 1;
+COMP "ram2_addr_o<15>" LOCATE = SITE "B10" LEVEL 1;
+COMP "ram2_addr_o<16>" LOCATE = SITE "C11" LEVEL 1;
+COMP "ram2_addr_o<17>" LOCATE = SITE "C13" LEVEL 1;
+COMP "ram2_addr_o<18>" LOCATE = SITE "B12" LEVEL 1;
+COMP "ram_data_io_zxdos<0>" LOCATE = SITE "K15" LEVEL 1;
+COMP "ram_data_io_zxdos<1>" LOCATE = SITE "N16" LEVEL 1;
+COMP "ram_data_io_zxdos<2>" LOCATE = SITE "L16" LEVEL 1;
+COMP "ram_data_io_zxdos<3>" LOCATE = SITE "K12" LEVEL 1;
+COMP "ram_data_io_zxdos<4>" LOCATE = SITE "J14" LEVEL 1;
+COMP "ram_data_io_zxdos<5>" LOCATE = SITE "P15" LEVEL 1;
+COMP "ram_data_io_zxdos<6>" LOCATE = SITE "P16" LEVEL 1;
+COMP "ram_data_io_zxdos<7>" LOCATE = SITE "R15" LEVEL 1;
+COMP "joy_data" LOCATE = SITE "T13" LEVEL 1;
+COMP "joy_load" LOCATE = SITE "T12" LEVEL 1;
+COMP "sd_cs0_n_o" LOCATE = SITE "N9" LEVEL 1;
+COMP "rgb_b_o<0>" LOCATE = SITE "C15" LEVEL 1;
+COMP "rgb_b_o<1>" LOCATE = SITE "B15" LEVEL 1;
+COMP "rgb_b_o<2>" LOCATE = SITE "E12" LEVEL 1;
+COMP "rgb_g_o<0>" LOCATE = SITE "D16" LEVEL 1;
+COMP "rgb_g_o<1>" LOCATE = SITE "C16" LEVEL 1;
+COMP "rgb_g_o<2>" LOCATE = SITE "B16" LEVEL 1;
+COMP "rgb_r_o<0>" LOCATE = SITE "F14" LEVEL 1;
+COMP "rgb_r_o<1>" LOCATE = SITE "F13" LEVEL 1;
+COMP "rgb_r_o<2>" LOCATE = SITE "G11" LEVEL 1;
+PIN zxnext/Mram_nr_wr_dat[6]_GND_123_o_wide_mux_566_OUT_pins<11> = BEL
+        "zxnext/Mram_nr_wr_dat[6]_GND_123_o_wide_mux_566_OUT" PINNAME
+        CLKAWRCLK;
+PIN ps2_kbd_mod/keymaps/Mram_ram_q_pins<21> = BEL
+        "ps2_kbd_mod/keymaps/Mram_ram_q" PINNAME CLKBRDCLK;
+PIN zxnext/copper_inst_lsb_ram/Mram_ram_q_pins<20> = BEL
+        "zxnext/copper_inst_lsb_ram/Mram_ram_q" PINNAME CLKAWRCLK;
+PIN zxnext/copper_inst_msb_ram/Mram_ram_q_pins<20> = BEL
+        "zxnext/copper_inst_msb_ram/Mram_ram_q" PINNAME CLKAWRCLK;
+PIN zxnext/palette_utm/Mram_ram_q_pins<20> = BEL
+        "zxnext/palette_utm/Mram_ram_q" PINNAME CLKAWRCLK;
+PIN zxnext/palette_l2s/Mram_ram_q_pins<20> = BEL
+        "zxnext/palette_l2s/Mram_ram_q" PINNAME CLKA;
+PIN zxnext/bank7_ram/Mram_ram_q1_pins<26> = BEL "zxnext/bank7_ram/Mram_ram_q1"
+        PINNAME CLKA;
+PIN zxnext/bank7_ram/Mram_ram_q2_pins<26> = BEL "zxnext/bank7_ram/Mram_ram_q2"
+        PINNAME CLKA;
+PIN zxnext/bank7_ram/Mram_ram_q3_pins<26> = BEL "zxnext/bank7_ram/Mram_ram_q3"
+        PINNAME CLKA;
+PIN zxnext/bank7_ram/Mram_ram_q4_pins<26> = BEL "zxnext/bank7_ram/Mram_ram_q4"
+        PINNAME CLKA;
+PIN zxnext/bank5_ram/Mram_ram_q2_pins<28> = BEL "zxnext/bank5_ram/Mram_ram_q2"
+        PINNAME CLKA;
+PIN zxnext/bank5_ram/Mram_ram_q1_pins<28> = BEL "zxnext/bank5_ram/Mram_ram_q1"
+        PINNAME CLKA;
+PIN zxnext/bank5_ram/Mram_ram_q3_pins<28> = BEL "zxnext/bank5_ram/Mram_ram_q3"
+        PINNAME CLKA;
+PIN zxnext/bank5_ram/Mram_ram_q4_pins<28> = BEL "zxnext/bank5_ram/Mram_ram_q4"
+        PINNAME CLKA;
+PIN zxnext/bank5_ram/Mram_ram_q5_pins<28> = BEL "zxnext/bank5_ram/Mram_ram_q5"
+        PINNAME CLKA;
+PIN zxnext/bank5_ram/Mram_ram_q6_pins<28> = BEL "zxnext/bank5_ram/Mram_ram_q6"
+        PINNAME CLKA;
+PIN zxnext/bank5_ram/Mram_ram_q7_pins<28> = BEL "zxnext/bank5_ram/Mram_ram_q7"
+        PINNAME CLKA;
+PIN zxnext/bank5_ram/Mram_ram_q8_pins<28> = BEL "zxnext/bank5_ram/Mram_ram_q8"
+        PINNAME CLKA;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q7_pins<29> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q7" PINNAME CLKB;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q6_pins<29> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q6" PINNAME CLKB;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q8_pins<29> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q8" PINNAME CLKB;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q4_pins<29> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q4" PINNAME CLKB;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q3_pins<29> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q3" PINNAME CLKB;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q5_pins<29> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q5" PINNAME CLKB;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q1_pins<29> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q1" PINNAME CLKB;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q2_pins<29> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q2" PINNAME CLKB;
+PIN sc_mod/u_run/Mram_ram_q_pins<23> = BEL "sc_mod/u_run/Mram_ram_q" PINNAME
+        CLKB;
+PIN zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT4_pins<13> = BEL
+        "zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT4" PINNAME
+        CLKA;
+PIN zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT3_pins<13> = BEL
+        "zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT3" PINNAME
+        CLKA;
+PIN zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT2_pins<13> = BEL
+        "zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT2" PINNAME
+        CLKA;
+PIN zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT1_pins<13> = BEL
+        "zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT1" PINNAME
+        CLKA;
+TIMEGRP CLK_28 = BEL "sram_port_a_dat_0" BEL "sram_port_a_dat_1" BEL
+        "sram_port_a_dat_2" BEL "sram_port_a_dat_3" BEL "sram_port_a_dat_4"
+        BEL "sram_port_a_dat_5" BEL "sram_port_a_dat_6" BEL
+        "sram_port_a_dat_7" BEL "o_zxn_cpu_do_0" BEL "o_zxn_cpu_do_1" BEL
+        "o_zxn_cpu_do_2" BEL "o_zxn_cpu_do_3" BEL "o_zxn_cpu_do_4" BEL
+        "o_zxn_cpu_do_5" BEL "o_zxn_cpu_do_6" BEL "o_zxn_cpu_do_7" BEL
+        "nr_6b_tm_control_0" BEL "nr_6b_tm_control_1" BEL "nr_6b_tm_control_2"
+        BEL "nr_6b_tm_control_3" BEL "nr_6b_tm_control_4" BEL
+        "nr_6b_tm_control_5" BEL "nr_6b_tm_control_6" BEL "nr_6b_tm_en" BEL
+        "zxnext/nr_1a_ula_clip_x2_0" BEL "zxnext/nr_1a_ula_clip_x2_1" BEL
+        "zxnext/nr_1a_ula_clip_x2_2" BEL "zxnext/nr_1a_ula_clip_x2_3" BEL
+        "zxnext/nr_1a_ula_clip_x2_4" BEL "zxnext/nr_1a_ula_clip_x2_5" BEL
+        "zxnext/nr_1a_ula_clip_x2_6" BEL "zxnext/nr_1a_ula_clip_x2_7" BEL
+        "zxnext/nr_4c_tm_transparent_index_0" BEL
+        "zxnext/nr_4c_tm_transparent_index_1" BEL
+        "zxnext/nr_4c_tm_transparent_index_2" BEL
+        "zxnext/nr_4c_tm_transparent_index_3" BEL "zxnext/nr_1b_tm_clip_y2_0"
+        BEL "zxnext/nr_1b_tm_clip_y2_1" BEL "zxnext/nr_1b_tm_clip_y2_2" BEL
+        "zxnext/nr_1b_tm_clip_y2_3" BEL "zxnext/nr_1b_tm_clip_y2_4" BEL
+        "zxnext/nr_1b_tm_clip_y2_5" BEL "zxnext/nr_1b_tm_clip_y2_6" BEL
+        "zxnext/nr_1b_tm_clip_y2_7" BEL "zxnext/nr_04_romram_bank_0" BEL
+        "zxnext/nr_04_romram_bank_1" BEL "zxnext/nr_04_romram_bank_2" BEL
+        "zxnext/nr_04_romram_bank_3" BEL "zxnext/nr_04_romram_bank_4" BEL
+        "zxnext/nr_6a_lores_radastan_xor" BEL "zxnext/nr_6c_tm_default_attr_0"
+        BEL "zxnext/nr_6c_tm_default_attr_1" BEL
+        "zxnext/nr_6c_tm_default_attr_2" BEL "zxnext/nr_6c_tm_default_attr_3"
+        BEL "zxnext/nr_6c_tm_default_attr_4" BEL
+        "zxnext/nr_6c_tm_default_attr_5" BEL "zxnext/nr_6c_tm_default_attr_6"
+        BEL "zxnext/nr_6c_tm_default_attr_7" BEL
+        "zxnext/nr_6a_lores_palette_offset_0" BEL
+        "zxnext/nr_6a_lores_palette_offset_1" BEL
+        "zxnext/nr_6a_lores_palette_offset_2" BEL
+        "zxnext/nr_6a_lores_palette_offset_3" BEL
+        "zxnext/nr_6a_lores_radastan" BEL "zxnext/nr_68_ula_fine_scroll_x" BEL
+        "zxnext/nr_64_copper_offset_0" BEL "zxnext/nr_64_copper_offset_1" BEL
+        "zxnext/nr_64_copper_offset_2" BEL "zxnext/nr_64_copper_offset_3" BEL
+        "zxnext/nr_64_copper_offset_4" BEL "zxnext/nr_64_copper_offset_5" BEL
+        "zxnext/nr_64_copper_offset_6" BEL "zxnext/nr_64_copper_offset_7" BEL
+        "zxnext/nr_copper_data_stored_0" BEL "zxnext/nr_copper_data_stored_1"
+        BEL "zxnext/nr_copper_data_stored_2" BEL
+        "zxnext/nr_copper_data_stored_3" BEL "zxnext/nr_copper_data_stored_4"
+        BEL "zxnext/nr_copper_data_stored_5" BEL
+        "zxnext/nr_copper_data_stored_6" BEL "zxnext/nr_copper_data_stored_7"
+        BEL "zxnext/nr_31_tm_scrolly_0" BEL "zxnext/nr_31_tm_scrolly_1" BEL
+        "zxnext/nr_31_tm_scrolly_2" BEL "zxnext/nr_31_tm_scrolly_3" BEL
+        "zxnext/nr_31_tm_scrolly_4" BEL "zxnext/nr_31_tm_scrolly_5" BEL
+        "zxnext/nr_31_tm_scrolly_6" BEL "zxnext/nr_31_tm_scrolly_7" BEL
+        "zxnext/nr_33_lores_scrolly_0" BEL "zxnext/nr_33_lores_scrolly_1" BEL
+        "zxnext/nr_33_lores_scrolly_2" BEL "zxnext/nr_33_lores_scrolly_3" BEL
+        "zxnext/nr_33_lores_scrolly_4" BEL "zxnext/nr_33_lores_scrolly_5" BEL
+        "zxnext/nr_33_lores_scrolly_6" BEL "zxnext/nr_33_lores_scrolly_7" BEL
+        "zxnext/nr_32_lores_scrollx_0" BEL "zxnext/nr_32_lores_scrollx_1" BEL
+        "zxnext/nr_32_lores_scrollx_2" BEL "zxnext/nr_32_lores_scrollx_3" BEL
+        "zxnext/nr_32_lores_scrollx_4" BEL "zxnext/nr_32_lores_scrollx_5" BEL
+        "zxnext/nr_32_lores_scrollx_6" BEL "zxnext/nr_32_lores_scrollx_7" BEL
+        "zxnext/nr_27_ula_scrolly_0" BEL "zxnext/nr_27_ula_scrolly_1" BEL
+        "zxnext/nr_27_ula_scrolly_2" BEL "zxnext/nr_27_ula_scrolly_3" BEL
+        "zxnext/nr_27_ula_scrolly_4" BEL "zxnext/nr_27_ula_scrolly_5" BEL
+        "zxnext/nr_27_ula_scrolly_6" BEL "zxnext/nr_27_ula_scrolly_7" BEL
+        "zxnext/nr_26_ula_scrollx_0" BEL "zxnext/nr_26_ula_scrollx_1" BEL
+        "zxnext/nr_26_ula_scrollx_2" BEL "zxnext/nr_26_ula_scrollx_3" BEL
+        "zxnext/nr_26_ula_scrollx_4" BEL "zxnext/nr_26_ula_scrollx_5" BEL
+        "zxnext/nr_26_ula_scrollx_6" BEL "zxnext/nr_26_ula_scrollx_7" BEL
+        "zxnext/nr_1b_tm_clip_y1_0" BEL "zxnext/nr_1b_tm_clip_y1_1" BEL
+        "zxnext/nr_1b_tm_clip_y1_2" BEL "zxnext/nr_1b_tm_clip_y1_3" BEL
+        "zxnext/nr_1b_tm_clip_y1_4" BEL "zxnext/nr_1b_tm_clip_y1_5" BEL
+        "zxnext/nr_1b_tm_clip_y1_6" BEL "zxnext/nr_1b_tm_clip_y1_7" BEL
+        "zxnext/nr_1b_tm_clip_x1_0" BEL "zxnext/nr_1b_tm_clip_x1_1" BEL
+        "zxnext/nr_1b_tm_clip_x1_2" BEL "zxnext/nr_1b_tm_clip_x1_3" BEL
+        "zxnext/nr_1b_tm_clip_x1_4" BEL "zxnext/nr_1b_tm_clip_x1_5" BEL
+        "zxnext/nr_1b_tm_clip_x1_6" BEL "zxnext/nr_1b_tm_clip_x1_7" BEL
+        "zxnext/nr_1a_ula_clip_y1_0" BEL "zxnext/nr_1a_ula_clip_y1_1" BEL
+        "zxnext/nr_1a_ula_clip_y1_2" BEL "zxnext/nr_1a_ula_clip_y1_3" BEL
+        "zxnext/nr_1a_ula_clip_y1_4" BEL "zxnext/nr_1a_ula_clip_y1_5" BEL
+        "zxnext/nr_1a_ula_clip_y1_6" BEL "zxnext/nr_1a_ula_clip_y1_7" BEL
+        "zxnext/nr_1a_ula_clip_x1_0" BEL "zxnext/nr_1a_ula_clip_x1_1" BEL
+        "zxnext/nr_1a_ula_clip_x1_2" BEL "zxnext/nr_1a_ula_clip_x1_3" BEL
+        "zxnext/nr_1a_ula_clip_x1_4" BEL "zxnext/nr_1a_ula_clip_x1_5" BEL
+        "zxnext/nr_1a_ula_clip_x1_6" BEL "zxnext/nr_1a_ula_clip_x1_7" BEL
+        "zxnext/nr_register_0" BEL "zxnext/nr_register_1" BEL
+        "zxnext/nr_register_2" BEL "zxnext/nr_register_3" BEL
+        "zxnext/nr_register_4" BEL "zxnext/nr_register_5" BEL
+        "zxnext/nr_register_6" BEL "zxnext/nr_register_7" BEL
+        "zxnext/port_123b_layer2_offset_0" BEL
+        "zxnext/port_123b_layer2_offset_1" BEL
+        "zxnext/port_123b_layer2_offset_2" BEL
+        "zxnext/port_123b_layer2_map_segment_0" BEL
+        "zxnext/port_123b_layer2_map_segment_1" BEL "zxnext/port_fe_reg_0" BEL
+        "zxnext/port_fe_reg_1" BEL "zxnext/port_fe_reg_2" BEL
+        "zxnext/port_fe_reg_3" BEL "zxnext/port_fe_reg_4" BEL
+        "zxnext/port_memory_change_dly" BEL "zxnext/cpu_bank5_req_dly" BEL
+        "zxnext/nr_8c_altrom_0" BEL "zxnext/nr_8c_altrom_1" BEL
+        "zxnext/nr_8c_altrom_2" BEL "zxnext/nr_8c_altrom_3" BEL
+        "zxnext/nr_8c_altrom_4" BEL "zxnext/nr_8c_altrom_5" BEL
+        "zxnext/nr_8c_altrom_6" BEL "zxnext/nr_8c_altrom_7" BEL
+        "zxnext/nr_6f_tilemap_tiles_0" BEL "zxnext/nr_6f_tilemap_tiles_1" BEL
+        "zxnext/nr_6f_tilemap_tiles_2" BEL "zxnext/nr_6f_tilemap_tiles_3" BEL
+        "zxnext/nr_6f_tilemap_tiles_4" BEL "zxnext/nr_6f_tilemap_tiles_5" BEL
+        "zxnext/nr_6e_tilemap_base_0" BEL "zxnext/nr_6e_tilemap_base_1" BEL
+        "zxnext/nr_6e_tilemap_base_2" BEL "zxnext/nr_6e_tilemap_base_3" BEL
+        "zxnext/nr_6e_tilemap_base_4" BEL "zxnext/nr_6e_tilemap_base_5" BEL
+        "zxnext/nr_1b_tm_clip_x2_0" BEL "zxnext/nr_1b_tm_clip_x2_1" BEL
+        "zxnext/nr_1b_tm_clip_x2_2" BEL "zxnext/nr_1b_tm_clip_x2_3" BEL
+        "zxnext/nr_1b_tm_clip_x2_4" BEL "zxnext/nr_1b_tm_clip_x2_5" BEL
+        "zxnext/nr_1b_tm_clip_x2_6" BEL "zxnext/nr_1b_tm_clip_x2_7" BEL
+        "zxnext/nr_1a_ula_clip_y2_0" BEL "zxnext/nr_1a_ula_clip_y2_1" BEL
+        "zxnext/nr_1a_ula_clip_y2_2" BEL "zxnext/nr_1a_ula_clip_y2_3" BEL
+        "zxnext/nr_1a_ula_clip_y2_4" BEL "zxnext/nr_1a_ula_clip_y2_5" BEL
+        "zxnext/nr_1a_ula_clip_y2_6" BEL "zxnext/nr_1a_ula_clip_y2_7" BEL
+        "zxnext/nr_13_layer2_shadow_bank_0" BEL
+        "zxnext/nr_13_layer2_shadow_bank_1" BEL
+        "zxnext/nr_13_layer2_shadow_bank_2" BEL
+        "zxnext/nr_13_layer2_shadow_bank_3" BEL
+        "zxnext/nr_13_layer2_shadow_bank_4" BEL
+        "zxnext/nr_13_layer2_shadow_bank_5" BEL
+        "zxnext/nr_13_layer2_shadow_bank_6" BEL
+        "zxnext/nr_12_layer2_active_bank_0" BEL
+        "zxnext/nr_12_layer2_active_bank_1" BEL
+        "zxnext/nr_12_layer2_active_bank_2" BEL
+        "zxnext/nr_12_layer2_active_bank_3" BEL
+        "zxnext/nr_12_layer2_active_bank_4" BEL
+        "zxnext/nr_12_layer2_active_bank_5" BEL
+        "zxnext/nr_12_layer2_active_bank_6" BEL "zxnext/port_dffd_reg_0" BEL
+        "zxnext/port_dffd_reg_1" BEL "zxnext/port_dffd_reg_2" BEL
+        "zxnext/port_dffd_reg_3" BEL "zxnext/lores_vram_di_0" BEL
+        "zxnext/lores_vram_di_1" BEL "zxnext/lores_vram_di_2" BEL
+        "zxnext/lores_vram_di_3" BEL "zxnext/lores_vram_di_4" BEL
+        "zxnext/lores_vram_di_5" BEL "zxnext/lores_vram_di_6" BEL
+        "zxnext/lores_vram_di_7" BEL "zxnext/port_e3_reg_0" BEL
+        "zxnext/port_e3_reg_1" BEL "zxnext/port_e3_reg_2" BEL
+        "zxnext/port_e3_reg_3" BEL "zxnext/port_e3_reg_4" BEL
+        "zxnext/port_e3_reg_5" BEL "zxnext/port_e3_reg_6" BEL
+        "zxnext/port_e3_reg_7" BEL "bus_data_i_q_0" BEL "bus_data_i_q_1" BEL
+        "bus_data_i_q_2" BEL "bus_data_i_q_3" BEL "bus_data_i_q_4" BEL
+        "bus_data_i_q_5" BEL "bus_data_i_q_6" BEL "bus_data_i_q_7" BEL
+        "sram_data_in_0" BEL "sram_data_in_1" BEL "sram_data_in_2" BEL
+        "sram_data_in_3" BEL "sram_data_in_4" BEL "sram_data_in_5" BEL
+        "sram_data_in_6" BEL "sram_data_in_7" BEL "sram_data_in_8" BEL
+        "sram_data_in_9" BEL "sram_data_in_10" BEL "sram_data_in_11" BEL
+        "sram_data_in_12" BEL "sram_data_in_13" BEL "sram_data_in_14" BEL
+        "sram_data_in_15" BEL "zxnext/port_1ffd_reg_0" BEL
+        "zxnext/port_1ffd_reg_1" BEL "zxnext/port_1ffd_reg_2" BEL
+        "zxnext/port_1ffd_reg_3" BEL "zxnext/port_1ffd_reg_4" BEL
+        "zxnext/port_1ffd_reg_5" BEL "zxnext/port_1ffd_reg_6" BEL
+        "zxnext/port_1ffd_reg_7" BEL "zxnext/copper_mod/copper_list_addr_s_0"
+        BEL "zxnext/copper_mod/copper_list_addr_s_1" BEL
+        "zxnext/copper_mod/copper_list_addr_s_2" BEL
+        "zxnext/copper_mod/copper_list_addr_s_3" BEL
+        "zxnext/copper_mod/copper_list_addr_s_4" BEL
+        "zxnext/copper_mod/copper_list_addr_s_5" BEL
+        "zxnext/copper_mod/copper_list_addr_s_6" BEL
+        "zxnext/copper_mod/copper_list_addr_s_7" BEL
+        "zxnext/copper_mod/copper_list_addr_s_8" BEL
+        "zxnext/copper_mod/copper_list_addr_s_9" BEL "zxnext/port_ff_reg_0"
+        BEL "zxnext/port_ff_reg_1" BEL "zxnext/port_ff_reg_2" BEL
+        "zxnext/port_ff_reg_3" BEL "zxnext/port_ff_reg_4" BEL
+        "zxnext/port_ff_reg_5" BEL "zxnext/port_ff_reg_6" BEL
+        "zxnext/port_ff_reg_7" BEL "zxnext/nr_copper_addr_0" BEL
+        "zxnext/nr_copper_addr_1" BEL "zxnext/nr_copper_addr_2" BEL
+        "zxnext/nr_copper_addr_3" BEL "zxnext/nr_copper_addr_4" BEL
+        "zxnext/nr_copper_addr_5" BEL "zxnext/nr_copper_addr_6" BEL
+        "zxnext/nr_copper_addr_7" BEL "zxnext/nr_copper_addr_8" BEL
+        "zxnext/nr_copper_addr_9" BEL "zxnext/nr_copper_addr_10" BEL
+        "zxnext/port_7ffd_reg_0" BEL "zxnext/port_7ffd_reg_1" BEL
+        "zxnext/port_7ffd_reg_2" BEL "zxnext/port_7ffd_reg_3" BEL
+        "zxnext/port_7ffd_reg_4" BEL "zxnext/port_7ffd_reg_5" BEL
+        "zxnext/port_7ffd_reg_6" BEL "zxnext/port_7ffd_reg_7" BEL
+        "zxnext/MMU1_0" BEL "zxnext/MMU1_1" BEL "zxnext/MMU1_2" BEL
+        "zxnext/MMU1_3" BEL "zxnext/MMU1_4" BEL "zxnext/MMU1_5" BEL
+        "zxnext/MMU1_6" BEL "zxnext/MMU1_7" BEL "zxnext/MMU0_0" BEL
+        "zxnext/MMU0_1" BEL "zxnext/MMU0_2" BEL "zxnext/MMU0_3" BEL
+        "zxnext/MMU0_4" BEL "zxnext/MMU0_5" BEL "zxnext/MMU0_6" BEL
+        "zxnext/MMU0_7" BEL "zxnext/MMU3_0" BEL "zxnext/MMU3_1" BEL
+        "zxnext/MMU3_2" BEL "zxnext/MMU3_3" BEL "zxnext/MMU3_4" BEL
+        "zxnext/MMU3_5" BEL "zxnext/MMU3_6" BEL "zxnext/MMU3_7" BEL
+        "zxnext/MMU5_0" BEL "zxnext/MMU5_1" BEL "zxnext/MMU5_2" BEL
+        "zxnext/MMU5_3" BEL "zxnext/MMU5_4" BEL "zxnext/MMU5_5" BEL
+        "zxnext/MMU5_6" BEL "zxnext/MMU5_7" BEL "zxnext/MMU4_0" BEL
+        "zxnext/MMU4_1" BEL "zxnext/MMU4_2" BEL "zxnext/MMU4_3" BEL
+        "zxnext/MMU4_4" BEL "zxnext/MMU4_5" BEL "zxnext/MMU4_6" BEL
+        "zxnext/MMU4_7" BEL "zxnext/MMU2_0" BEL "zxnext/MMU2_1" BEL
+        "zxnext/MMU2_2" BEL "zxnext/MMU2_3" BEL "zxnext/MMU2_4" BEL
+        "zxnext/MMU2_5" BEL "zxnext/MMU2_6" BEL "zxnext/MMU2_7" BEL
+        "zxnext/copper_mod/copper_data_o_0" BEL
+        "zxnext/copper_mod/copper_data_o_1" BEL
+        "zxnext/copper_mod/copper_data_o_2" BEL
+        "zxnext/copper_mod/copper_data_o_3" BEL
+        "zxnext/copper_mod/copper_data_o_4" BEL
+        "zxnext/copper_mod/copper_data_o_5" BEL
+        "zxnext/copper_mod/copper_data_o_6" BEL
+        "zxnext/copper_mod/copper_data_o_7" BEL
+        "zxnext/copper_mod/copper_data_o_8" BEL
+        "zxnext/copper_mod/copper_data_o_9" BEL
+        "zxnext/copper_mod/copper_data_o_10" BEL
+        "zxnext/copper_mod/copper_data_o_11" BEL
+        "zxnext/copper_mod/copper_data_o_12" BEL
+        "zxnext/copper_mod/copper_data_o_13" BEL
+        "zxnext/copper_mod/copper_data_o_14" BEL "zxnext/copper_nr_reg_0" BEL
+        "zxnext/copper_nr_reg_1" BEL "zxnext/copper_nr_reg_2" BEL
+        "zxnext/copper_nr_reg_3" BEL "zxnext/copper_nr_reg_4" BEL
+        "zxnext/copper_nr_reg_5" BEL "zxnext/copper_nr_reg_6" BEL
+        "zxnext/copper_nr_dat_0" BEL "zxnext/copper_nr_dat_1" BEL
+        "zxnext/copper_nr_dat_2" BEL "zxnext/copper_nr_dat_3" BEL
+        "zxnext/copper_nr_dat_4" BEL "zxnext/copper_nr_dat_5" BEL
+        "zxnext/copper_nr_dat_6" BEL "zxnext/copper_nr_dat_7" BEL
+        "zxnext/MMU6_0" BEL "zxnext/MMU6_1" BEL "zxnext/MMU6_2" BEL
+        "zxnext/MMU6_3" BEL "zxnext/MMU6_4" BEL "zxnext/MMU6_5" BEL
+        "zxnext/MMU6_6" BEL "zxnext/MMU6_7" BEL "zxnext/MMU7_0" BEL
+        "zxnext/MMU7_1" BEL "zxnext/MMU7_2" BEL "zxnext/MMU7_3" BEL
+        "zxnext/MMU7_4" BEL "zxnext/MMU7_5" BEL "zxnext/MMU7_6" BEL
+        "zxnext/MMU7_7" BEL "zxnext/nr_30_tm_scrollx_0" BEL
+        "zxnext/nr_30_tm_scrollx_1" BEL "zxnext/nr_30_tm_scrollx_2" BEL
+        "zxnext/nr_30_tm_scrollx_3" BEL "zxnext/nr_30_tm_scrollx_4" BEL
+        "zxnext/nr_30_tm_scrollx_5" BEL "zxnext/nr_30_tm_scrollx_6" BEL
+        "zxnext/nr_30_tm_scrollx_7" BEL "zxnext/nr_30_tm_scrollx_8" BEL
+        "zxnext/nr_30_tm_scrollx_9" BEL "zxnext/nr_23_line_interrupt_0" BEL
+        "zxnext/nr_23_line_interrupt_1" BEL "zxnext/nr_23_line_interrupt_2"
+        BEL "zxnext/nr_23_line_interrupt_3" BEL
+        "zxnext/nr_23_line_interrupt_4" BEL "zxnext/nr_23_line_interrupt_5"
+        BEL "zxnext/nr_23_line_interrupt_6" BEL
+        "zxnext/nr_23_line_interrupt_7" BEL "zxnext/nr_23_line_interrupt_8"
+        BEL "zxnext/cpu_speed_0" BEL "zxnext/cpu_speed_1" BEL
+        "zxnext/port_103b_dat" BEL "zxnext/port_113b_dat" BEL
+        "zxnext/port_7ffd_dat_0" BEL "zxnext/port_7ffd_dat_1" BEL
+        "zxnext/port_7ffd_dat_2" BEL "zxnext/port_7ffd_dat_3" BEL
+        "zxnext/port_7ffd_dat_4" BEL "zxnext/port_7ffd_dat_5" BEL
+        "zxnext/port_7ffd_dat_6" BEL "zxnext/port_7ffd_dat_7" BEL
+        "zxnext/port_ff_dat_tmx_0" BEL "zxnext/port_ff_dat_tmx_1" BEL
+        "zxnext/port_ff_dat_tmx_2" BEL "zxnext/port_ff_dat_tmx_3" BEL
+        "zxnext/port_ff_dat_tmx_4" BEL "zxnext/port_ff_dat_tmx_5" BEL
+        "zxnext/port_ff_dat_tmx_6" BEL "zxnext/port_ff_dat_tmx_7" BEL
+        "zxnext/port_fe_border_0" BEL "zxnext/port_fe_border_1" BEL
+        "zxnext/port_fe_border_2" BEL "zxnext/port_37_dat_0" BEL
+        "zxnext/port_37_dat_1" BEL "zxnext/port_37_dat_2" BEL
+        "zxnext/port_37_dat_3" BEL "zxnext/port_37_dat_4" BEL
+        "zxnext/port_37_dat_5" BEL "zxnext/port_37_dat_7" BEL
+        "zxnext/port_1f_dat_0" BEL "zxnext/port_1f_dat_1" BEL
+        "zxnext/port_1f_dat_2" BEL "zxnext/port_1f_dat_3" BEL
+        "zxnext/port_1f_dat_4" BEL "zxnext/port_1f_dat_5" BEL
+        "zxnext/port_1f_dat_7" BEL "zxnext/port_dma_dat_0" BEL
+        "zxnext/port_dma_dat_1" BEL "zxnext/port_dma_dat_2" BEL
+        "zxnext/port_dma_dat_3" BEL "zxnext/port_dma_dat_4" BEL
+        "zxnext/port_dma_dat_5" BEL "zxnext/port_dma_dat_6" BEL
+        "zxnext/port_dma_dat_7" BEL "zxnext/keyrow_0" BEL "zxnext/keyrow_1"
+        BEL "zxnext/keyrow_2" BEL "zxnext/keyrow_3" BEL "zxnext/keyrow_4" BEL
+        "zxnext/keyrow_5" BEL "zxnext/keyrow_6" BEL "zxnext/keyrow_7" BEL
+        "zxnext/sram_pre_bank7" BEL "zxnext/sram_pre_bank5" BEL
+        "zxnext/ula_mod/mreq23_n" BEL "zxnext/layer2_pre_A21_A13_0" BEL
+        "zxnext/layer2_pre_A21_A13_1" BEL "zxnext/layer2_pre_A21_A13_2" BEL
+        "zxnext/layer2_pre_A21_A13_3" BEL "zxnext/layer2_pre_A21_A13_4" BEL
+        "zxnext/layer2_pre_A21_A13_5" BEL "zxnext/layer2_pre_A21_A13_6" BEL
+        "zxnext/layer2_pre_A21_A13_7" BEL "zxnext/layer2_pre_A21_A13_8" BEL
+        "zxnext/sram_pre_A20_A13_0" BEL "zxnext/sram_pre_A20_A13_1" BEL
+        "zxnext/sram_pre_A20_A13_2" BEL "zxnext/sram_pre_A20_A13_3" BEL
+        "zxnext/sram_pre_A20_A13_4" BEL "zxnext/sram_pre_A20_A13_5" BEL
+        "zxnext/sram_pre_A20_A13_6" BEL "zxnext/sram_pre_A20_A13_7" BEL
+        "zxnext/cpu_bank5_do_0" BEL "zxnext/cpu_bank5_do_1" BEL
+        "zxnext/cpu_bank5_do_2" BEL "zxnext/cpu_bank5_do_3" BEL
+        "zxnext/cpu_bank5_do_4" BEL "zxnext/cpu_bank5_do_5" BEL
+        "zxnext/cpu_bank5_do_6" BEL "zxnext/cpu_bank5_do_7" BEL
+        "zxnext/ula_mod/ioreqtw3_n" BEL "zxnext/p3_floating_bus_dat_0" BEL
+        "zxnext/p3_floating_bus_dat_1" BEL "zxnext/p3_floating_bus_dat_2" BEL
+        "zxnext/p3_floating_bus_dat_3" BEL "zxnext/p3_floating_bus_dat_4" BEL
+        "zxnext/p3_floating_bus_dat_5" BEL "zxnext/p3_floating_bus_dat_6" BEL
+        "zxnext/p3_floating_bus_dat_7" BEL "zxnext/cpu_nr_dat_0" BEL
+        "zxnext/cpu_nr_dat_1" BEL "zxnext/cpu_nr_dat_2" BEL
+        "zxnext/cpu_nr_dat_3" BEL "zxnext/cpu_nr_dat_4" BEL
+        "zxnext/cpu_nr_dat_5" BEL "zxnext/cpu_nr_dat_6" BEL
+        "zxnext/cpu_nr_dat_7" BEL "zxnext/nr_11_video_timing_0" BEL
+        "zxnext/nr_11_video_timing_1" BEL "zxnext/nr_11_video_timing_2" BEL
+        "accel_i_q_2" BEL "accel_i_q_3" BEL "accel_i_q_4" BEL "accel_i_q_5"
+        BEL "accel_i_q_6" BEL "accel_i_q_7" BEL "accel_i_q_8" BEL
+        "accel_i_q_9" BEL "accel_i_q_10" BEL "accel_i_q_11" BEL "accel_i_q_12"
+        BEL "accel_i_q_13" BEL "accel_i_q_14" BEL "accel_i_q_15" BEL
+        "accel_i_q_16" BEL "accel_i_q_17" BEL "accel_i_q_18" BEL
+        "accel_i_q_19" BEL "accel_i_q_20" BEL "accel_i_q_21" BEL
+        "accel_i_q_22" BEL "accel_i_q_23" BEL "accel_i_q_24" BEL
+        "accel_i_q_25" BEL "accel_i_q_26" BEL "accel_i_q_27" BEL
+        "sram_port_b_dat_0" BEL "sram_port_b_dat_1" BEL "sram_port_b_dat_2"
+        BEL "sram_port_b_dat_3" BEL "sram_port_b_dat_4" BEL
+        "sram_port_b_dat_5" BEL "sram_port_b_dat_6" BEL "sram_port_b_dat_7"
+        BEL "o_zxn_cpu_m1_n" BEL "o_zxn_cpu_rd_n" BEL "o_zxn_cpu_rfsh_n" BEL
+        "sram_cs_n_active_0" BEL "sram_cs_n_active_1" BEL "sram_cs_n_active_2"
+        BEL "sram_cs_n_active_3" BEL "actual_video_mode_0" BEL
+        "actual_video_mode_1" BEL "actual_video_mode_2" BEL "nr_15_sprite_en"
+        BEL "nr_15_sprite_over_border_en" BEL "nr_15_layer_priority_0" BEL
+        "nr_15_layer_priority_1" BEL "nr_15_layer_priority_2" BEL
+        "nr_15_sprite_border_clip_en" BEL "nr_15_sprite_priority" BEL
+        "nr_15_lores_en" BEL "nr_43_ulanext_en" BEL "nr_43_active_ula_palette"
+        BEL "nr_43_active_layer2_palette" BEL "nr_43_active_sprite_palette"
+        BEL "nr_43_palette_write_select_0" BEL "nr_43_palette_write_select_1"
+        BEL "nr_43_palette_write_select_2" BEL "nr_43_palette_autoinc_disable"
+        BEL "zxnext/nr_08_internal_speaker_en" BEL
+        "zxnext/nr_88_bus_port_enable_0" BEL "zxnext/nr_88_bus_port_enable_1"
+        BEL "zxnext/nr_88_bus_port_enable_2" BEL
+        "zxnext/nr_88_bus_port_enable_3" BEL "zxnext/nr_88_bus_port_enable_4"
+        BEL "zxnext/nr_88_bus_port_enable_5" BEL
+        "zxnext/nr_88_bus_port_enable_6" BEL "zxnext/nr_88_bus_port_enable_7"
+        BEL "zxnext/nr_98_pi_gpio_o_2" BEL "zxnext/nr_98_pi_gpio_o_3" BEL
+        "zxnext/nr_98_pi_gpio_o_4" BEL "zxnext/nr_98_pi_gpio_o_5" BEL
+        "zxnext/nr_98_pi_gpio_o_6" BEL "zxnext/nr_98_pi_gpio_o_7" BEL
+        "zxnext/nr_89_bus_port_enable_0" BEL "zxnext/nr_89_bus_port_enable_1"
+        BEL "zxnext/nr_85_internal_port_enable_0" BEL
+        "zxnext/nr_85_internal_port_enable_1" BEL
+        "zxnext/nr_87_bus_port_enable_0" BEL "zxnext/nr_87_bus_port_enable_1"
+        BEL "zxnext/nr_87_bus_port_enable_2" BEL
+        "zxnext/nr_87_bus_port_enable_3" BEL "zxnext/nr_87_bus_port_enable_4"
+        BEL "zxnext/nr_87_bus_port_enable_5" BEL
+        "zxnext/nr_87_bus_port_enable_6" BEL "zxnext/nr_87_bus_port_enable_7"
+        BEL "zxnext/nr_86_bus_port_enable_0" BEL
+        "zxnext/nr_86_bus_port_enable_1" BEL "zxnext/nr_86_bus_port_enable_2"
+        BEL "zxnext/nr_86_bus_port_enable_3" BEL
+        "zxnext/nr_86_bus_port_enable_4" BEL "zxnext/nr_86_bus_port_enable_5"
+        BEL "zxnext/nr_86_bus_port_enable_6" BEL
+        "zxnext/nr_86_bus_port_enable_7" BEL
+        "zxnext/nr_82_internal_port_enable_0" BEL
+        "zxnext/nr_82_internal_port_enable_1" BEL
+        "zxnext/nr_82_internal_port_enable_2" BEL
+        "zxnext/nr_82_internal_port_enable_3" BEL
+        "zxnext/nr_82_internal_port_enable_4" BEL
+        "zxnext/nr_82_internal_port_enable_5" BEL
+        "zxnext/nr_82_internal_port_enable_6" BEL
+        "zxnext/nr_82_internal_port_enable_7" BEL
+        "zxnext/nr_84_internal_port_enable_0" BEL
+        "zxnext/nr_84_internal_port_enable_1" BEL
+        "zxnext/nr_84_internal_port_enable_2" BEL
+        "zxnext/nr_84_internal_port_enable_3" BEL
+        "zxnext/nr_84_internal_port_enable_4" BEL
+        "zxnext/nr_84_internal_port_enable_5" BEL
+        "zxnext/nr_84_internal_port_enable_6" BEL
+        "zxnext/nr_84_internal_port_enable_7" BEL
+        "zxnext/nr_83_internal_port_enable_0" BEL
+        "zxnext/nr_83_internal_port_enable_1" BEL
+        "zxnext/nr_83_internal_port_enable_2" BEL
+        "zxnext/nr_83_internal_port_enable_3" BEL
+        "zxnext/nr_83_internal_port_enable_4" BEL
+        "zxnext/nr_83_internal_port_enable_5" BEL
+        "zxnext/nr_83_internal_port_enable_6" BEL
+        "zxnext/nr_83_internal_port_enable_7" BEL
+        "zxnext/nr_7f_user_register_0_0" BEL "zxnext/nr_7f_user_register_0_1"
+        BEL "zxnext/nr_7f_user_register_0_2" BEL
+        "zxnext/nr_7f_user_register_0_3" BEL "zxnext/nr_7f_user_register_0_4"
+        BEL "zxnext/nr_7f_user_register_0_5" BEL
+        "zxnext/nr_7f_user_register_0_6" BEL "zxnext/nr_7f_user_register_0_7"
+        BEL "zxnext/nr_68_ula_en" BEL "zxnext/nr_19_sprite_clip_x2_0" BEL
+        "zxnext/nr_19_sprite_clip_x2_1" BEL "zxnext/nr_19_sprite_clip_x2_2"
+        BEL "zxnext/nr_19_sprite_clip_x2_3" BEL
+        "zxnext/nr_19_sprite_clip_x2_4" BEL "zxnext/nr_19_sprite_clip_x2_5"
+        BEL "zxnext/nr_19_sprite_clip_x2_6" BEL
+        "zxnext/nr_19_sprite_clip_x2_7" BEL "zxnext/nr_18_layer2_clip_x2_0"
+        BEL "zxnext/nr_18_layer2_clip_x2_1" BEL
+        "zxnext/nr_18_layer2_clip_x2_2" BEL "zxnext/nr_18_layer2_clip_x2_3"
+        BEL "zxnext/nr_18_layer2_clip_x2_4" BEL
+        "zxnext/nr_18_layer2_clip_x2_5" BEL "zxnext/nr_18_layer2_clip_x2_6"
+        BEL "zxnext/nr_18_layer2_clip_x2_7" BEL "zxnext/nr_06_hotkey_5060_en"
+        BEL "zxnext/nr_06_hotkey_cpu_speed_en" BEL "zxnext/io_mode_bit_0" BEL
+        "zxnext/port_e7_reg_0" BEL "zxnext/port_e7_reg_1" BEL
+        "zxnext/port_e7_reg_2" BEL "zxnext/port_e7_reg_3" BEL
+        "zxnext/port_e7_reg_7" BEL "zxnext/nr_8a_bus_port_propagate_0" BEL
+        "zxnext/nr_8a_bus_port_propagate_1" BEL
+        "zxnext/nr_8a_bus_port_propagate_2" BEL
+        "zxnext/nr_8a_bus_port_propagate_3" BEL
+        "zxnext/nr_8a_bus_port_propagate_4" BEL
+        "zxnext/nr_09_hdmi_audio_disable" BEL "zxnext/nr_09_psg_mono_0" BEL
+        "zxnext/nr_09_psg_mono_1" BEL "zxnext/nr_09_psg_mono_2" BEL
+        "zxnext/nr_08_keyboard_issue2" BEL "zxnext/nr_08_dac_en" BEL
+        "zxnext/nr_08_psg_turbosound_en" BEL "zxnext/nr_08_port_ff_rd_en" BEL
+        "zxnext/nr_08_psg_stereo_mode" BEL "zxnext/nr_06_button_m1_nmi_en" BEL
+        "zxnext/nr_06_divmmc_automap_en" BEL
+        "zxnext/nr_06_internal_speaker_beep" BEL
+        "zxnext/nr_a0_pi_peripheral_en_0" BEL
+        "zxnext/nr_a0_pi_peripheral_en_3" BEL
+        "zxnext/nr_a0_pi_peripheral_en_4" BEL
+        "zxnext/nr_a0_pi_peripheral_en_5" BEL "zxnext/nr_a2_pi_i2s_ctl_0" BEL
+        "zxnext/nr_a2_pi_i2s_ctl_2" BEL "zxnext/nr_a2_pi_i2s_ctl_3" BEL
+        "zxnext/nr_a2_pi_i2s_ctl_4" BEL "zxnext/nr_a2_pi_i2s_ctl_6" BEL
+        "zxnext/nr_a2_pi_i2s_ctl_7" BEL "zxnext/nr_91_pi_gpio_o_en_0" BEL
+        "zxnext/nr_91_pi_gpio_o_en_1" BEL "zxnext/nr_91_pi_gpio_o_en_2" BEL
+        "zxnext/nr_91_pi_gpio_o_en_3" BEL "zxnext/nr_91_pi_gpio_o_en_4" BEL
+        "zxnext/nr_91_pi_gpio_o_en_5" BEL "zxnext/nr_91_pi_gpio_o_en_6" BEL
+        "zxnext/nr_91_pi_gpio_o_en_7" BEL "zxnext/nr_93_pi_gpio_o_en_0" BEL
+        "zxnext/nr_93_pi_gpio_o_en_1" BEL "zxnext/nr_93_pi_gpio_o_en_2" BEL
+        "zxnext/nr_93_pi_gpio_o_en_3" BEL "zxnext/nr_92_pi_gpio_o_en_0" BEL
+        "zxnext/nr_92_pi_gpio_o_en_1" BEL "zxnext/nr_92_pi_gpio_o_en_2" BEL
+        "zxnext/nr_92_pi_gpio_o_en_3" BEL "zxnext/nr_92_pi_gpio_o_en_4" BEL
+        "zxnext/nr_92_pi_gpio_o_en_5" BEL "zxnext/nr_92_pi_gpio_o_en_6" BEL
+        "zxnext/nr_92_pi_gpio_o_en_7" BEL "zxnext/nr_9a_pi_gpio_o_0" BEL
+        "zxnext/nr_9a_pi_gpio_o_1" BEL "zxnext/nr_9a_pi_gpio_o_2" BEL
+        "zxnext/nr_9a_pi_gpio_o_3" BEL "zxnext/nr_9a_pi_gpio_o_4" BEL
+        "zxnext/nr_9a_pi_gpio_o_5" BEL "zxnext/nr_9a_pi_gpio_o_6" BEL
+        "zxnext/nr_9a_pi_gpio_o_7" BEL "zxnext/nr_90_pi_gpio_o_en_2" BEL
+        "zxnext/nr_90_pi_gpio_o_en_3" BEL "zxnext/nr_90_pi_gpio_o_en_4" BEL
+        "zxnext/nr_90_pi_gpio_o_en_5" BEL "zxnext/nr_90_pi_gpio_o_en_6" BEL
+        "zxnext/nr_90_pi_gpio_o_en_7" BEL "zxnext/nr_9b_pi_gpio_o_0" BEL
+        "zxnext/nr_9b_pi_gpio_o_1" BEL "zxnext/nr_9b_pi_gpio_o_2" BEL
+        "zxnext/nr_9b_pi_gpio_o_3" BEL "zxnext/nr_70_layer2_palette_offset_0"
+        BEL "zxnext/nr_70_layer2_palette_offset_1" BEL
+        "zxnext/nr_70_layer2_palette_offset_2" BEL
+        "zxnext/nr_70_layer2_palette_offset_3" BEL
+        "zxnext/nr_70_layer2_resolution_0" BEL
+        "zxnext/nr_70_layer2_resolution_1" BEL "zxnext/nr_68_ula_stencil_mode"
+        BEL "zxnext/nr_68_cancel_extended_keys" BEL
+        "zxnext/nr_68_blend_mode_0" BEL "zxnext/nr_68_blend_mode_1" BEL
+        "zxnext/nr_62_copper_mode_0" BEL "zxnext/nr_62_copper_mode_1" BEL
+        "zxnext/nr_palette_idx_0" BEL "zxnext/nr_palette_idx_1" BEL
+        "zxnext/nr_palette_idx_2" BEL "zxnext/nr_palette_idx_3" BEL
+        "zxnext/nr_palette_idx_4" BEL "zxnext/nr_palette_idx_5" BEL
+        "zxnext/nr_palette_idx_6" BEL "zxnext/nr_palette_idx_7" BEL
+        "zxnext/nr_stored_palette_value_0" BEL
+        "zxnext/nr_stored_palette_value_1" BEL
+        "zxnext/nr_stored_palette_value_2" BEL
+        "zxnext/nr_stored_palette_value_3" BEL
+        "zxnext/nr_stored_palette_value_4" BEL
+        "zxnext/nr_stored_palette_value_5" BEL
+        "zxnext/nr_stored_palette_value_6" BEL
+        "zxnext/nr_stored_palette_value_7" BEL "zxnext/nr_19_sprite_clip_y1_0"
+        BEL "zxnext/nr_19_sprite_clip_y1_1" BEL
+        "zxnext/nr_19_sprite_clip_y1_2" BEL "zxnext/nr_19_sprite_clip_y1_3"
+        BEL "zxnext/nr_19_sprite_clip_y1_4" BEL
+        "zxnext/nr_19_sprite_clip_y1_5" BEL "zxnext/nr_19_sprite_clip_y1_6"
+        BEL "zxnext/nr_19_sprite_clip_y1_7" BEL
+        "zxnext/nr_19_sprite_clip_x1_0" BEL "zxnext/nr_19_sprite_clip_x1_1"
+        BEL "zxnext/nr_19_sprite_clip_x1_2" BEL
+        "zxnext/nr_19_sprite_clip_x1_3" BEL "zxnext/nr_19_sprite_clip_x1_4"
+        BEL "zxnext/nr_19_sprite_clip_x1_5" BEL
+        "zxnext/nr_19_sprite_clip_x1_6" BEL "zxnext/nr_19_sprite_clip_x1_7"
+        BEL "zxnext/nr_18_layer2_clip_y1_0" BEL
+        "zxnext/nr_18_layer2_clip_y1_1" BEL "zxnext/nr_18_layer2_clip_y1_2"
+        BEL "zxnext/nr_18_layer2_clip_y1_3" BEL
+        "zxnext/nr_18_layer2_clip_y1_4" BEL "zxnext/nr_18_layer2_clip_y1_5"
+        BEL "zxnext/nr_18_layer2_clip_y1_6" BEL
+        "zxnext/nr_18_layer2_clip_y1_7" BEL "zxnext/nr_16_layer2_scrollx_0"
+        BEL "zxnext/nr_16_layer2_scrollx_1" BEL
+        "zxnext/nr_16_layer2_scrollx_2" BEL "zxnext/nr_16_layer2_scrollx_3"
+        BEL "zxnext/nr_16_layer2_scrollx_4" BEL
+        "zxnext/nr_16_layer2_scrollx_5" BEL "zxnext/nr_16_layer2_scrollx_6"
+        BEL "zxnext/nr_16_layer2_scrollx_7" BEL
+        "zxnext/nr_18_layer2_clip_x1_0" BEL "zxnext/nr_18_layer2_clip_x1_1"
+        BEL "zxnext/nr_18_layer2_clip_x1_2" BEL
+        "zxnext/nr_18_layer2_clip_x1_3" BEL "zxnext/nr_18_layer2_clip_x1_4"
+        BEL "zxnext/nr_18_layer2_clip_x1_5" BEL
+        "zxnext/nr_18_layer2_clip_x1_6" BEL "zxnext/nr_18_layer2_clip_x1_7"
+        BEL "zxnext/nr_17_layer2_scrolly_0" BEL
+        "zxnext/nr_17_layer2_scrolly_1" BEL "zxnext/nr_17_layer2_scrolly_2"
+        BEL "zxnext/nr_17_layer2_scrolly_3" BEL
+        "zxnext/nr_17_layer2_scrolly_4" BEL "zxnext/nr_17_layer2_scrolly_5"
+        BEL "zxnext/nr_17_layer2_scrolly_6" BEL
+        "zxnext/nr_17_layer2_scrolly_7" BEL "zxnext/port_bf3b_ulap_index_0"
+        BEL "zxnext/port_bf3b_ulap_index_1" BEL
+        "zxnext/port_bf3b_ulap_index_2" BEL "zxnext/port_bf3b_ulap_index_3"
+        BEL "zxnext/port_bf3b_ulap_index_4" BEL
+        "zxnext/port_bf3b_ulap_index_5" BEL "zxnext/port_bf3b_ulap_mode_0" BEL
+        "zxnext/port_bf3b_ulap_mode_1" BEL
+        "zxnext/port_123b_layer2_map_shadow" BEL
+        "zxnext/port_123b_layer2_map_rd_en" BEL
+        "zxnext/port_123b_layer2_map_wr_en" BEL "zxnext/io_mode_0" BEL
+        "zxnext/io_mode_1" BEL "zxnext/uart1_153b_prescalar_msb_0" BEL
+        "zxnext/uart1_153b_prescalar_msb_1" BEL
+        "zxnext/uart1_153b_prescalar_msb_2" BEL
+        "zxnext/uart0_153b_prescalar_msb_0" BEL
+        "zxnext/uart0_153b_prescalar_msb_1" BEL
+        "zxnext/uart0_153b_prescalar_msb_2" BEL "zxnext/sram_pre_alt_en" BEL
+        "zxnext/sram_pre_romcs" BEL "zxnext/sram_pre_rdonly" BEL
+        "zxnext/nr_80_expbus_0" BEL "zxnext/nr_80_expbus_1" BEL
+        "zxnext/nr_80_expbus_2" BEL "zxnext/nr_80_expbus_3" BEL
+        "zxnext/nr_80_expbus_4" BEL "zxnext/nr_80_expbus_5" BEL
+        "zxnext/nr_80_expbus_6" BEL "zxnext/nr_80_expbus_7" BEL
+        "zxnext/nr_keymap_addr_0" BEL "zxnext/nr_keymap_addr_1" BEL
+        "zxnext/nr_keymap_addr_2" BEL "zxnext/nr_keymap_addr_3" BEL
+        "zxnext/nr_keymap_addr_4" BEL "zxnext/nr_keymap_addr_5" BEL
+        "zxnext/nr_keymap_addr_6" BEL "zxnext/nr_keymap_addr_7" BEL
+        "zxnext/nr_keymap_addr_8" BEL "zxnext/nr_02_reset_type_0" BEL
+        "zxnext/nr_02_reset_type_1" BEL "zxnext/nr_06_psg_mode_0" BEL
+        "zxnext/nr_06_psg_mode_1" BEL "zxnext/nr_05_joy0_0" BEL
+        "zxnext/nr_05_joy0_1" BEL "zxnext/nr_05_joy0_2" BEL
+        "zxnext/nr_05_joy1_0" BEL "zxnext/nr_05_joy1_1" BEL
+        "zxnext/nr_05_joy1_2" BEL "zxnext/nr_0a_mouse_dpi_0" BEL
+        "zxnext/nr_0a_mouse_dpi_1" BEL "zxnext/nr_99_pi_gpio_o_0" BEL
+        "zxnext/nr_99_pi_gpio_o_1" BEL "zxnext/nr_99_pi_gpio_o_2" BEL
+        "zxnext/nr_99_pi_gpio_o_3" BEL "zxnext/nr_99_pi_gpio_o_4" BEL
+        "zxnext/nr_99_pi_gpio_o_5" BEL "zxnext/nr_99_pi_gpio_o_6" BEL
+        "zxnext/nr_99_pi_gpio_o_7" BEL
+        "zxnext/nr_4b_sprite_transparent_index_0" BEL
+        "zxnext/nr_4b_sprite_transparent_index_1" BEL
+        "zxnext/nr_4b_sprite_transparent_index_2" BEL
+        "zxnext/nr_4b_sprite_transparent_index_3" BEL
+        "zxnext/nr_4b_sprite_transparent_index_4" BEL
+        "zxnext/nr_4b_sprite_transparent_index_5" BEL
+        "zxnext/nr_4b_sprite_transparent_index_6" BEL
+        "zxnext/nr_4b_sprite_transparent_index_7" BEL
+        "zxnext/nr_4a_fallback_rgb_0" BEL "zxnext/nr_4a_fallback_rgb_1" BEL
+        "zxnext/nr_4a_fallback_rgb_2" BEL "zxnext/nr_4a_fallback_rgb_3" BEL
+        "zxnext/nr_4a_fallback_rgb_4" BEL "zxnext/nr_4a_fallback_rgb_5" BEL
+        "zxnext/nr_4a_fallback_rgb_6" BEL "zxnext/nr_4a_fallback_rgb_7" BEL
+        "zxnext/nr_42_ulanext_format_0" BEL "zxnext/nr_42_ulanext_format_1"
+        BEL "zxnext/nr_42_ulanext_format_2" BEL
+        "zxnext/nr_42_ulanext_format_3" BEL "zxnext/nr_42_ulanext_format_4"
+        BEL "zxnext/nr_42_ulanext_format_5" BEL
+        "zxnext/nr_42_ulanext_format_6" BEL "zxnext/nr_42_ulanext_format_7"
+        BEL "zxnext/nr_19_sprite_clip_y2_0" BEL
+        "zxnext/nr_19_sprite_clip_y2_1" BEL "zxnext/nr_19_sprite_clip_y2_2"
+        BEL "zxnext/nr_19_sprite_clip_y2_3" BEL
+        "zxnext/nr_19_sprite_clip_y2_4" BEL "zxnext/nr_19_sprite_clip_y2_5"
+        BEL "zxnext/nr_19_sprite_clip_y2_6" BEL
+        "zxnext/nr_19_sprite_clip_y2_7" BEL "zxnext/nr_18_layer2_clip_y2_0"
+        BEL "zxnext/nr_18_layer2_clip_y2_1" BEL
+        "zxnext/nr_18_layer2_clip_y2_2" BEL "zxnext/nr_18_layer2_clip_y2_3"
+        BEL "zxnext/nr_18_layer2_clip_y2_4" BEL
+        "zxnext/nr_18_layer2_clip_y2_5" BEL "zxnext/nr_18_layer2_clip_y2_6"
+        BEL "zxnext/nr_18_layer2_clip_y2_7" BEL
+        "zxnext/nr_14_global_transparent_rgb_0" BEL
+        "zxnext/nr_14_global_transparent_rgb_1" BEL
+        "zxnext/nr_14_global_transparent_rgb_2" BEL
+        "zxnext/nr_14_global_transparent_rgb_3" BEL
+        "zxnext/nr_14_global_transparent_rgb_4" BEL
+        "zxnext/nr_14_global_transparent_rgb_5" BEL
+        "zxnext/nr_14_global_transparent_rgb_6" BEL
+        "zxnext/nr_14_global_transparent_rgb_7" BEL
+        "zxnext/uart1_143b_prescalar_0" BEL "zxnext/uart1_143b_prescalar_1"
+        BEL "zxnext/uart1_143b_prescalar_2" BEL
+        "zxnext/uart1_143b_prescalar_3" BEL "zxnext/uart1_143b_prescalar_4"
+        BEL "zxnext/uart1_143b_prescalar_5" BEL
+        "zxnext/uart1_143b_prescalar_6" BEL "zxnext/uart1_143b_prescalar_7"
+        BEL "zxnext/uart1_143b_prescalar_8" BEL
+        "zxnext/uart1_143b_prescalar_9" BEL "zxnext/uart1_143b_prescalar_10"
+        BEL "zxnext/uart1_143b_prescalar_11" BEL
+        "zxnext/uart1_143b_prescalar_12" BEL "zxnext/uart1_143b_prescalar_13"
+        BEL "zxnext/uart0_143b_prescalar_0" BEL
+        "zxnext/uart0_143b_prescalar_1" BEL "zxnext/uart0_143b_prescalar_2"
+        BEL "zxnext/uart0_143b_prescalar_3" BEL
+        "zxnext/uart0_143b_prescalar_4" BEL "zxnext/uart0_143b_prescalar_5"
+        BEL "zxnext/uart0_143b_prescalar_6" BEL
+        "zxnext/uart0_143b_prescalar_7" BEL "zxnext/uart0_143b_prescalar_8"
+        BEL "zxnext/uart0_143b_prescalar_9" BEL
+        "zxnext/uart0_143b_prescalar_10" BEL "zxnext/uart0_143b_prescalar_11"
+        BEL "zxnext/uart0_143b_prescalar_12" BEL
+        "zxnext/uart0_143b_prescalar_13" BEL
+        "zxnext/port_123b_layer2_map_segment_pre_0" BEL
+        "zxnext/port_123b_layer2_map_segment_pre_1" BEL
+        "zxnext/sram_pre_alt_128" BEL "zxnext/s128_timing_hw_en" BEL
+        "zxnext/p3_timing_hw_en" BEL "zxnext/port_37_hw_en" BEL
+        "zxnext/port_1f_hw_en" BEL "zxnext/cpu_req_dly" BEL
+        "zxnext/port_memory_ram_change_dly" BEL "zxnext/sram_req_dly" BEL
+        "zxnext/hotkeys_0_0" BEL "zxnext/hotkeys_0_1" BEL "zxnext/hotkeys_0_2"
+        BEL "zxnext/hotkeys_0_3" BEL "zxnext/hotkeys_0_4" BEL
+        "zxnext/hotkeys_0_5" BEL "zxnext/hotkeys_0_6" BEL "zxnext/hotkeys_0_7"
+        BEL "zxnext/ulap_palette_rd_done" BEL "zxnext/sram_wait_n" BEL
+        "ps2_kbd_mod/fnkeys_s_1" BEL "ps2_kbd_mod/fnkeys_s_2" BEL
+        "ps2_kbd_mod/fnkeys_s_3" BEL "ps2_kbd_mod/fnkeys_s_4" BEL
+        "ps2_kbd_mod/fnkeys_s_7" BEL "ps2_kbd_mod/fnkeys_s_8" BEL
+        "ps2_kbd_mod/fnkeys_s_9" BEL "ps2_kbd_mod/fnkeys_s_10" BEL
+        "o_zxn_cpu_int_n" BEL "esp_gpio0_o" BEL "esp_gpio0_en" BEL
+        "zxnext/expbus_eff_disable_mem" BEL "zxnext/expbus_eff_disable_io" BEL
+        "zxnext/expbus_eff_en" BEL "zxnext/port_123b_dat_0" BEL
+        "zxnext/port_123b_dat_1" BEL "zxnext/port_123b_dat_2" BEL
+        "zxnext/port_123b_dat_3" BEL "zxnext/port_123b_dat_6" BEL
+        "zxnext/port_123b_dat_7" BEL "zxnext/port_123b_layer2_map_rd_pre" BEL
+        "zxnext/port_123b_layer2_map_wr_pre" BEL
+        "zxnext/eff_expbus_romcs_replace" BEL "zxnext/eff_bootrom_en" BEL
+        "zxnext/dac_hw_en" BEL "zxnext/copper_req_dly" BEL
+        "zxnext/hotkeys_1_0" BEL "zxnext/hotkeys_1_1" BEL "zxnext/hotkeys_1_2"
+        BEL "zxnext/hotkeys_1_3" BEL "zxnext/hotkeys_1_4" BEL
+        "zxnext/hotkeys_1_5" BEL "zxnext/hotkeys_1_6" BEL "zxnext/hotkeys_1_7"
+        BEL "zxnext/copper_mod/last_state_s_0" BEL
+        "zxnext/copper_mod/last_state_s_1" BEL "pi_gpio_en_2" BEL
+        "pi_gpio_en_3" BEL "pi_gpio_en_4" BEL "pi_gpio_en_5" BEL
+        "pi_gpio_en_6" BEL "pi_gpio_en_7" BEL "pi_gpio_en_8" BEL
+        "pi_gpio_en_9" BEL "pi_gpio_en_10" BEL "pi_gpio_en_11" BEL
+        "pi_gpio_en_12" BEL "pi_gpio_en_13" BEL "pi_gpio_en_14" BEL
+        "pi_gpio_en_15" BEL "pi_gpio_en_16" BEL "pi_gpio_en_17" BEL
+        "pi_gpio_en_18" BEL "pi_gpio_en_19" BEL "pi_gpio_en_20" BEL
+        "pi_gpio_en_21" BEL "pi_gpio_en_22" BEL "pi_gpio_en_23" BEL
+        "pi_gpio_en_24" BEL "pi_gpio_en_25" BEL "pi_gpio_en_26" BEL
+        "pi_gpio_en_27" BEL "zxnext/port_fffd_dat_0" BEL
+        "zxnext/port_fffd_dat_1" BEL "zxnext/port_fffd_dat_2" BEL
+        "zxnext/port_fffd_dat_3" BEL "zxnext/port_fffd_dat_4" BEL
+        "zxnext/port_fffd_dat_5" BEL "zxnext/port_fffd_dat_6" BEL
+        "zxnext/port_fffd_dat_7" BEL "bus_reset_db_n_d" BEL
+        "zxnext/port_fe_dat_0_0" BEL "zxnext/port_fe_dat_0_1" BEL
+        "zxnext/port_fe_dat_0_2" BEL "zxnext/port_fe_dat_0_3" BEL
+        "zxnext/port_fe_dat_0_4" BEL "zxnext/port_fe_dat_0_5" BEL
+        "zxnext/port_fe_dat_0_6" BEL "ps2_kbd_mod/matrix_q_2_0" BEL
+        "ps2_kbd_mod/matrix_q_2_1" BEL "ps2_kbd_mod/matrix_q_2_2" BEL
+        "ps2_kbd_mod/matrix_q_2_3" BEL "ps2_kbd_mod/matrix_q_2_4" BEL
+        "ps2_kbd_mod/matrix_q_1_0" BEL "ps2_kbd_mod/matrix_q_1_1" BEL
+        "ps2_kbd_mod/matrix_q_1_2" BEL "ps2_kbd_mod/matrix_q_1_3" BEL
+        "ps2_kbd_mod/matrix_q_1_4" BEL "ps2_kbd_mod/matrix_q_3_0" BEL
+        "ps2_kbd_mod/matrix_q_3_1" BEL "ps2_kbd_mod/matrix_q_3_2" BEL
+        "ps2_kbd_mod/matrix_q_3_3" BEL "ps2_kbd_mod/matrix_q_3_4" BEL
+        "ps2_kbd_mod/matrix_q_4_0" BEL "ps2_kbd_mod/matrix_q_4_1" BEL
+        "ps2_kbd_mod/matrix_q_4_2" BEL "ps2_kbd_mod/matrix_q_4_3" BEL
+        "ps2_kbd_mod/matrix_q_4_4" BEL "ps2_kbd_mod/matrix_q_5_0" BEL
+        "ps2_kbd_mod/matrix_q_5_1" BEL "ps2_kbd_mod/matrix_q_5_2" BEL
+        "ps2_kbd_mod/matrix_q_5_3" BEL "ps2_kbd_mod/matrix_q_5_4" BEL
+        "ps2_kbd_mod/matrix_q_6_0" BEL "ps2_kbd_mod/matrix_q_6_1" BEL
+        "ps2_kbd_mod/matrix_q_6_2" BEL "ps2_kbd_mod/matrix_q_6_3" BEL
+        "ps2_kbd_mod/matrix_q_6_4" BEL "ps2_kbd_mod/keymap_addr_s_0" BEL
+        "ps2_kbd_mod/keymap_addr_s_1" BEL "ps2_kbd_mod/keymap_addr_s_2" BEL
+        "ps2_kbd_mod/keymap_addr_s_3" BEL "ps2_kbd_mod/keymap_addr_s_4" BEL
+        "ps2_kbd_mod/keymap_addr_s_5" BEL "ps2_kbd_mod/keymap_addr_s_6" BEL
+        "ps2_kbd_mod/keymap_addr_s_7" BEL "ps2_kbd_mod/keymap_addr_s_8" BEL
+        "ps2_kbd_mod/keyb_valid_edge_v" BEL "bus_int_n_i_q" BEL
+        "esp_gpio0_i_q" BEL "zxnext/nr_2d_i2s_sample_0" BEL
+        "zxnext/nr_2d_i2s_sample_1" BEL "ps2_kbd_mod/matrix_q_0_0" BEL
+        "ps2_kbd_mod/matrix_q_0_1" BEL "ps2_kbd_mod/matrix_q_0_2" BEL
+        "ps2_kbd_mod/matrix_q_0_3" BEL "ps2_kbd_mod/matrix_q_0_4" BEL
+        "ps2_kbd_mod/matrix_q_7_0" BEL "ps2_kbd_mod/matrix_q_7_1" BEL
+        "ps2_kbd_mod/matrix_q_7_2" BEL "ps2_kbd_mod/matrix_q_7_3" BEL
+        "ps2_kbd_mod/matrix_q_7_4" BEL "sram_addr_active_0" BEL
+        "sram_addr_active_1" BEL "sram_addr_active_2" BEL "sram_addr_active_3"
+        BEL "sram_addr_active_4" BEL "sram_addr_active_5" BEL
+        "sram_addr_active_6" BEL "sram_addr_active_7" BEL "sram_addr_active_8"
+        BEL "sram_addr_active_9" BEL "sram_addr_active_10" BEL
+        "sram_addr_active_11" BEL "sram_addr_active_12" BEL
+        "sram_addr_active_13" BEL "sram_addr_active_14" BEL
+        "sram_addr_active_15" BEL "sram_addr_active_16" BEL
+        "sram_addr_active_17" BEL "sram_addr_active_18" BEL
+        "sram_data_H_active" BEL "zxnext/port_133b_dat_20_0" BEL
+        "zxnext/port_133b_dat_20_1" BEL "zxnext/port_133b_dat_20_2" BEL
+        "sram_data_H_read" BEL "audioext_l_o" BEL "audioext_r_o" BEL
+        "pi_gpio_o_2" BEL "pi_gpio_o_3" BEL "pi_gpio_o_4" BEL "pi_gpio_o_5"
+        BEL "pi_gpio_o_6" BEL "pi_gpio_o_7" BEL "pi_gpio_o_8" BEL
+        "pi_gpio_o_9" BEL "pi_gpio_o_10" BEL "pi_gpio_o_11" BEL "pi_gpio_o_12"
+        BEL "pi_gpio_o_13" BEL "pi_gpio_o_14" BEL "pi_gpio_o_15" BEL
+        "pi_gpio_o_16" BEL "pi_gpio_o_17" BEL "pi_gpio_o_18" BEL
+        "pi_gpio_o_19" BEL "pi_gpio_o_20" BEL "pi_gpio_o_21" BEL
+        "pi_gpio_o_22" BEL "pi_gpio_o_23" BEL "pi_gpio_o_24" BEL
+        "pi_gpio_o_25" BEL "pi_gpio_o_26" BEL "pi_gpio_o_27" BEL
+        "zxnext/rgb_vsync_n_7" BEL "zxnext/rgb_hsync_n_7" BEL
+        "zxnext/port_fadf_dat_0" BEL "zxnext/port_fadf_dat_1" BEL
+        "zxnext/port_fadf_dat_2" BEL "zxnext/port_fadf_dat_4" BEL
+        "zxnext/port_fadf_dat_5" BEL "zxnext/port_fadf_dat_6" BEL
+        "zxnext/port_fadf_dat_7" BEL "zxnext/layer2_prgb_1_0" BEL
+        "zxnext/layer2_prgb_1_1" BEL "zxnext/layer2_prgb_1_2" BEL
+        "zxnext/layer2_prgb_1_3" BEL "zxnext/layer2_prgb_1_4" BEL
+        "zxnext/layer2_prgb_1_5" BEL "zxnext/layer2_prgb_1_6" BEL
+        "zxnext/layer2_prgb_1_7" BEL "zxnext/layer2_prgb_1_8" BEL
+        "zxnext/layer2_prgb_1_9" BEL "zxnext/port_ffdf_dat_0" BEL
+        "zxnext/port_ffdf_dat_1" BEL "zxnext/port_ffdf_dat_2" BEL
+        "zxnext/port_ffdf_dat_3" BEL "zxnext/port_ffdf_dat_4" BEL
+        "zxnext/port_ffdf_dat_5" BEL "zxnext/port_ffdf_dat_6" BEL
+        "zxnext/port_ffdf_dat_7" BEL "zxnext/port_fbdf_dat_0" BEL
+        "zxnext/port_fbdf_dat_1" BEL "zxnext/port_fbdf_dat_2" BEL
+        "zxnext/port_fbdf_dat_3" BEL "zxnext/port_fbdf_dat_4" BEL
+        "zxnext/port_fbdf_dat_5" BEL "zxnext/port_fbdf_dat_6" BEL
+        "zxnext/port_fbdf_dat_7" BEL "zxnext/ula_rgb_1_0" BEL
+        "zxnext/ula_rgb_1_1" BEL "zxnext/ula_rgb_1_2" BEL "zxnext/ula_rgb_1_3"
+        BEL "zxnext/ula_rgb_1_4" BEL "zxnext/ula_rgb_1_5" BEL
+        "zxnext/ula_rgb_1_6" BEL "zxnext/ula_rgb_1_7" BEL "zxnext/ula_rgb_1_8"
+        BEL "zxnext/port_ff3b_dat_0" BEL "zxnext/port_ff3b_dat_1" BEL
+        "zxnext/port_ff3b_dat_2" BEL "zxnext/port_ff3b_dat_3" BEL
+        "zxnext/port_ff3b_dat_4" BEL "zxnext/port_ff3b_dat_5" BEL
+        "zxnext/port_ff3b_dat_6" BEL "zxnext/port_ff3b_dat_7" BEL
+        "zxnext/rgb_out_7_0" BEL "zxnext/rgb_out_7_1" BEL "zxnext/rgb_out_7_2"
+        BEL "zxnext/rgb_out_7_3" BEL "zxnext/rgb_out_7_4" BEL
+        "zxnext/rgb_out_7_5" BEL "zxnext/rgb_out_7_6" BEL "zxnext/rgb_out_7_7"
+        BEL "zxnext/rgb_out_7_8" BEL "rgb_g_o_0" BEL "rgb_g_o_1" BEL
+        "rgb_g_o_2" BEL "rgb_r_o_0" BEL "rgb_r_o_1" BEL "rgb_r_o_2" BEL
+        "rgb_b_o_0" BEL "rgb_b_o_1" BEL "rgb_b_o_2" BEL "hsync_o" BEL
+        "zxnext/port_253b_dat_01" BEL "zxnext/port_253b_dat_1" BEL
+        "zxnext/port_253b_dat_2" BEL "zxnext/port_253b_dat_3" BEL
+        "zxnext/port_253b_dat_4" BEL "zxnext/port_253b_dat_5" BEL
+        "zxnext/port_253b_dat_6" BEL "zxnext/port_253b_dat_7" BEL
+        "zxnext/port_253b_dat_0_0" BEL "zxnext/port_253b_dat_0_1" BEL
+        "zxnext/port_253b_dat_0_2" BEL "zxnext/port_253b_dat_0_3" BEL
+        "zxnext/port_253b_dat_0_4" BEL "zxnext/port_253b_dat_0_5" BEL
+        "zxnext/port_253b_dat_0_6" BEL "zxnext/port_253b_dat_0_7" BEL
+        "btn_mf_sync/o_signal" BEL "btn_mf_sync/sig" BEL
+        "btn_div_sync/o_signal" BEL "btn_div_sync/sig" BEL "ear_sync/o_signal"
+        BEL "ear_sync/sig" BEL "db_2_noise/button_1" BEL "db_2_noise/button_0"
+        BEL "db_1_noise/button_1" BEL "db_1_noise/button_0" BEL
+        "db_expbus_rst_noise/button_1" BEL "db_expbus_rst_noise/button_0" BEL
+        "db_2_bounce/button_1" BEL "db_2_bounce/button_0" BEL
+        "db_1_bounce/button_1" BEL "db_1_bounce/button_0" BEL
+        "db_expbus_rst/button_1" BEL "db_expbus_rst/button_0" BEL
+        "audio_R/DACout_q" BEL "audio_L/DACout_q" BEL "clk_28_div_0" BEL
+        "clk_28_div_1" BEL "clk_28_div_2" BEL "clk_28_div_3" BEL
+        "clk_28_div_4" BEL "clk_28_div_5" BEL "clk_28_div_6" BEL
+        "clk_28_div_7" BEL "clk_28_div_8" BEL "clk_28_div_9" BEL
+        "clk_28_div_10" BEL "clk_28_div_11" BEL "clk_28_div_12" BEL
+        "clk_28_div_13" BEL "clk_28_div_14" BEL "clk_28_div_15" BEL
+        "clk_28_div_16" BEL "clk_28_div_17" BEL "reset_counter_0" BEL
+        "reset_counter_1" BEL "reset_counter_2" BEL "reset_counter_3" BEL
+        "reset_counter_4" BEL "reset_counter_5" BEL "reset_counter_6" BEL
+        "reset_counter_7" BEL "reset_counter_8" BEL "reset_counter_9" BEL
+        "zxnext/nr_07_cpu_speed_0" BEL "zxnext/nr_07_cpu_speed_1" BEL
+        "poweron_counter_0" BEL "poweron_counter_1" BEL "poweron_counter_2"
+        BEL "poweron_counter_3" BEL "poweron_counter_4" BEL
+        "zxnext/nr_09_scanlines_0" BEL "zxnext/nr_09_scanlines_1" BEL
+        "zxnext/nr_1b_tm_clip_idx_0" BEL "zxnext/nr_1b_tm_clip_idx_1" BEL
+        "zxnext/nr_1a_ula_clip_idx_0" BEL "zxnext/nr_1a_ula_clip_idx_1" BEL
+        "zxnext/memcycle_delay_0" BEL "zxnext/memcycle_delay_1" BEL
+        "zxnext/memcycle_delay_2" BEL "zxnext/memcycle_delay_3" BEL
+        "zxnext/nr_19_sprite_clip_idx_0" BEL "zxnext/nr_19_sprite_clip_idx_1"
+        BEL "zxnext/nr_18_layer2_clip_idx_0" BEL
+        "zxnext/nr_18_layer2_clip_idx_1" BEL
+        "zxnext/nr_03_machine_type_FSM_FFd3" BEL
+        "zxnext/nr_03_machine_type_FSM_FFd2" BEL
+        "zxnext/nr_03_machine_type_FSM_FFd1" BEL
+        "ps2_kbd_mod/keymap_seq_s_FSM_FFd2" BEL
+        "ps2_kbd_mod/keymap_seq_s_FSM_FFd1" BEL "db_1_noise/counter_0" BEL
+        "db_1_noise/counter_1" BEL "db_1_noise/counter_2" BEL
+        "db_1_noise/counter_3" BEL "db_1_noise/counter_4" BEL
+        "db_2_noise/counter_0" BEL "db_2_noise/counter_1" BEL
+        "db_2_noise/counter_2" BEL "db_2_noise/counter_3" BEL
+        "db_2_noise/counter_4" BEL "db_expbus_rst_noise/counter_0" BEL
+        "db_expbus_rst_noise/counter_1" BEL "db_expbus_rst_noise/counter_2"
+        BEL "db_expbus_rst_noise/counter_3" BEL
+        "db_expbus_rst_noise/counter_4" BEL "db_2_bounce/counter_0" BEL
+        "db_2_bounce/counter_1" BEL "db_2_bounce/counter_2" BEL
+        "db_2_bounce/counter_3" BEL "db_1_bounce/counter_0" BEL
+        "db_1_bounce/counter_1" BEL "db_1_bounce/counter_2" BEL
+        "db_1_bounce/counter_3" BEL "reset_state_FSM_FFd2" BEL
+        "db_expbus_rst/counter_0" BEL "db_expbus_rst/counter_1" BEL
+        "db_expbus_rst/counter_2" BEL "db_expbus_rst/counter_3" BEL
+        "reset_state_FSM_FFd3" BEL "reset_state_FSM_FFd1" BEL
+        "m_reset_FSM_FFd2" BEL "audio_R/SigmaLatch_q_0" BEL
+        "audio_R/SigmaLatch_q_1" BEL "audio_R/SigmaLatch_q_2" BEL
+        "audio_R/SigmaLatch_q_3" BEL "audio_R/SigmaLatch_q_4" BEL
+        "audio_R/SigmaLatch_q_5" BEL "audio_R/SigmaLatch_q_6" BEL
+        "audio_R/SigmaLatch_q_7" BEL "audio_R/SigmaLatch_q_8" BEL
+        "audio_R/SigmaLatch_q_9" BEL "audio_R/SigmaLatch_q_10" BEL
+        "audio_R/SigmaLatch_q_11" BEL "audio_R/SigmaLatch_q_12" BEL
+        "audio_R/SigmaLatch_q_13" BEL "audio_L/SigmaLatch_q_0" BEL
+        "audio_L/SigmaLatch_q_1" BEL "audio_L/SigmaLatch_q_2" BEL
+        "audio_L/SigmaLatch_q_3" BEL "audio_L/SigmaLatch_q_4" BEL
+        "audio_L/SigmaLatch_q_5" BEL "audio_L/SigmaLatch_q_6" BEL
+        "audio_L/SigmaLatch_q_7" BEL "audio_L/SigmaLatch_q_8" BEL
+        "audio_L/SigmaLatch_q_9" BEL "audio_L/SigmaLatch_q_10" BEL
+        "audio_L/SigmaLatch_q_11" BEL "audio_L/SigmaLatch_q_12" BEL
+        "audio_L/SigmaLatch_q_13" BEL "zxnext/ula_int_count_0" BEL
+        "zxnext/ula_int_count_1" BEL "zxnext/ula_int_count_2" BEL
+        "zxnext/ula_int_count_3" BEL "zxnext/ula_int_count_4" BEL
+        "zxnext/nmi_state_FSM_FFd2" BEL "zxnext/nmi_state_FSM_FFd1" BEL
+        "BUFGMUX1_i1" BEL "BUFGMUX1_i2" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_20" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_19" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_18" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_17" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_16" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_15" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_14" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_13" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_12" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_11" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_10" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_9" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_8" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_7" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_6" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_5" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_4" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_3" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_2" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_1" BEL
+        "zxnext/layer2_mod/layer2_sram_addr_0" BEL
+        "zxnext/layer2_mod/o_layer2_pixel_7" BEL
+        "zxnext/layer2_mod/o_layer2_pixel_6" BEL
+        "zxnext/layer2_mod/o_layer2_pixel_5" BEL
+        "zxnext/layer2_mod/o_layer2_pixel_4" BEL
+        "zxnext/layer2_mod/o_layer2_pixel_3" BEL
+        "zxnext/layer2_mod/o_layer2_pixel_2" BEL
+        "zxnext/layer2_mod/o_layer2_pixel_1" BEL
+        "zxnext/layer2_mod/o_layer2_pixel_0" BEL
+        "zxnext/layer2_mod/layer2_pixel_qq_7" BEL
+        "zxnext/layer2_mod/layer2_pixel_qq_6" BEL
+        "zxnext/layer2_mod/layer2_pixel_qq_5" BEL
+        "zxnext/layer2_mod/layer2_pixel_qq_4" BEL
+        "zxnext/layer2_mod/layer2_pixel_qq_3" BEL
+        "zxnext/layer2_mod/layer2_pixel_qq_2" BEL
+        "zxnext/layer2_mod/layer2_pixel_qq_1" BEL
+        "zxnext/layer2_mod/layer2_pixel_qq_0" BEL
+        "zxnext/uart1_mod/db/counter_2" BEL "zxnext/uart1_mod/db/counter_1"
+        BEL "zxnext/uart1_mod/db/counter_0" BEL
+        "zxnext/uart1_mod/tx_bit_index_s_2" BEL
+        "zxnext/uart1_mod/tx_bit_index_s_1" BEL
+        "zxnext/uart1_mod/tx_bit_index_s_0" BEL
+        "zxnext/uart1_mod/rx_bit_index_s_2" BEL
+        "zxnext/uart1_mod/rx_bit_index_s_1" BEL
+        "zxnext/uart1_mod/rx_bit_index_s_0" BEL
+        "zxnext/uart1_mod/rx_current_state_s_FSM_FFd1" BEL
+        "zxnext/uart1_mod/rx_current_state_s_FSM_FFd2" BEL
+        "zxnext/uart1_mod/tx_current_state_s_FSM_FFd1" BEL
+        "zxnext/uart1_mod/tx_current_state_s_FSM_FFd2" BEL
+        "zxnext/uart1_mod/rx_current_state_s_FSM_FFd3" BEL
+        "zxnext/uart1_mod/tx_current_state_s_FSM_FFd3" BEL
+        "zxnext/uart1_mod/db/button_0" BEL "zxnext/uart1_mod/db/button_1" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_16" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_15" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_14" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_13" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_12" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_11" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_10" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_9" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_8" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_7" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_6" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_5" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_4" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_3" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_2" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_1" BEL
+        "zxnext/uart1_mod/rx_clock_counter_s_0" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_16" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_15" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_14" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_13" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_12" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_11" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_10" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_9" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_8" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_7" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_6" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_5" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_4" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_3" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_2" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_1" BEL
+        "zxnext/uart1_mod/tx_clock_counter_s_0" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_16" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_15" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_14" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_13" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_12" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_11" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_10" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_9" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_8" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_7" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_6" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_5" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_4" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_3" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_2" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_1" BEL
+        "zxnext/uart1_mod/ticks_per_bit_tx_0" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_16" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_15" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_14" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_13" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_12" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_11" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_10" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_9" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_8" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_7" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_6" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_5" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_4" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_3" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_2" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_1" BEL
+        "zxnext/uart1_mod/ticks_per_bit_rx_0" BEL
+        "zxnext/uart1_mod/tx_data_s_7" BEL "zxnext/uart1_mod/tx_data_s_6" BEL
+        "zxnext/uart1_mod/tx_data_s_5" BEL "zxnext/uart1_mod/tx_data_s_4" BEL
+        "zxnext/uart1_mod/tx_data_s_3" BEL "zxnext/uart1_mod/tx_data_s_2" BEL
+        "zxnext/uart1_mod/tx_data_s_1" BEL "zxnext/uart1_mod/tx_data_s_0" BEL
+        "zxnext/uart0_mod/db/counter_2" BEL "zxnext/uart0_mod/db/counter_1"
+        BEL "zxnext/uart0_mod/db/counter_0" BEL
+        "zxnext/uart0_mod/tx_bit_index_s_2" BEL
+        "zxnext/uart0_mod/tx_bit_index_s_1" BEL
+        "zxnext/uart0_mod/tx_bit_index_s_0" BEL
+        "zxnext/uart0_mod/rx_bit_index_s_2" BEL
+        "zxnext/uart0_mod/rx_bit_index_s_1" BEL
+        "zxnext/uart0_mod/rx_bit_index_s_0" BEL
+        "zxnext/uart0_mod/rx_current_state_s_FSM_FFd1" BEL
+        "zxnext/uart0_mod/rx_current_state_s_FSM_FFd2" BEL
+        "zxnext/uart0_mod/tx_current_state_s_FSM_FFd1" BEL
+        "zxnext/uart0_mod/tx_current_state_s_FSM_FFd2" BEL
+        "zxnext/uart0_mod/rx_current_state_s_FSM_FFd3" BEL
+        "zxnext/uart0_mod/tx_current_state_s_FSM_FFd3" BEL
+        "zxnext/uart0_mod/db/button_0" BEL "zxnext/uart0_mod/db/button_1" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_16" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_15" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_14" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_13" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_12" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_11" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_10" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_9" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_8" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_7" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_6" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_5" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_4" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_3" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_2" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_1" BEL
+        "zxnext/uart0_mod/rx_clock_counter_s_0" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_16" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_15" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_14" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_13" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_12" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_11" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_10" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_9" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_8" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_7" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_6" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_5" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_4" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_3" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_2" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_1" BEL
+        "zxnext/uart0_mod/tx_clock_counter_s_0" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_16" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_15" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_14" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_13" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_12" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_11" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_10" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_9" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_8" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_7" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_6" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_5" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_4" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_3" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_2" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_1" BEL
+        "zxnext/uart0_mod/ticks_per_bit_tx_0" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_16" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_15" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_14" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_13" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_12" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_11" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_10" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_9" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_8" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_7" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_6" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_5" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_4" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_3" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_2" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_1" BEL
+        "zxnext/uart0_mod/ticks_per_bit_rx_0" BEL
+        "zxnext/fifop_uart1_rx/stored_9" BEL "zxnext/fifop_uart1_rx/stored_8"
+        BEL "zxnext/fifop_uart1_rx/stored_7" BEL
+        "zxnext/fifop_uart1_rx/stored_6" BEL "zxnext/fifop_uart1_rx/stored_5"
+        BEL "zxnext/fifop_uart1_rx/stored_4" BEL
+        "zxnext/fifop_uart1_rx/stored_3" BEL "zxnext/fifop_uart1_rx/stored_2"
+        BEL "zxnext/fifop_uart1_rx/stored_1" BEL
+        "zxnext/fifop_uart1_rx/stored_0" BEL "zxnext/fifop_uart1_rx/rd_dly"
+        BEL "zxnext/fifop_uart1_rx/wr_dly" BEL
+        "zxnext/fifop_uart0_rx/stored_9" BEL "zxnext/fifop_uart0_rx/stored_8"
+        BEL "zxnext/fifop_uart0_rx/stored_7" BEL
+        "zxnext/fifop_uart0_rx/stored_6" BEL "zxnext/fifop_uart0_rx/stored_5"
+        BEL "zxnext/fifop_uart0_rx/stored_4" BEL
+        "zxnext/fifop_uart0_rx/stored_3" BEL "zxnext/fifop_uart0_rx/stored_2"
+        BEL "zxnext/fifop_uart0_rx/stored_1" BEL
+        "zxnext/fifop_uart0_rx/stored_0" BEL "zxnext/fifop_uart0_rx/rd_dly"
+        BEL "zxnext/fifop_uart0_rx/wr_dly" BEL
+        "zxnext/multiface_mod/port_io_dly" BEL
+        "zxnext/sprite_mod/state_s_FSM_FFd2" BEL
+        "zxnext/sprite_mod/mirror_sprite_q_7" BEL
+        "zxnext/sprite_mod/mirror_sprite_q_6" BEL
+        "zxnext/sprite_mod/mirror_sprite_q_5" BEL
+        "zxnext/sprite_mod/mirror_sprite_q_4" BEL
+        "zxnext/sprite_mod/mirror_sprite_q_3" BEL
+        "zxnext/sprite_mod/mirror_sprite_q_2" BEL
+        "zxnext/sprite_mod/mirror_sprite_q_1" BEL
+        "zxnext/sprite_mod/mirror_sprite_q_0" BEL
+        "zxnext/sprite_mod/cpu_index_q_2" BEL
+        "zxnext/sprite_mod/cpu_index_q_1" BEL
+        "zxnext/sprite_mod/cpu_index_q_0" BEL
+        "zxnext/sprite_mod/cpu_sprite_q_6" BEL
+        "zxnext/sprite_mod/cpu_sprite_q_5" BEL
+        "zxnext/sprite_mod/cpu_sprite_q_4" BEL
+        "zxnext/sprite_mod/cpu_sprite_q_3" BEL
+        "zxnext/sprite_mod/cpu_sprite_q_2" BEL
+        "zxnext/sprite_mod/cpu_sprite_q_1" BEL
+        "zxnext/sprite_mod/cpu_sprite_q_0" BEL
+        "zxnext/sprite_mod/attr_index_9" BEL "zxnext/sprite_mod/attr_index_8"
+        BEL "zxnext/sprite_mod/attr_index_7" BEL
+        "zxnext/sprite_mod/attr_index_6" BEL "zxnext/sprite_mod/attr_index_5"
+        BEL "zxnext/sprite_mod/attr_index_4" BEL
+        "zxnext/sprite_mod/attr_index_3" BEL "zxnext/sprite_mod/attr_index_2"
+        BEL "zxnext/sprite_mod/attr_index_1" BEL
+        "zxnext/sprite_mod/attr_index_0" BEL
+        "zxnext/sprite_mod/pattern_index_13" BEL
+        "zxnext/sprite_mod/pattern_index_12" BEL
+        "zxnext/sprite_mod/pattern_index_11" BEL
+        "zxnext/sprite_mod/pattern_index_10" BEL
+        "zxnext/sprite_mod/pattern_index_9" BEL
+        "zxnext/sprite_mod/pattern_index_8" BEL
+        "zxnext/sprite_mod/pattern_index_7" BEL
+        "zxnext/sprite_mod/pattern_index_6" BEL
+        "zxnext/sprite_mod/pattern_index_5" BEL
+        "zxnext/sprite_mod/pattern_index_4" BEL
+        "zxnext/sprite_mod/pattern_index_3" BEL
+        "zxnext/sprite_mod/pattern_index_2" BEL
+        "zxnext/sprite_mod/pattern_index_1" BEL
+        "zxnext/sprite_mod/pattern_index_0" BEL
+        "zxnext/sprite_mod/spr_cur_vcount_8" BEL
+        "zxnext/sprite_mod/spr_cur_vcount_7" BEL
+        "zxnext/sprite_mod/spr_cur_vcount_6" BEL
+        "zxnext/sprite_mod/spr_cur_vcount_5" BEL
+        "zxnext/sprite_mod/spr_cur_vcount_4" BEL
+        "zxnext/sprite_mod/spr_cur_vcount_3" BEL
+        "zxnext/sprite_mod/spr_cur_vcount_2" BEL
+        "zxnext/sprite_mod/spr_cur_vcount_1" BEL
+        "zxnext/sprite_mod/spr_cur_vcount_0" BEL
+        "zxnext/sprite_mod/line_buf_sel" BEL
+        "zxnext/sprite_mod/line_reset_re_1" BEL
+        "zxnext/sprite_mod/line_reset_re_0" BEL
+        "zxnext/sprite_mod/io_port_access_d" BEL
+        "zxnext/sprite_mod/sprites_overtime" BEL
+        "zxnext/sprite_mod/cpu_data_q_7" BEL "zxnext/sprite_mod/cpu_data_q_6"
+        BEL "zxnext/sprite_mod/cpu_data_q_5" BEL
+        "zxnext/sprite_mod/cpu_data_q_4" BEL "zxnext/sprite_mod/cpu_data_q_3"
+        BEL "zxnext/sprite_mod/cpu_data_q_2" BEL
+        "zxnext/sprite_mod/cpu_data_q_1" BEL "zxnext/sprite_mod/cpu_data_q_0"
+        BEL "zxnext/tilemap_mod/state_s_FSM_FFd2" BEL
+        "zxnext/tilemap_mod/state_s_FSM_FFd1" BEL
+        "zxnext/tilemap_mod/video_data_q_10" BEL
+        "zxnext/tilemap_mod/video_data_q_9" BEL
+        "zxnext/tilemap_mod/video_data_q_8" BEL
+        "zxnext/tilemap_mod/video_data_q_7" BEL
+        "zxnext/tilemap_mod/video_data_q_6" BEL
+        "zxnext/tilemap_mod/video_data_q_5" BEL
+        "zxnext/tilemap_mod/video_data_q_4" BEL
+        "zxnext/tilemap_mod/video_data_q_3" BEL
+        "zxnext/tilemap_mod/video_data_q_2" BEL
+        "zxnext/tilemap_mod/video_data_q_1" BEL
+        "zxnext/tilemap_mod/video_data_q_0" BEL
+        "zxnext/tilemap_mod/tm_pixel_2" BEL "zxnext/tilemap_mod/tm_pixel_1"
+        BEL "zxnext/tilemap_mod/tm_pixel_0" BEL
+        "zxnext/tilemap_mod/tm_on_top_q" BEL "zxnext/tilemap_mod/mode_512_q"
+        BEL "zxnext/tilemap_mod/textmode_q" BEL
+        "zxnext/tilemap_mod/tm_strip_flags_q" BEL
+        "zxnext/tilemap_mod/tm_abs_y_11" BEL "zxnext/tilemap_mod/tm_abs_y_10"
+        BEL "zxnext/tilemap_mod/tm_abs_y_9" BEL
+        "zxnext/tilemap_mod/tm_abs_y_8" BEL "zxnext/tilemap_mod/tm_abs_y_7"
+        BEL "zxnext/tilemap_mod/tm_abs_y_6" BEL
+        "zxnext/tilemap_mod/tm_abs_y_5" BEL "zxnext/tilemap_mod/tm_abs_y_4"
+        BEL "zxnext/tilemap_mod/tm_abs_y_3" BEL
+        "zxnext/tilemap_mod/tm_abs_y_2" BEL "zxnext/tilemap_mod/tm_abs_y_1"
+        BEL "zxnext/tilemap_mod/tm_abs_y_0" BEL
+        "zxnext/tilemap_mod/tm_tile_base_q_5" BEL
+        "zxnext/tilemap_mod/tm_tile_base_q_4" BEL
+        "zxnext/tilemap_mod/tm_tile_base_q_3" BEL
+        "zxnext/tilemap_mod/tm_tile_base_q_2" BEL
+        "zxnext/tilemap_mod/tm_tile_base_q_1" BEL
+        "zxnext/tilemap_mod/tm_tile_base_q_0" BEL
+        "zxnext/tilemap_mod/tm_map_base_q_5" BEL
+        "zxnext/tilemap_mod/tm_map_base_q_4" BEL
+        "zxnext/tilemap_mod/tm_map_base_q_3" BEL
+        "zxnext/tilemap_mod/tm_map_base_q_2" BEL
+        "zxnext/tilemap_mod/tm_map_base_q_1" BEL
+        "zxnext/tilemap_mod/tm_map_base_q_0" BEL
+        "zxnext/tilemap_mod/tm_abs_x_9" BEL "zxnext/tilemap_mod/tm_abs_x_8"
+        BEL "zxnext/tilemap_mod/tm_abs_x_7" BEL
+        "zxnext/tilemap_mod/tm_abs_x_6" BEL "zxnext/tilemap_mod/tm_abs_x_5"
+        BEL "zxnext/tilemap_mod/tm_abs_x_4" BEL
+        "zxnext/tilemap_mod/tm_abs_x_3" BEL "zxnext/tilemap_mod/tm_abs_x_2"
+        BEL "zxnext/tilemap_mod/tm_abs_x_1" BEL
+        "zxnext/tilemap_mod/tm_abs_x_0" BEL
+        "zxnext/tilemap_mod/tm_tilemap_1_7" BEL
+        "zxnext/tilemap_mod/tm_tilemap_1_6" BEL
+        "zxnext/tilemap_mod/tm_tilemap_1_5" BEL
+        "zxnext/tilemap_mod/tm_tilemap_1_4" BEL
+        "zxnext/tilemap_mod/tm_tilemap_1_3" BEL
+        "zxnext/tilemap_mod/tm_tilemap_1_2" BEL
+        "zxnext/tilemap_mod/tm_tilemap_1_1" BEL
+        "zxnext/tilemap_mod/tm_tilemap_1_0" BEL "zxnext/tilemap_mod/xev_8" BEL
+        "zxnext/tilemap_mod/xev_7" BEL "zxnext/tilemap_mod/xev_6" BEL
+        "zxnext/tilemap_mod/xev_5" BEL "zxnext/tilemap_mod/xev_4" BEL
+        "zxnext/tilemap_mod/xev_3" BEL "zxnext/tilemap_mod/xev_2" BEL
+        "zxnext/tilemap_mod/xev_1" BEL "zxnext/tilemap_mod/xsv_8" BEL
+        "zxnext/tilemap_mod/xsv_7" BEL "zxnext/tilemap_mod/xsv_6" BEL
+        "zxnext/tilemap_mod/xsv_5" BEL "zxnext/tilemap_mod/xsv_4" BEL
+        "zxnext/tilemap_mod/xsv_3" BEL "zxnext/tilemap_mod/xsv_2" BEL
+        "zxnext/tilemap_mod/xsv_1" BEL "zxnext/tilemap_mod/yev_7" BEL
+        "zxnext/tilemap_mod/yev_6" BEL "zxnext/tilemap_mod/yev_5" BEL
+        "zxnext/tilemap_mod/yev_4" BEL "zxnext/tilemap_mod/yev_3" BEL
+        "zxnext/tilemap_mod/yev_2" BEL "zxnext/tilemap_mod/yev_1" BEL
+        "zxnext/tilemap_mod/yev_0" BEL "zxnext/tilemap_mod/ysv_7" BEL
+        "zxnext/tilemap_mod/ysv_6" BEL "zxnext/tilemap_mod/ysv_5" BEL
+        "zxnext/tilemap_mod/ysv_4" BEL "zxnext/tilemap_mod/ysv_3" BEL
+        "zxnext/tilemap_mod/ysv_2" BEL "zxnext/tilemap_mod/ysv_1" BEL
+        "zxnext/tilemap_mod/ysv_0" BEL "zxnext/tilemap_mod/tm_tilemap_0_7" BEL
+        "zxnext/tilemap_mod/tm_tilemap_0_6" BEL
+        "zxnext/tilemap_mod/tm_tilemap_0_5" BEL
+        "zxnext/tilemap_mod/tm_tilemap_0_4" BEL
+        "zxnext/tilemap_mod/tm_tilemap_0_3" BEL
+        "zxnext/tilemap_mod/tm_tilemap_0_2" BEL
+        "zxnext/tilemap_mod/tm_tilemap_0_1" BEL
+        "zxnext/tilemap_mod/tm_tilemap_0_0" BEL
+        "zxnext/turbosound_mod/psg0/noise_gen_cnt_4" BEL
+        "zxnext/turbosound_mod/psg0/noise_gen_cnt_3" BEL
+        "zxnext/turbosound_mod/psg0/noise_gen_cnt_2" BEL
+        "zxnext/turbosound_mod/psg0/noise_gen_cnt_1" BEL
+        "zxnext/turbosound_mod/psg0/noise_gen_cnt_0" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_11" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_10" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_9" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_8" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_7" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_6" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_5" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_4" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_3" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_2" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_1" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_1_0" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_11" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_10" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_9" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_8" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_7" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_6" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_5" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_4" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_3" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_2" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_1" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_2_0" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_11" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_10" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_9" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_8" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_7" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_6" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_5" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_4" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_3" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_2" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_1" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_cnt_3_0" BEL
+        "zxnext/turbosound_mod/psg1/noise_gen_cnt_4" BEL
+        "zxnext/turbosound_mod/psg1/noise_gen_cnt_3" BEL
+        "zxnext/turbosound_mod/psg1/noise_gen_cnt_2" BEL
+        "zxnext/turbosound_mod/psg1/noise_gen_cnt_1" BEL
+        "zxnext/turbosound_mod/psg1/noise_gen_cnt_0" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_11" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_10" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_9" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_8" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_7" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_6" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_5" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_4" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_3" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_2" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_1" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_2_0" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_11" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_10" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_9" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_8" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_7" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_6" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_5" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_4" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_3" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_2" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_1" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_3_0" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_11" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_10" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_9" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_8" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_7" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_6" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_5" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_4" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_3" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_2" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_1" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_cnt_1_0" BEL
+        "zxnext/turbosound_mod/psg2/noise_gen_cnt_4" BEL
+        "zxnext/turbosound_mod/psg2/noise_gen_cnt_3" BEL
+        "zxnext/turbosound_mod/psg2/noise_gen_cnt_2" BEL
+        "zxnext/turbosound_mod/psg2/noise_gen_cnt_1" BEL
+        "zxnext/turbosound_mod/psg2/noise_gen_cnt_0" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_11" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_10" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_9" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_8" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_7" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_6" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_5" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_4" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_3" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_2" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_1" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_2_0" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_11" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_10" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_9" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_8" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_7" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_6" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_5" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_4" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_3" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_2" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_1" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_3_0" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_11" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_10" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_9" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_8" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_7" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_6" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_5" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_4" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_3" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_2" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_1" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_cnt_1_0" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_15" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_14" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_13" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_12" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_11" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_10" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_9" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_8" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_7" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_6" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_5" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_4" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_3" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_2" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_1" BEL
+        "zxnext/turbosound_mod/psg1/env_gen_cnt_0" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_15" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_14" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_13" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_12" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_11" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_10" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_9" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_8" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_7" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_6" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_5" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_4" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_3" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_2" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_1" BEL
+        "zxnext/turbosound_mod/psg2/env_gen_cnt_0" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_15" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_14" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_13" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_12" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_11" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_10" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_9" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_8" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_7" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_6" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_5" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_4" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_3" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_2" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_1" BEL
+        "zxnext/turbosound_mod/psg0/env_gen_cnt_0" BEL
+        "zxnext/turbosound_mod/psg0/cnt_div_2" BEL
+        "zxnext/turbosound_mod/psg0/cnt_div_1" BEL
+        "zxnext/turbosound_mod/psg0/cnt_div_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_2_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_2_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_2_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_2_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_2_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_2_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_2_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_2_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_0_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_0_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_0_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_0_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_0_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_0_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_0_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_0_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_1_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_1_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_1_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_1_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_1_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_1_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_1_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_1_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_5_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_5_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_5_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_5_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_5_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_5_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_5_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_5_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_3_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_3_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_3_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_3_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_3_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_3_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_3_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_3_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_4_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_4_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_4_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_4_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_4_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_4_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_4_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_4_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_9_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_9_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_9_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_9_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_9_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_9_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_9_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_9_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_6_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_6_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_6_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_6_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_6_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_6_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_6_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_6_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_8_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_8_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_8_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_8_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_8_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_8_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_8_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_8_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_10_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_10_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_10_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_10_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_10_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_10_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_10_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_10_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_11_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_11_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_11_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_11_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_11_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_11_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_11_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_11_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_14_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_14_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_14_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_14_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_14_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_14_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_14_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_14_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_12_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_12_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_12_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_12_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_12_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_12_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_12_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_12_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_13_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_13_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_13_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_13_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_13_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_13_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_13_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_13_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_7_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_7_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_7_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_7_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_7_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_7_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_7_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_7_7" BEL
+        "zxnext/turbosound_mod/psg0/reg_15_0" BEL
+        "zxnext/turbosound_mod/psg0/reg_15_1" BEL
+        "zxnext/turbosound_mod/psg0/reg_15_2" BEL
+        "zxnext/turbosound_mod/psg0/reg_15_3" BEL
+        "zxnext/turbosound_mod/psg0/reg_15_4" BEL
+        "zxnext/turbosound_mod/psg0/reg_15_5" BEL
+        "zxnext/turbosound_mod/psg0/reg_15_6" BEL
+        "zxnext/turbosound_mod/psg0/reg_15_7" BEL
+        "zxnext/turbosound_mod/psg0/addr_0" BEL
+        "zxnext/turbosound_mod/psg0/addr_1" BEL
+        "zxnext/turbosound_mod/psg0/addr_2" BEL
+        "zxnext/turbosound_mod/psg0/addr_3" BEL
+        "zxnext/turbosound_mod/psg0/addr_4" BEL
+        "zxnext/turbosound_mod/psg0/ena_div" BEL
+        "zxnext/turbosound_mod/psg0/env_reset" BEL
+        "zxnext/turbosound_mod/psg0/O_DA_0" BEL
+        "zxnext/turbosound_mod/psg0/O_DA_1" BEL
+        "zxnext/turbosound_mod/psg0/O_DA_2" BEL
+        "zxnext/turbosound_mod/psg0/O_DA_3" BEL
+        "zxnext/turbosound_mod/psg0/O_DA_4" BEL
+        "zxnext/turbosound_mod/psg0/O_DA_5" BEL
+        "zxnext/turbosound_mod/psg0/O_DA_6" BEL
+        "zxnext/turbosound_mod/psg0/O_DA_7" BEL
+        "zxnext/turbosound_mod/psg0/poly17_0" BEL
+        "zxnext/turbosound_mod/psg0/poly17_1" BEL
+        "zxnext/turbosound_mod/psg0/poly17_2" BEL
+        "zxnext/turbosound_mod/psg0/poly17_3" BEL
+        "zxnext/turbosound_mod/psg0/poly17_4" BEL
+        "zxnext/turbosound_mod/psg0/poly17_5" BEL
+        "zxnext/turbosound_mod/psg0/poly17_6" BEL
+        "zxnext/turbosound_mod/psg0/poly17_7" BEL
+        "zxnext/turbosound_mod/psg0/poly17_8" BEL
+        "zxnext/turbosound_mod/psg0/poly17_9" BEL
+        "zxnext/turbosound_mod/psg0/poly17_10" BEL
+        "zxnext/turbosound_mod/psg0/poly17_11" BEL
+        "zxnext/turbosound_mod/psg0/poly17_12" BEL
+        "zxnext/turbosound_mod/psg0/poly17_13" BEL
+        "zxnext/turbosound_mod/psg0/poly17_14" BEL
+        "zxnext/turbosound_mod/psg0/poly17_15" BEL
+        "zxnext/turbosound_mod/psg0/poly17_16" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_op_1" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_op_2" BEL
+        "zxnext/turbosound_mod/psg0/tone_gen_op_3" BEL
+        "zxnext/turbosound_mod/psg0/B_0" BEL "zxnext/turbosound_mod/psg0/B_1"
+        BEL "zxnext/turbosound_mod/psg0/B_2" BEL
+        "zxnext/turbosound_mod/psg0/B_3" BEL "zxnext/turbosound_mod/psg0/B_4"
+        BEL "zxnext/turbosound_mod/psg0/A_0" BEL
+        "zxnext/turbosound_mod/psg0/A_1" BEL "zxnext/turbosound_mod/psg0/A_2"
+        BEL "zxnext/turbosound_mod/psg0/A_3" BEL
+        "zxnext/turbosound_mod/psg0/A_4" BEL "zxnext/turbosound_mod/psg0/C_0"
+        BEL "zxnext/turbosound_mod/psg0/C_1" BEL
+        "zxnext/turbosound_mod/psg0/C_2" BEL "zxnext/turbosound_mod/psg0/C_3"
+        BEL "zxnext/turbosound_mod/psg0/C_4" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_A_0" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_A_1" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_A_2" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_A_3" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_A_4" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_A_5" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_A_6" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_A_7" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_B_0" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_B_1" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_B_2" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_B_3" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_B_4" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_B_5" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_B_6" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_B_7" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_C_0" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_C_1" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_C_2" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_C_3" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_C_4" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_C_5" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_C_6" BEL
+        "zxnext/turbosound_mod/psg0/O_AUDIO_C_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_2_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_2_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_2_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_2_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_2_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_2_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_2_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_2_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_0_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_0_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_0_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_0_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_0_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_0_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_0_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_0_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_1_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_1_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_1_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_1_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_1_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_1_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_1_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_1_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_5_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_5_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_5_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_5_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_5_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_5_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_5_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_5_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_3_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_3_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_3_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_3_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_3_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_3_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_3_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_3_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_4_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_4_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_4_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_4_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_4_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_4_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_4_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_4_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_9_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_9_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_9_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_9_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_9_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_9_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_9_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_9_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_6_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_6_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_6_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_6_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_6_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_6_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_6_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_6_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_8_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_8_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_8_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_8_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_8_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_8_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_8_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_8_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_10_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_10_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_10_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_10_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_10_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_10_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_10_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_10_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_11_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_11_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_11_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_11_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_11_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_11_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_11_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_11_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_14_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_14_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_14_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_14_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_14_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_14_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_14_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_14_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_12_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_12_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_12_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_12_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_12_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_12_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_12_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_12_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_13_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_13_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_13_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_13_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_13_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_13_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_13_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_13_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_7_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_7_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_7_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_7_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_7_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_7_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_7_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_7_7" BEL
+        "zxnext/turbosound_mod/psg1/reg_15_0" BEL
+        "zxnext/turbosound_mod/psg1/reg_15_1" BEL
+        "zxnext/turbosound_mod/psg1/reg_15_2" BEL
+        "zxnext/turbosound_mod/psg1/reg_15_3" BEL
+        "zxnext/turbosound_mod/psg1/reg_15_4" BEL
+        "zxnext/turbosound_mod/psg1/reg_15_5" BEL
+        "zxnext/turbosound_mod/psg1/reg_15_6" BEL
+        "zxnext/turbosound_mod/psg1/reg_15_7" BEL
+        "zxnext/turbosound_mod/psg1/addr_0" BEL
+        "zxnext/turbosound_mod/psg1/addr_1" BEL
+        "zxnext/turbosound_mod/psg1/addr_2" BEL
+        "zxnext/turbosound_mod/psg1/addr_3" BEL
+        "zxnext/turbosound_mod/psg1/addr_4" BEL
+        "zxnext/turbosound_mod/psg1/env_reset" BEL
+        "zxnext/turbosound_mod/psg1/O_DA_0" BEL
+        "zxnext/turbosound_mod/psg1/O_DA_1" BEL
+        "zxnext/turbosound_mod/psg1/O_DA_2" BEL
+        "zxnext/turbosound_mod/psg1/O_DA_3" BEL
+        "zxnext/turbosound_mod/psg1/O_DA_4" BEL
+        "zxnext/turbosound_mod/psg1/O_DA_5" BEL
+        "zxnext/turbosound_mod/psg1/O_DA_6" BEL
+        "zxnext/turbosound_mod/psg1/O_DA_7" BEL
+        "zxnext/turbosound_mod/psg1/poly17_0" BEL
+        "zxnext/turbosound_mod/psg1/poly17_1" BEL
+        "zxnext/turbosound_mod/psg1/poly17_2" BEL
+        "zxnext/turbosound_mod/psg1/poly17_3" BEL
+        "zxnext/turbosound_mod/psg1/poly17_4" BEL
+        "zxnext/turbosound_mod/psg1/poly17_5" BEL
+        "zxnext/turbosound_mod/psg1/poly17_6" BEL
+        "zxnext/turbosound_mod/psg1/poly17_7" BEL
+        "zxnext/turbosound_mod/psg1/poly17_8" BEL
+        "zxnext/turbosound_mod/psg1/poly17_9" BEL
+        "zxnext/turbosound_mod/psg1/poly17_10" BEL
+        "zxnext/turbosound_mod/psg1/poly17_11" BEL
+        "zxnext/turbosound_mod/psg1/poly17_12" BEL
+        "zxnext/turbosound_mod/psg1/poly17_13" BEL
+        "zxnext/turbosound_mod/psg1/poly17_14" BEL
+        "zxnext/turbosound_mod/psg1/poly17_15" BEL
+        "zxnext/turbosound_mod/psg1/poly17_16" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_op_1" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_op_2" BEL
+        "zxnext/turbosound_mod/psg1/tone_gen_op_3" BEL
+        "zxnext/turbosound_mod/psg1/B_0" BEL "zxnext/turbosound_mod/psg1/B_1"
+        BEL "zxnext/turbosound_mod/psg1/B_2" BEL
+        "zxnext/turbosound_mod/psg1/B_3" BEL "zxnext/turbosound_mod/psg1/B_4"
+        BEL "zxnext/turbosound_mod/psg1/A_0" BEL
+        "zxnext/turbosound_mod/psg1/A_1" BEL "zxnext/turbosound_mod/psg1/A_2"
+        BEL "zxnext/turbosound_mod/psg1/A_3" BEL
+        "zxnext/turbosound_mod/psg1/A_4" BEL "zxnext/turbosound_mod/psg1/C_0"
+        BEL "zxnext/turbosound_mod/psg1/C_1" BEL
+        "zxnext/turbosound_mod/psg1/C_2" BEL "zxnext/turbosound_mod/psg1/C_3"
+        BEL "zxnext/turbosound_mod/psg1/C_4" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_A_0" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_A_1" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_A_2" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_A_3" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_A_4" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_A_5" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_A_6" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_A_7" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_B_0" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_B_1" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_B_2" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_B_3" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_B_4" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_B_5" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_B_6" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_B_7" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_C_0" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_C_1" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_C_2" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_C_3" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_C_4" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_C_5" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_C_6" BEL
+        "zxnext/turbosound_mod/psg1/O_AUDIO_C_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_2_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_2_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_2_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_2_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_2_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_2_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_2_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_2_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_0_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_0_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_0_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_0_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_0_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_0_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_0_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_0_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_1_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_1_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_1_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_1_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_1_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_1_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_1_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_1_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_5_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_5_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_5_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_5_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_5_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_5_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_5_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_5_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_3_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_3_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_3_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_3_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_3_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_3_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_3_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_3_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_4_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_4_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_4_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_4_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_4_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_4_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_4_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_4_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_9_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_9_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_9_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_9_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_9_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_9_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_9_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_9_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_6_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_6_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_6_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_6_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_6_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_6_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_6_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_6_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_8_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_8_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_8_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_8_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_8_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_8_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_8_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_8_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_10_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_10_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_10_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_10_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_10_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_10_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_10_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_10_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_11_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_11_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_11_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_11_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_11_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_11_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_11_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_11_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_14_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_14_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_14_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_14_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_14_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_14_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_14_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_14_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_12_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_12_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_12_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_12_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_12_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_12_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_12_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_12_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_13_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_13_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_13_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_13_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_13_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_13_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_13_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_13_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_7_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_7_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_7_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_7_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_7_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_7_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_7_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_7_7" BEL
+        "zxnext/turbosound_mod/psg2/reg_15_0" BEL
+        "zxnext/turbosound_mod/psg2/reg_15_1" BEL
+        "zxnext/turbosound_mod/psg2/reg_15_2" BEL
+        "zxnext/turbosound_mod/psg2/reg_15_3" BEL
+        "zxnext/turbosound_mod/psg2/reg_15_4" BEL
+        "zxnext/turbosound_mod/psg2/reg_15_5" BEL
+        "zxnext/turbosound_mod/psg2/reg_15_6" BEL
+        "zxnext/turbosound_mod/psg2/reg_15_7" BEL
+        "zxnext/turbosound_mod/psg2/addr_0" BEL
+        "zxnext/turbosound_mod/psg2/addr_1" BEL
+        "zxnext/turbosound_mod/psg2/addr_2" BEL
+        "zxnext/turbosound_mod/psg2/addr_3" BEL
+        "zxnext/turbosound_mod/psg2/addr_4" BEL
+        "zxnext/turbosound_mod/psg2/env_reset" BEL
+        "zxnext/turbosound_mod/psg2/O_DA_0" BEL
+        "zxnext/turbosound_mod/psg2/O_DA_1" BEL
+        "zxnext/turbosound_mod/psg2/O_DA_2" BEL
+        "zxnext/turbosound_mod/psg2/O_DA_3" BEL
+        "zxnext/turbosound_mod/psg2/O_DA_4" BEL
+        "zxnext/turbosound_mod/psg2/O_DA_5" BEL
+        "zxnext/turbosound_mod/psg2/O_DA_6" BEL
+        "zxnext/turbosound_mod/psg2/O_DA_7" BEL
+        "zxnext/turbosound_mod/psg2/poly17_0" BEL
+        "zxnext/turbosound_mod/psg2/poly17_1" BEL
+        "zxnext/turbosound_mod/psg2/poly17_2" BEL
+        "zxnext/turbosound_mod/psg2/poly17_3" BEL
+        "zxnext/turbosound_mod/psg2/poly17_4" BEL
+        "zxnext/turbosound_mod/psg2/poly17_5" BEL
+        "zxnext/turbosound_mod/psg2/poly17_6" BEL
+        "zxnext/turbosound_mod/psg2/poly17_7" BEL
+        "zxnext/turbosound_mod/psg2/poly17_8" BEL
+        "zxnext/turbosound_mod/psg2/poly17_9" BEL
+        "zxnext/turbosound_mod/psg2/poly17_10" BEL
+        "zxnext/turbosound_mod/psg2/poly17_11" BEL
+        "zxnext/turbosound_mod/psg2/poly17_12" BEL
+        "zxnext/turbosound_mod/psg2/poly17_13" BEL
+        "zxnext/turbosound_mod/psg2/poly17_14" BEL
+        "zxnext/turbosound_mod/psg2/poly17_15" BEL
+        "zxnext/turbosound_mod/psg2/poly17_16" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_op_1" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_op_2" BEL
+        "zxnext/turbosound_mod/psg2/tone_gen_op_3" BEL
+        "zxnext/turbosound_mod/psg2/B_0" BEL "zxnext/turbosound_mod/psg2/B_1"
+        BEL "zxnext/turbosound_mod/psg2/B_2" BEL
+        "zxnext/turbosound_mod/psg2/B_3" BEL "zxnext/turbosound_mod/psg2/B_4"
+        BEL "zxnext/turbosound_mod/psg2/A_0" BEL
+        "zxnext/turbosound_mod/psg2/A_1" BEL "zxnext/turbosound_mod/psg2/A_2"
+        BEL "zxnext/turbosound_mod/psg2/A_3" BEL
+        "zxnext/turbosound_mod/psg2/A_4" BEL "zxnext/turbosound_mod/psg2/C_0"
+        BEL "zxnext/turbosound_mod/psg2/C_1" BEL
+        "zxnext/turbosound_mod/psg2/C_2" BEL "zxnext/turbosound_mod/psg2/C_3"
+        BEL "zxnext/turbosound_mod/psg2/C_4" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_A_0" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_A_1" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_A_2" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_A_3" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_A_4" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_A_5" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_A_6" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_A_7" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_B_0" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_B_1" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_B_2" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_B_3" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_B_4" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_B_5" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_B_6" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_B_7" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_C_0" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_C_1" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_C_2" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_C_3" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_C_4" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_C_5" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_C_6" BEL
+        "zxnext/turbosound_mod/psg2/O_AUDIO_C_7" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_11" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_10" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_9" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_8" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_7" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_6" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_5" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_4" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_3" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_2" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_1" BEL
+        "zxnext/turbosound_mod/pcm_ay_L_o_0" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_11" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_10" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_9" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_8" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_7" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_6" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_5" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_4" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_3" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_2" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_1" BEL
+        "zxnext/turbosound_mod/pcm_ay_R_o_0" BEL
+        "zxnext/turbosound_mod/psg2_L_9" BEL "zxnext/turbosound_mod/psg2_L_8"
+        BEL "zxnext/turbosound_mod/psg2_L_7" BEL
+        "zxnext/turbosound_mod/psg2_L_6" BEL "zxnext/turbosound_mod/psg2_L_5"
+        BEL "zxnext/turbosound_mod/psg2_L_4" BEL
+        "zxnext/turbosound_mod/psg2_L_3" BEL "zxnext/turbosound_mod/psg2_L_2"
+        BEL "zxnext/turbosound_mod/psg2_L_1" BEL
+        "zxnext/turbosound_mod/psg2_L_0" BEL "zxnext/turbosound_mod/psg1_L_9"
+        BEL "zxnext/turbosound_mod/psg1_L_8" BEL
+        "zxnext/turbosound_mod/psg1_L_7" BEL "zxnext/turbosound_mod/psg1_L_6"
+        BEL "zxnext/turbosound_mod/psg1_L_5" BEL
+        "zxnext/turbosound_mod/psg1_L_4" BEL "zxnext/turbosound_mod/psg1_L_3"
+        BEL "zxnext/turbosound_mod/psg1_L_2" BEL
+        "zxnext/turbosound_mod/psg1_L_1" BEL "zxnext/turbosound_mod/psg1_L_0"
+        BEL "zxnext/turbosound_mod/psg0_L_9" BEL
+        "zxnext/turbosound_mod/psg0_L_8" BEL "zxnext/turbosound_mod/psg0_L_7"
+        BEL "zxnext/turbosound_mod/psg0_L_6" BEL
+        "zxnext/turbosound_mod/psg0_L_5" BEL "zxnext/turbosound_mod/psg0_L_4"
+        BEL "zxnext/turbosound_mod/psg0_L_3" BEL
+        "zxnext/turbosound_mod/psg0_L_2" BEL "zxnext/turbosound_mod/psg0_L_1"
+        BEL "zxnext/turbosound_mod/psg0_L_0" BEL
+        "zxnext/turbosound_mod/psg2_R_8" BEL "zxnext/turbosound_mod/psg2_R_7"
+        BEL "zxnext/turbosound_mod/psg2_R_6" BEL
+        "zxnext/turbosound_mod/psg2_R_5" BEL "zxnext/turbosound_mod/psg2_R_4"
+        BEL "zxnext/turbosound_mod/psg2_R_3" BEL
+        "zxnext/turbosound_mod/psg2_R_2" BEL "zxnext/turbosound_mod/psg2_R_1"
+        BEL "zxnext/turbosound_mod/psg2_R_0" BEL
+        "zxnext/turbosound_mod/psg0_R_8" BEL "zxnext/turbosound_mod/psg0_R_7"
+        BEL "zxnext/turbosound_mod/psg0_R_6" BEL
+        "zxnext/turbosound_mod/psg0_R_5" BEL "zxnext/turbosound_mod/psg0_R_4"
+        BEL "zxnext/turbosound_mod/psg0_R_3" BEL
+        "zxnext/turbosound_mod/psg0_R_2" BEL "zxnext/turbosound_mod/psg0_R_1"
+        BEL "zxnext/turbosound_mod/psg0_R_0" BEL
+        "zxnext/turbosound_mod/psg1_R_8" BEL "zxnext/turbosound_mod/psg1_R_7"
+        BEL "zxnext/turbosound_mod/psg1_R_6" BEL
+        "zxnext/turbosound_mod/psg1_R_5" BEL "zxnext/turbosound_mod/psg1_R_4"
+        BEL "zxnext/turbosound_mod/psg1_R_3" BEL
+        "zxnext/turbosound_mod/psg1_R_2" BEL "zxnext/turbosound_mod/psg1_R_1"
+        BEL "zxnext/turbosound_mod/psg1_R_0" BEL
+        "zxnext/turbosound_mod/ay_select_1" BEL
+        "zxnext/turbosound_mod/ay_select_0" BEL
+        "zxnext/turbosound_mod/psg1_pan_1" BEL
+        "zxnext/turbosound_mod/psg1_pan_0" BEL
+        "zxnext/turbosound_mod/psg0_pan_1" BEL
+        "zxnext/turbosound_mod/psg0_pan_0" BEL
+        "zxnext/turbosound_mod/psg2_pan_1" BEL
+        "zxnext/turbosound_mod/psg2_pan_0" BEL
+        "zxnext/soundrive_mod/pcm_R_o_8" BEL "zxnext/soundrive_mod/pcm_R_o_7"
+        BEL "zxnext/soundrive_mod/pcm_R_o_6" BEL
+        "zxnext/soundrive_mod/pcm_R_o_5" BEL "zxnext/soundrive_mod/pcm_R_o_4"
+        BEL "zxnext/soundrive_mod/pcm_R_o_3" BEL
+        "zxnext/soundrive_mod/pcm_R_o_2" BEL "zxnext/soundrive_mod/pcm_R_o_1"
+        BEL "zxnext/soundrive_mod/pcm_R_o_0" BEL
+        "zxnext/soundrive_mod/pcm_L_o_8" BEL "zxnext/soundrive_mod/pcm_L_o_7"
+        BEL "zxnext/soundrive_mod/pcm_L_o_6" BEL
+        "zxnext/soundrive_mod/pcm_L_o_5" BEL "zxnext/soundrive_mod/pcm_L_o_4"
+        BEL "zxnext/soundrive_mod/pcm_L_o_3" BEL
+        "zxnext/soundrive_mod/pcm_L_o_2" BEL "zxnext/soundrive_mod/pcm_L_o_1"
+        BEL "zxnext/soundrive_mod/pcm_L_o_0" BEL "zxnext/soundrive_mod/chA_7"
+        BEL "zxnext/soundrive_mod/chA_6" BEL "zxnext/soundrive_mod/chA_5" BEL
+        "zxnext/soundrive_mod/chA_4" BEL "zxnext/soundrive_mod/chA_3" BEL
+        "zxnext/soundrive_mod/chA_2" BEL "zxnext/soundrive_mod/chA_1" BEL
+        "zxnext/soundrive_mod/chA_0" BEL "zxnext/soundrive_mod/chD_7" BEL
+        "zxnext/soundrive_mod/chD_6" BEL "zxnext/soundrive_mod/chD_5" BEL
+        "zxnext/soundrive_mod/chD_4" BEL "zxnext/soundrive_mod/chD_3" BEL
+        "zxnext/soundrive_mod/chD_2" BEL "zxnext/soundrive_mod/chD_1" BEL
+        "zxnext/soundrive_mod/chD_0" BEL "zxnext/soundrive_mod/chC_7" BEL
+        "zxnext/soundrive_mod/chC_6" BEL "zxnext/soundrive_mod/chC_5" BEL
+        "zxnext/soundrive_mod/chC_4" BEL "zxnext/soundrive_mod/chC_3" BEL
+        "zxnext/soundrive_mod/chC_2" BEL "zxnext/soundrive_mod/chC_1" BEL
+        "zxnext/soundrive_mod/chC_0" BEL "zxnext/soundrive_mod/chB_7" BEL
+        "zxnext/soundrive_mod/chB_6" BEL "zxnext/soundrive_mod/chB_5" BEL
+        "zxnext/soundrive_mod/chB_4" BEL "zxnext/soundrive_mod/chB_3" BEL
+        "zxnext/soundrive_mod/chB_2" BEL "zxnext/soundrive_mod/chB_1" BEL
+        "zxnext/soundrive_mod/chB_0" BEL "zxnext/i2s_mod/o_audio_pi_L_9" BEL
+        "zxnext/i2s_mod/o_audio_pi_L_8" BEL "zxnext/i2s_mod/o_audio_pi_L_7"
+        BEL "zxnext/i2s_mod/o_audio_pi_L_6" BEL
+        "zxnext/i2s_mod/o_audio_pi_L_5" BEL "zxnext/i2s_mod/o_audio_pi_L_4"
+        BEL "zxnext/i2s_mod/o_audio_pi_L_3" BEL
+        "zxnext/i2s_mod/o_audio_pi_L_2" BEL "zxnext/i2s_mod/o_audio_pi_L_1"
+        BEL "zxnext/i2s_mod/o_audio_pi_L_0" BEL
+        "zxnext/i2s_mod/o_audio_pi_R_9" BEL "zxnext/i2s_mod/o_audio_pi_R_8"
+        BEL "zxnext/i2s_mod/o_audio_pi_R_7" BEL
+        "zxnext/i2s_mod/o_audio_pi_R_6" BEL "zxnext/i2s_mod/o_audio_pi_R_5"
+        BEL "zxnext/i2s_mod/o_audio_pi_R_4" BEL
+        "zxnext/i2s_mod/o_audio_pi_R_3" BEL "zxnext/i2s_mod/o_audio_pi_R_2"
+        BEL "zxnext/i2s_mod/o_audio_pi_R_1" BEL
+        "zxnext/i2s_mod/o_audio_pi_R_0" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_L_12" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_L_11" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_L_10" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_L_9" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_L_8" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_L_7" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_L_6" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_L_5" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_L_4" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_L_3" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_R_12" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_R_11" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_R_10" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_R_9" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_R_8" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_R_7" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_R_6" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_R_5" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_R_4" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_R_3" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_count_3" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_count_2" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_count_1" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/recv_count_0" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/receiver_13" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/receiver_12" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/receiver_11" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/receiver_10" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/receiver_9" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/receiver_8" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/receiver_7" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/receiver_6" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/receiver_5" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/receiver_4" BEL
+        "zxnext/i2s_mod/i2s_receiver_mod/sck_d" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_12" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_11" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_10" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_9" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_8" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_7" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_6" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_5" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_4" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_3" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_2" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_1" BEL
+        "zxnext/i2s_mod/i2s_transmit_mod/transmitter_0" BEL
+        "zxnext/audio_mixer_mod/pcm_L_12" BEL
+        "zxnext/audio_mixer_mod/pcm_L_11" BEL
+        "zxnext/audio_mixer_mod/pcm_L_10" BEL "zxnext/audio_mixer_mod/pcm_L_9"
+        BEL "zxnext/audio_mixer_mod/pcm_L_8" BEL
+        "zxnext/audio_mixer_mod/pcm_L_7" BEL "zxnext/audio_mixer_mod/pcm_L_6"
+        BEL "zxnext/audio_mixer_mod/pcm_L_5" BEL
+        "zxnext/audio_mixer_mod/pcm_L_4" BEL "zxnext/audio_mixer_mod/pcm_L_3"
+        BEL "zxnext/audio_mixer_mod/pcm_L_2" BEL
+        "zxnext/audio_mixer_mod/pcm_L_1" BEL "zxnext/audio_mixer_mod/pcm_L_0"
+        BEL "zxnext/audio_mixer_mod/pcm_R_12" BEL
+        "zxnext/audio_mixer_mod/pcm_R_11" BEL
+        "zxnext/audio_mixer_mod/pcm_R_10" BEL "zxnext/audio_mixer_mod/pcm_R_9"
+        BEL "zxnext/audio_mixer_mod/pcm_R_8" BEL
+        "zxnext/audio_mixer_mod/pcm_R_7" BEL "zxnext/audio_mixer_mod/pcm_R_6"
+        BEL "zxnext/audio_mixer_mod/pcm_R_5" BEL
+        "zxnext/audio_mixer_mod/pcm_R_4" BEL "zxnext/audio_mixer_mod/pcm_R_3"
+        BEL "zxnext/audio_mixer_mod/pcm_R_2" BEL
+        "zxnext/audio_mixer_mod/pcm_R_1" BEL "zxnext/audio_mixer_mod/pcm_R_0"
+        BEL "zxnext/timing_mod/sc_s_1" BEL "zxnext/timing_mod/sc_s_0" BEL
+        "zxnext/timing_mod/whc_lsb_d" BEL "zxnext/cpu_mod/IORQ_t2" BEL
+        "zxnext/cpu_mod/MReq_Inhibit" BEL "zxnext/cpu_mod/Req_Inhibit" BEL
+        "zxnext/cpu_mod/Reset_s" BEL "zxnext/cpu_mod/DI_Reg_7" BEL
+        "zxnext/cpu_mod/DI_Reg_6" BEL "zxnext/cpu_mod/DI_Reg_5" BEL
+        "zxnext/cpu_mod/DI_Reg_4" BEL "zxnext/cpu_mod/DI_Reg_3" BEL
+        "zxnext/cpu_mod/DI_Reg_2" BEL "zxnext/cpu_mod/DI_Reg_1" BEL
+        "zxnext/cpu_mod/DI_Reg_0" BEL "zxnext/cpu_mod/z80n/TState_2" BEL
+        "zxnext/cpu_mod/z80n/TState_1" BEL "zxnext/cpu_mod/z80n/TState_0" BEL
+        "zxnext/cpu_mod/z80n/A_15" BEL "zxnext/cpu_mod/z80n/A_14" BEL
+        "zxnext/cpu_mod/z80n/A_13" BEL "zxnext/cpu_mod/z80n/A_12" BEL
+        "zxnext/cpu_mod/z80n/A_11" BEL "zxnext/cpu_mod/z80n/A_10" BEL
+        "zxnext/cpu_mod/z80n/A_9" BEL "zxnext/cpu_mod/z80n/A_8" BEL
+        "zxnext/cpu_mod/z80n/A_7" BEL "zxnext/cpu_mod/z80n/A_6" BEL
+        "zxnext/cpu_mod/z80n/A_5" BEL "zxnext/cpu_mod/z80n/A_4" BEL
+        "zxnext/cpu_mod/z80n/A_3" BEL "zxnext/cpu_mod/z80n/A_2" BEL
+        "zxnext/cpu_mod/z80n/A_1" BEL "zxnext/cpu_mod/z80n/A_0" BEL
+        "zxnext/cpu_mod/z80n/DO_7" BEL "zxnext/cpu_mod/z80n/DO_6" BEL
+        "zxnext/cpu_mod/z80n/DO_5" BEL "zxnext/cpu_mod/z80n/DO_4" BEL
+        "zxnext/cpu_mod/z80n/DO_3" BEL "zxnext/cpu_mod/z80n/DO_2" BEL
+        "zxnext/cpu_mod/z80n/DO_1" BEL "zxnext/cpu_mod/z80n/DO_0" BEL
+        "zxnext/cpu_mod/z80n/Save_ALU_r" BEL
+        "zxnext/cpu_mod/z80n/Read_To_Reg_r_4" BEL
+        "zxnext/cpu_mod/z80n/Read_To_Reg_r_3" BEL
+        "zxnext/cpu_mod/z80n/Read_To_Reg_r_2" BEL
+        "zxnext/cpu_mod/z80n/Read_To_Reg_r_1" BEL
+        "zxnext/cpu_mod/z80n/Read_To_Reg_r_0" BEL
+        "zxnext/cpu_mod/z80n/MCycles_2" BEL "zxnext/cpu_mod/z80n/MCycles_1"
+        BEL "zxnext/cpu_mod/z80n/MCycles_0" BEL
+        "zxnext/cpu_mod/z80n/IStatus_1" BEL "zxnext/cpu_mod/z80n/IStatus_0"
+        BEL "zxnext/cpu_mod/z80n/F_7" BEL "zxnext/cpu_mod/z80n/F_6" BEL
+        "zxnext/cpu_mod/z80n/F_5" BEL "zxnext/cpu_mod/z80n/F_4" BEL
+        "zxnext/cpu_mod/z80n/F_3" BEL "zxnext/cpu_mod/z80n/F_2" BEL
+        "zxnext/cpu_mod/z80n/F_1" BEL "zxnext/cpu_mod/z80n/F_0" BEL
+        "zxnext/cpu_mod/z80n/ACC_7" BEL "zxnext/cpu_mod/z80n/ACC_6" BEL
+        "zxnext/cpu_mod/z80n/ACC_5" BEL "zxnext/cpu_mod/z80n/ACC_4" BEL
+        "zxnext/cpu_mod/z80n/ACC_3" BEL "zxnext/cpu_mod/z80n/ACC_2" BEL
+        "zxnext/cpu_mod/z80n/ACC_1" BEL "zxnext/cpu_mod/z80n/ACC_0" BEL
+        "zxnext/cpu_mod/z80n/BusA_7" BEL "zxnext/cpu_mod/z80n/BusA_6" BEL
+        "zxnext/cpu_mod/z80n/BusA_5" BEL "zxnext/cpu_mod/z80n/BusA_4" BEL
+        "zxnext/cpu_mod/z80n/BusA_3" BEL "zxnext/cpu_mod/z80n/BusA_2" BEL
+        "zxnext/cpu_mod/z80n/BusA_1" BEL "zxnext/cpu_mod/z80n/BusA_0" BEL
+        "zxnext/cpu_mod/z80n/_o35908_7" BEL "zxnext/cpu_mod/z80n/_o35908_6"
+        BEL "zxnext/cpu_mod/z80n/_o35908_5" BEL
+        "zxnext/cpu_mod/z80n/_o35908_4" BEL "zxnext/cpu_mod/z80n/_o35908_3"
+        BEL "zxnext/cpu_mod/z80n/_o35908_2" BEL
+        "zxnext/cpu_mod/z80n/_o35908_1" BEL "zxnext/cpu_mod/z80n/_o35908_0"
+        BEL "zxnext/cpu_mod/z80n/reg_temp_t_16" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_a_7" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_a_6" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_a_5" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_a_4" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_a_3" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_a_2" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_a_1" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_a_0" BEL
+        "zxnext/cpu_mod/z80n/_o35915_7" BEL "zxnext/cpu_mod/z80n/_o35915_6"
+        BEL "zxnext/cpu_mod/z80n/_o35915_5" BEL
+        "zxnext/cpu_mod/z80n/_o35915_4" BEL "zxnext/cpu_mod/z80n/_o35915_3"
+        BEL "zxnext/cpu_mod/z80n/_o35915_2" BEL
+        "zxnext/cpu_mod/z80n/_o35915_1" BEL "zxnext/cpu_mod/z80n/_o35915_0"
+        BEL "zxnext/cpu_mod/z80n/reg_direct_val_H_b_7" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_b_6" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_b_5" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_b_4" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_b_3" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_b_2" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_b_1" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_H_b_0" BEL
+        "zxnext/cpu_mod/z80n/_o35922_7" BEL "zxnext/cpu_mod/z80n/_o35922_6"
+        BEL "zxnext/cpu_mod/z80n/_o35922_5" BEL
+        "zxnext/cpu_mod/z80n/_o35922_4" BEL "zxnext/cpu_mod/z80n/_o35922_3"
+        BEL "zxnext/cpu_mod/z80n/_o35922_2" BEL
+        "zxnext/cpu_mod/z80n/_o35922_1" BEL "zxnext/cpu_mod/z80n/_o35922_0"
+        BEL "zxnext/cpu_mod/z80n/RegBusA_r_15" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_14" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_13" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_12" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_11" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_10" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_9" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_8" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_7" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_6" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_5" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_4" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_3" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_2" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_1" BEL
+        "zxnext/cpu_mod/z80n/RegBusA_r_0" BEL "zxnext/cpu_mod/z80n/_o36031_7"
+        BEL "zxnext/cpu_mod/z80n/_o36031_6" BEL
+        "zxnext/cpu_mod/z80n/_o36031_5" BEL "zxnext/cpu_mod/z80n/_o36031_4"
+        BEL "zxnext/cpu_mod/z80n/_o36031_3" BEL
+        "zxnext/cpu_mod/z80n/_o36031_2" BEL "zxnext/cpu_mod/z80n/_o36031_1"
+        BEL "zxnext/cpu_mod/z80n/_o36031_0" BEL "zxnext/cpu_mod/z80n/BusB_7"
+        BEL "zxnext/cpu_mod/z80n/BusB_6" BEL "zxnext/cpu_mod/z80n/BusB_5" BEL
+        "zxnext/cpu_mod/z80n/BusB_4" BEL "zxnext/cpu_mod/z80n/BusB_3" BEL
+        "zxnext/cpu_mod/z80n/BusB_2" BEL "zxnext/cpu_mod/z80n/BusB_1" BEL
+        "zxnext/cpu_mod/z80n/BusB_0" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_a_7" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_a_6" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_a_5" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_a_4" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_a_3" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_a_2" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_a_1" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_a_0" BEL
+        "zxnext/cpu_mod/z80n/PC_15" BEL "zxnext/cpu_mod/z80n/PC_14" BEL
+        "zxnext/cpu_mod/z80n/PC_13" BEL "zxnext/cpu_mod/z80n/PC_12" BEL
+        "zxnext/cpu_mod/z80n/PC_11" BEL "zxnext/cpu_mod/z80n/PC_10" BEL
+        "zxnext/cpu_mod/z80n/PC_9" BEL "zxnext/cpu_mod/z80n/PC_8" BEL
+        "zxnext/cpu_mod/z80n/PC_7" BEL "zxnext/cpu_mod/z80n/PC_6" BEL
+        "zxnext/cpu_mod/z80n/PC_5" BEL "zxnext/cpu_mod/z80n/PC_4" BEL
+        "zxnext/cpu_mod/z80n/PC_3" BEL "zxnext/cpu_mod/z80n/PC_2" BEL
+        "zxnext/cpu_mod/z80n/PC_1" BEL "zxnext/cpu_mod/z80n/PC_0" BEL
+        "zxnext/cpu_mod/z80n/_o36038_7" BEL "zxnext/cpu_mod/z80n/_o36038_6"
+        BEL "zxnext/cpu_mod/z80n/_o36038_5" BEL
+        "zxnext/cpu_mod/z80n/_o36038_4" BEL "zxnext/cpu_mod/z80n/_o36038_3"
+        BEL "zxnext/cpu_mod/z80n/_o36038_2" BEL
+        "zxnext/cpu_mod/z80n/_o36038_1" BEL "zxnext/cpu_mod/z80n/_o36038_0"
+        BEL "zxnext/cpu_mod/z80n/reg_direct_val_L_b_7" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_b_6" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_b_5" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_b_4" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_b_3" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_b_2" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_b_1" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_val_L_b_0" BEL
+        "zxnext/cpu_mod/z80n/SP_15" BEL "zxnext/cpu_mod/z80n/SP_14" BEL
+        "zxnext/cpu_mod/z80n/SP_13" BEL "zxnext/cpu_mod/z80n/SP_12" BEL
+        "zxnext/cpu_mod/z80n/SP_11" BEL "zxnext/cpu_mod/z80n/SP_10" BEL
+        "zxnext/cpu_mod/z80n/SP_9" BEL "zxnext/cpu_mod/z80n/SP_8" BEL
+        "zxnext/cpu_mod/z80n/SP_7" BEL "zxnext/cpu_mod/z80n/SP_6" BEL
+        "zxnext/cpu_mod/z80n/SP_5" BEL "zxnext/cpu_mod/z80n/SP_4" BEL
+        "zxnext/cpu_mod/z80n/SP_3" BEL "zxnext/cpu_mod/z80n/SP_2" BEL
+        "zxnext/cpu_mod/z80n/SP_1" BEL "zxnext/cpu_mod/z80n/SP_0" BEL
+        "zxnext/cpu_mod/z80n/TmpAddr_15" BEL "zxnext/cpu_mod/z80n/TmpAddr_14"
+        BEL "zxnext/cpu_mod/z80n/TmpAddr_13" BEL
+        "zxnext/cpu_mod/z80n/TmpAddr_12" BEL "zxnext/cpu_mod/z80n/TmpAddr_11"
+        BEL "zxnext/cpu_mod/z80n/TmpAddr_10" BEL
+        "zxnext/cpu_mod/z80n/TmpAddr_9" BEL "zxnext/cpu_mod/z80n/TmpAddr_8"
+        BEL "zxnext/cpu_mod/z80n/TmpAddr_7" BEL
+        "zxnext/cpu_mod/z80n/TmpAddr_6" BEL "zxnext/cpu_mod/z80n/TmpAddr_5"
+        BEL "zxnext/cpu_mod/z80n/TmpAddr_4" BEL
+        "zxnext/cpu_mod/z80n/TmpAddr_3" BEL "zxnext/cpu_mod/z80n/TmpAddr_2"
+        BEL "zxnext/cpu_mod/z80n/TmpAddr_1" BEL
+        "zxnext/cpu_mod/z80n/TmpAddr_0" BEL "zxnext/cpu_mod/z80n/_o36045_7"
+        BEL "zxnext/cpu_mod/z80n/_o36045_6" BEL
+        "zxnext/cpu_mod/z80n/_o36045_5" BEL "zxnext/cpu_mod/z80n/_o36045_4"
+        BEL "zxnext/cpu_mod/z80n/_o36045_3" BEL
+        "zxnext/cpu_mod/z80n/_o36045_2" BEL "zxnext/cpu_mod/z80n/_o36045_1"
+        BEL "zxnext/cpu_mod/z80n/_o36045_0" BEL "zxnext/cpu_mod/z80n/MCycle_2"
+        BEL "zxnext/cpu_mod/z80n/MCycle_1" BEL "zxnext/cpu_mod/z80n/MCycle_0"
+        BEL "zxnext/cpu_mod/z80n/RegAddrC_2" BEL
+        "zxnext/cpu_mod/z80n/RegAddrC_1" BEL "zxnext/cpu_mod/z80n/RegAddrC_0"
+        BEL "zxnext/cpu_mod/z80n/RegAddrB_r_2" BEL
+        "zxnext/cpu_mod/z80n/RegAddrB_r_1" BEL
+        "zxnext/cpu_mod/z80n/RegAddrB_r_0" BEL
+        "zxnext/cpu_mod/z80n/RegAddrA_r_2" BEL
+        "zxnext/cpu_mod/z80n/RegAddrA_r_1" BEL
+        "zxnext/cpu_mod/z80n/RegAddrA_r_0" BEL "zxnext/cpu_mod/z80n/R_7" BEL
+        "zxnext/cpu_mod/z80n/R_6" BEL "zxnext/cpu_mod/z80n/R_5" BEL
+        "zxnext/cpu_mod/z80n/R_4" BEL "zxnext/cpu_mod/z80n/R_3" BEL
+        "zxnext/cpu_mod/z80n/R_2" BEL "zxnext/cpu_mod/z80n/R_1" BEL
+        "zxnext/cpu_mod/z80n/R_0" BEL "zxnext/cpu_mod/z80n/XY_State_1" BEL
+        "zxnext/cpu_mod/z80n/XY_State_0" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_add_H_a_2" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_add_H_a_1" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_add_H_a_0" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_H_b" BEL
+        "zxnext/cpu_mod/z80n/Auto_Wait_t2" BEL
+        "zxnext/cpu_mod/z80n/ALU_Op_r_3" BEL "zxnext/cpu_mod/z80n/ALU_Op_r_2"
+        BEL "zxnext/cpu_mod/z80n/ALU_Op_r_1" BEL
+        "zxnext/cpu_mod/z80n/ALU_Op_r_0" BEL "zxnext/cpu_mod/z80n/ISet_1" BEL
+        "zxnext/cpu_mod/z80n/ISet_0" BEL "zxnext/cpu_mod/z80n/Auto_Wait_t1"
+        BEL "zxnext/cpu_mod/z80n/reg_direct_H_a" BEL
+        "zxnext/cpu_mod/z80n/_o36080_7" BEL "zxnext/cpu_mod/z80n/_o36080_6"
+        BEL "zxnext/cpu_mod/z80n/_o36080_5" BEL
+        "zxnext/cpu_mod/z80n/_o36080_4" BEL "zxnext/cpu_mod/z80n/_o36080_3"
+        BEL "zxnext/cpu_mod/z80n/_o36080_2" BEL
+        "zxnext/cpu_mod/z80n/_o36080_1" BEL "zxnext/cpu_mod/z80n/_o36080_0"
+        BEL "zxnext/cpu_mod/z80n/_o36073_7" BEL
+        "zxnext/cpu_mod/z80n/_o36073_6" BEL "zxnext/cpu_mod/z80n/_o36073_5"
+        BEL "zxnext/cpu_mod/z80n/_o36073_4" BEL
+        "zxnext/cpu_mod/z80n/_o36073_3" BEL "zxnext/cpu_mod/z80n/_o36073_2"
+        BEL "zxnext/cpu_mod/z80n/_o36073_1" BEL
+        "zxnext/cpu_mod/z80n/_o36073_0" BEL "zxnext/cpu_mod/z80n/_o36066_7"
+        BEL "zxnext/cpu_mod/z80n/_o36066_6" BEL
+        "zxnext/cpu_mod/z80n/_o36066_5" BEL "zxnext/cpu_mod/z80n/_o36066_4"
+        BEL "zxnext/cpu_mod/z80n/_o36066_3" BEL
+        "zxnext/cpu_mod/z80n/_o36066_2" BEL "zxnext/cpu_mod/z80n/_o36066_1"
+        BEL "zxnext/cpu_mod/z80n/_o36066_0" BEL
+        "zxnext/cpu_mod/z80n/_o36059_7" BEL "zxnext/cpu_mod/z80n/_o36059_6"
+        BEL "zxnext/cpu_mod/z80n/_o36059_5" BEL
+        "zxnext/cpu_mod/z80n/_o36059_4" BEL "zxnext/cpu_mod/z80n/_o36059_3"
+        BEL "zxnext/cpu_mod/z80n/_o36059_2" BEL
+        "zxnext/cpu_mod/z80n/_o36059_1" BEL "zxnext/cpu_mod/z80n/_o36059_0"
+        BEL "zxnext/cpu_mod/z80n/_o36052_7" BEL
+        "zxnext/cpu_mod/z80n/_o36052_6" BEL "zxnext/cpu_mod/z80n/_o36052_5"
+        BEL "zxnext/cpu_mod/z80n/_o36052_4" BEL
+        "zxnext/cpu_mod/z80n/_o36052_3" BEL "zxnext/cpu_mod/z80n/_o36052_2"
+        BEL "zxnext/cpu_mod/z80n/_o36052_1" BEL
+        "zxnext/cpu_mod/z80n/_o36052_0" BEL "zxnext/cpu_mod/z80n/_o35957_7"
+        BEL "zxnext/cpu_mod/z80n/_o35957_6" BEL
+        "zxnext/cpu_mod/z80n/_o35957_5" BEL "zxnext/cpu_mod/z80n/_o35957_4"
+        BEL "zxnext/cpu_mod/z80n/_o35957_3" BEL
+        "zxnext/cpu_mod/z80n/_o35957_2" BEL "zxnext/cpu_mod/z80n/_o35957_1"
+        BEL "zxnext/cpu_mod/z80n/_o35957_0" BEL
+        "zxnext/cpu_mod/z80n/_o35950_7" BEL "zxnext/cpu_mod/z80n/_o35950_6"
+        BEL "zxnext/cpu_mod/z80n/_o35950_5" BEL
+        "zxnext/cpu_mod/z80n/_o35950_4" BEL "zxnext/cpu_mod/z80n/_o35950_3"
+        BEL "zxnext/cpu_mod/z80n/_o35950_2" BEL
+        "zxnext/cpu_mod/z80n/_o35950_1" BEL "zxnext/cpu_mod/z80n/_o35950_0"
+        BEL "zxnext/cpu_mod/z80n/_o35943_7" BEL
+        "zxnext/cpu_mod/z80n/_o35943_6" BEL "zxnext/cpu_mod/z80n/_o35943_5"
+        BEL "zxnext/cpu_mod/z80n/_o35943_4" BEL
+        "zxnext/cpu_mod/z80n/_o35943_3" BEL "zxnext/cpu_mod/z80n/_o35943_2"
+        BEL "zxnext/cpu_mod/z80n/_o35943_1" BEL
+        "zxnext/cpu_mod/z80n/_o35943_0" BEL "zxnext/cpu_mod/z80n/_o35936_7"
+        BEL "zxnext/cpu_mod/z80n/_o35936_6" BEL
+        "zxnext/cpu_mod/z80n/_o35936_5" BEL "zxnext/cpu_mod/z80n/_o35936_4"
+        BEL "zxnext/cpu_mod/z80n/_o35936_3" BEL
+        "zxnext/cpu_mod/z80n/_o35936_2" BEL "zxnext/cpu_mod/z80n/_o35936_1"
+        BEL "zxnext/cpu_mod/z80n/_o35936_0" BEL
+        "zxnext/cpu_mod/z80n/_o35929_7" BEL "zxnext/cpu_mod/z80n/_o35929_6"
+        BEL "zxnext/cpu_mod/z80n/_o35929_5" BEL
+        "zxnext/cpu_mod/z80n/_o35929_4" BEL "zxnext/cpu_mod/z80n/_o35929_3"
+        BEL "zxnext/cpu_mod/z80n/_o35929_2" BEL
+        "zxnext/cpu_mod/z80n/_o35929_1" BEL "zxnext/cpu_mod/z80n/_o35929_0"
+        BEL "zxnext/cpu_mod/z80n/Pre_XY_F_M_2" BEL
+        "zxnext/cpu_mod/z80n/Pre_XY_F_M_1" BEL
+        "zxnext/cpu_mod/z80n/Pre_XY_F_M_0" BEL "zxnext/cpu_mod/z80n/Ap_7" BEL
+        "zxnext/cpu_mod/z80n/Ap_6" BEL "zxnext/cpu_mod/z80n/Ap_5" BEL
+        "zxnext/cpu_mod/z80n/Ap_4" BEL "zxnext/cpu_mod/z80n/Ap_3" BEL
+        "zxnext/cpu_mod/z80n/Ap_2" BEL "zxnext/cpu_mod/z80n/Ap_1" BEL
+        "zxnext/cpu_mod/z80n/Ap_0" BEL "zxnext/cpu_mod/z80n/Fp_7" BEL
+        "zxnext/cpu_mod/z80n/Fp_6" BEL "zxnext/cpu_mod/z80n/Fp_5" BEL
+        "zxnext/cpu_mod/z80n/Fp_4" BEL "zxnext/cpu_mod/z80n/Fp_3" BEL
+        "zxnext/cpu_mod/z80n/Fp_2" BEL "zxnext/cpu_mod/z80n/Fp_1" BEL
+        "zxnext/cpu_mod/z80n/Fp_0" BEL "zxnext/cpu_mod/z80n/PreserveC_r" BEL
+        "zxnext/cpu_mod/z80n/Z16_r" BEL "zxnext/cpu_mod/z80n/Arith16_r" BEL
+        "zxnext/cpu_mod/z80n/I_7" BEL "zxnext/cpu_mod/z80n/I_6" BEL
+        "zxnext/cpu_mod/z80n/I_5" BEL "zxnext/cpu_mod/z80n/I_4" BEL
+        "zxnext/cpu_mod/z80n/I_3" BEL "zxnext/cpu_mod/z80n/I_2" BEL
+        "zxnext/cpu_mod/z80n/I_1" BEL "zxnext/cpu_mod/z80n/I_0" BEL
+        "zxnext/cpu_mod/z80n/RFSH_n" BEL "zxnext/cpu_mod/z80n/No_BTR" BEL
+        "zxnext/cpu_mod/z80n/OldNMI_n" BEL "zxnext/cpu_mod/z80n/INT_s" BEL
+        "zxnext/cpu_mod/z80n/BusReq_s" BEL "zxnext/dma_mod/DMA_timer_s_13" BEL
+        "zxnext/dma_mod/DMA_timer_s_12" BEL "zxnext/dma_mod/DMA_timer_s_11"
+        BEL "zxnext/dma_mod/DMA_timer_s_10" BEL "zxnext/dma_mod/DMA_timer_s_9"
+        BEL "zxnext/dma_mod/DMA_timer_s_8" BEL "zxnext/dma_mod/DMA_timer_s_7"
+        BEL "zxnext/dma_mod/DMA_timer_s_6" BEL "zxnext/dma_mod/DMA_timer_s_5"
+        BEL "zxnext/dma_mod/DMA_timer_s_4" BEL "zxnext/dma_mod/DMA_timer_s_3"
+        BEL "zxnext/dma_mod/DMA_timer_s_2" BEL "zxnext/dma_mod/DMA_timer_s_1"
+        BEL "zxnext/dma_mod/DMA_timer_s_0" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd1" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd2" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd4" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd5" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd3" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd7" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd8" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd6" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd10" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd11" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd9" BEL
+        "zxnext/dma_mod/dma_seq_s_FSM_FFd12" BEL
+        "zxnext/dma_mod/reg_wr_seq_s_FSM_FFd2" BEL
+        "zxnext/dma_mod/reg_wr_seq_s_FSM_FFd3" BEL
+        "zxnext/dma_mod/reg_wr_seq_s_FSM_FFd1" BEL
+        "zxnext/dma_mod/reg_wr_seq_s_FSM_FFd5" BEL
+        "zxnext/dma_mod/reg_wr_seq_s_FSM_FFd4" BEL "zxnext/dma_mod/cpu_d_o_7"
+        BEL "zxnext/dma_mod/cpu_d_o_6" BEL "zxnext/dma_mod/cpu_d_o_5" BEL
+        "zxnext/dma_mod/cpu_d_o_2" BEL "zxnext/dma_mod/cpu_d_o_0" BEL
+        "zxnext/dma_mod/dma_a_s_15" BEL "zxnext/dma_mod/dma_a_s_14" BEL
+        "zxnext/dma_mod/dma_a_s_13" BEL "zxnext/dma_mod/dma_a_s_12" BEL
+        "zxnext/dma_mod/dma_a_s_11" BEL "zxnext/dma_mod/dma_a_s_10" BEL
+        "zxnext/dma_mod/dma_a_s_9" BEL "zxnext/dma_mod/dma_a_s_8" BEL
+        "zxnext/dma_mod/dma_a_s_7" BEL "zxnext/dma_mod/dma_a_s_6" BEL
+        "zxnext/dma_mod/dma_a_s_5" BEL "zxnext/dma_mod/dma_a_s_4" BEL
+        "zxnext/dma_mod/dma_a_s_3" BEL "zxnext/dma_mod/dma_a_s_2" BEL
+        "zxnext/dma_mod/dma_a_s_1" BEL "zxnext/dma_mod/dma_a_s_0" BEL
+        "zxnext/dma_mod/dma_dest_s_15" BEL "zxnext/dma_mod/dma_dest_s_14" BEL
+        "zxnext/dma_mod/dma_dest_s_13" BEL "zxnext/dma_mod/dma_dest_s_12" BEL
+        "zxnext/dma_mod/dma_dest_s_11" BEL "zxnext/dma_mod/dma_dest_s_10" BEL
+        "zxnext/dma_mod/dma_dest_s_9" BEL "zxnext/dma_mod/dma_dest_s_8" BEL
+        "zxnext/dma_mod/dma_dest_s_7" BEL "zxnext/dma_mod/dma_dest_s_6" BEL
+        "zxnext/dma_mod/dma_dest_s_5" BEL "zxnext/dma_mod/dma_dest_s_4" BEL
+        "zxnext/dma_mod/dma_dest_s_3" BEL "zxnext/dma_mod/dma_dest_s_2" BEL
+        "zxnext/dma_mod/dma_dest_s_1" BEL "zxnext/dma_mod/dma_dest_s_0" BEL
+        "zxnext/dma_mod/dma_src_s_15" BEL "zxnext/dma_mod/dma_src_s_14" BEL
+        "zxnext/dma_mod/dma_src_s_13" BEL "zxnext/dma_mod/dma_src_s_12" BEL
+        "zxnext/dma_mod/dma_src_s_11" BEL "zxnext/dma_mod/dma_src_s_10" BEL
+        "zxnext/dma_mod/dma_src_s_9" BEL "zxnext/dma_mod/dma_src_s_8" BEL
+        "zxnext/dma_mod/dma_src_s_7" BEL "zxnext/dma_mod/dma_src_s_6" BEL
+        "zxnext/dma_mod/dma_src_s_5" BEL "zxnext/dma_mod/dma_src_s_4" BEL
+        "zxnext/dma_mod/dma_src_s_3" BEL "zxnext/dma_mod/dma_src_s_2" BEL
+        "zxnext/dma_mod/dma_src_s_1" BEL "zxnext/dma_mod/dma_src_s_0" BEL
+        "zxnext/dma_mod/dma_d_p_s_7" BEL "zxnext/dma_mod/dma_d_p_s_6" BEL
+        "zxnext/dma_mod/dma_d_p_s_5" BEL "zxnext/dma_mod/dma_d_p_s_4" BEL
+        "zxnext/dma_mod/dma_d_p_s_3" BEL "zxnext/dma_mod/dma_d_p_s_2" BEL
+        "zxnext/dma_mod/dma_d_p_s_1" BEL "zxnext/dma_mod/dma_d_p_s_0" BEL
+        "zxnext/dma_mod/dma_d_n_s_7" BEL "zxnext/dma_mod/dma_d_n_s_6" BEL
+        "zxnext/dma_mod/dma_d_n_s_5" BEL "zxnext/dma_mod/dma_d_n_s_4" BEL
+        "zxnext/dma_mod/dma_d_n_s_3" BEL "zxnext/dma_mod/dma_d_n_s_2" BEL
+        "zxnext/dma_mod/dma_d_n_s_1" BEL "zxnext/dma_mod/dma_d_n_s_0" BEL
+        "zxnext/dma_mod/dma_mreq_cycle" BEL "zxnext/dma_mod/dma_write_cycle"
+        BEL "zxnext/dma_mod/reg_rd_seq_s_2" BEL
+        "zxnext/dma_mod/reg_rd_seq_s_1" BEL "zxnext/dma_mod/reg_rd_seq_s_0"
+        BEL "zxnext/dma_mod/dma_counter_s_15" BEL
+        "zxnext/dma_mod/dma_counter_s_14" BEL
+        "zxnext/dma_mod/dma_counter_s_13" BEL
+        "zxnext/dma_mod/dma_counter_s_12" BEL
+        "zxnext/dma_mod/dma_counter_s_11" BEL
+        "zxnext/dma_mod/dma_counter_s_10" BEL "zxnext/dma_mod/dma_counter_s_9"
+        BEL "zxnext/dma_mod/dma_counter_s_8" BEL
+        "zxnext/dma_mod/dma_counter_s_7" BEL "zxnext/dma_mod/dma_counter_s_6"
+        BEL "zxnext/dma_mod/dma_counter_s_5" BEL
+        "zxnext/dma_mod/dma_counter_s_4" BEL "zxnext/dma_mod/dma_counter_s_3"
+        BEL "zxnext/dma_mod/dma_counter_s_2" BEL
+        "zxnext/dma_mod/dma_counter_s_1" BEL "zxnext/dma_mod/dma_counter_s_0"
+        BEL "zxnext/dma_mod/status_atleastone" BEL
+        "zxnext/dma_mod/R2_portB_timming_byte_s_1" BEL
+        "zxnext/dma_mod/R2_portB_timming_byte_s_0" BEL
+        "zxnext/dma_mod/R1_portA_timming_byte_s_1" BEL
+        "zxnext/dma_mod/R1_portA_timming_byte_s_0" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_15" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_14" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_13" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_12" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_11" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_10" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_9" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_8" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_7" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_6" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_5" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_4" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_3" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_2" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_1" BEL
+        "zxnext/dma_mod/R4_start_addr_port_B_s_0" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_15" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_14" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_13" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_12" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_11" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_10" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_9" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_8" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_7" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_6" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_5" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_4" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_3" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_2" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_1" BEL
+        "zxnext/dma_mod/R0_start_addr_port_A_s_0" BEL
+        "zxnext/dma_mod/R0_block_len_s_15" BEL
+        "zxnext/dma_mod/R0_block_len_s_14" BEL
+        "zxnext/dma_mod/R0_block_len_s_13" BEL
+        "zxnext/dma_mod/R0_block_len_s_12" BEL
+        "zxnext/dma_mod/R0_block_len_s_11" BEL
+        "zxnext/dma_mod/R0_block_len_s_10" BEL
+        "zxnext/dma_mod/R0_block_len_s_9" BEL
+        "zxnext/dma_mod/R0_block_len_s_8" BEL
+        "zxnext/dma_mod/R0_block_len_s_7" BEL
+        "zxnext/dma_mod/R0_block_len_s_6" BEL
+        "zxnext/dma_mod/R0_block_len_s_5" BEL
+        "zxnext/dma_mod/R0_block_len_s_4" BEL
+        "zxnext/dma_mod/R0_block_len_s_3" BEL
+        "zxnext/dma_mod/R0_block_len_s_2" BEL
+        "zxnext/dma_mod/R0_block_len_s_1" BEL
+        "zxnext/dma_mod/R0_block_len_s_0" BEL
+        "zxnext/dma_mod/R2_portB_preescaler_s_7" BEL
+        "zxnext/dma_mod/R2_portB_preescaler_s_6" BEL
+        "zxnext/dma_mod/R2_portB_preescaler_s_5" BEL
+        "zxnext/dma_mod/R2_portB_preescaler_s_4" BEL
+        "zxnext/dma_mod/R2_portB_preescaler_s_3" BEL
+        "zxnext/dma_mod/R2_portB_preescaler_s_2" BEL
+        "zxnext/dma_mod/R2_portB_preescaler_s_1" BEL
+        "zxnext/dma_mod/R2_portB_preescaler_s_0" BEL
+        "zxnext/dma_mod/R4_mode_s_1" BEL "zxnext/dma_mod/R4_mode_s_0" BEL
+        "zxnext/dma_mod/R6_read_mask_s_6" BEL
+        "zxnext/dma_mod/R6_read_mask_s_5" BEL
+        "zxnext/dma_mod/R6_read_mask_s_4" BEL
+        "zxnext/dma_mod/R6_read_mask_s_3" BEL
+        "zxnext/dma_mod/R6_read_mask_s_2" BEL
+        "zxnext/dma_mod/R6_read_mask_s_1" BEL
+        "zxnext/dma_mod/R6_read_mask_s_0" BEL
+        "zxnext/dma_mod/R2_portB_addrMode_s_1" BEL
+        "zxnext/dma_mod/R2_portB_addrMode_s_0" BEL
+        "zxnext/dma_mod/R1_portA_addrMode_s_1" BEL
+        "zxnext/dma_mod/R1_portA_addrMode_s_0" BEL
+        "zxnext/dma_mod/R1_portAisIO_s" BEL "zxnext/dma_mod/R2_portBisIO_s"
+        BEL "zxnext/dma_mod/wait_n_s" BEL "zxnext/dma_mod/cs_rd_v_0" BEL
+        "zxnext/dma_mod/cs_wr_v_0" BEL "zxnext/dma_mod/reg_temp_6" BEL
+        "zxnext/dma_mod/reg_temp_5" BEL "zxnext/dma_mod/reg_temp_4" BEL
+        "zxnext/dma_mod/reg_temp_3" BEL "zxnext/spi_master_mod/counter_3" BEL
+        "zxnext/spi_master_mod/counter_2" BEL
+        "zxnext/spi_master_mod/counter_1" BEL
+        "zxnext/spi_master_mod/counter_0" BEL
+        "zxnext/spi_master_mod/miso_dat_7" BEL
+        "zxnext/spi_master_mod/miso_dat_6" BEL
+        "zxnext/spi_master_mod/miso_dat_5" BEL
+        "zxnext/spi_master_mod/miso_dat_4" BEL
+        "zxnext/spi_master_mod/miso_dat_3" BEL
+        "zxnext/spi_master_mod/miso_dat_2" BEL
+        "zxnext/spi_master_mod/miso_dat_1" BEL
+        "zxnext/spi_master_mod/miso_dat_0" BEL "zxnext/spi_master_mod/shift_8"
+        BEL "zxnext/spi_master_mod/shift_7" BEL
+        "zxnext/spi_master_mod/shift_6" BEL "zxnext/spi_master_mod/shift_5"
+        BEL "zxnext/spi_master_mod/shift_4" BEL
+        "zxnext/spi_master_mod/shift_3" BEL "zxnext/spi_master_mod/shift_2"
+        BEL "zxnext/spi_master_mod/shift_1" BEL
+        "zxnext/spi_master_mod/shift_0" BEL "zxnext/spi_master_mod/sck" BEL
+        "sc_mod/vcnt_10" BEL "sc_mod/vcnt_9" BEL "sc_mod/vcnt_8" BEL
+        "sc_mod/vcnt_7" BEL "sc_mod/vcnt_6" BEL "sc_mod/vcnt_5" BEL
+        "sc_mod/vcnt_4" BEL "sc_mod/vcnt_3" BEL "sc_mod/vcnt_2" BEL
+        "sc_mod/vcnt_1" BEL "sc_mod/vcnt_0" BEL "sc_mod/hcnt_10" BEL
+        "sc_mod/hcnt_9" BEL "sc_mod/hcnt_8" BEL "sc_mod/hcnt_7" BEL
+        "sc_mod/hcnt_6" BEL "sc_mod/hcnt_5" BEL "sc_mod/hcnt_4" BEL
+        "sc_mod/hcnt_3" BEL "sc_mod/hcnt_2" BEL "sc_mod/hcnt_1" BEL
+        "sc_mod/hcnt_0" BEL "sc_mod/hpos_o_10" BEL "sc_mod/hpos_o_9" BEL
+        "sc_mod/hpos_o_8" BEL "sc_mod/hpos_o_7" BEL "sc_mod/hpos_o_6" BEL
+        "sc_mod/hpos_o_5" BEL "sc_mod/hpos_o_4" BEL "sc_mod/hpos_o_3" BEL
+        "sc_mod/hpos_o_2" BEL "sc_mod/hpos_o_1" BEL "sc_mod/hpos_o_0" BEL
+        "sc_mod/O_VIDEO_31_8" BEL "sc_mod/O_VIDEO_31_7" BEL
+        "sc_mod/O_VIDEO_31_6" BEL "sc_mod/O_VIDEO_31_5" BEL
+        "sc_mod/O_VIDEO_31_4" BEL "sc_mod/O_VIDEO_31_3" BEL
+        "sc_mod/O_VIDEO_31_2" BEL "sc_mod/O_VIDEO_31_1" BEL
+        "sc_mod/O_VIDEO_31_0" BEL "sc_mod/O_HSYNC" BEL "sc_mod/O_VSYNC" BEL
+        "sc_mod/ivsync_last_x2" BEL "emu_fnkeys_mod/timer_count_6" BEL
+        "emu_fnkeys_mod/timer_count_5" BEL "emu_fnkeys_mod/timer_count_4" BEL
+        "emu_fnkeys_mod/timer_count_3" BEL "emu_fnkeys_mod/timer_count_2" BEL
+        "emu_fnkeys_mod/timer_count_1" BEL "emu_fnkeys_mod/timer_count_0" BEL
+        "emu_fnkeys_mod/state_FSM_FFd1" BEL "emu_fnkeys_mod/state_FSM_FFd3"
+        BEL "emu_fnkeys_mod/state_FSM_FFd2" BEL
+        "emu_fnkeys_mod/local_fnkeys_10" BEL "emu_fnkeys_mod/local_fnkeys_9"
+        BEL "emu_fnkeys_mod/local_fnkeys_8" BEL
+        "emu_fnkeys_mod/local_fnkeys_7" BEL "emu_fnkeys_mod/local_fnkeys_4"
+        BEL "emu_fnkeys_mod/local_fnkeys_3" BEL
+        "emu_fnkeys_mod/local_fnkeys_2" BEL "emu_fnkeys_mod/local_fnkeys_1"
+        BEL "emu_fnkeys_mod/cancel_nmi" BEL
+        "emu_fnkeys_mod/button_reset_n_edge_1" BEL
+        "emu_fnkeys_mod/button_reset_n_edge_0" BEL
+        "emu_fnkeys_mod/button_m1_n_edge_1" BEL
+        "emu_fnkeys_mod/button_m1_n_edge_0" BEL "sram_oe_n_active_1" BEL
+        "zxnext/cpu_nr_reg_0" BEL "zxnext/cpu_nr_reg_1" BEL
+        "zxnext/cpu_nr_reg_2" BEL "zxnext/cpu_nr_reg_3" BEL
+        "zxnext/cpu_nr_reg_4" BEL "zxnext/cpu_nr_reg_5" BEL
+        "zxnext/cpu_nr_reg_6" BEL "zxnext/cpu_nr_reg_7" BEL "zxnext/ula_int_n"
+        BEL "zxnext/cpu_req" BEL "zxnext/uart1_rx_avail_dly" BEL
+        "zxnext/uart0_rx_avail_dly" BEL "zxnext/nmi_divmmc" BEL
+        "zxnext/bootrom_en" BEL "zxnext/nmi_mf" BEL
+        "zxnext/copper_mod/copper_dout_s" BEL "zxnext/nmi_counter_0" BEL
+        "zxnext/nmi_counter_1" BEL "zxnext/nmi_counter_2" BEL
+        "zxnext/nmi_counter_3" BEL "zxnext/nmi_counter_4" BEL
+        "zxnext/multiface_mod/mf_enable" BEL "zxnext/multiface_mod/invisible"
+        BEL "zxnext/multiface_mod/nmi_active" BEL
+        "zxnext/sprite_mod/attr_num_change" BEL
+        "zxnext/sprite_mod/cpu_request" BEL
+        "zxnext/sprite_mod/mirror_num_change" BEL
+        "zxnext/turbosound_mod/psg0/env_vol_4" BEL
+        "zxnext/turbosound_mod/psg0/env_vol_3" BEL
+        "zxnext/turbosound_mod/psg0/env_vol_2" BEL
+        "zxnext/turbosound_mod/psg0/env_vol_1" BEL
+        "zxnext/turbosound_mod/psg0/env_vol_0" BEL
+        "zxnext/turbosound_mod/psg1/env_vol_4" BEL
+        "zxnext/turbosound_mod/psg1/env_vol_3" BEL
+        "zxnext/turbosound_mod/psg1/env_vol_2" BEL
+        "zxnext/turbosound_mod/psg1/env_vol_1" BEL
+        "zxnext/turbosound_mod/psg1/env_vol_0" BEL
+        "zxnext/turbosound_mod/psg2/env_vol_4" BEL
+        "zxnext/turbosound_mod/psg2/env_vol_3" BEL
+        "zxnext/turbosound_mod/psg2/env_vol_2" BEL
+        "zxnext/turbosound_mod/psg2/env_vol_1" BEL
+        "zxnext/turbosound_mod/psg2/env_vol_0" BEL
+        "zxnext/turbosound_mod/psg0/env_hold" BEL
+        "zxnext/turbosound_mod/psg1/env_hold" BEL
+        "zxnext/turbosound_mod/psg2/env_hold" BEL "zxnext/cpu_mod/z80n/IR_7"
+        BEL "zxnext/cpu_mod/z80n/IR_6" BEL "zxnext/cpu_mod/z80n/IR_5" BEL
+        "zxnext/cpu_mod/z80n/IR_4" BEL "zxnext/cpu_mod/z80n/IR_3" BEL
+        "zxnext/cpu_mod/z80n/IR_2" BEL "zxnext/cpu_mod/z80n/IR_1" BEL
+        "zxnext/cpu_mod/z80n/IR_0" BEL "zxnext/cpu_mod/z80n/NMI_s" BEL
+        "zxnext/cpu_mod/z80n/XY_Ind" BEL "zxnext/cpu_mod/z80n/Halt_FF" BEL
+        "zxnext/nr_22_line_interrupt_en" BEL "zxnext/dma_mode" BEL
+        "zxnext/nr_85_internal_port_reset_type" BEL
+        "zxnext/nr_89_bus_port_reset_type" BEL "zxnext/nr_a9_esp_gpio0" BEL
+        "zxnext/i2c_scl_o" BEL "zxnext/i2c_sda_o" BEL
+        "zxnext/nr_81_expbus_clken" BEL "zxnext/nr_0a_mouse_button_reverse"
+        BEL "zxnext/nr_03_user_dt_lock" BEL "zxnext/nr_02_bus_reset" BEL
+        "zxnext/nr_a8_esp_gpio0_en" BEL "zxnext/nr_71_layer2_scrollx_msb" BEL
+        "zxnext/nr_palette_sub_idx" BEL "zxnext/io_mode_en" BEL
+        "zxnext/nr_09_sprite_tie" BEL "zxnext/nr_08_contention_disable" BEL
+        "zxnext/port_ff3b_ulap_en" BEL "zxnext/port_123b_layer2_en" BEL
+        "zxnext/port_1ffd_special_old" BEL "zxnext/port_dffd_pentagon_512" BEL
+        "zxnext/uart_153b_select" BEL "ps2_kbd_mod/extended_s" BEL
+        "ps2_kbd_mod/release_s" BEL "zxnext/eff_nr_08_contention_disable" BEL
+        "zxnext/tilemap_mod/tm_mode" BEL "zxnext/tilemap_mod/tm_pixel_half_wr"
+        BEL "zxnext/i2s_mod/i2s_receiver_mod/wsp_e" BEL "zxnext/cpu_mod/MREQ"
+        BEL "zxnext/cpu_mod/RD" BEL "zxnext/cpu_mod/IORQ_int" BEL
+        "zxnext/cpu_mod/WR_t2" BEL "zxnext/cpu_mod/IORQ_t1" BEL
+        "zxnext/cpu_mod/z80n/IntE_FF1" BEL "zxnext/cpu_mod/z80n/IntE_FF2" BEL
+        "zxnext/cpu_mod/z80n/BusAck" BEL "zxnext/cpu_mod/z80n/IntCycle" BEL
+        "zxnext/cpu_mod/z80n/Alternate" BEL "zxnext/dma_mod/dma_read_cycle"
+        BEL "zxnext/dma_mod/status_endofblock_n" BEL
+        "zxnext/dma_mod/R5_auto_restart_s" BEL "zxnext/dma_mod/cpu_busreq_n_s"
+        BEL "zxnext/turbosound_mod/psg0/env_ena" BEL
+        "zxnext/turbosound_mod/psg1/env_ena" BEL
+        "zxnext/turbosound_mod/psg2/env_ena" BEL "sram_port_a_active" BEL
+        "zxnext/copper_req" BEL "sram_port_a_read" BEL
+        "zxnext/cpu_bank5_sched_dly" BEL "zxnext/lores_vram_ack_dly" BEL
+        "zxnext/nr_05_5060" BEL "sram_port_b_active" BEL
+        "zxnext/ulap_palette_rd_dly" BEL "zxnext/nr_keymap_dat_msb" BEL
+        "zxnext/nr_05_scandouble_en" BEL "zxnext/nr_06_ps2_mode" BEL
+        "zxnext/bus_iorq_ula" BEL "sram_port_b_read" BEL
+        "ps2_kbd_mod/data_send_rdy_s" BEL "sram_port_b_req" BEL "vsync_o" BEL
+        "db_2_noise/button_db" BEL "db_1_noise/button_db" BEL
+        "db_expbus_rst_noise/button_db" BEL "db_2_bounce/button_db" BEL
+        "db_1_bounce/button_db" BEL "db_expbus_rst/button_db" BEL
+        "m_reset_FSM_FFd1" BEL "zxnext/layer2_mod/layer2_req_t" BEL
+        "zxnext/uart1_mod/db/button_db" BEL "zxnext/uart1_mod/TX_out_o" BEL
+        "zxnext/uart1_mod/rx_byte_finished_s" BEL
+        "zxnext/uart1_mod/TX_active_o" BEL "zxnext/uart0_mod/db/button_db" BEL
+        "zxnext/uart0_mod/rx_byte_finished_s" BEL
+        "zxnext/uart0_mod/TX_active_o" BEL
+        "zxnext/sprite_mod/state_s_FSM_FFd1" BEL
+        "zxnext/sprite_mod/port5b_w_en_d" BEL "zxnext/tilemap_mod/textmode_1"
+        BEL "zxnext/tilemap_mod/textmode_0" BEL
+        "zxnext/turbosound_mod/psg0/noise_div" BEL
+        "zxnext/cpu_mod/z80n/IncDecZ" BEL
+        "zxnext/cpu_mod/z80n/reg_direct_add_H_c_2" BEL
+        "zxnext/dma_mod/dma_rd_s" BEL "zxnext/dma_mod/dma_wr_s" BEL
+        "zxnext/dma_mod/R0_dir_AtoB_s" BEL "sc_mod/blank_s" BEL
+        "zxnext/lores_vram_req" BEL "zxnext/pi_fe_ear" BEL
+        "zxnext/turbosound_mod/psg0/env_inc" BEL
+        "zxnext/turbosound_mod/psg1/env_inc" BEL
+        "zxnext/turbosound_mod/psg2/env_inc" BEL "zxnext/cpu_mod/z80n/M1_n"
+        BEL "sc_mod/p_out_ctrs.trigger" BEL "zxnext/sram_romcs" BEL
+        "zxnext/divmmc_mod/automap_hold" BEL
+        "zxnext/turbosound_mod/psg0/ena_div_noise" BEL
+        "zxnext/cpu_mod/z80n/NMICycle" BEL "zxnext/cpu_mod/z80n/BTR_r" BEL
+        "zxnext/sram_pre_active" BEL
+        "zxnext/timing_mod/lint_minus_one_v<0>_FRB" BEL
+        "zxnext/timing_mod/lint_minus_one_v<1>_FRB" BEL
+        "zxnext/timing_mod/lint_minus_one_v<2>_FRB" BEL
+        "zxnext/timing_mod/lint_minus_one_v<3>_FRB" BEL
+        "zxnext/timing_mod/lint_minus_one_v<4>_FRB" BEL
+        "zxnext/timing_mod/lint_minus_one_v<5>_FRB" BEL
+        "zxnext/timing_mod/lint_minus_one_v<6>_FRB" BEL
+        "zxnext/timing_mod/lint_minus_one_v<7>_FRB" BEL
+        "zxnext/timing_mod/lint_minus_one_v<8>_FRB" BEL
+        "btn_expbus_rst/sig_BRB0" BEL "btn_expbus_rst/sig_BRB1" BEL
+        "btn_expbus_rst/sig_BRB2" BEL "btn_expbus_rst/sig_BRB3" BEL
+        "btn_expbus_rst/sig_BRB4" BEL "btn_expbus_rst/sig_BRB5" BEL
+        "zxnext/dma_mod/cpu_d_o_4_BRB0" BEL "zxnext/dma_mod/cpu_d_o_4_BRB1"
+        BEL "zxnext/dma_mod/cpu_d_o_4_BRB2" BEL
+        "zxnext/dma_mod/cpu_d_o_4_BRB3" BEL "zxnext/dma_mod/cpu_d_o_4_BRB4"
+        BEL "zxnext/dma_mod/cpu_d_o_3_BRB0" BEL
+        "zxnext/dma_mod/cpu_d_o_3_BRB1" BEL "zxnext/dma_mod/cpu_d_o_3_BRB3"
+        BEL "zxnext/dma_mod/cpu_d_o_1_BRB0" BEL
+        "zxnext/dma_mod/cpu_d_o_1_BRB1" BEL "zxnext/dma_mod/cpu_d_o_1_BRB3"
+        BEL "bus_int_n_i_0_BRB0" BEL "esp_gpio0_i_0_BRB0" BEL
+        "esp_gpio0_i_0_BRB1" BEL "accel_i_0_2_BRB0" BEL "accel_i_0_2_BRB1" BEL
+        "accel_i_0_3_BRB0" BEL "accel_i_0_3_BRB1" BEL "accel_i_0_4_BRB0" BEL
+        "accel_i_0_4_BRB1" BEL "accel_i_0_5_BRB0" BEL "accel_i_0_5_BRB1" BEL
+        "accel_i_0_6_BRB0" BEL "accel_i_0_6_BRB1" BEL "accel_i_0_7_BRB0" BEL
+        "accel_i_0_7_BRB1" BEL "accel_i_0_8_BRB0" BEL "accel_i_0_8_BRB1" BEL
+        "accel_i_0_9_BRB0" BEL "accel_i_0_9_BRB1" BEL "accel_i_0_10_BRB0" BEL
+        "accel_i_0_10_BRB1" BEL "accel_i_0_11_BRB0" BEL "accel_i_0_11_BRB1"
+        BEL "accel_i_0_12_BRB0" BEL "accel_i_0_12_BRB1" BEL
+        "accel_i_0_13_BRB0" BEL "accel_i_0_13_BRB1" BEL "accel_i_0_14_BRB0"
+        BEL "accel_i_0_14_BRB1" BEL "accel_i_0_15_BRB0" BEL
+        "accel_i_0_15_BRB1" BEL "accel_i_0_16_BRB0" BEL "accel_i_0_16_BRB1"
+        BEL "accel_i_0_17_BRB0" BEL "accel_i_0_17_BRB1" BEL
+        "accel_i_0_18_BRB0" BEL "accel_i_0_18_BRB1" BEL "accel_i_0_19_BRB0"
+        BEL "accel_i_0_19_BRB1" BEL "accel_i_0_20_BRB0" BEL
+        "accel_i_0_20_BRB1" BEL "accel_i_0_21_BRB0" BEL "accel_i_0_21_BRB1"
+        BEL "accel_i_0_22_BRB0" BEL "accel_i_0_22_BRB1" BEL
+        "accel_i_0_23_BRB0" BEL "accel_i_0_23_BRB1" BEL "accel_i_0_24_BRB0"
+        BEL "accel_i_0_24_BRB1" BEL "accel_i_0_25_BRB0" BEL
+        "accel_i_0_25_BRB1" BEL "accel_i_0_26_BRB0" BEL "accel_i_0_26_BRB1"
+        BEL "accel_i_0_27_BRB0" BEL "accel_i_0_27_BRB1" BEL
+        "bus_data_i_0_0_BRB0" BEL "bus_data_i_0_0_BRB1" BEL
+        "bus_data_i_0_0_BRB2" BEL "bus_data_i_0_0_BRB4" BEL
+        "bus_data_i_0_1_BRB4" BEL "bus_data_i_0_2_BRB4" BEL
+        "bus_data_i_0_3_BRB4" BEL "bus_data_i_0_4_BRB4" BEL
+        "bus_data_i_0_5_BRB4" BEL "bus_data_i_0_6_BRB4" BEL
+        "bus_data_i_0_7_BRB4" BEL "btn_expbus_rst/o_signal_BRB0" BEL
+        "btn_expbus_rst/o_signal_BRB1" BEL "btn_expbus_rst/o_signal_BRB2" BEL
+        "btn_expbus_rst/o_signal_BRB3" BEL "btn_expbus_rst/o_signal_BRB4" BEL
+        "btn_expbus_rst/o_signal_BRB5" BEL "sram_oe_n_active" BEL
+        "sram_addr_active_18_1" BEL "sram_addr_active_17_1" BEL
+        "sram_addr_active_16_1" BEL "sram_addr_active_15_1" BEL
+        "sram_addr_active_14_1" BEL "sram_addr_active_13_1" BEL
+        "sram_addr_active_12_1" BEL "sram_addr_active_11_1" BEL
+        "sram_addr_active_10_1" BEL "sram_addr_active_9_1" BEL
+        "sram_addr_active_8_1" BEL "sram_addr_active_7_1" BEL
+        "sram_addr_active_6_1" BEL "sram_addr_active_5_1" BEL
+        "sram_addr_active_4_1" BEL "sram_addr_active_3_1" BEL
+        "sram_addr_active_2_1" BEL "sram_addr_active_1_1" BEL
+        "sram_addr_active_0_1" BEL "zxnext/port_e7_reg_0_1" BEL
+        "zxnext/spi_master_mod/sck_1" BEL "zxnext/spi_master_mod/shift_8_1"
+        BEL "clk_28_div_4_1" BEL "sram_oe_n_active_17" BEL
+        "sram_data_active_7" BEL "sram_oe_n_active_16" BEL
+        "sram_data_active_6" BEL "sram_oe_n_active_15" BEL
+        "sram_data_active_5" BEL "sram_oe_n_active_14" BEL
+        "sram_data_active_4" BEL "sram_oe_n_active_13" BEL
+        "sram_data_active_3" BEL "sram_oe_n_active_12" BEL
+        "sram_data_active_2" BEL "sram_oe_n_active_11" BEL
+        "sram_data_active_1" BEL "sram_oe_n_active_10" BEL
+        "sram_data_active_0" BEL "sram_oe_n_active_9" BEL
+        "sram_data_active_0_1" BEL "sram_oe_n_active_8" BEL
+        "sram_data_active_1_1" BEL "sram_oe_n_active_7" BEL
+        "sram_data_active_2_1" BEL "sram_oe_n_active_6" BEL
+        "sram_data_active_3_1" BEL "sram_oe_n_active_5" BEL
+        "sram_data_active_4_1" BEL "sram_oe_n_active_4" BEL
+        "sram_data_active_5_1" BEL "sram_oe_n_active_3" BEL
+        "sram_data_active_6_1" BEL "sram_oe_n_active_2" BEL
+        "sram_data_active_7_1" PIN
+        "zxnext/Mram_nr_wr_dat[6]_GND_123_o_wide_mux_566_OUT_pins<11>" PIN
+        "ps2_kbd_mod/keymaps/Mram_ram_q_pins<21>" PIN
+        "zxnext/copper_inst_lsb_ram/Mram_ram_q_pins<20>" PIN
+        "zxnext/copper_inst_msb_ram/Mram_ram_q_pins<20>" PIN
+        "zxnext/palette_utm/Mram_ram_q_pins<20>" PIN
+        "zxnext/palette_l2s/Mram_ram_q_pins<20>" PIN
+        "zxnext/bank7_ram/Mram_ram_q1_pins<26>" PIN
+        "zxnext/bank7_ram/Mram_ram_q2_pins<26>" PIN
+        "zxnext/bank7_ram/Mram_ram_q3_pins<26>" PIN
+        "zxnext/bank7_ram/Mram_ram_q4_pins<26>" PIN
+        "zxnext/bank5_ram/Mram_ram_q2_pins<28>" PIN
+        "zxnext/bank5_ram/Mram_ram_q1_pins<28>" PIN
+        "zxnext/bank5_ram/Mram_ram_q3_pins<28>" PIN
+        "zxnext/bank5_ram/Mram_ram_q4_pins<28>" PIN
+        "zxnext/bank5_ram/Mram_ram_q5_pins<28>" PIN
+        "zxnext/bank5_ram/Mram_ram_q6_pins<28>" PIN
+        "zxnext/bank5_ram/Mram_ram_q7_pins<28>" PIN
+        "zxnext/bank5_ram/Mram_ram_q8_pins<28>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q7_pins<29>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q6_pins<29>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q8_pins<29>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q4_pins<29>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q3_pins<29>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q5_pins<29>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q1_pins<29>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q2_pins<29>" PIN
+        "sc_mod/u_run/Mram_ram_q_pins<23>" PIN
+        "zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT4_pins<13>"
+        PIN
+        "zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT3_pins<13>"
+        PIN
+        "zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT2_pins<13>"
+        PIN
+        "zxnext/bootrom_mod/Mram_ADDR[12]_PWR_115_o_wide_mux_0_OUT1_pins<13>"
+        BEL "zxnext/tilemap_mod/tilemem/Mram_ram_q8/SP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q8/DP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q7/SP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q7/DP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q6/SP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q6/DP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q5/SP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q5/DP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q4/SP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q4/DP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q3/SP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q3/DP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q2/SP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q2/DP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q1/SP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q1/DP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q9/SP" BEL
+        "zxnext/tilemap_mod/tilemem/Mram_ram_q9/DP";
+PIN ps2_kbd_mod/keymaps/Mram_ram_q_pins<20> = BEL
+        "ps2_kbd_mod/keymaps/Mram_ram_q" PINNAME CLKAWRCLK;
+PIN zxnext/copper_inst_lsb_ram/Mram_ram_q_pins<21> = BEL
+        "zxnext/copper_inst_lsb_ram/Mram_ram_q" PINNAME CLKBRDCLK;
+PIN zxnext/copper_inst_msb_ram/Mram_ram_q_pins<21> = BEL
+        "zxnext/copper_inst_msb_ram/Mram_ram_q" PINNAME CLKBRDCLK;
+PIN zxnext/palette_utm/Mram_ram_q_pins<21> = BEL
+        "zxnext/palette_utm/Mram_ram_q" PINNAME CLKBRDCLK;
+PIN zxnext/palette_l2s/Mram_ram_q_pins<21> = BEL
+        "zxnext/palette_l2s/Mram_ram_q" PINNAME CLKB;
+PIN zxnext/bank7_ram/Mram_ram_q1_pins<27> = BEL "zxnext/bank7_ram/Mram_ram_q1"
+        PINNAME CLKB;
+PIN zxnext/bank7_ram/Mram_ram_q2_pins<27> = BEL "zxnext/bank7_ram/Mram_ram_q2"
+        PINNAME CLKB;
+PIN zxnext/bank7_ram/Mram_ram_q3_pins<27> = BEL "zxnext/bank7_ram/Mram_ram_q3"
+        PINNAME CLKB;
+PIN zxnext/bank7_ram/Mram_ram_q4_pins<27> = BEL "zxnext/bank7_ram/Mram_ram_q4"
+        PINNAME CLKB;
+PIN zxnext/bank5_ram/Mram_ram_q2_pins<29> = BEL "zxnext/bank5_ram/Mram_ram_q2"
+        PINNAME CLKB;
+PIN zxnext/bank5_ram/Mram_ram_q1_pins<29> = BEL "zxnext/bank5_ram/Mram_ram_q1"
+        PINNAME CLKB;
+PIN zxnext/bank5_ram/Mram_ram_q3_pins<29> = BEL "zxnext/bank5_ram/Mram_ram_q3"
+        PINNAME CLKB;
+PIN zxnext/bank5_ram/Mram_ram_q4_pins<29> = BEL "zxnext/bank5_ram/Mram_ram_q4"
+        PINNAME CLKB;
+PIN zxnext/bank5_ram/Mram_ram_q5_pins<29> = BEL "zxnext/bank5_ram/Mram_ram_q5"
+        PINNAME CLKB;
+PIN zxnext/bank5_ram/Mram_ram_q6_pins<29> = BEL "zxnext/bank5_ram/Mram_ram_q6"
+        PINNAME CLKB;
+PIN zxnext/bank5_ram/Mram_ram_q7_pins<29> = BEL "zxnext/bank5_ram/Mram_ram_q7"
+        PINNAME CLKB;
+PIN zxnext/bank5_ram/Mram_ram_q8_pins<29> = BEL "zxnext/bank5_ram/Mram_ram_q8"
+        PINNAME CLKB;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q7_pins<28> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q7" PINNAME CLKA;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q6_pins<28> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q6" PINNAME CLKA;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q8_pins<28> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q8" PINNAME CLKA;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q4_pins<28> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q4" PINNAME CLKA;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q3_pins<28> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q3" PINNAME CLKA;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q5_pins<28> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q5" PINNAME CLKA;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q1_pins<28> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q1" PINNAME CLKA;
+PIN zxnext/sprite_mod/pattern/Mram_ram_q2_pins<28> = BEL
+        "zxnext/sprite_mod/pattern/Mram_ram_q2" PINNAME CLKA;
+PIN zxnext/sprite_mod/linebuf0/Mram_ram_q_pins<10> = BEL
+        "zxnext/sprite_mod/linebuf0/Mram_ram_q" PINNAME CLKAWRCLK;
+PIN zxnext/sprite_mod/linebuf1/Mram_ram_q_pins<10> = BEL
+        "zxnext/sprite_mod/linebuf1/Mram_ram_q" PINNAME CLKAWRCLK;
+TIMEGRP CLK_28_n = BEL "ps2_kbd_mod/keymaps/data_o_0" BEL
+        "ps2_kbd_mod/keymaps/data_o_1" BEL "ps2_kbd_mod/keymaps/data_o_2" BEL
+        "ps2_kbd_mod/keymaps/data_o_3" BEL "ps2_kbd_mod/keymaps/data_o_4" BEL
+        "ps2_kbd_mod/keymaps/data_o_5" BEL "ps2_kbd_mod/keymaps/data_o_6" BEL
+        "ps2_kbd_mod/keymaps/data_o_7" BEL "zxnext/ula_bank5_do_0" BEL
+        "zxnext/ula_bank5_do_1" BEL "zxnext/ula_bank5_do_2" BEL
+        "zxnext/ula_bank5_do_3" BEL "zxnext/ula_bank5_do_4" BEL
+        "zxnext/ula_bank5_do_5" BEL "zxnext/ula_bank5_do_6" BEL
+        "zxnext/ula_bank5_do_7" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_13" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_12" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_11" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_10" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_9" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_8" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_7" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_6" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_5" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_4" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_3" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_2" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_1" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_addr_0" BEL
+        "zxnext/sprite_mod/spr_cur_hcount_8" BEL
+        "zxnext/sprite_mod/spr_cur_hcount_7" BEL
+        "zxnext/sprite_mod/spr_cur_hcount_6" BEL
+        "zxnext/sprite_mod/spr_cur_hcount_5" BEL
+        "zxnext/sprite_mod/spr_cur_hcount_4" BEL
+        "zxnext/sprite_mod/spr_cur_hcount_3" BEL
+        "zxnext/sprite_mod/spr_cur_hcount_2" BEL
+        "zxnext/sprite_mod/spr_cur_hcount_1" BEL
+        "zxnext/sprite_mod/spr_cur_hcount_0" BEL
+        "zxnext/sprite_mod/anchor_pattern_6" BEL
+        "zxnext/sprite_mod/anchor_pattern_5" BEL
+        "zxnext/sprite_mod/anchor_pattern_4" BEL
+        "zxnext/sprite_mod/anchor_pattern_3" BEL
+        "zxnext/sprite_mod/anchor_pattern_2" BEL
+        "zxnext/sprite_mod/anchor_pattern_1" BEL
+        "zxnext/sprite_mod/anchor_pattern_0" BEL
+        "zxnext/sprite_mod/spr_cur_index_6" BEL
+        "zxnext/sprite_mod/spr_cur_index_5" BEL
+        "zxnext/sprite_mod/spr_cur_index_4" BEL
+        "zxnext/sprite_mod/spr_cur_index_3" BEL
+        "zxnext/sprite_mod/spr_cur_index_2" BEL
+        "zxnext/sprite_mod/spr_cur_index_1" BEL
+        "zxnext/sprite_mod/spr_cur_index_0" BEL
+        "zxnext/sprite_mod/spr_cur_yoff_4" BEL
+        "zxnext/sprite_mod/spr_cur_yoff_3" BEL
+        "zxnext/sprite_mod/spr_cur_yoff_2" BEL
+        "zxnext/sprite_mod/spr_cur_yoff_1" BEL
+        "zxnext/sprite_mod/spr_cur_yoff_0" BEL "zxnext/sprite_mod/anchor_x_8"
+        BEL "zxnext/sprite_mod/anchor_x_7" BEL "zxnext/sprite_mod/anchor_x_6"
+        BEL "zxnext/sprite_mod/anchor_x_5" BEL "zxnext/sprite_mod/anchor_x_4"
+        BEL "zxnext/sprite_mod/anchor_x_3" BEL "zxnext/sprite_mod/anchor_x_2"
+        BEL "zxnext/sprite_mod/anchor_x_1" BEL "zxnext/sprite_mod/anchor_x_0"
+        BEL "zxnext/sprite_mod/spr_cur_paloff_3" BEL
+        "zxnext/sprite_mod/spr_cur_paloff_2" BEL
+        "zxnext/sprite_mod/spr_cur_paloff_1" BEL
+        "zxnext/sprite_mod/spr_cur_paloff_0" BEL
+        "zxnext/sprite_mod/anchor_y_8" BEL "zxnext/sprite_mod/anchor_y_7" BEL
+        "zxnext/sprite_mod/anchor_y_6" BEL "zxnext/sprite_mod/anchor_y_5" BEL
+        "zxnext/sprite_mod/anchor_y_4" BEL "zxnext/sprite_mod/anchor_y_3" BEL
+        "zxnext/sprite_mod/anchor_y_2" BEL "zxnext/sprite_mod/anchor_y_1" BEL
+        "zxnext/sprite_mod/anchor_y_0" BEL "zxnext/sprite_mod/anchor_rotate"
+        BEL "zxnext/sprite_mod/anchor_xmirror" BEL
+        "zxnext/sprite_mod/anchor_yscale_1" BEL
+        "zxnext/sprite_mod/anchor_yscale_0" BEL
+        "zxnext/sprite_mod/anchor_ymirror" BEL
+        "zxnext/sprite_mod/anchor_xscale_1" BEL
+        "zxnext/sprite_mod/anchor_xscale_0" BEL
+        "zxnext/sprite_mod/anchor_paloff_3" BEL
+        "zxnext/sprite_mod/anchor_paloff_2" BEL
+        "zxnext/sprite_mod/anchor_paloff_1" BEL
+        "zxnext/sprite_mod/anchor_paloff_0" BEL
+        "zxnext/sprite_mod/spr_width_count_7" BEL
+        "zxnext/sprite_mod/spr_width_count_6" BEL
+        "zxnext/sprite_mod/spr_width_count_5" BEL
+        "zxnext/sprite_mod/spr_width_count_4" BEL
+        "zxnext/sprite_mod/spr_width_count_3" BEL
+        "zxnext/sprite_mod/spr_width_count_2" BEL
+        "zxnext/sprite_mod/spr_width_count_1" BEL
+        "zxnext/sprite_mod/spr_width_count_0" BEL
+        "zxnext/sprite_mod/spr_cur_4bit_0" BEL
+        "zxnext/sprite_mod/spr_cur_visible" BEL
+        "zxnext/sprite_mod/status_reg_read_1" BEL
+        "zxnext/sprite_mod/status_reg_read_0" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_delta_5" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_delta_4" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_delta_1" BEL
+        "zxnext/sprite_mod/spr_cur_pattern_delta_0" BEL
+        "zxnext/sprite_mod/spr_cur_x_wrap_3" BEL
+        "zxnext/sprite_mod/spr_cur_x_wrap_2" BEL
+        "zxnext/sprite_mod/spr_cur_x_wrap_1" BEL
+        "zxnext/sprite_mod/spr_cur_x_wrap_0" BEL
+        "zxnext/sprite_mod/status_reg_s_1" BEL
+        "zxnext/sprite_mod/status_reg_s_0" BEL
+        "zxnext/sprite_mod/spr_width_count_delta_3" BEL
+        "zxnext/sprite_mod/spr_width_count_delta_2" BEL
+        "zxnext/sprite_mod/spr_width_count_delta_1" BEL
+        "zxnext/sprite_mod/spr_width_count_delta_0" BEL
+        "zxnext/tilemap_mod/tm_mem_ack_d" BEL "zxnext/sprite_mod/anchor_vis"
+        BEL "zxnext/ula_bank5_req_dly" BEL "zxnext/ula_bank5_sched_dly" BEL
+        "zxnext/sprite_mod/spr_cur_4bit_1" BEL
+        "zxnext/sprite_mod/anchor_rel_type" PIN
+        "ps2_kbd_mod/keymaps/Mram_ram_q_pins<20>" PIN
+        "zxnext/copper_inst_lsb_ram/Mram_ram_q_pins<21>" PIN
+        "zxnext/copper_inst_msb_ram/Mram_ram_q_pins<21>" PIN
+        "zxnext/palette_utm/Mram_ram_q_pins<21>" PIN
+        "zxnext/palette_l2s/Mram_ram_q_pins<21>" PIN
+        "zxnext/bank7_ram/Mram_ram_q1_pins<27>" PIN
+        "zxnext/bank7_ram/Mram_ram_q2_pins<27>" PIN
+        "zxnext/bank7_ram/Mram_ram_q3_pins<27>" PIN
+        "zxnext/bank7_ram/Mram_ram_q4_pins<27>" PIN
+        "zxnext/bank5_ram/Mram_ram_q2_pins<29>" PIN
+        "zxnext/bank5_ram/Mram_ram_q1_pins<29>" PIN
+        "zxnext/bank5_ram/Mram_ram_q3_pins<29>" PIN
+        "zxnext/bank5_ram/Mram_ram_q4_pins<29>" PIN
+        "zxnext/bank5_ram/Mram_ram_q5_pins<29>" PIN
+        "zxnext/bank5_ram/Mram_ram_q6_pins<29>" PIN
+        "zxnext/bank5_ram/Mram_ram_q7_pins<29>" PIN
+        "zxnext/bank5_ram/Mram_ram_q8_pins<29>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q7_pins<28>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q6_pins<28>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q8_pins<28>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q4_pins<28>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q3_pins<28>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q5_pins<28>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q1_pins<28>" PIN
+        "zxnext/sprite_mod/pattern/Mram_ram_q2_pins<28>" PIN
+        "zxnext/sprite_mod/linebuf0/Mram_ram_q_pins<10>" PIN
+        "zxnext/sprite_mod/linebuf1/Mram_ram_q_pins<10>" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q8/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q8/SP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q8/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q8/DP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q7/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q7/SP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q7/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q7/DP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q5/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q5/SP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q5/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q5/DP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q4/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q4/SP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q4/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q4/DP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q6/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q6/SP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q6/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q6/DP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q2/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q2/SP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q2/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q2/DP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q1/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q1/SP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q1/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q1/DP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q3/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q3/SP.LOW" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q3/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr0/Mram_ram_q3/DP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q8/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q8/SP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q8/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q8/DP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q7/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q7/SP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q7/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q7/DP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q6/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q6/SP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q6/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q6/DP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q5/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q5/SP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q5/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q5/DP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q3/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q3/SP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q3/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q3/DP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q2/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q2/SP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q2/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q2/DP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q4/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q4/SP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q4/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q4/DP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q8/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q8/SP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q8/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q8/DP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q7/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q7/SP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q7/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q7/DP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q1/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q1/SP.LOW" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q1/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr1/Mram_ram_q1/DP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q5/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q5/SP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q5/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q5/DP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q4/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q4/SP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q4/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q4/DP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q6/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q6/SP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q6/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q6/DP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q2/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q2/SP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q2/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q2/DP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q1/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q1/SP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q1/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q1/DP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q3/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q3/SP.LOW" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q3/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr2/Mram_ram_q3/DP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q7/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q7/SP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q7/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q7/DP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q6/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q6/SP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q6/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q6/DP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q8/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q8/SP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q8/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q8/DP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q4/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q4/SP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q4/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q4/DP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q3/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q3/SP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q3/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q3/DP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q5/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q5/SP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q5/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q5/DP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q1/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q1/SP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q1/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q1/DP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q8/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q8/SP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q8/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q8/DP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q2/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q2/SP.LOW" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q2/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr3/Mram_ram_q2/DP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q7/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q7/SP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q7/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q7/DP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q6/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q6/SP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q6/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q6/DP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q5/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q5/SP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q5/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q5/DP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q4/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q4/SP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q4/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q4/DP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q2/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q2/SP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q2/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q2/DP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q1/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q1/SP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q1/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q1/DP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q3/SP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q3/SP.LOW" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q3/DP.HIGH" BEL
+        "zxnext/sprite_mod/attr4/Mram_ram_q3/DP.LOW";
+NET "CLK_7" PERIOD = 120 ns HIGH 50%;
+NET "CLK_14" PERIOD = 60 ns HIGH 50%;
+NET "clk_28_div<6>" PERIOD = 3840 ns HIGH 50%;
+NET "clk_28_div<7>" PERIOD = 7680 ns HIGH 50%;
+NET "CLK_3M5_CONT" PERIOD = 240 ns HIGH 50%;
+TIMEGRP "FFS" = FFS(*);
+TIMEGRP "PADS" = PADS(*);
+TSF2P = MAXDELAY FROM TIMEGRP "FFS" TO TIMEGRP "PADS" 26 ns;
+TS_CLK_28 = PERIOD TIMEGRP "CLK_28" 30 ns HIGH 50%;
+TS_CLK_28_n = PERIOD TIMEGRP "CLK_28_n" TS_CLK_28 PHASE 15 ns HIGH 50%;
+SCHEMATIC END;
+

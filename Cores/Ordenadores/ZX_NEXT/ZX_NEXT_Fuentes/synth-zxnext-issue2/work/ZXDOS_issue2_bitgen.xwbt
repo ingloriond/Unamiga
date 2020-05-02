@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Users\benit\Downloads\UnAmiga\ZXDos\Cores\ZX_Spectrum_Next_FPGA-master-Altera-transitiom\zxnext\synth-zxnext-issue2\work\ZXDOS_issue2.ncd
+OUTFILE=D:\Users\benit\Downloads\UnAmiga\ZXDos\Cores\ZX_Spectrum_Next_FPGA-master-Altera-transitiom\zxnext\synth-zxnext-issue2\work\ZXDOS_issue2.bit
+FAMILY=Spartan6
+PART=xc6slx16-2ftg256
+WORKINGDIR=D:\Users\benit\Downloads\UnAmiga\ZXDos\Cores\ZX_Spectrum_Next_FPGA-master-Altera-transitiom\zxnext\synth-zxnext-issue2\work
+LICENSE=WebPack
+USER_INFO=__0_0_0

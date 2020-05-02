@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Route" num="466" delta="new" >Unusually high hold time violation detected among <arg fmt="%d" index="1">88</arg> connections. The top <arg fmt="%d" index="2">20</arg> such instances are printed below. The router will continue and try to fix it
+</msg>
+
+<msg type="warning" file="ParHelpers" num="79" delta="old" >
+The following Clock signals are not routed on the dedicated
+global clock routing resources. This will usually result in
+longer delays and higher skew for the clock load pins. This could
+be the result of incorrect clock placement, more than 8 clocks
+feeding logic in a single quadrant of the device, or incorrect
+logic partitioning into the quadrant(s). Check the timing report
+to verify the delay and skew for this net
+</msg>
+
+</messages>
+

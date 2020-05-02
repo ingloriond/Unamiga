@@ -1,0 +1,54 @@
+INFO:sim:172 - Generating IP...
+Resolving generics for 'next_clocks'...
+Applying external generics to 'next_clocks'...
+Delivering associated files for 'next_clocks'...
+WARNING:sim - Component clk_wiz_v3_6 does not have a valid model name for VHDL
+   synthesis
+Delivering EJava files for 'next_clocks'...
+Delivered 3 files into directory
+D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera
+-transitiom/zxnext/synth-zxnext-issue2/ipcore_dir/tmp/_cg/next_clocks
+Delivered 1 file into directory
+D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera
+-transitiom/zxnext/synth-zxnext-issue2/ipcore_dir/tmp/_cg/next_clocks
+Generating ASY schematic symbol...
+Loading device for application Rf_Device from file '6slx16.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'next_clocks'...
+Generating ISE project...
+XCO file found: next_clocks.xco
+XMDF file found: next_clocks_xmdf.tcl
+Adding
+D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera
+-transitiom/zxnext/synth-zxnext-issue2/ipcore_dir/tmp/_cg/next_clocks.asy -view
+all -origin_type imported
+Adding
+D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera
+-transitiom/zxnext/synth-zxnext-issue2/ipcore_dir/tmp/_cg/next_clocks.ucf -view
+all -origin_type created
+Adding
+D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera
+-transitiom/zxnext/synth-zxnext-issue2/ipcore_dir/tmp/_cg/next_clocks.vhd -view
+all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Al
+   tera-transitiom/zxnext/synth-zxnext-issue2/ipcore_dir/tmp/_cg/next_clocks.vhd
+   " into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-Altera
+-transitiom/zxnext/synth-zxnext-issue2/ipcore_dir/tmp/_cg/next_clocks.vho -view
+all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/next_clocks"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'next_clocks'.

@@ -1,0 +1,2 @@
+vhdl work "../../src/ram/dpram2.vhd"
+vhdl work "../../src/video/hdmi/hdmi_frame.vhd"
