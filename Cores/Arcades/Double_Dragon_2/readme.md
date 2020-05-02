@@ -10,6 +10,8 @@
 
 #### MULTICORE: SI
 
+#### OSD: SI
+
 #### SOPORTE PAD 6 BOTONES: NO
 
 #### SALIDA DE VIDEO : VGA, 15KHZ
