@@ -8,7 +8,9 @@ portado por...
 
 #### Requerimientos:
 
-#### Módulo SRAM
+#### SRAM SI
+
+#### MULTICORE SI CORE:1.05 STM:1.08
 
 #### Los ficheros del archivo sn-complete-v1.3.zip debe de ir en la SD principal de Unamiga, no en la de STM32 ( https://www.specnext.com/latestdistro/ )
 
