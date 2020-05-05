@@ -10,7 +10,7 @@
 
 #### SRAM SI
 
-#### MULTICORE SI
+#### MULTICORE SI CORE:1.05 STM:1.08
 
 ### Intrucciones:
 
