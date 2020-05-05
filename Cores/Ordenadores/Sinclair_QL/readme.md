@@ -6,6 +6,12 @@
 
 #### Fuente imagen: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Working-Sinclair-QL.jpg/250px-Working-Sinclair-QL.jpg
 
+### Requerimientos
+
+#### SRAM SI
+
+#### MULTICORE SI
+
 ### Intrucciones:
 
 Copie en archivo .rbf y el fichero "QL.dat" en la raíz de la tarjeta SD del addon STM32.
