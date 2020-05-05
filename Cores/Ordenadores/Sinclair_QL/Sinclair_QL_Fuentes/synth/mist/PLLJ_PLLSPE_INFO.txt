@@ -1,0 +1,15 @@
+PLL_Name	pll:pll|altpll:altpll_component|pll_altpll:auto_generated|pll1
+PLLJITTER	45
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	zx8302:zx8302|ipc:ipc|pll_ipc:pll_ipc|altpll:altpll_component|pll_ipc_altpll:auto_generated|pll1
+PLLJITTER	32
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	zx8302:zx8302|pll_rtc:pll_rtc|altpll:altpll_component|pll_rtc_altpll:auto_generated|pll1
+PLLJITTER	NA
+PLLSPEmax	84
+PLLSPEmin	-53
+

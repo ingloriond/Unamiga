@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Documentacao\Eletronica\FPGA\Multicore\SRC\Multicore\Sinclair QL\synth\ZX Next Issue 2\ql.ncd
+OUTFILE=D:\Documentacao\Eletronica\FPGA\Multicore\SRC\Multicore\Sinclair QL\synth\ZX Next Issue 2\ql.bit
+FAMILY=Spartan6
+PART=xc6slx16-2ftg256
+WORKINGDIR=D:\Documentacao\Eletronica\FPGA\Multicore\SRC\Multicore\Sinclair QL\synth\ZX Next Issue 2
+LICENSE=WebPack
+USER_INFO=206335900_0_0_917
