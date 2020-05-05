@@ -6,7 +6,6 @@ La versión unamiga proviene del port a multicore 2 realizado por Victor Trucco.
 #### Fuente imagen: https://commons.wikimedia.org/wiki/File:Amstrad_CPC464_keyboard.jpg
 
 ### Intrucciones:
-Atención, algunos teclados no funcionan.
 
 Descomprima y copie en archivo .rbf y el fichero "Amstrad.dat" en la raíz de la tarjeta SD del addon STM32.
 
@@ -35,4 +34,7 @@ El reproductor comienza a reproducir audio automáticamente 15 a 30 segundos des
 Se adjunta en formato RBF,MC2 para el multicore y SOF.: Amstrad_VGA inicia primero en modo VGA yAmstrad_15khz inicia en RGB
 Requiere el archivo Amstrad.dat en la tarjeta SD del addon STM32.
 
-Edit: No tiene implementado el soporte para joystick.
+Commandos Básicos:
+
+cat -- ver contenido del disco
+run" -- mas nombre garga del juego 
