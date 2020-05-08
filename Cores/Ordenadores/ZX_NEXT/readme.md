@@ -1,7 +1,7 @@
-# Core ZX NEXT para Unamiga
+# Core ZX NEXT para Unamiga(+EAR)
 portado por...
 ### Fernando Mosquera ( https://github.com/benitoss )
-
+## Añadido soporte para EAR en el pin RX del Unamiga
 ![ZXnext](https://user-images.githubusercontent.com/31018768/80793839-80c67100-8b98-11ea-9f41-6a14665c122c.jpg)
 
 (imagen de https://www.specnext.com/ )
