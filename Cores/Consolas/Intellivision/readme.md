@@ -4,6 +4,8 @@
 del port de Victor Trucco  proviniente de mister Grabulosaure 
 -- https://github.com/Grabulosaure/Intv_MiSTer
 
+![photo_2020-05-09_21-15-42](https://user-images.githubusercontent.com/31018768/81484021-9dbb0e00-9242-11ea-930c-2c17dd9b6718.jpg)
+
 #### Requerimientos:
 
 #### Mod 6 botones
@@ -16,7 +18,7 @@ PS/2 keyboard:
 
 - Teclas 1 a 0 para los números en el joystick de Intellivision
 
-- Keypad (or an external keypad) can be used. ATTENTION! Inverted rows to match the intellivision positions. "789" on keypad are "123" on Intellivision joystick, "456" are the same and "123" is "789". Keypad "0" is the clear key and keypad "." is the "0" key.
+- Se puede usar el teclado (o un teclado externo). ¡ATENCIÓN! Filas invertidas para que coincidan con las posiciones de intellivision. "789" en el teclado son "123" en el joystick de Intellivision, "456" son lo mismo y "123" es "789". Keypad "0" la tecla clear  y keypad "." es la tecla "0".
 
 - Cambio entre RGB y VGA con tecla BLOQ DESPL.
 
