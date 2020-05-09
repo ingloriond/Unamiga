@@ -1,0 +1,218 @@
+# --------------------------------------------------------------------------
+#
+# MiSTer project
+#
+# WARNING WARNING WARNING:
+# Do not add files to project in Quartus IDE! It will mess this file!
+# Add the files manually to files.qip file.
+#
+# --------------------------------------------------------------------------
+
+set_global_assignment -name TOP_LEVEL_ENTITY Intv_mc
+
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+
+set_global_assignment -name GENERATE_RBF_FILE ON
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name SAVE_DISK_SPACE OFF
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS OFF
+set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING OFF
+set_global_assignment -name FINAL_PLACEMENT_OPTIMIZATION ALWAYS
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+
+set_global_assignment -name ALLOW_POWER_UP_DONT_CARE ON
+
+set_global_assignment -name ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING ON
+set_global_assignment -name OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name MUX_RESTRUCTURE ON
+set_global_assignment -name REMOVE_REDUNDANT_LOGIC_CELLS ON
+set_global_assignment -name AUTO_DELAY_CHAINS_FOR_HIGH_FANOUT_INPUT_PINS ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA ON
+set_global_assignment -name ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP ON
+set_global_assignment -name SYNTH_GATED_CLOCK_CONVERSION ON
+set_global_assignment -name PRE_MAPPING_RESYNTHESIS ON
+set_global_assignment -name ROUTER_CLOCKING_TOPOLOGY_ANALYSIS ON
+set_global_assignment -name ECO_OPTIMIZE_TIMING ON
+
+set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ON
+set_global_assignment -name ALM_REGISTER_PACKING_EFFORT LOW
+set_global_assignment -name PLACEMENT_EFFORT_MULTIPLIER 2.0
+set_global_assignment -name SEED 3
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE10E22C8
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+
+
+set_location_assignment PIN_104 -to sd_cs_n_o
+set_location_assignment PIN_103 -to sd_miso_i
+set_location_assignment PIN_105 -to sd_mosi_o
+set_location_assignment PIN_101 -to sd_sclk_o
+set_location_assignment PIN_141 -to dac_l_o
+set_location_assignment PIN_115 -to dac_r_o
+set_location_assignment PIN_119 -to ear_i
+set_location_assignment PIN_72 -to joy1_down_i
+set_location_assignment PIN_68 -to joy1_left_i
+set_location_assignment PIN_100 -to joy1_p6_io
+set_location_assignment PIN_70 -to joy1_p7_o
+set_location_assignment PIN_64 -to joy1_p9_io
+set_location_assignment PIN_66 -to joy1_right_i
+set_location_assignment PIN_99 -to joy1_up_i
+set_location_assignment PIN_53 -to joy2_down_i
+set_location_assignment PIN_49 -to joy2_left_i
+set_location_assignment PIN_55 -to joy2_p6_io
+set_location_assignment PIN_51 -to joy2_p7_o
+set_location_assignment PIN_42 -to joy2_p9_io
+set_location_assignment PIN_44 -to joy2_right_i
+set_location_assignment PIN_59 -to joy2_up_i
+set_location_assignment PIN_114 -to mic_o
+set_location_assignment PIN_31 -to ps2_clk_io
+set_location_assignment PIN_33 -to ps2_data_io
+set_location_assignment PIN_30 -to ps2_mouse_clk_io
+set_location_assignment PIN_28 -to ps2_mouse_data_io
+set_location_assignment PIN_32 -to sram_addr_o[18]
+set_location_assignment PIN_34 -to sram_addr_o[17]
+set_location_assignment PIN_39 -to sram_addr_o[16]
+set_location_assignment PIN_43 -to sram_addr_o[15]
+set_location_assignment PIN_60 -to sram_addr_o[14]
+set_location_assignment PIN_65 -to sram_addr_o[13]
+set_location_assignment PIN_67 -to sram_addr_o[12]
+set_location_assignment PIN_69 -to sram_addr_o[11]
+set_location_assignment PIN_71 -to sram_addr_o[10]
+set_location_assignment PIN_106 -to sram_addr_o[9]
+set_location_assignment PIN_111 -to sram_addr_o[8]
+set_location_assignment PIN_121 -to sram_addr_o[7]
+set_location_assignment PIN_120 -to sram_addr_o[6]
+set_location_assignment PIN_125 -to sram_addr_o[5]
+set_location_assignment PIN_142 -to sram_addr_o[4]
+set_location_assignment PIN_1 -to sram_addr_o[3]
+set_location_assignment PIN_2 -to sram_addr_o[2]
+set_location_assignment PIN_3 -to sram_addr_o[1]
+set_location_assignment PIN_7 -to sram_addr_o[0]
+set_location_assignment PIN_50 -to sram_data_io[7]
+set_location_assignment PIN_52 -to sram_data_io[6]
+set_location_assignment PIN_54 -to sram_data_io[5]
+set_location_assignment PIN_58 -to sram_data_io[4]
+set_location_assignment PIN_127 -to sram_data_io[3]
+set_location_assignment PIN_126 -to sram_data_io[2]
+set_location_assignment PIN_129 -to sram_data_io[1]
+set_location_assignment PIN_128 -to sram_data_io[0]
+set_location_assignment PIN_124 -to sram_we_n_o
+set_location_assignment PIN_46 -to sram_oe_n_o
+set_location_assignment PIN_136 -to sram_ce_n_o[1]
+set_location_assignment PIN_138 -to sram_ce_n_o[0]
+set_location_assignment PIN_91 -to btn_n_i[4]
+set_location_assignment PIN_89 -to btn_n_i[3]
+set_location_assignment PIN_88 -to btn_n_i[2]
+set_location_assignment PIN_90 -to btn_n_i[1]
+set_location_assignment PIN_86 -to btn_oe_n_i
+set_location_assignment PIN_87 -to btn_clr_n_i
+set_location_assignment PIN_23 -to clock_50_i
+set_location_assignment PIN_73 -to leds_n_o[7]
+set_location_assignment PIN_74 -to leds_n_o[6]
+set_location_assignment PIN_75 -to leds_n_o[5]
+set_location_assignment PIN_76 -to leds_n_o[4]
+set_location_assignment PIN_77 -to leds_n_o[3]
+set_location_assignment PIN_83 -to leds_n_o[2]
+set_location_assignment PIN_84 -to leds_n_o[1]
+set_location_assignment PIN_85 -to leds_n_o[0]
+set_location_assignment PIN_144 -to vga_b_o[2]
+set_location_assignment PIN_143 -to vga_b_o[1]
+set_location_assignment PIN_38 -to vga_b_o[0]
+set_location_assignment PIN_132 -to vga_g_o[2]
+set_location_assignment PIN_135 -to vga_g_o[1]
+set_location_assignment PIN_137 -to vga_g_o[0]
+set_location_assignment PIN_10 -to vga_hsync_n_o
+set_location_assignment PIN_112 -to vga_r_o[2]
+set_location_assignment PIN_113 -to vga_r_o[1]
+set_location_assignment PIN_133 -to vga_r_o[0]
+set_location_assignment PIN_11 -to vga_vsync_n_o
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy1_down_i
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy1_left_i
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy1_p6_io
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy1_p9_io
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy1_right_i
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy1_up_i
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy2_down_i
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy2_left_i
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy2_p6_io
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy2_p9_io
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy2_right_i
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to joy2_up_i
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to dac_l_o
+set_instance_assignment -name CURRENT_STRENGTH_NEW 16MA -to dac_r_o
+
+
+
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_1993
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION OFF
+set_global_assignment -name FORCE_CONFIGURATION_VCCIO ON
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+
+
+
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to ps2_clk_io
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to ps2_data_io
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to ps2_mouse_clk_io
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to ps2_mouse_data_io
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to sd_miso_i
+set_global_assignment -name SDC_FILE constrains.sdc
+set_global_assignment -name VHDL_FILE ../../src/intv/intv_mc.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/dpram2.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/CtrlModule/RTL/interrupt_controller.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/CtrlModule/RTL/spi.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/CtrlModule/RTL/io_ps2_com.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/CtrlModule/CharROM/CharROM_ROM.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/CtrlModule/RTL/DualPortRAM_2RW_1Clock_Unreg.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/CtrlModule/RTL/OnScreenDisplay.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/CtrlModule/Firmware/CtrlROM_ROM.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/ZPUFlex/RTL/zpupkg.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/CtrlModule/RTL/OSD_Overlay.vhd
+set_global_assignment -name VHDL_FILE ../../CtrlModule/CtrlModule/RTL/CtrlModule.vhd
+set_global_assignment -name VHDL_FILE ../../../common/io_ps2_keyboard.vhd
+set_global_assignment -name VHDL_FILE ../../../common/kbd_joystick.vhd
+set_global_assignment -name VERILOG_FILE ../../common/data_io.v
+set_global_assignment -name VERILOG_FILE ../../common/scandoubler.v
+set_global_assignment -name SYSTEMVERILOG_FILE ../../common/rgb2ypbpr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../common/cofi.sv
+set_global_assignment -name VHDL_FILE pll.vhd
+set_global_assignment -name VERILOG_FILE ../../common/osd.v
+set_global_assignment -name VERILOG_FILE ../../common/mist_video.v
+set_global_assignment -name VHDL_FILE ../../common/dac.vhd
+set_global_assignment -name VHDL_FILE ../../src/intv/stic.vhd
+set_global_assignment -name VHDL_FILE ../../src/intv/snd.vhd
+set_global_assignment -name VHDL_FILE ../../src/intv/rom_pack.vhd
+set_global_assignment -name VHDL_FILE ../../src/intv/ivoice.vhd
+set_global_assignment -name VHDL_FILE ../../src/intv/cp1610_pack.vhd
+set_global_assignment -name VHDL_FILE ../../src/intv/cp1610.vhd
+set_global_assignment -name VHDL_FILE ../../src/base/ovo.vhd
+set_global_assignment -name VHDL_FILE ../../src/base/base_pack.vhd
+set_global_assignment -name CDF_FILE jtag.cdf
+set_global_assignment -name CDF_FILE output_files/Chain2.cdf
+set_global_assignment -name CDF_FILE output_files/Intv.cdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

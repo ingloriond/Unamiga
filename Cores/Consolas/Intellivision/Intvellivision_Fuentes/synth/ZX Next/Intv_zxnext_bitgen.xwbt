@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Documentacao\Eletronica\FPGA\Multicore\SRC\Multicore\Intv\synth\ZX Next\Intv_zxnext.ncd
+OUTFILE=D:\Documentacao\Eletronica\FPGA\Multicore\SRC\Multicore\Intv\synth\ZX Next\Intv_zxnext.bit
+FAMILY=Automotive Spartan6
+PART=xa6slx16-2ftg256
+WORKINGDIR=D:\Documentacao\Eletronica\FPGA\Multicore\SRC\Multicore\Intv\synth\ZX Next
+LICENSE=WebPack
+USER_INFO=206335900_0_0_917
