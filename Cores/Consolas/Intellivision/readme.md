@@ -1,6 +1,8 @@
 # Intellivision
 
-## port por Jose Manuel @delgrom del port de Victor trucco proviniente de mister
+## port por Jose Manuel @delgrom 
+del port de Victor Trucco  proviniente de mister Grabulosaure 
+-- https://github.com/Grabulosaure/Intv_MiSTer
 
 #### Requerimientos:
 
