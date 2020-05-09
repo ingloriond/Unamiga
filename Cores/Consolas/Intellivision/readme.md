@@ -6,13 +6,13 @@ del port de Victor Trucco  proviniente de mister Grabulosaure
 
 ![photo_2020-05-09_21-15-42](https://user-images.githubusercontent.com/31018768/81484021-9dbb0e00-9242-11ea-930c-2c17dd9b6718.jpg)
 
-#### Requerimientos:
+### Requerimientos:
 
 #### Mod 6 botones
 
 #### Multicore : SI (STM32)
 
-PS/2 keyboard:
+#### PS/2 keyboard:
 
 - Feclas para las direcciones y B, N, M (or Space, CTRL and ALT) para botones de disparo. 
 
