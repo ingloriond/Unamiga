@@ -1,5 +1,3 @@
-
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -11,13 +9,13 @@ entity top is
 		clock_50_i			: in    std_logic;
 
 		-- Buttons
-		btn_n_i				: in    std_logic_vector(4 downto 1);
+		--btn_n_i				: in    std_logic_vector(4 downto 1);
 
 		-- SRAMs (AS7C34096)
 		sram_addr_o			: out   std_logic_vector(18 downto 0)	:= (others => '0');
 		sram_data_io		: inout std_logic_vector(7 downto 0)	:= (others => 'Z');
 		sram_we_n_o			: out   std_logic								:= '1';
-		sram_oe_n_o			: out   std_logic								:= '1';
+		--sram_oe_n_o			: out   std_logic								:= '1';
 		
 		-- SDRAM	(H57V256)
 		SDRAM_A				: out std_logic_vector(12 downto 0);
@@ -59,13 +57,13 @@ entity top is
 		joy2_right_i		: in    std_logic;
 		joy2_p6_i			: in    std_logic;
 		joy2_p9_i			: in    std_logic;
-		joyX_p7_o			: out   std_logic								:= '1';
+		--joyX_p7_o			: out   std_logic								:= '1';
 
 		-- Audio
 		AUDIO_L				: out   std_logic								:= '0';
 		AUDIO_R				: out   std_logic								:= '0';
-		ear_i					: in    std_logic;
-		mic_o					: out   std_logic								:= '0';
+		--ear_i					: in    std_logic;
+		--mic_o					: out   std_logic								:= '0';
 
 		-- VGA
 		VGA_R					: out   std_logic_vector(4 downto 0)	:= (others => '0');
@@ -80,6 +78,7 @@ entity top is
 		--STM32
 		stm_rx_o				: out std_logic		:= 'Z'; -- stm RX pin, so, is OUT on the slave
 		stm_tx_i				: in  std_logic		:= 'Z'; -- stm TX pin, so, is IN on the slave
+		-- 
 		stm_rst_o			: out std_logic		:= 'Z'; -- '0' to hold the microcontroller reset line, to free the SD card
 		
 		--stm_a15_io			: inout std_logic;
@@ -111,27 +110,78 @@ architecture Behavior of top is
         return answer; 
     end function; 
 
-	component vga is
+--	component vga is
+--	port
+--	(
+--		-- pixel clock
+--		pclk			: in std_logic;
+--
+--		-- enable/disable scanlines
+--		scanlines	: in std_logic;
+--		
+--		-- output to VGA screen
+--		hs	: out std_logic;
+--		vs	: out std_logic;
+--		r	: out std_logic_vector(3 downto 0);
+--		g	: out std_logic_vector(3 downto 0);
+--		b	: out std_logic_vector(3 downto 0);
+--		blank : out std_logic
+--		
+--		--debug
+--		--joy_i	: in std_logic_vector(11 downto 0)
+--	);
+--	end component;
+	
+	component rgb_mist is
 	port
 	(
 		-- pixel clock
 		pclk			: in std_logic;
 
 		-- enable/disable scanlines
-		scanlines	: in std_logic;
-		
+		--scanlines	: in std_logic;
+		white_noise	: in std_logic;
 		-- output to VGA screen
 		hs	: out std_logic;
 		vs	: out std_logic;
 		r	: out std_logic_vector(3 downto 0);
 		g	: out std_logic_vector(3 downto 0);
-		b	: out std_logic_vector(3 downto 0);
-		blank : out std_logic
+		b	: out std_logic_vector(3 downto 0)
+		--blank : out std_logic
 		
 		--debug
 		--joy_i	: in std_logic_vector(11 downto 0)
 	);
 	end component;
+	
+	   component scandoubler is
+	port
+	(
+		-- pixel clock
+		clk_x2		: in std_logic;
+		clk_pix		: in std_logic;
+		
+		scanlines	: in std_logic_vector(1 downto 0);
+      scandoubler_disable : in std_logic;
+		-- enable/disable scanlines 
+		--scanlines	: in std_logic;
+		
+		-- output to VGA screen
+		hs_in		: in std_logic;
+		vs_in		: in std_logic;
+		r_in		: in std_logic_vector(5 downto 0);
+		g_in		: in std_logic_vector(5 downto 0);
+		b_in		: in std_logic_vector(5 downto 0);
+		
+		hs_out	: out std_logic;
+		vs_out	: out std_logic;
+		r_out		: out std_logic_vector(5 downto 0);
+		g_out		: out std_logic_vector(5 downto 0);
+		b_out		: out std_logic_vector(5 downto 0)
+		
+	);
+	end component;	
+
 	
 	component osd is
 	generic
@@ -180,82 +230,88 @@ architecture Behavior of top is
 	);
 	end component;
 	
-	component top_test_mc2 is
-	port
-	(
-		clk100				: in  std_logic;
-		clk100n				: in  std_logic;
-		clk25					: in  std_logic;
-		pll_locked			: in  std_logic;
-		
-		sram_addr_o  		: out std_logic_vector(18 downto 0);
-		sram_data_io		: inout std_logic_vector(7 downto 0);
-		sram_we_n_o			: out std_logic;
-		sram_oe_n_o			: out std_logic;
-			
-		SDRAM_A				: out std_logic_vector(12 downto 0);
-		SDRAM_BA				: out std_logic_vector(1 downto 0);
-		SDRAM_DQ 			: inout std_logic_vector(15 downto 0);
-		SDRAM_DQMH			: out std_logic;
-		SDRAM_DQML			: out std_logic;
-		SDRAM_CKE			: out std_logic;
-		SDRAM_nCS			: out std_logic;
-		SDRAM_nWE			: out std_logic;
-		SDRAM_nRAS			: out std_logic;
-		SDRAM_nCAS			: out std_logic;
-		SDRAM_CLK			: out std_logic;
 
-		ps2_clk_io			: inout std_logic;
-		ps2_data_io			: inout std_logic;
-		ps2_mouse_clk_io  : inout std_logic;
-		ps2_mouse_data_io : inout std_logic;
 
-		sd_cs_n_o			: out std_logic;
-		sd_sclk_o			: out std_logic;
-		sd_mosi_o			: out std_logic;
-		sd_miso_i			: in  std_logic;
-
-		joy1_up_i			: inout std_logic;
-		joy1_down_i			: inout std_logic;
-		joy1_left_i			: in  std_logic;
-		joy1_right_i		: in  std_logic;
-		joy1_p6_i			: in  std_logic;
-		joy1_p9_i			: in  std_logic;
-		joy2_up_i			: inout std_logic;
-		joy2_down_i			: inout std_logic;
-		joy2_left_i			: in  std_logic;
-		joy2_right_i		: in  std_logic;
-		joy2_p6_i			: in  std_logic;
-		joy2_p9_i			: in  std_logic;
-		joyX_p7_o			: out std_logic;
-
-		AUDIO_L				: out std_logic;
-		AUDIO_R 				: out std_logic;
-
-		VGA_R 				: out std_logic_vector(4 downto 0);
-		VGA_G 				: out std_logic_vector(4 downto 0);
-		VGA_B 				: out std_logic_vector(4 downto 0);
-		VGA_HS 				: out std_logic;
-		VGA_VS				: out std_logic;
-		VGA_BLANK			: out std_logic;
-		
-		stm_rst_o 			: out std_logic
-	);
-	end component;
+--	component top_test_mc2 is
+--	port
+--	(
+--		clk100				: in  std_logic;
+--		clk100n				: in  std_logic;
+--		clk25					: in  std_logic;
+--		pll_locked			: in  std_logic;
+--		
+--		sram_addr_o  		: out std_logic_vector(18 downto 0);
+--		sram_data_io		: inout std_logic_vector(7 downto 0);
+--		sram_we_n_o			: out std_logic;
+--		sram_oe_n_o			: out std_logic;
+--			
+--		SDRAM_A				: out std_logic_vector(12 downto 0);
+--		SDRAM_BA				: out std_logic_vector(1 downto 0);
+--		SDRAM_DQ 			: inout std_logic_vector(15 downto 0);
+--		SDRAM_DQMH			: out std_logic;
+--		SDRAM_DQML			: out std_logic;
+--		SDRAM_CKE			: out std_logic;
+--		SDRAM_nCS			: out std_logic;
+--		SDRAM_nWE			: out std_logic;
+--		SDRAM_nRAS			: out std_logic;
+--		SDRAM_nCAS			: out std_logic;
+--		SDRAM_CLK			: out std_logic;
+--
+--		ps2_clk_io			: inout std_logic;
+--		ps2_data_io			: inout std_logic;
+--		ps2_mouse_clk_io  : inout std_logic;
+--		ps2_mouse_data_io : inout std_logic;
+--
+--		sd_cs_n_o			: out std_logic;
+--		sd_sclk_o			: out std_logic;
+--		sd_mosi_o			: out std_logic;
+--		sd_miso_i			: in  std_logic;
+--
+--		joy1_up_i			: inout std_logic;
+--		joy1_down_i			: inout std_logic;
+--		joy1_left_i			: in  std_logic;
+--		joy1_right_i		: in  std_logic;
+--		joy1_p6_i			: in  std_logic;
+--		joy1_p9_i			: in  std_logic;
+--		joy2_up_i			: inout std_logic;
+--		joy2_down_i			: inout std_logic;
+--		joy2_left_i			: in  std_logic;
+--		joy2_right_i		: in  std_logic;
+--		joy2_p6_i			: in  std_logic;
+--		joy2_p9_i			: in  std_logic;
+--		joyX_p7_o			: out std_logic;
+--
+--		AUDIO_L				: out std_logic;
+--		AUDIO_R 				: out std_logic;
+--
+--		VGA_R 				: out std_logic_vector(4 downto 0);
+--		VGA_G 				: out std_logic_vector(4 downto 0);
+--		VGA_B 				: out std_logic_vector(4 downto 0);
+--		VGA_HS 				: out std_logic;
+--		VGA_VS				: out std_logic;
+--		VGA_BLANK			: out std_logic;
+--		
+--		stm_rst_o 			: out std_logic
+--	);
+--	end component;
 
 	-- clocks
 	signal clk100				: std_logic;		
-	signal clk100n				: std_logic;	
+	signal clk100n				: std_logic;
+	signal clock_10			: std_logic;	
+	signal clock_20			: std_logic;
 	signal pll_locked			: std_logic;	
 	signal pixel_clock		: std_logic;		
 	signal clk_dvi				: std_logic;		
 	signal pMemClk				: std_logic;		
 	signal clock_div_q		: unsigned(7 downto 0) 				:= (others => '0');	
+--	signal sega_clk			: std_logic;
 	
 	-- Reset 
 	signal reset_s				: std_logic;		-- Reset geral	
 	signal power_on_s			: std_logic_vector(7 downto 0)	:= (others => '1');
 	signal btn_reset_s		: std_logic;
+		
 	
 	-- Video
 	signal video_r_s				: std_logic_vector(3 downto 0)	:= (others => '0');
@@ -263,7 +319,7 @@ architecture Behavior of top is
 	signal video_b_s				: std_logic_vector(3 downto 0)	:= (others => '0');
 	signal video_hsync_n_s		: std_logic								:= '1';
 	signal video_vsync_n_s		: std_logic								:= '1';
-	
+  	
 	signal osd_r_s				: std_logic_vector(3 downto 0)	:= (others => '0');
 	signal osd_g_s				: std_logic_vector(3 downto 0)	:= (others => '0');
 	signal osd_b_s				: std_logic_vector(3 downto 0)	:= (others => '0');
@@ -279,6 +335,20 @@ architecture Behavior of top is
 	signal vga_hsync_n_s 		: std_logic;
 	signal vga_vsync_n_s 		: std_logic;
 	signal vga_blank_s 			: std_logic;
+	signal scandoubler_disable : std_logic								:= '0';  -- 0 = HVSync 31KHz, 1 = CSync 15KHz
+	signal white_noise_change  : std_logic								:= '0'; 
+	signal white_noise			: std_logic								:= '0';  -- 0 = Not Activated, 1 = Activated
+
+	signal vga_r_rgb				: std_logic_vector( 4 downto 0);
+	signal vga_g_rgb				: std_logic_vector( 4 downto 0);
+	signal vga_b_rgb				: std_logic_vector( 4 downto 0);
+	signal vga_hsync_n_rgb 	   : std_logic;	
+	signal vga_vsync_n_rgb 		: std_logic;
+	signal cs 						: std_logic;
+	signal hs 						: std_logic;
+	signal vs 						: std_logic;
+	
+	signal hsync_n_o : std_logic; 
 
 	-- HDMI
 	signal tdms_r_s			: std_logic_vector( 9 downto 0);
@@ -306,14 +376,13 @@ architecture Behavior of top is
 	-- keyboard
 	signal kbd_intr      : std_logic;
 	signal kbd_scancode  : std_logic_vector(7 downto 0);
-	
-	
-	signal HDMI_R  : std_logic_vector(7 downto 0);
-	signal HDMI_G  : std_logic_vector(7 downto 0);
-	signal HDMI_B  : std_logic_vector(7 downto 0);
-	signal HDMI_HS : std_logic;
-	signal HDMI_VS : std_logic;
-	signal HDMI_BL : std_logic;
+		
+--	signal HDMI_R  : std_logic_vector(7 downto 0);
+--	signal HDMI_G  : std_logic_vector(7 downto 0);
+--	signal HDMI_B  : std_logic_vector(7 downto 0);
+--	signal HDMI_HS : std_logic;
+--	signal HDMI_VS : std_logic;
+--	signal HDMI_BL : std_logic;
 				
 	----------------------------------
 	
@@ -338,7 +407,7 @@ architecture Behavior of top is
 	-- Teclas unamiga
 	signal changeScandoubler : std_logic;
 	signal esc_reset : std_logic;
-	signal f2_test : std_logic;		
+	signal f1_whitenoise : std_logic;		
 		
 begin	
 
@@ -364,11 +433,11 @@ begin
 			
 			if power_on_s /= x"00" then
 				reset_s <= '1';
-				stm_rst_o <= '0';
+				stm_rst_o <= '0'; 
 				power_on_s <= power_on_s - 1;
 			else
 				reset_s <= '0';
-				stm_rst_o <= 'Z';
+				stm_rst_o <= 'Z'; 
 			end if;
 			
 		end if;
@@ -378,28 +447,42 @@ begin
 	  port map(
 		inclk0   => clock_50_i,              
 		c0       => pixel_clock,             -- 25.200Mhz
-		c1       => clk_dvi,                 -- 126 MHz
-		c2 		=> clk100,
-		c3 		=> clk100n,
-		locked 	=> pll_locked
+		c1       => clock_10,             -- 10.000Mhz
+		c2       => clock_20              -- 20.000Mhz
 	  );
 
 	--generate a black screen with proper sync VGA timing
-	vga1 : vga 
+--	vga1 : vga 
+--	port map
+--	(
+--		pclk     => pixel_clock,
+--
+--		scanlines => '0',
+--		
+--		hs    	=> video_hsync_n_s,
+--		vs    	=> video_vsync_n_s,
+--		r     	=> video_r_s,
+--		g     	=> video_g_s,
+--		b     	=> video_b_s,
+--		blank 	=> vga_blank_s
+--		
+--	);
+	  
+	vga1 : rgb_mist 
 	port map
 	(
-		pclk     => pixel_clock,
-
-		scanlines => '0',
+		pclk     => clock_10,
 		
+		white_noise => white_noise,
+				
 		hs    	=> video_hsync_n_s,
 		vs    	=> video_vsync_n_s,
 		r     	=> video_r_s,
 		g     	=> video_g_s,
-		b     	=> video_b_s,
-		blank 	=> vga_blank_s
-		
+		b     	=> video_b_s
 	);
+
+
 	  
 
 	osd1 : osd 
@@ -413,7 +496,7 @@ begin
 	)
 	port map
 	(
-		pclk        => pixel_clock,
+		pclk        => clock_10,
 
 		-- spi for OSD
 		sdi        => SPI_DI,
@@ -442,12 +525,12 @@ begin
 	info1 : work.core_info 
 	generic map
 	(
-		xOffset => 380,
-		yOffset => 408
+		xOffset => 183, --380,
+		yOffset => 239  --408
 	)
 	port map
 	(
-		clk_i 	=> pixel_clock,
+		clk_i 	=> clock_10,
 		
 		r_i 		=> osd_r_s,
 		g_i 		=> osd_g_s,
@@ -471,12 +554,12 @@ begin
 	info2 : work.core_copyright
 	generic map
 	(
-		xOffset => 320,
-		yOffset => 420
+		xOffset => 153, --320,
+		yOffset => 246 -- 420
 	)
 	port map
 	(
-		clk_i 	=> pixel_clock,
+		clk_i 	=> clock_10,
 		
 		r_i 		=> info_r_s,
 		g_i 		=> info_g_s,
@@ -560,7 +643,7 @@ begin
 --	);
 
 
-	joystick : entity work.kbd_joystick
+	joystick : entity work.kbd_joystick_atari
 	generic map 
 	(
 		osd_cmd		=> "111"
@@ -590,11 +673,11 @@ begin
 		player2    => joy2_s,
 
 		-- sega joystick
-		sega_clk  	=>  vga_hsync_n_s,
+		sega_clk  	=>  hs, --vga_hsync_n_s,
 		sega_strobe	=> menu_joyp7_s, 
 		changeScandoubler	=> changeScandoubler, 
 		esc_reset	=> esc_reset, 
-		f2_test	=> f2_test 
+		f1_whitenoise	=> white_noise_change 
 
 	);	
 	
@@ -603,44 +686,44 @@ begin
 	---------
 	
 	-- HDMI
- 		inst_dvid: entity work.hdmi
- 		generic map (
- 			FREQ	=> 25200000,	-- pixel clock frequency 
- 			FS		=> 48000,		-- audio sample rate - should be 32000, 41000 or 48000 = 48KHz
- 			CTS	=> 25200,		-- CTS = Freq(pixclk) * N / (128 * Fs)
- 			N		=> 6144			-- N = 128 * Fs /1000,  128 * Fs /1500 <= N <= 128 * Fs /300 (Check HDMI spec 7.2 for details)
- 		) 
- 		port map (
- 			I_CLK_PIXEL		=> pixel_clock,
-			
-			I_R				=> HDMI_R,
-			I_G				=> HDMI_G,
-			I_B				=> HDMI_B,
-			I_BLANK			=> HDMI_BL,
-			I_HSYNC			=> HDMI_HS,
-			I_VSYNC			=> HDMI_VS,
-			
-			-- PCM audio
-			I_AUDIO_ENABLE	=> '1',
-			I_AUDIO_PCM_L 	=> (others=>'0'),
-			I_AUDIO_PCM_R	=> (others=>'0'),
-			-- TMDS parallel pixel synchronous outputs (serialize LSB first)
- 			O_RED				=> tdms_r_s,
-			O_GREEN			=> tdms_g_s,
-			O_BLUE			=> tdms_b_s
-		);
-		
-
-			hdmio: entity work.hdmi_out_altera
-		port map (
-			clock_pixel_i		=> pixel_clock,
-			clock_tdms_i		=> clk_dvi,
-			red_i					=> tdms_r_s,
-			green_i				=> tdms_g_s,
-			blue_i				=> tdms_b_s,
-			tmds_out_p			=> hdmi_p_s,
-			tmds_out_n			=> hdmi_n_s
-		);
+-- 		inst_dvid: entity work.hdmi
+-- 		generic map (
+-- 			FREQ	=> 25200000,	-- pixel clock frequency 
+-- 			FS		=> 48000,		-- audio sample rate - should be 32000, 41000 or 48000 = 48KHz
+-- 			CTS	=> 25200,		-- CTS = Freq(pixclk) * N / (128 * Fs)
+-- 			N		=> 6144			-- N = 128 * Fs /1000,  128 * Fs /1500 <= N <= 128 * Fs /300 (Check HDMI spec 7.2 for details)
+-- 		) 
+-- 		port map (
+-- 			I_CLK_PIXEL		=> pixel_clock,
+--			
+--			I_R				=> HDMI_R,
+--			I_G				=> HDMI_G,
+--			I_B				=> HDMI_B,
+--			I_BLANK			=> HDMI_BL,
+--			I_HSYNC			=> HDMI_HS,
+--			I_VSYNC			=> HDMI_VS,
+--			
+--			-- PCM audio
+--			I_AUDIO_ENABLE	=> '1',
+--			I_AUDIO_PCM_L 	=> (others=>'0'),
+--			I_AUDIO_PCM_R	=> (others=>'0'),
+--			-- TMDS parallel pixel synchronous outputs (serialize LSB first)
+-- 			O_RED				=> tdms_r_s,
+--			O_GREEN			=> tdms_g_s,
+--			O_BLUE			=> tdms_b_s
+--		);
+--		
+--
+--			hdmio: entity work.hdmi_out_altera
+--		port map (
+--			clock_pixel_i		=> pixel_clock,
+--			clock_tdms_i		=> clk_dvi,
+--			red_i					=> tdms_r_s,
+--			green_i				=> tdms_g_s,
+--			blue_i				=> tdms_b_s,
+--			tmds_out_p			=> hdmi_p_s,
+--			tmds_out_n			=> hdmi_n_s
+--		);
  		
 		
 		-- tmds_o(7)	<= hdmi_p_s(2);	-- 2+		
@@ -651,135 +734,191 @@ begin
 		-- tmds_o(2)	<= hdmi_n_s(0);	-- 0-	
 		-- tmds_o(1)	<= hdmi_p_s(3);	-- CLK+	
 		-- tmds_o(0)	<= hdmi_n_s(3);	-- CLK-	
-		
-		
-	btnmode: entity work.debounce
-	generic map (
-		counter_size	=> 16
-	)
-	port map (
-		clk_i				=> pixel_clock,
-		--button_i			=> not btn_n_i(4),
-		button_i			=> f2_test, --not btn_n_i(4),
-		result_o			=> btn_mode_s
-	);
-	
-	process (btn_mode_s)
-	begin
-		if rising_edge(btn_mode_s) then
-			auto_test_disabled <= not auto_test_disabled;
-		end if;
-	
-	end process;
+				
+--	btnmode: entity work.debounce
+--	generic map (
+--		counter_size	=> 16
+--	)
+--	port map (
+--		clk_i				=> pixel_clock,
+--		--button_i			=> not btn_n_i(4),
+--		button_i			=> f2_test, --not btn_n_i(4),
+--		result_o			=> btn_mode_s
+--	);
+--	
+--	process (btn_mode_s)
+--	begin
+--		if rising_edge(btn_mode_s) then
+--			auto_test_disabled <= not auto_test_disabled;
+--		end if;
+--	
+--	end process;
 		
 		process(pixel_clock)
 		begin
-			if auto_test_disabled = '1' then
-				VGA_R		<= vga_r_s & '0';
-				VGA_G		<= vga_g_s & '0';
-				VGA_B		<= vga_b_s & '0';
-				VGA_HS	<= vga_hsync_n_s;
-				VGA_VS	<= vga_vsync_n_s;
+--			if auto_test_disabled = '1' then
+--				VGA_R		<= vga_r_s & '0';
+--				VGA_G		<= vga_g_s & '0';
+--				VGA_B		<= vga_b_s & '0';
+--				VGA_HS	<= vga_hsync_n_s;
+--				VGA_VS	<= vga_vsync_n_s;
 				
-				HDMI_R  <= vga_r_s & vga_r_s;
-				HDMI_G  <= vga_g_s & vga_g_s;
-				HDMI_B  <= vga_b_s & vga_b_s;
-				HDMI_HS <= vga_hsync_n_s;
-				HDMI_VS <= vga_vsync_n_s;
-				HDMI_BL <= vga_blank_s;
+--				HDMI_R  <= vga_r_s & vga_r_s;
+--				HDMI_G  <= vga_g_s & vga_g_s;
+--				HDMI_B  <= vga_b_s & vga_b_s;
+--				HDMI_HS <= vga_hsync_n_s;
+--				HDMI_VS <= vga_vsync_n_s;
+--				HDMI_BL <= vga_blank_s;
 				
 				AUDIO_L <= '0';
 				AUDIO_R <= '0';
 				stm_rst_o <= 'Z';
-				joyX_p7_o <= menu_joyp7_s;
-			else
-				VGA_R		<= test_vga_r_s;
-				VGA_G		<= test_vga_g_s;
-				VGA_B		<= test_vga_b_s;
-				VGA_HS	<= test_vga_hs_s;
-				VGA_VS	<= test_vga_vs_s;
+				--joyX_p7_o <= menu_joyp7_s;
+--			else
+--				VGA_R		<= test_vga_r_s;
+--				VGA_G		<= test_vga_g_s;
+--				VGA_B		<= test_vga_b_s;
+--				VGA_HS	<= test_vga_hs_s;
+--				VGA_VS	<= test_vga_vs_s;
 				
-				HDMI_R  <= test_vga_r_s & test_vga_r_s(4 downto 2);
-				HDMI_G  <= test_vga_g_s & test_vga_g_s(4 downto 2);
-				HDMI_B  <= test_vga_b_s & test_vga_b_s(4 downto 2);
-				HDMI_HS <= test_vga_hs_s;
-				HDMI_VS <= test_vga_vs_s;
-				HDMI_BL <= test_vga_blank_s;
+--				HDMI_R  <= test_vga_r_s & test_vga_r_s(4 downto 2);
+--				HDMI_G  <= test_vga_g_s & test_vga_g_s(4 downto 2);
+--				HDMI_B  <= test_vga_b_s & test_vga_b_s(4 downto 2);
+--				HDMI_HS <= test_vga_hs_s;
+--				HDMI_VS <= test_vga_vs_s;
+--				HDMI_BL <= test_vga_blank_s;
 			
-				AUDIO_L	<= test_audiol_s;
-				AUDIO_R 	<= test_audior_s;
-				stm_rst_o <= '0';
-				joyX_p7_o <= test_joyp7_s;
-			end if;
+--				AUDIO_L	<= test_audiol_s;
+--				AUDIO_R 	<= test_audior_s;
+--				stm_rst_o <= '0';
+--				joyX_p7_o <= test_joyp7_s;
+--			end if;
 		
 		end process;
-		
+	
+
+-- Cambiar entre 15khz y 31khz
+
+process (changeScandoubler)
+begin
+  if rising_edge(changeScandoubler) then
+    scandoubler_disable <= not scandoubler_disable;	 
+  end if;
+end process;
+
+process (white_noise_change)
+begin
+  if rising_edge(white_noise_change) then
+    white_noise <= not white_noise;
+  end if;
+end process;
+
+	
 -----------------------------------------------------		
 ------------- AUTO TEST -----------------------------
 
-	autotest : top_test_mc2 
+--	autotest : top_test_mc2 
+--	port map
+--	(
+--		clk100				=> clk100,
+--		clk100n				=> clk100n,
+--		clk25					=> pixel_clock, 
+--		pll_locked			=> pll_locked,
+--
+--		sram_addr_o  		=> sram_addr_o,
+--		sram_data_io		=> sram_data_io,
+--		sram_we_n_o			=> sram_we_n_o,
+--		sram_oe_n_o			=> sram_oe_n_o,	
+--			                  	
+--		SDRAM_A				=> SDRAM_A,		
+--		SDRAM_BA				=> SDRAM_BA,		
+--		SDRAM_DQ 			=> SDRAM_DQ,	
+--		SDRAM_DQMH			=> SDRAM_DQMH,	
+--		SDRAM_DQML			=> SDRAM_DQML,	
+--		SDRAM_CKE			=> SDRAM_CKE,	
+--		SDRAM_nCS			=> SDRAM_nCS,	
+--		SDRAM_nWE			=> SDRAM_nWE,	
+--		SDRAM_nRAS			=> SDRAM_nRAS,	
+--		SDRAM_nCAS			=> SDRAM_nCAS,	
+--		SDRAM_CLK			=> SDRAM_CLK,	
+--
+--		ps2_clk_io			=> ps2_clk_io,
+--		ps2_data_io			=> ps2_data_io,
+--		ps2_mouse_clk_io  => ps2_mouse_clk_io,
+--		ps2_mouse_data_io => ps2_mouse_data_io,
+--
+--		sd_cs_n_o			=> sd_cs_n_o,
+--		sd_sclk_o			=> sd_sclk_o,
+--		sd_mosi_o			=> sd_mosi_o,
+--		sd_miso_i			=> sd_miso_i,
+--
+--		joy1_up_i			=> joy1_up_i,
+--		joy1_down_i			=> joy1_down_i,
+--		joy1_left_i			=> joy1_left_i,
+--		joy1_right_i		=> joy1_right_i,
+--		joy1_p6_i			=> joy1_p6_i,
+--		joy1_p9_i			=> joy1_p9_i,
+--		joy2_up_i			=> joy2_up_i,
+--		joy2_down_i			=> joy2_down_i,
+--		joy2_left_i			=> joy2_left_i,
+--		joy2_right_i		=> joy2_right_i,
+--		joy2_p6_i			=> joy2_p6_i,
+--		joy2_p9_i			=> joy2_p9_i,
+--		joyX_p7_o			=> test_joyp7_s,
+--
+--		AUDIO_L				=> test_audiol_s,
+--		AUDIO_R 				=> test_audior_s,
+--
+--		VGA_R 				=> test_vga_r_s,
+--		VGA_G 				=> test_vga_g_s,
+--		VGA_B 				=> test_vga_b_s,
+--		VGA_HS 				=> test_vga_hs_s,
+--		VGA_VS				=> test_vga_vs_s,
+--		VGA_BLANK			=> test_vga_blank_s,
+--		stm_rst_o 			=> open
+--	);
+
+
+	scandoubler1 : scandoubler 
 	port map
 	(
-		clk100				=> clk100,
-		clk100n				=> clk100n,
-		clk25					=> pixel_clock, 
-		pll_locked			=> pll_locked,
-
-		sram_addr_o  		=> sram_addr_o,
-		sram_data_io		=> sram_data_io,
-		sram_we_n_o			=> sram_we_n_o,
-		sram_oe_n_o			=> sram_oe_n_o,	
-			                  	
-		SDRAM_A				=> SDRAM_A,		
-		SDRAM_BA				=> SDRAM_BA,		
-		SDRAM_DQ 			=> SDRAM_DQ,	
-		SDRAM_DQMH			=> SDRAM_DQMH,	
-		SDRAM_DQML			=> SDRAM_DQML,	
-		SDRAM_CKE			=> SDRAM_CKE,	
-		SDRAM_nCS			=> SDRAM_nCS,	
-		SDRAM_nWE			=> SDRAM_nWE,	
-		SDRAM_nRAS			=> SDRAM_nRAS,	
-		SDRAM_nCAS			=> SDRAM_nCAS,	
-		SDRAM_CLK			=> SDRAM_CLK,	
-
-		ps2_clk_io			=> ps2_clk_io,
-		ps2_data_io			=> ps2_data_io,
-		ps2_mouse_clk_io  => ps2_mouse_clk_io,
-		ps2_mouse_data_io => ps2_mouse_data_io,
-
-		sd_cs_n_o			=> sd_cs_n_o,
-		sd_sclk_o			=> sd_sclk_o,
-		sd_mosi_o			=> sd_mosi_o,
-		sd_miso_i			=> sd_miso_i,
-
-		joy1_up_i			=> joy1_up_i,
-		joy1_down_i			=> joy1_down_i,
-		joy1_left_i			=> joy1_left_i,
-		joy1_right_i		=> joy1_right_i,
-		joy1_p6_i			=> joy1_p6_i,
-		joy1_p9_i			=> joy1_p9_i,
-		joy2_up_i			=> joy2_up_i,
-		joy2_down_i			=> joy2_down_i,
-		joy2_left_i			=> joy2_left_i,
-		joy2_right_i		=> joy2_right_i,
-		joy2_p6_i			=> joy2_p6_i,
-		joy2_p9_i			=> joy2_p9_i,
-		joyX_p7_o			=> test_joyp7_s,
-
-		AUDIO_L				=> test_audiol_s,
-		AUDIO_R 				=> test_audior_s,
-
-		VGA_R 				=> test_vga_r_s,
-		VGA_G 				=> test_vga_g_s,
-		VGA_B 				=> test_vga_b_s,
-		VGA_HS 				=> test_vga_hs_s,
-		VGA_VS				=> test_vga_vs_s,
-		VGA_BLANK			=> test_vga_blank_s,
-		stm_rst_o 			=> open
-	);
-
-
+	
+	   clk_x2	   => clock_20, 
+		clk_pix		=> clock_10,
+	
+		scanlines  => "00",
+      scandoubler_disable => scandoubler_disable,		
 		
+		hs_in      => vga_hsync_n_s,
+		vs_in      => vga_vsync_n_s,
+		r_in    	  => vga_r_s & "00",
+		g_in    	  => vga_g_s & "00",
+		b_in    	  => vga_b_s & "00",
+		
+--		hs_out     => vga_hsync_n_rgb,
+--		vs_out     => vga_vsync_n_rgb,
+--		r_out      => vga_r_rgb,
+--		g_out      => vga_g_rgb,
+--		b_out      => vga_b_rgb
+		hs_out     => vga_hsync_n_rgb,
+		vs_out     => vga_vsync_n_rgb,
+		r_out(5 downto 1)      => vga_r_rgb,
+		g_out(5 downto 1)      => vga_g_rgb,
+		b_out(5 downto 1)      => vga_b_rgb
+	);			
 
+--	sega_clk <= vga_hsync_n_rgb when scandoubler_disable = '1' else vga_hsync_n_s;
+			
+	VGA_R <= (vga_r_s & "0") when scandoubler_disable = '1' else vga_r_rgb; 
+	VGA_G <= (vga_g_s & "0") when scandoubler_disable = '1' else vga_g_rgb; 
+	VGA_B <= (vga_b_s & "0") when scandoubler_disable = '1' else vga_b_rgb; 
+	
+	cs <= not(vga_hsync_n_s xor vga_vsync_n_s) when scandoubler_disable = '1' else not (vga_hsync_n_rgb xor vga_vsync_n_rgb);
+	hs <= vga_hsync_n_s when scandoubler_disable = '1' else vga_hsync_n_rgb; 
+	vs <= vga_vsync_n_s when scandoubler_disable = '1' else vga_vsync_n_rgb;
+
+	VGA_HS <= cs  when scandoubler_disable = '1' else hs;
+	VGA_VS <= '1' when scandoubler_disable = '1' else vs;
+	
 
 end architecture;

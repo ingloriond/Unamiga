@@ -39,7 +39,7 @@ port
 		-- delgrom
 		changeScandoubler  : out std_logic;
 		esc_reset : out std_logic;
-		f2_test  : out std_logic
+		f1_whitenoise : out std_logic
 );
 end Kbd_Joystick_atari;
 
@@ -158,8 +158,8 @@ begin
 			if KbdScanCode = x"6B" then btn_left          <= not(IsReleased); end if; -- left
 			if KbdScanCode = x"74" then btn_right         <= not(IsReleased); end if; -- right
 			--if KbdScanCode = x"76" then btn_coin          <= not(IsReleased); end if; -- ESC
-			if KbdScanCode = x"05" then btn_one_player    <= not(IsReleased); end if; -- F1
-			--if KbdScanCode = x"06" then btn_two_players   <= not(IsReleased); end if; -- F2
+			--if KbdScanCode = x"05" then btn_one_player    <= not(IsReleased); end if; -- F1
+			if KbdScanCode = x"06" then btn_two_players   <= not(IsReleased); end if; -- F2
 			if KbdScanCode = x"04" then btn_three_players <= not(IsReleased); end if; -- F3
 			if KbdScanCode = x"0C" then btn_four_players  <= not(IsReleased); end if; -- F4
 			if KbdScanCode = x"12" then btn_fireD         <= not(IsReleased); end if; -- l-shift
@@ -175,11 +175,11 @@ begin
 			-- delgrom unamiga
 			if KbdScanCode = "01111110" then changeScandoubler <= not(IsReleased); end if; -- ScrLock : 0x7E					
 			
-			if KbdScanCode = x"06" 
+			if KbdScanCode = x"05" 
 			then 
-				btn_two_players   <= not(IsReleased); 
-				f2_test   <= not(IsReleased); 
-			end if; -- F2
+				btn_one_player    <= not(IsReleased); 
+				f1_whitenoise   <= not(IsReleased); 				
+			end if; -- F1			
 			
 			
 			if KbdScanCode = x"76" 

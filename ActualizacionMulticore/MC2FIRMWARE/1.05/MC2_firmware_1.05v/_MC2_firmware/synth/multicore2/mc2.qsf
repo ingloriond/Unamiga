@@ -105,6 +105,8 @@ set_location_assignment PIN_T4 -to ps2_mouse_clk_io
 set_location_assignment PIN_R5 -to ps2_mouse_data_io
 
 #UNAMIGA#
+#set_location_assignment PIN_R13 -to sram_addr_o[20]
+#set_location_assignment PIN_T13 -to sram_addr_o[19]
 set_location_assignment PIN_F16 -to sram_addr_o[18]
 set_location_assignment PIN_T11 -to sram_addr_o[17]
 set_location_assignment PIN_J13 -to sram_addr_o[16]
@@ -133,10 +135,10 @@ set_location_assignment PIN_L15 -to sram_data_io[2]
 set_location_assignment PIN_G15 -to sram_data_io[1]
 set_location_assignment PIN_D16 -to sram_data_io[0]
 set_location_assignment PIN_N12 -to sram_we_n_o
-set_location_assignment PIN_L8 -to sram_oe_n_o
+#set_location_assignment PIN_L8 -to sram_oe_n_o
 
 #UNAMIGA MOD 6 BOTONES#
-set_location_assignment PIN_T13 -to joyX_p7_o
+#set_location_assignment PIN_T13 -to joyX_p7_o
 #UNAMIGA#
 set_location_assignment PIN_R4 -to joy1_up_i
 set_location_assignment PIN_R3 -to joy1_down_i
@@ -170,7 +172,7 @@ set_location_assignment PIN_F2 -to sd_mosi_o
 set_location_assignment PIN_F3 -to sd_sclk_o
 
 #UNAMIGA CONEXION STM32#
-set_location_assignment PIN_R13 -to stm_rst_o
+set_location_assignment PIN_T12 -to stm_rst_o
 set_location_assignment PIN_R14 -to stm_tx_i
 set_location_assignment PIN_T14 -to stm_rx_o
 #set_location_assignment PIN_R5 -to stm_b8_io
@@ -345,21 +347,26 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name GENERATE_RBF_FILE ON
 set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS OFF
-set_global_assignment -name VHDL_FILE kbd_joystick.vhd
-set_global_assignment -name VERILOG_FILE ../../BoardTest/video_processor.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/top_test_mc2.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/sync_generator.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/switch_mode.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/sramtest.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/spi.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/sdtest.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/sdramtest.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/sdram_controller.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/ps2_port.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/mousetest.v
-set_global_assignment -name VERILOG_FILE ../../BoardTest/joystick_snes.v
-set_global_assignment -name VHDL_FILE ../../BoardTest/joystick_Sega_6_buttons.vhd
-set_global_assignment -name VERILOG_FILE ../../BoardTest/audio_test.v
+set_global_assignment -name VHDL_FILE kbd_joystick_atari.vhd
+set_global_assignment -name VERILOG_FILE ../../src/scandoubler.v
+set_global_assignment -name VERILOG_FILE ../../src/video.v
+set_global_assignment -name SYSTEMVERILOG_FILE ../../src/rgb_mist.sv
+set_global_assignment -name VERILOG_FILE ../../src/lfsr.v
+set_global_assignment -name SYSTEMVERILOG_FILE ../../src/cos.sv
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/video_processor.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/top_test_mc2.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/sync_generator.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/switch_mode.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/sramtest.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/spi.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/sdtest.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/sdramtest.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/sdram_controller.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/ps2_port.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/mousetest.v
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/joystick_snes.v
+#set_global_assignment -name VHDL_FILE ../../BoardTest/joystick_Sega_6_buttons.vhd
+#set_global_assignment -name VERILOG_FILE ../../BoardTest/audio_test.v
 set_global_assignment -name VHDL_FILE ../../../common/io_ps2_keyboard.vhd
 set_global_assignment -name VHDL_FILE ../../../common/debounce.vhd
 set_global_assignment -name VHDL_FILE ../../src/core_info.vhd
