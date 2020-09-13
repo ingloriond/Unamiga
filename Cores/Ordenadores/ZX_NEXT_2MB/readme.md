@@ -9,6 +9,8 @@
 
 #### Requerimientos:
 
+#### ADDON MULTICORE 2Mb : SI 
+
 #### SRAM: SI
 
 #### MULTICORE: SI CORE:1.05 STM:1.08
