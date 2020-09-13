@@ -1,4 +1,4 @@
-# PC XT ZET
+# PC XT ZET_x86
 ### Port por Subcritical :+1:
 
 http://www.forofpga.es/viewtopic.php?f=20&t=350
