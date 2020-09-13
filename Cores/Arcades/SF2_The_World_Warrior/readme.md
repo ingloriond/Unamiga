@@ -3,7 +3,7 @@
 ### Port por Jose Manuel @delgrom :+1: 
 #### Fuentes:Jose Tejada Jotego https://www.patreon.com/topapate
 
-![SF2 The World Warrior](https://user-images.githubusercontent.com/31018768/93027285-27715280-f60c-11ea-83ce-b5a42fbd2cbc.jpg)
+![SF2 The World Warrior](https://user-images.githubusercontent.com/31018768/93027341-61425900-f60c-11ea-969a-860451fc5c4a.jpg)
 
 ### Requerimientos: 
 
