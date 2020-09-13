@@ -1,0 +1,126 @@
+# Clocks & debug
+NET "clock_50_i" LOC="P55" |IOSTANDARD = LVCMOS33;
+##NET "clock_50_i" CLOCK_DEDICATED_ROUTE = FALSE;  #MAP necesita esto...
+#NET "testled" LOC="P11" |IOSTANDARD = LVCMOS33;
+
+# Video output
+NET "rgb_b_o<2>" LOC="P93" |IOSTANDARD = LVCMOS33;
+NET "rgb_b_o<1>" LOC="P92" |IOSTANDARD = LVCMOS33;
+NET "rgb_b_o<0>" LOC="P88" |IOSTANDARD = LVCMOS33;
+NET "rgb_g_o<2>" LOC="P84" |IOSTANDARD = LVCMOS33;
+NET "rgb_g_o<1>" LOC="P83" |IOSTANDARD = LVCMOS33;
+NET "rgb_g_o<0>" LOC="P82" |IOSTANDARD = LVCMOS33;
+NET "rgb_r_o<2>" LOC="P81" |IOSTANDARD = LVCMOS33;
+NET "rgb_r_o<1>" LOC="P80" |IOSTANDARD = LVCMOS33;
+NET "rgb_r_o<0>" LOC="P79" |IOSTANDARD = LVCMOS33;
+NET "hsync_o" LOC="P87" |IOSTANDARD = LVCMOS33; #87
+NET "vsync_o" LOC="P85" |IOSTANDARD = LVCMOS33;
+#NET "stdn" LOC="P66" |IOSTANDARD = LVCMOS33;
+#NET "stdnb" LOC="P67" |IOSTANDARD = LVCMOS33;
+
+# Sound input/output
+NET "audioext_l_o" LOC="P10" |IOSTANDARD = LVCMOS33;
+NET "audioext_r_o" LOC="P9" |IOSTANDARD = LVCMOS33;
+NET "ear_port_i" LOC="P94" |IOSTANDARD = LVCMOS33;
+
+# MIDI
+#NET "midi_out" LOC="P43" |IOSTANDARD = LVCMOS33 |DRIVE=12;  # MIDI_OUT del addon MIDI
+#NET "clkbd" LOC="P50" |IOSTANDARD = LVCMOS33 |PULLUP;
+#NET "wsbd" LOC="P57" |IOSTANDARD = LVCMOS33 |PULLUP;
+#NET "dabd" LOC="P46" |IOSTANDARD = LVCMOS33 |PULLUP;
+
+# UART
+#NET "uart_tx"           LOC="P16"  |IOSTANDARD = LVCMOS33;
+#NET "uart_rx"           LOC="P12"  |IOSTANDARD = LVCMOS33 |PULLUP;
+#NET "uart_rts"          LOC="P22"  |IOSTANDARD = LVCMOS33;
+#NET "uart_reset"        LOC="P26"  |IOSTANDARD = LVCMOS33 |PULLUP;
+
+# Keyboard and mouse
+NET "ps2_clk_io" LOC="P99"    |IOSTANDARD = LVCMOS33 |PULLUP;  # pin 1 DIN
+NET "ps2_data_io" LOC="P98"   |IOSTANDARD = LVCMOS33 |PULLUP;  # pin 5 DIN
+NET "ps2_pin6_io" LOC="P95"  |IOSTANDARD = LVCMOS33 |PULLUP;  # pin 6 DIN
+NET "ps2_pin2_io" LOC="P97" |IOSTANDARD = LVCMOS33 |PULLUP;  # pin 2 DIN
+# SRAM
+NET "ram_*" SLEW = SLOW;
+NET "ram_addr_o<0>"  LOC="P141" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<1>"  LOC="P139" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<2>"  LOC="P137" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<3>"  LOC="P134" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<4>"  LOC="P133" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<5>"  LOC="P120" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<6>"  LOC="P118" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<7>"  LOC="P116" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<8>"  LOC="P114" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<9>"  LOC="P112" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<10>" LOC="P104" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<11>" LOC="P102" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<12>" LOC="P101" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<13>" LOC="P100" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<14>" LOC="P111" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<15>" LOC="P131" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<16>" LOC="P138" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<17>" LOC="P140" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<18>" LOC="P142" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<19>" LOC="P105" |IOSTANDARD = LVTTL;
+NET "ram_addr_o<20>" LOC="P143" |IOSTANDARD = LVTTL;
+
+NET "ram_data_io_zxdos<0>" LOC="P132" |IOSTANDARD = LVTTL;
+NET "ram_data_io_zxdos<1>" LOC="P127" |IOSTANDARD = LVTTL;
+NET "ram_data_io_zxdos<2>" LOC="P124" |IOSTANDARD = LVTTL;
+NET "ram_data_io_zxdos<3>" LOC="P123" |IOSTANDARD = LVTTL;
+NET "ram_data_io_zxdos<4>" LOC="P115" |IOSTANDARD = LVTTL;
+NET "ram_data_io_zxdos<5>" LOC="P117" |IOSTANDARD = LVTTL;
+NET "ram_data_io_zxdos<6>" LOC="P119" |IOSTANDARD = LVTTL;
+NET "ram_data_io_zxdos<7>" LOC="P126" |IOSTANDARD = LVTTL;
+
+NET "ram1_we_n_o" 	 LOC="P121" |IOSTANDARD = LVTTL;
+
+# SPI Flash
+#NET "flash_cs_n" LOC="P38" |IOSTANDARD = LVCMOS33;
+#NET "flash_clk"  LOC="P70" |IOSTANDARD = LVCMOS33;
+#NET "flash_mosi" LOC="P64" |IOSTANDARD = LVCMOS33;
+#NET "flash_miso" LOC="P65" |IOSTANDARD = LVCMOS33;
+
+# SD/MMC
+NET "sd_cs0_n_o" LOC="P59" |IOSTANDARD = LVCMOS33;
+NET "sd_sclk_o"  LOC="P75" |IOSTANDARD = LVCMOS33;
+NET "sd_mosi_o" LOC="P74" |IOSTANDARD = LVCMOS33;
+NET "sd_miso_i" LOC="P78" |IOSTANDARD = LVCMOS33;
+
+# JOYSTICK
+NET "joyup"    LOC="P1"  |IOSTANDARD = LVCMOS33 |PULLUP;  #JOY6
+NET "joydown"  LOC="P5"  |IOSTANDARD = LVCMOS33 |PULLUP;  #JOY4
+NET "joyleft"  LOC="P6"  |IOSTANDARD = LVCMOS33 |PULLUP;  #JOY3
+NET "joyright" LOC="P7"  |IOSTANDARD = LVCMOS33 |PULLUP;  #JOY2
+NET "joyfire"  LOC="P2"  |IOSTANDARD = LVCMOS33 |PULLUP;  #JOY7
+NET "joybtn2"  LOC="P8"  |IOSTANDARD = LVCMOS33 |PULLUP;  #JOY5
+#Created by Constraints Editor (xc6slx9-tqg144-2) - 2019/09/22
+
+# Timings
+
+TIMESPEC TSF2P  = FROM : FFS   : TO : PADS  : 26 ns;
+
+NET "CLK_28" TNM_NET = "CLK_28" | KEEP | S;
+NET "CLK_28_n" TNM_NET = "CLK_28_n" | KEEP | S;
+NET "CLK_14" KEEP | S | PERIOD = 60 ns;
+NET "CLK_7" KEEP | S | PERIOD = 120 ns;
+#NET "CLK_HDMI" TNM_NET = "CLK_HDMI" | KEEP | S;
+#NET "CLK_HDMI_n" TNM_NET = "CLK_HDMI_n" | KEEP | S;
+NET "CLK_3M5_CONT" KEEP | S | PERIOD = 240 ns;
+NET "clk_28_div<7>" KEEP | S | PERIOD = 7680 ns;
+NET "clk_28_div<6>" KEEP | S | PERIOD = 3840 ns;
+
+TIMESPEC "TS_CLK_28" = PERIOD "CLK_28" 30 ns;
+TIMESPEC "TS_CLK_28_n" = PERIOD "CLK_28_n" TS_CLK_28 PHASE + 15 ns;
+#TIMESPEC "TS_CLK_HDMI" = PERIOD "CLK_HDMI" TS_CLK_28/5;
+#TIMESPEC "TS_CLK_HDMI_n" = PERIOD "CLK_HDMI_n" TS_CLK_28/5 PHASE + 3 ns;
+
+NET "clock_50_i" CLOCK_DEDICATED_ROUTE = FALSE;
+
+#PIN "pll/BUFG_CLK0.O" CLOCK_DEDICATED_ROUTE = FALSE;
+#PIN "pll/BUFG_CLK2.O" CLOCK_DEDICATED_ROUTE = FALSE;
+#PIN "pll/BUFG_CLK3.O" CLOCK_DEDICATED_ROUTE = FALSE;
+
+#NET "clock_50_i" 		 TNM_NET = "clock_50_i";
+#TIMESPEC "TS_CLOCK_50" = PERIOD "clock_50_i" 20 ns HIGH 50 %; 
+

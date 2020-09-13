@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-April-24/cores/zxnext/synth-zxnext-issue2/work/hdmi_frame.xst" -ofn "D:/Users/benit/Downloads/UnAmiga/ZXDos/Cores/ZX_Spectrum_Next_FPGA-master-April-24/cores/zxnext/synth-zxnext-issue2/work/hdmi_frame.syr" 

@@ -1,0 +1,133 @@
+
+State Machine - |ZXNEXT_UnAmiga_2MB|reset_state
+Name reset_state.S_RESET_SOFT_1 reset_state.S_RESET_SOFT_0 reset_state.S_RESET_HARD_1 reset_state.S_RESET_IDLE reset_state.S_RESET_HARD_0 
+reset_state.S_RESET_HARD_0 0 0 0 0 0 
+reset_state.S_RESET_IDLE 0 0 0 1 1 
+reset_state.S_RESET_HARD_1 0 0 1 0 1 
+reset_state.S_RESET_SOFT_0 0 1 0 0 1 
+reset_state.S_RESET_SOFT_1 1 0 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|zxnext:zxnext|nmi_state
+Name nmi_state.S_NMI_END nmi_state.S_NMI_HOLD nmi_state.S_NMI_IDLE 
+nmi_state.S_NMI_IDLE 0 0 0 
+nmi_state.S_NMI_HOLD 0 1 1 
+nmi_state.S_NMI_END 1 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|zxnext:zxnext|tilemap:tilemap_mod|state_s
+Name state_s.S_READ_PIXELS state_s.S_READ_TILE_1 state_s.S_READ_TILE_0 state_s.S_IDLE 
+state_s.S_IDLE 0 0 0 0 
+state_s.S_READ_TILE_0 0 0 1 1 
+state_s.S_READ_TILE_1 0 1 0 1 
+state_s.S_READ_PIXELS 1 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|zxnext:zxnext|sprites:sprite_mod|state_s
+Name state_s.S_PROCESS state_s.S_QUALIFY state_s.S_START state_s.S_IDLE 
+state_s.S_IDLE 0 0 0 0 
+state_s.S_START 0 0 1 1 
+state_s.S_QUALIFY 0 1 0 1 
+state_s.S_PROCESS 1 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|zxnext:zxnext|uart:uart1_mod|tx_current_state_s
+Name tx_current_state_s.STATE_TX_FINISH tx_current_state_s.STATE_TX_STOP tx_current_state_s.STATE_TX_DATA tx_current_state_s.STATE_TX_START tx_current_state_s.STATE_TX_IDLE 
+tx_current_state_s.STATE_TX_IDLE 0 0 0 0 0 
+tx_current_state_s.STATE_TX_START 0 0 0 1 1 
+tx_current_state_s.STATE_TX_DATA 0 0 1 0 1 
+tx_current_state_s.STATE_TX_STOP 0 1 0 0 1 
+tx_current_state_s.STATE_TX_FINISH 1 0 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|zxnext:zxnext|uart:uart1_mod|rx_current_state_s
+Name rx_current_state_s.STATE_RX_FINISH rx_current_state_s.STATE_RX_STOP rx_current_state_s.STATE_RX_DATA rx_current_state_s.STATE_RX_START rx_current_state_s.STATE_RX_IDLE 
+rx_current_state_s.STATE_RX_IDLE 0 0 0 0 0 
+rx_current_state_s.STATE_RX_START 0 0 0 1 1 
+rx_current_state_s.STATE_RX_DATA 0 0 1 0 1 
+rx_current_state_s.STATE_RX_STOP 0 1 0 0 1 
+rx_current_state_s.STATE_RX_FINISH 1 0 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|zxnext:zxnext|uart:uart0_mod|tx_current_state_s
+Name tx_current_state_s.STATE_TX_FINISH tx_current_state_s.STATE_TX_STOP tx_current_state_s.STATE_TX_DATA tx_current_state_s.STATE_TX_START tx_current_state_s.STATE_TX_IDLE 
+tx_current_state_s.STATE_TX_IDLE 0 0 0 0 0 
+tx_current_state_s.STATE_TX_START 0 0 0 1 1 
+tx_current_state_s.STATE_TX_DATA 0 0 1 0 1 
+tx_current_state_s.STATE_TX_STOP 0 1 0 0 1 
+tx_current_state_s.STATE_TX_FINISH 1 0 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|zxnext:zxnext|uart:uart0_mod|rx_current_state_s
+Name rx_current_state_s.STATE_RX_FINISH rx_current_state_s.STATE_RX_STOP rx_current_state_s.STATE_RX_DATA rx_current_state_s.STATE_RX_START rx_current_state_s.STATE_RX_IDLE 
+rx_current_state_s.STATE_RX_IDLE 0 0 0 0 0 
+rx_current_state_s.STATE_RX_START 0 0 0 1 1 
+rx_current_state_s.STATE_RX_DATA 0 0 1 0 1 
+rx_current_state_s.STATE_RX_STOP 0 1 0 0 1 
+rx_current_state_s.STATE_RX_FINISH 1 0 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|zxnext:zxnext|z80dma:dma_mod|dma_seq_s
+Name dma_seq_s.FINISH_DMA dma_seq_s.WAITING_CYCLES dma_seq_s.TRANSFERING_WRITE_4 dma_seq_s.TRANSFERING_WRITE_3 dma_seq_s.TRANSFERING_WRITE_2 dma_seq_s.TRANSFERING_WRITE_1 dma_seq_s.TRANSFERING_READ_4 dma_seq_s.TRANSFERING_READ_3 dma_seq_s.TRANSFERING_READ_2 dma_seq_s.TRANSFERING_READ_1 dma_seq_s.WAITING_ACK dma_seq_s.START_DMA dma_seq_s.IDLE 
+dma_seq_s.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+dma_seq_s.START_DMA 0 0 0 0 0 0 0 0 0 0 0 1 1 
+dma_seq_s.WAITING_ACK 0 0 0 0 0 0 0 0 0 0 1 0 1 
+dma_seq_s.TRANSFERING_READ_1 0 0 0 0 0 0 0 0 0 1 0 0 1 
+dma_seq_s.TRANSFERING_READ_2 0 0 0 0 0 0 0 0 1 0 0 0 1 
+dma_seq_s.TRANSFERING_READ_3 0 0 0 0 0 0 0 1 0 0 0 0 1 
+dma_seq_s.TRANSFERING_READ_4 0 0 0 0 0 0 1 0 0 0 0 0 1 
+dma_seq_s.TRANSFERING_WRITE_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+dma_seq_s.TRANSFERING_WRITE_2 0 0 0 0 1 0 0 0 0 0 0 0 1 
+dma_seq_s.TRANSFERING_WRITE_3 0 0 0 1 0 0 0 0 0 0 0 0 1 
+dma_seq_s.TRANSFERING_WRITE_4 0 0 1 0 0 0 0 0 0 0 0 0 1 
+dma_seq_s.WAITING_CYCLES 0 1 0 0 0 0 0 0 0 0 0 0 1 
+dma_seq_s.FINISH_DMA 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|zxnext:zxnext|z80dma:dma_mod|reg_rd_seq_s
+Name reg_rd_seq_s.RD_PORT_B_HI reg_rd_seq_s.RD_PORT_B_LO reg_rd_seq_s.RD_PORT_A_HI reg_rd_seq_s.RD_PORT_A_LO reg_rd_seq_s.RD_COUNTER_LO reg_rd_seq_s.RD_COUNTER_HI reg_rd_seq_s.RD_STATUS 
+reg_rd_seq_s.RD_STATUS 0 0 0 0 0 0 0 
+reg_rd_seq_s.RD_COUNTER_HI 0 0 0 0 0 1 1 
+reg_rd_seq_s.RD_COUNTER_LO 0 0 0 0 1 0 1 
+reg_rd_seq_s.RD_PORT_A_LO 0 0 0 1 0 0 1 
+reg_rd_seq_s.RD_PORT_A_HI 0 0 1 0 0 0 1 
+reg_rd_seq_s.RD_PORT_B_LO 0 1 0 0 0 0 1 
+reg_rd_seq_s.RD_PORT_B_HI 1 0 0 0 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|zxnext:zxnext|z80dma:dma_mod|reg_wr_seq_s
+Name reg_wr_seq_s.R6_BYTE_0 reg_wr_seq_s.R4_BYTE_4 reg_wr_seq_s.R4_BYTE_3 reg_wr_seq_s.R4_BYTE_2 reg_wr_seq_s.R4_BYTE_1 reg_wr_seq_s.R4_BYTE_0 reg_wr_seq_s.R3_BYTE_1 reg_wr_seq_s.R3_BYTE_0 reg_wr_seq_s.R2_BYTE_1 reg_wr_seq_s.R2_BYTE_0 reg_wr_seq_s.R1_BYTE_1 reg_wr_seq_s.R1_BYTE_0 reg_wr_seq_s.R0_BYTE_3 reg_wr_seq_s.R0_BYTE_2 reg_wr_seq_s.R0_BYTE_1 reg_wr_seq_s.R0_BYTE_0 reg_wr_seq_s.IDLE 
+reg_wr_seq_s.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+reg_wr_seq_s.R0_BYTE_0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+reg_wr_seq_s.R0_BYTE_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+reg_wr_seq_s.R0_BYTE_2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+reg_wr_seq_s.R0_BYTE_3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+reg_wr_seq_s.R1_BYTE_0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+reg_wr_seq_s.R1_BYTE_1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+reg_wr_seq_s.R2_BYTE_0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+reg_wr_seq_s.R2_BYTE_1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+reg_wr_seq_s.R3_BYTE_0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+reg_wr_seq_s.R3_BYTE_1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+reg_wr_seq_s.R4_BYTE_0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+reg_wr_seq_s.R4_BYTE_1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+reg_wr_seq_s.R4_BYTE_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+reg_wr_seq_s.R4_BYTE_3 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+reg_wr_seq_s.R4_BYTE_4 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+reg_wr_seq_s.R6_BYTE_0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|emu_fnkeys:emu_fnkeys_mod|state
+Name state.S_RESET_DONE state.S_RESET_CHECK state.S_MF_DONE state.S_MF_CHECK state.S_MF_ROW_A12 state.S_MF_ROW_A11 state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 0 
+state.S_MF_ROW_A11 0 0 0 0 0 1 1 
+state.S_MF_ROW_A12 0 0 0 0 1 0 1 
+state.S_MF_CHECK 0 0 0 1 0 0 1 
+state.S_MF_DONE 0 0 1 0 0 0 1 
+state.S_RESET_CHECK 0 1 0 0 0 0 1 
+state.S_RESET_DONE 1 0 0 0 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|ps2_keyb:ps2_kbd_mod|keymap_seq_s
+Name keymap_seq_s.KM_END keymap_seq_s.KM_SEND keymap_seq_s.KM_READ keymap_seq_s.KM_IDLE 
+keymap_seq_s.KM_IDLE 0 0 0 0 
+keymap_seq_s.KM_READ 0 0 1 1 
+keymap_seq_s.KM_SEND 0 1 0 1 
+keymap_seq_s.KM_END 1 0 0 1 
+
+State Machine - |ZXNEXT_UnAmiga_2MB|ps2_mouse:ps2_mouse_mod|mstate
+Name mstate.110 mstate.101 mstate.100 mstate.011 mstate.010 mstate.001 mstate.000 
+mstate.000 0 0 0 0 0 0 0 
+mstate.001 0 0 0 0 0 1 1 
+mstate.010 0 0 0 0 1 0 1 
+mstate.011 0 0 0 1 0 0 1 
+mstate.100 0 0 1 0 0 0 1 
+mstate.101 0 1 0 0 0 0 1 
+mstate.110 1 0 0 0 0 0 1 

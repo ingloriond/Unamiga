@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="../zxnext-issue2-ZXDOS-issue2.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="../ipcore_dir/coregen.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../ipcore_dir/next_clocks.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="../ipcore_dir/sdpbram_16k_8.asy" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="../ipcore_dir/sdpbram_16k_8.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../ipcore_dir/sdpbram_16k_8.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHO" xil_pn:name="../ipcore_dir/sdpbram_16k_8.vho" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="../ipcore_dir/sdpram_128_8.asy" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="../ipcore_dir/sdpram_128_8.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../ipcore_dir/sdpram_128_8.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHO" xil_pn:name="../ipcore_dir/sdpram_128_8.vho" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="../ipcore_dir/sdpram_16_9.asy" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="../ipcore_dir/sdpram_16_9.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../ipcore_dir/sdpram_16_9.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHO" xil_pn:name="../ipcore_dir/sdpram_16_9.vho" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="../ipcore_dir/spram_320_9.asy" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="../ipcore_dir/spram_320_9.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="../ipcore_dir/spram_320_9.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHO" xil_pn:name="../ipcore_dir/spram_320_9.vho" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="ZXDOS_issue2.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ZXDOS_issue2.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ZXDOS_issue2.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="ZXDOS_issue2.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ZXDOS_issue2.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="ZXDOS_issue2.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ZXDOS_issue2.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="ZXDOS_issue2.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="ZXDOS_issue2.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="ZXDOS_issue2.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ZXDOS_issue2.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="ZXDOS_issue2.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ZXDOS_issue2.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ZXDOS_issue2.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="ZXDOS_issue2.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="ZXDOS_issue2.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="ZXDOS_issue2.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="ZXDOS_issue2.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="ZXDOS_issue2.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ZXDOS_issue2.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ZXDOS_issue2_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="ZXDOS_issue2_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ZXDOS_issue2_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ZXDOS_issue2_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="ZXDOS_issue2_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="ZXDOS_issue2_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ZXDOS_issue2_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ZXDOS_issue2_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="ZXDOS_issue2_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="ZXDOS_issue2_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ZXDOS_issue2_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ZXDOS_issue2_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="ZXDOS_issue2_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="ZXDOS_issue2_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ZXDOS_issue2_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="hdmi_frame.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="hdmi_frame.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="hdmi_frame.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="hdmi_frame.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="hdmi_frame.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="hdmi_frame.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="hdmi_frame_summary.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="zxdos_issue2.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_BIN" xil_pn:name="zxdos_issue2.bin"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="zxdos_issue2.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="zxdos_issue2.drc" xil_pn:subbranch="FPGAConfiguration"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1587789539" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1587789538">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587789539" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="307297210986420648" xil_pn:start_ts="1587789539">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588027233" xil_pn:in_ck="-2258888078677671139" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-412601880945551330" xil_pn:start_ts="1588027232">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../ipcore_dir/next_clocks.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1587789541" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1587789541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587789541" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2912415891348960874" xil_pn:start_ts="1587789541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587789541" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426877399996" xil_pn:start_ts="1587789541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587789541" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1568334719543887128" xil_pn:start_ts="1587789541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588043308" xil_pn:in_ck="4098153596381116241" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8457794836162439575" xil_pn:start_ts="1588042423">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ZXDOS_issue2.lso"/>
+      <outfile xil_pn:name="ZXDOS_issue2.ngc"/>
+      <outfile xil_pn:name="ZXDOS_issue2.ngr"/>
+      <outfile xil_pn:name="ZXDOS_issue2.prj"/>
+      <outfile xil_pn:name="ZXDOS_issue2.stx"/>
+      <outfile xil_pn:name="ZXDOS_issue2.syr"/>
+      <outfile xil_pn:name="ZXDOS_issue2.xst"/>
+      <outfile xil_pn:name="ZXDOS_issue2_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1588028222" xil_pn:in_ck="465994834866248984" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8949813500811354975" xil_pn:start_ts="1588028222">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588043338" xil_pn:in_ck="1865776612871268827" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2765053105484693321" xil_pn:start_ts="1588043308">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ZXDOS_issue2.bld"/>
+      <outfile xil_pn:name="ZXDOS_issue2.ngd"/>
+      <outfile xil_pn:name="ZXDOS_issue2_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1588043804" xil_pn:in_ck="9219166048329488587" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-2733824397997621320" xil_pn:start_ts="1588043338">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ZXDOS_issue2.pcf"/>
+      <outfile xil_pn:name="ZXDOS_issue2_map.map"/>
+      <outfile xil_pn:name="ZXDOS_issue2_map.mrp"/>
+      <outfile xil_pn:name="ZXDOS_issue2_map.ncd"/>
+      <outfile xil_pn:name="ZXDOS_issue2_map.ngm"/>
+      <outfile xil_pn:name="ZXDOS_issue2_map.xrpt"/>
+      <outfile xil_pn:name="ZXDOS_issue2_summary.xml"/>
+      <outfile xil_pn:name="ZXDOS_issue2_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1588044059" xil_pn:in_ck="1874156128080729444" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="7287610863686864138" xil_pn:start_ts="1588043804">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ZXDOS_issue2.ncd"/>
+      <outfile xil_pn:name="ZXDOS_issue2.pad"/>
+      <outfile xil_pn:name="ZXDOS_issue2.par"/>
+      <outfile xil_pn:name="ZXDOS_issue2.ptwx"/>
+      <outfile xil_pn:name="ZXDOS_issue2.unroutes"/>
+      <outfile xil_pn:name="ZXDOS_issue2.xpi"/>
+      <outfile xil_pn:name="ZXDOS_issue2_pad.csv"/>
+      <outfile xil_pn:name="ZXDOS_issue2_pad.txt"/>
+      <outfile xil_pn:name="ZXDOS_issue2_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1588044173" xil_pn:in_ck="8645041975917037063" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="6587536580693756888" xil_pn:start_ts="1588044059">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ZXDOS_issue2.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="zxdos_issue2.bgn"/>
+      <outfile xil_pn:name="zxdos_issue2.bin"/>
+      <outfile xil_pn:name="zxdos_issue2.bit"/>
+      <outfile xil_pn:name="zxdos_issue2.drc"/>
+    </transform>
+    <transform xil_pn:end_ts="1588044059" xil_pn:in_ck="9219166048329488455" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1588043997">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ZXDOS_issue2.twr"/>
+      <outfile xil_pn:name="ZXDOS_issue2.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

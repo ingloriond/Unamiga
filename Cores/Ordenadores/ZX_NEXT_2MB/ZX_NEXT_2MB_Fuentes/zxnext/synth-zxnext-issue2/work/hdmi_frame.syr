@@ -1,0 +1,293 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.40 secs
+ 
+--> Reading design: hdmi_frame.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "hdmi_frame.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "hdmi_frame"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-ftg256
+
+---- Source Options
+Top Module Name                    : hdmi_frame
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : YES
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Users\benit\Downloads\UnAmiga\ZXDos\Cores\ZX_Spectrum_Next_FPGA-master-April-24\cores\zxnext\src\ram\dpram2.vhd" into library work
+Parsing entity <dpram2>.
+Parsing architecture <rtl> of entity <dpram2>.
+Parsing VHDL file "D:\Users\benit\Downloads\UnAmiga\ZXDos\Cores\ZX_Spectrum_Next_FPGA-master-April-24\cores\zxnext\src\video\hdmi\hdmi_frame.vhd" into library work
+Parsing entity <hdmi_frame>.
+Parsing architecture <rtl> of entity <hdmi_frame>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <hdmi_frame> (architecture <rtl>) from library <work>.
+
+Elaborating entity <dpram2> (architecture <rtl>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <hdmi_frame>.
+    Related source file is "D:\Users\benit\Downloads\UnAmiga\ZXDos\Cores\ZX_Spectrum_Next_FPGA-master-April-24\cores\zxnext\src\video\hdmi\hdmi_frame.vhd".
+WARNING:Xst:647 - Input <h_visible<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hsync_start<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hsync_end<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hcnt_end<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <v_visible<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <vsync_start<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <vsync_end<31:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <vcnt_end> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <hsync_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <vsync_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\Users\benit\Downloads\UnAmiga\ZXDos\Cores\ZX_Spectrum_Next_FPGA-master-April-24\cores\zxnext\src\video\hdmi\hdmi_frame.vhd" line 250: Output port <data_a_o> of the instance <scandoubler_ram> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <locked_y>.
+    Found 10-bit register for signal <hcnt>.
+    Found 10-bit register for signal <vcnt>.
+    Found 1-bit register for signal <odd_line_s>.
+    Found 2-bit register for signal <egde_hb>.
+    Found 2-bit register for signal <egde_vb>.
+    Found 3-bit register for signal <timing_selected_s>.
+    Found 1-bit register for signal <egde_hb_2<0>>.
+    Found 11-bit register for signal <input_addr_s>.
+    Found 1-bit register for signal <line_bank>.
+    Found 11-bit register for signal <output_addr_s>.
+    Found 1-bit register for signal <blank_o>.
+    Found 1-bit register for signal <hsync_o>.
+    Found 1-bit register for signal <vsync_o>.
+    Found 9-bit register for signal <rgb_o>.
+    Found 1-bit register for signal <locked_x>.
+    Found 10-bit adder for signal <hcnt[9]_GND_6_o_add_4_OUT> created at line 220.
+    Found 10-bit adder for signal <vcnt[9]_GND_6_o_add_9_OUT> created at line 237.
+    Found 11-bit adder for signal <input_addr_s[10]_GND_6_o_add_29_OUT> created at line 279.
+    Found 4-bit adder for signal <rgb_r_25> created at line 295.
+    Found 4-bit adder for signal <rgb_g_25> created at line 296.
+    Found 4-bit adder for signal <rgb_b_25> created at line 297.
+    Found 4-bit adder for signal <rgb_r_12> created at line 299.
+    Found 4-bit adder for signal <rgb_g_12> created at line 300.
+    Found 4-bit adder for signal <rgb_b_12> created at line 301.
+    Found 3-bit comparator not equal for signal <n0003> created at line 190
+    Found 11-bit comparator equal for signal <GND_6_o_hcnt_end[10]_equal_4_o> created at line 214
+    Found 11-bit comparator equal for signal <GND_6_o_hsync_start[10]_equal_8_o> created at line 224
+    Found 11-bit comparator greater for signal <GND_6_o_h_visible[10]_LessThan_47_o> created at line 320
+    Found 11-bit comparator greater for signal <GND_6_o_v_visible[10]_LessThan_48_o> created at line 320
+    Found 11-bit comparator lessequal for signal <n0079> created at line 328
+    Found 11-bit comparator greater for signal <GND_6_o_hsync_end[10]_LessThan_51_o> created at line 328
+    Found 11-bit comparator lessequal for signal <n0083> created at line 334
+    Found 11-bit comparator greater for signal <GND_6_o_vsync_end[10]_LessThan_53_o> created at line 334
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   9 Comparator(s).
+	inferred  11 Multiplexer(s).
+Unit <hdmi_frame> synthesized.
+
+Synthesizing Unit <dpram2>.
+    Related source file is "D:\Users\benit\Downloads\UnAmiga\ZXDos\Cores\ZX_Spectrum_Next_FPGA-master-April-24\cores\zxnext\src\ram\dpram2.vhd".
+        addr_width_g = 11
+        data_width_g = 9
+    Found 2048x9-bit dual-port RAM <Mram_ram_q> for signal <ram_q>.
+    Found 9-bit register for signal <data_b_o>.
+    Found 9-bit register for signal <data_a_o>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  18 D-type flip-flop(s).
+Unit <dpram2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2048x9-bit dual-port RAM                              : 1
+# Adders/Subtractors                                   : 9
+ 10-bit adder                                          : 2
+ 11-bit adder                                          : 1
+ 4-bit adder                                           : 6
+# Registers                                            : 18
+ 1-bit register                                        : 8
+ 10-bit register                                       : 2
+ 11-bit register                                       : 2
+ 2-bit register                                        : 2
+ 3-bit register                                        : 1
+ 9-bit register                                        : 3
+# Comparators                                          : 9
+ 11-bit comparator equal                               : 2
+ 11-bit comparator greater                             : 4
+ 11-bit comparator lessequal                           : 2
+ 3-bit comparator not equal                            : 1
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 3
+ 11-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <hdmi_frame>.
+The following registers are absorbed into counter <input_addr_s>: 1 register on signal <input_addr_s>.
+The following registers are absorbed into counter <vcnt>: 1 register on signal <vcnt>.
+INFO:Xst:3226 - The RAM <scandoubler_ram/Mram_ram_q> will be implemented as a BLOCK RAM, absorbing the following register(s): <output_addr_s> <scandoubler_ram/data_b_o>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 9-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clock_i>       | rise     |
+    |     weA            | connected to signal <VCC>           | high     |
+    |     addrA          | connected to signal <input_addr_s>  |          |
+    |     diA            | connected to signal <rgb_i>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 9-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clock2X_i>     | rise     |
+    |     addrB          | connected to signal <(line_bank_INV_15_o,hcnt)> |          |
+    |     doB            | connected to signal <rgb_s>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+Unit <hdmi_frame> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2048x9-bit dual-port block RAM                        : 1
+# Adders/Subtractors                                   : 7
+ 10-bit adder                                          : 1
+ 4-bit adder                                           : 6
+# Counters                                             : 2
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Comparators                                          : 9
+ 11-bit comparator equal                               : 2
+ 11-bit comparator greater                             : 4
+ 11-bit comparator lessequal                           : 2
+ 3-bit comparator not equal                            : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <hdmi_frame> ...

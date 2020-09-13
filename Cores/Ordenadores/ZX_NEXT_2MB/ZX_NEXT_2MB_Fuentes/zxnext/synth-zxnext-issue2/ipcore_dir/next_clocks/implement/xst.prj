@@ -1,0 +1,2 @@
+vhdl work ../../next_clocks.vhd
+vhdl work ../example_design/next_clocks_exdes.vhd

@@ -1,0 +1,277 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[16]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[17]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[18]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[19]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr_o[20]",
+					"strict" : false
+				},
+				{
+					"name" : "ram1_we_n_o",
+					"strict" : false
+				},
+				{
+					"name" : "sd_cs0_n_o",
+					"strict" : false
+				},
+				{
+					"name" : "sd_sclk_o",
+					"strict" : false
+				},
+				{
+					"name" : "sd_mosi_o",
+					"strict" : false
+				},
+				{
+					"name" : "audioext_l_o",
+					"strict" : false
+				},
+				{
+					"name" : "audioext_r_o",
+					"strict" : false
+				},
+				{
+					"name" : "rgb_r_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rgb_r_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rgb_r_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rgb_g_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rgb_g_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rgb_g_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rgb_b_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rgb_b_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rgb_b_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hsync_o",
+					"strict" : false
+				},
+				{
+					"name" : "vsync_o",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data_io_zxdos[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data_io_zxdos[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data_io_zxdos[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data_io_zxdos[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data_io_zxdos[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data_io_zxdos[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data_io_zxdos[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data_io_zxdos[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_clk_io",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_data_io",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_pin6_io",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_pin2_io",
+					"strict" : false
+				},
+				{
+					"name" : "joy1right",
+					"strict" : false
+				},
+				{
+					"name" : "joy2right",
+					"strict" : false
+				},
+				{
+					"name" : "joy2left",
+					"strict" : false
+				},
+				{
+					"name" : "joy1left",
+					"strict" : false
+				},
+				{
+					"name" : "joy2fire1",
+					"strict" : false
+				},
+				{
+					"name" : "joy1fire1",
+					"strict" : false
+				},
+				{
+					"name" : "joy2up",
+					"strict" : false
+				},
+				{
+					"name" : "joy1up",
+					"strict" : false
+				},
+				{
+					"name" : "joy1down",
+					"strict" : false
+				},
+				{
+					"name" : "joy2down",
+					"strict" : false
+				},
+				{
+					"name" : "joy2fire2",
+					"strict" : false
+				},
+				{
+					"name" : "joy1fire2",
+					"strict" : false
+				},
+				{
+					"name" : "sd_miso_i",
+					"strict" : false
+				},
+				{
+					"name" : "ear_port_i",
+					"strict" : false
+				},
+				{
+					"name" : "btn_multiface_n_i",
+					"strict" : false
+				},
+				{
+					"name" : "btn_divmmc_n_i",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

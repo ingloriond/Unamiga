@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Sep 13 23:01:54 2020
+Quartus Prime Version : 17.0.2 Build 602 07/19/2017 SJ Lite Edition
+Revision Name : zxnext_UnAmiga_2MB
+Top-level Entity Name : ZXNEXT_UnAmiga_2MB
+Family : Cyclone IV E
+Device : EP4CE22F17C8
+Timing Models : Final
+Total logic elements : 12,637 / 22,320 ( 57 % )
+    Total combinational functions : 11,754 / 22,320 ( 53 % )
+    Dedicated logic registers : 4,912 / 22,320 ( 22 % )
+Total registers : 4912
+Total pins : 69 / 154 ( 45 % )
+Total virtual pins : 0
+Total memory bits : 466,998 / 608,256 ( 77 % )
+Embedded Multiplier 9-bit elements : 1 / 132 ( < 1 % )
+Total PLLs : 1 / 4 ( 25 % )
