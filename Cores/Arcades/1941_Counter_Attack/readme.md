@@ -7,7 +7,7 @@
 
 ### Requerimientos: 
 
-#### SRAM: SI
+#### SRAM: NO
 
 #### MULTICORE: SI
 
