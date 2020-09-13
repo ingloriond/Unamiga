@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Apr 24 20:21:22 2020
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : u16
+Top-level Entity Name : kotku
+Family : Cyclone IV E
+Total logic elements : 14,749
+    Total combinational functions : 13,096
+    Dedicated logic registers : 3,728
+Total registers : 3728
+Total pins : 76
+Total virtual pins : 0
+Total memory bits : 185,907
+Embedded Multiplier 9-bit elements : 2
+Total PLLs : 1
