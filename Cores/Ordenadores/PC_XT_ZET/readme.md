@@ -1,4 +1,4 @@
-# PC XT ZET
+# PC XT ZET_x86
 ### Port por Subcritical :+1:
 
 http://www.forofpga.es/viewtopic.php?f=20&t=350
@@ -11,7 +11,7 @@ http://www.forofpga.es/viewtopic.php?f=20&t=350
 
 #### SOPORTE PAD 6 BOTONES: 
 
-#### SALIDA DE VIDEO : 
+#### SALIDA DE VIDEO : VGA
 
 El core tiene un problema por ahora, y es que si se graba como jic con las bios en su interior no es capaz de realizar el arranque del mismo core, pero recargando el sof arranca con normalidad
 
