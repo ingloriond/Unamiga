@@ -15,7 +15,7 @@
 
 #### SALIDA DE VIDEO : VGA,RGB
 
-#### SOPORTE I2S: 
+#### SOPORTE I2S: SI
 
 ## Teclas:
 
