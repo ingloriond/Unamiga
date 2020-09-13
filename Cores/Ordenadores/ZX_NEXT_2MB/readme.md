@@ -9,7 +9,7 @@
 
 #### Requerimientos:
 
-#### ADDON MULTICORE 2Mb : SI 
+#### ADDON MULTICORE 2Mb : SI ( Cortesia de @antoniovillena )
 
 #### SRAM: SI
 
