@@ -14,7 +14,7 @@ http://www.forofpga.es/viewtopic.php?f=20&p=1436#p1436
 
 #### SOPORTE PAD 6 BOTONES: NO , Soportados sólo 2 por ahora
 
-#### SALIDA DE VIDEO : SOLO VGA
+#### SALIDA DE VIDEO : VGA,RGB (el menu se desplaza constantemente en este modo)
 
 ##### Por falta de celdas no incluye soporte para los chips especiales ni salvado de la cart ram.El core arranca en modo VGA 31.5 kHz y muestra un menú para seleccionar el mapper del cartucho (hay que configurarlo antes de cargar la rom), activar scanlines, intercambiar los controles y cargar roms. Sólo funciona con roms sin cabecera (suelen llevar extensión SFC y ocupan en tamaño un múltiplo exacto de 1024)
 
