@@ -1,0 +1,49 @@
+15KHZ / 31KHZ       BLOQ. DESPL.     
+btn_coin 			Esc
+btn_tilt			Backspace
+
+btn_four_players	F4
+btn_three_players	F3
+btn_two_players		F2
+btn_one_player		F1	
+			
+			
+btn_coin4_mame		8
+btn_coin3_mame		7
+btn_coin2_mame		6
+btn_coin1_mame		5
+
+btn_start4_mame		4
+btn_start3_mame		3
+btn_start2_mame		2
+btn_start1_mame		1
+				
+p1 :
+btn_up				up arrow
+btn_down 			down arrow
+btn_left			lert arrow
+btn_right			right arrow
+
+btn_fireA			Space
+btn_fireB			alt
+btn_fireC			ctrl
+btn_fireD			l-shift
+btn_fireE			Z
+btn_fireF			X
+btn_fireG			C
+btn_fireH			V
+
+p2 :
+btn_up2				R
+btn_down2			F
+btn_left2			D
+btn_right2			G
+
+btn_fire2A			A
+btn_fire2B			S
+btn_fire2C			Q
+btn_fire2D			W
+btn_fire2E			I
+btn_fire2F			K
+btn_fire2G			J
+btn_fire2H			L
