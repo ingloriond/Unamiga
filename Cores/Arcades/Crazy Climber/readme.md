@@ -1,35 +1,28 @@
-### Port por Jose Manuel @delgrom | llevado a fpga por Dar | portado a mist por Gehstock| adaptación de Victor Trucco
-
 # Crazy Climber
+
+### Port por Jose Manuel @delgrom :+1: 
+#### Fuentes: Llevado a fpga por Dar, portado a mist por Gehstock, adaptación de Victor Trucco
 
 ![Crazy-climber-flyer](https://user-images.githubusercontent.com/31018768/70372938-c894e500-18e5-11ea-8071-a84d725d814d.jpg)
 
-### Requerimientos:
+### Requerimientos: 
 
 #### SRAM: NO
 
-#### MULTICORE: NO
+#### MULTICORE: SI
 
 #### SOPORTE PAD 6 BOTONES: NO
 
-#### SALIDA DE VIDEO : VGA, 15KHZ
+#### SALIDA DE VIDEO : VGA,RGB
 
-Versión arcade llevado a fpga por Dar, y portado a Mist por Gehstock.Esta versión proviene de la adaptación de Victor Trucco a su multicore 2.
+#### SOPORTE I2S: NO
 
-Teclas:
+## Teclas:
 
-F1: 1P START
-
-F2: 2P START
-
-F3: INSERT COIN
-
-ESC: RESET
-
-BLOQ DESP: Cambio entre VGA y 15KHZ
-
-F4: Scanlines (alternando entre no scanlines, 25%, 50% y 75%)
-
-Controles:
-
-Teclado: Cursores y Joystick
+#### F1  :    1P Start
+#### F2  :    2P Start
+#### F3  :    Insert Coin
+#### F4: Scanlines (alternando entre no scanlines, 25%, 50% y 75%)
+#### ESQ :    Reset
+#### BLOQ DESP: Cambio entre VGA y Rgb)
+#### Controles: Joystick y Teclado
