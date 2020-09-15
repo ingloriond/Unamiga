@@ -1,35 +1,33 @@
-# 1942
+# 1941 Counter Attack
 
-### Port por Jose Manuel @delgom @ adaptación de Scramble de Victor Trucco a su multicore 2.
+### Port por Jose Manuel @delgrom :+1: 
+#### Fuentes:adaptación de Scramble de Victor Trucco a su multicore 2
 
 ![1942](https://user-images.githubusercontent.com/31018768/71418274-0164e600-266a-11ea-89dd-e3a148b3f355.jpg)
 
-Requerimientos:
-SRAM: SI
+### Requerimientos: 
 
-MULTICORE: SI
+#### SRAM: SI
 
-SOPORTE PAD 6 BOTONES: NO
+#### MULTICORE: SI
 
-SALIDA DE VIDEO : VGA, 15KHZ
+#### SOPORTE PAD 6 BOTONES: NO
 
-Teclas:
+#### SALIDA DE VIDEO : VGA,RGB
 
-F1: 1P START
+#### SOPORTE I2S: NO
 
-F2: 2P START
+## Teclas:
 
-F3: INSERT COIN
+#### F1  :    1P Start
+#### F2  :    2P Start
+#### F3  :    Insert Coin
+#### F4: Scanlines (alternando entre no scanlines, 25%, 50% y 75%)
+#### ESQ :    Reset
+#### BLOQ DESP: Cambio entre VGA y Rgb)
+#### Controles: Joystick y Teclado (Cursores y espacio el salto)
 
-ESC: RESET
-
-BLOQ DESP: Cambio entre VGA y 15KHZ
-
-F4: Scanlines (alternando entre no scanlines, 25%, 50% y 75%)
-
-Controles:
-
-Teclado: Cursores y espacio para salto
-
-Joystick
-
+#### F7       : Apaga/enciende la capa del personaje 
+#### F8       : Apaga/enciende la segunfa capa del fondo
+#### F9       : Apaga/enciende la primera capa del fondo
+#### F10      : Apaga/enciende los objetos(sprites)
