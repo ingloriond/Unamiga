@@ -5,7 +5,10 @@
 
 ![TETRIS](https://user-images.githubusercontent.com/31018768/93262180-152a1c80-f7a4-11ea-9ad7-93ddde55c6ed.jpg)
 
-[![](http://img.youtube.com/vi/is4Rj2G8rVM/0.jpg)](http://www.youtube.com/watch?v=is4Rj2G8rVM "TETRIS")
+Video: Tetris
+[![is4Rj2G8rVM](http://img.youtube.com/vi/is4Rj2G8rVM/0.jpg)](http://www.youtube.com/watch?v=is4Rj2G8rVM "TETRIS")
+
+
 
 ### Requerimientos: Necesita el archivo tetris.dat en la tarjeta del stm32
 
