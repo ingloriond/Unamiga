@@ -3,11 +3,7 @@
 ### Port por Jose Manuel @delgrom :+1: 
 #### Fuentes:Jose Tejada Jotego https://www.patreon.com/topapate
 
-![1941 Counter Attack](https://user-images.githubusercontent.com/31018768/93019403-10643d80-f5d7-11ea-8d06-2d6f03e9cee4.jpg)
-
-#### Preview
-
-![My Video](https://user-images.githubusercontent.com/31018768/93630861-fbc6e180-f9ea-11ea-8aae-645e8f11c856.gif)
+![1941 Counter Attack](https://user-images.githubusercontent.com/31018768/93019403-10643d80-f5d7-11ea-8d06-2d6f03e9cee4.jpg) | ![My Video](https://user-images.githubusercontent.com/31018768/93630861-fbc6e180-f9ea-11ea-8aae-645e8f11c856.gif)
 
 ### Requerimientos: 
 
