@@ -1,9 +1,9 @@
-# 1941 Counter Attack
+# 1942
 
 ### Port por Jose Manuel @delgrom :+1: 
 #### Fuentes:adaptación de Scramble de Victor Trucco a su multicore 2
+![1942](https://user-images.githubusercontent.com/31018768/93634912-a93cf380-f9f1-11ea-885b-834f5b8e479b.jpg)|![1941s](https://user-images.githubusercontent.com/31018768/93634613-2f0c6f00-f9f1-11ea-9467-fd6846630ff1.gif)
 
-![1942](https://user-images.githubusercontent.com/31018768/71418274-0164e600-266a-11ea-89dd-e3a148b3f355.jpg)
 
 ### Requerimientos: 
 
