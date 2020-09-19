@@ -1,5 +1,5 @@
 # Core ZX NEXT 2 MB para Unamiga(+EAR)
-### Port por Fernando Mosquera ( https://github.com/benitoss ) y colaboración de Jose Manuel @delgrom :+1:
+### Port por Fernando Mosquera ( https://github.com/benitoss ) y colaboración de Jose Manuel @delgrom :+1: Gracias a rampa069 por el fix BUFGMUX1.vhd para MISTer, corregido en Unamiga por @delgrom
 #### Añadido soporte 2MB
 #### Añadido soporte para EAR en el pin RX del Unamiga
 
