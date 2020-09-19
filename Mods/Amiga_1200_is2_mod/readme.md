@@ -14,7 +14,7 @@ I2S LRCLK pin T6 Unamiga
 
 I2S DATA pin T7 Unamiga
 
-Para usuarios con MC usar el core UnAmiga_MIST_AGA_I2S.rbf usuarios sin MC UnAmiga_MIST_AGA_I2S.jic
+Para usuarios con MC usar el core UnAmiga_MIST_AGA_I2S.rbf usuarios sin MC UnAmiga_MIST_AGA_I2S.jic [a link](https://github.com/ingloriond/Unamiga/tree/master/Cores/Ordenadores/Minimiga_A1200_I2S)
 
 ![Esquema ES2093](https://user-images.githubusercontent.com/31018768/83967558-08537e00-a8c3-11ea-829a-a84d1da4b66b.jpg)
 
