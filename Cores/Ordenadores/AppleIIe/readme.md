@@ -19,8 +19,8 @@
 
 ## Teclas:
 -------------
-#### VGA/RGB (Cambio al vuelo pulsando Bloq. Despl.)
-#### 80 colunas (slot 0)
+#### VGA/RGB ( Bloq. Despl.)
+#### 80 columnas (slot 0)
 #### Mocking Board (slot 4)
 #### Saturn 128k (slot 5)
 #### Interface DiskII (slot 6)
