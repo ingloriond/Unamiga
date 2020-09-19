@@ -38,4 +38,4 @@
 #### Commandos Básicos:
 
 cat -- ver contenido del disco
-run" -- mas nombre garga del juego 
+run" -- mas nombre carga del juego 
