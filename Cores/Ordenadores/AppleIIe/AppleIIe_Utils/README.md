@@ -1,4 +1,4 @@
-# Imagens de disco
+# Imagenes de disco
 
-A controladora do Apple II espera uma sequencia de discos "nibblized" (227k) no SD a partir do bloco 0. 
-Muitas imagens de disco de Apple est„o em formato DSK de 140Kb, ent„o precisam ser convertidas antes para o formato NIB. O pequeno programa "AppleDSK2NIB.exe" cumpre este trabalho, convertendo a imagem.
+El controlador Apple II espera una secuencia de discos "nibblizados" (227k) en la SD del bloque 0.
+Muchas im√°genes de disco de Apple est√°n en formato DSK de 140 Kb, por lo que primero deben convertirse al formato NIB. El peque√±o programa "AppleDSK2NIB.exe" hace este trabajo, convirtiendo la imagen.
