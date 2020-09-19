@@ -3,16 +3,12 @@
 #### Fuente : http://www.forofpga.es/viewtopic.php?f=141&t=303#)
 
 Hola chicos:
-
 Voy a explicaros que tenéis que hacer para modificar vuestro Unamiga para poder usar los futuros cores que se creen con opción de 6 botones + Start + Menú
-
 Antes de nada decir que todo esto ha sido idea de @benitoss (Fernando Mosquera) y que todo el merito es únicamente suyo .
 Él nos dijo que modificaciones teníamos que hacer y se curró un test para comprobar su funcionamiento basándose en el trabajo realizado en sus maquinas por Victor Trucco.
 
 https://gitlab.com/victor.trucco
-
 Con esta modificación tendremos posibilidad de pulsación en botones ABC XYZ Start y Menú.
-
 La modificación es muy sencilla y solo hay que soldar unos cables a los puertos db9 de joystick de nuestro unamiga
 
 1) llevar señal de 3.3 voltios a los pines 5 del puerto db9 de ambos mandos
