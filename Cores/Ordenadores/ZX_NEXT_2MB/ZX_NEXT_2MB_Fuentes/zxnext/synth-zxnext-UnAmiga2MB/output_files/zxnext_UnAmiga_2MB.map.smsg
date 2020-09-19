@@ -1,1 +1,0 @@
-Warning (10268): Verilog HDL information at audio_out.v(44): always construct contains both blocking and non-blocking assignments File: D:/cores/PORTANDO5/ZXNext_MC2-master/zxnext/src/audio/audio_i2s/audio_out.v Line: 44
