@@ -20,8 +20,9 @@
 
 #### Descomprima y copie en archivo .rbf y el fichero "Amstrad.dat" en la raíz de la tarjeta SD del addon STM32.
 
-####Teclas del core
+#### Teclas del core
 --------------------------------------
+#### F12: OSD
 
 #### Bloq Despl: VGA/RGB
 
