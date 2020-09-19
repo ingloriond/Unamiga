@@ -1,5 +1,6 @@
 ### [Modificar Unamiga para tener 6 botones+ Start + Menú (norma megadrive 6 buttons)](http://www.forofpga.es/viewtopic.php?f=141&t=303#p1257)
 #### Tutorial por : Lui sal @luixyto
+#### Fuente : http://www.forofpga.es/viewtopic.php?f=141&t=303#)
 
 Hola chicos:
 
@@ -34,6 +35,4 @@ Punto 3,3 V Alternativos gracias a Monstronio
 ![:!:](http://www.forofpga.es/images/smilies/icon_exclaim.gif) **Por lo que pueda pasar (posible daño en la fpga ) no se les ocurra conectar un joystick especial de 3 botones o Ratón de 3 botones de Amiga en los puertos del joystick** ![:!:](http://www.forofpga.es/images/smilies/icon_exclaim.gif)
 
 Decir que ya se han probado algunos cores que utilizan más de 2 botones y funcionan perfectamente (ejemplo arcade capcom gunsmoke, 3 botones) , y explicar también que esto no afecta a los antiguos cores y que los mandos norma atari/amiga funcionan perfectamente con los antiguos cores.
-
-- http://www.forofpga.es/viewtopic.php?f=141&t=303#)
 
