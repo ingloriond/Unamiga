@@ -3,7 +3,7 @@
 ### Port por Jose Manuel @delgrom :+1: 
 #### Fuentes: de la versión de Multicore2 de Victor Trucco
 
-
+![Apple_II_IMG_4212](https://user-images.githubusercontent.com/31018768/93654124-414fd280-fa1c-11ea-9bb4-2b765e01e70c.jpg)
 
 ### Requerimientos: 
 
