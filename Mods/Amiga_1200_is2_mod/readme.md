@@ -1,7 +1,7 @@
 # Amiga 1200 con Dac I2S
 
 #### Implementación por Fernando Mosquera @benitoss https://github.com/benitoss
-
+#### Tutorial por Ingloriond @ingloriond
 http://www.forofpga.es/viewtopic.php?f=141&t=355
 
 Gracias a Fernando Mosquera ( @benitoss ) por implementar el dac al core de Unamiga y a Jose Manuel ( @delgrom ) por buscar los pines libres para ello, podemos disfrutar de una calidad de audio brutal muy superior al Delta Sigma ;). Los pines elegidos para ello se encuentran debajo del addon ps2/vga de Antonio villena, son los siguientes:
