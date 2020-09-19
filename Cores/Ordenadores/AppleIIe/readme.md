@@ -11,11 +11,11 @@
 
 #### MULTICORE: SI
 
-#### SOPORTE PAD 6 BOTONES: SI
+#### SOPORTE PAD 6 BOTONES: NO
 
 #### SALIDA DE VIDEO : VGA,RGB
 
-#### SOPORTE I2S: SI
+#### SOPORTE I2S: NO
 
 ## Teclas:
 -------------
