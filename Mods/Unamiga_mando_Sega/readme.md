@@ -12,6 +12,4 @@ Como se ve en la foto que se adjunta a este post, el pin R12 pertenece a la hile
 
 Gracias a A. Villena por la modificación del addon y a F. Mosquera por el port del core de Spectrum Next al Unamiga.
 
-- Adjuntos
-
   ![joyx_p7_0_en_R12.jpg](http://www.forofpga.es/download/file.php?id=673)joyx_p7_0_en_R12.jpg 
