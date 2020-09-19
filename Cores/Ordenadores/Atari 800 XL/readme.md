@@ -1,5 +1,18 @@
-## Jepalza http://forofpga.es/viewtopic.php?f=160&t=41
+# Atari 800 XL
+### Port por Jepalza http://forofpga.es/viewtopic.php?f=160&t=41 :+1:
 ![Atari_800XL_Plain_White](https://user-images.githubusercontent.com/31018768/70316102-3de7b380-181b-11ea-9102-cb2bd3c59bbd.jpg)
+
+### Requerimientos: 
+
+#### SRAM: NO
+
+#### MULTICORE: NO
+
+#### SOPORTE PAD 6 BOTONES: NO
+
+#### SALIDA DE VIDEO : VGA,RGB
+
+#### SOPORTE I2S: NO
 ### Instrucciones
 Teclas especiales en el teclado extendido numérico:
 "*" cambia entre NTSC y PAL
