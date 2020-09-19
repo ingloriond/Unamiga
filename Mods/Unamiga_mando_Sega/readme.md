@@ -1,6 +1,6 @@
 #### 																	ACTUALIZACION 13/8/2020 @delgrom
 
-### Modificar Unamiga para tener 6 botones+ Start + Menú (norma megadrive 6 buttons)
+### Modificar Unamiga para tener 6 botones+ Start + Menú (norma megadrive 6 buttons) [a link](https://github.com/ingloriond/Unamiga/blob/master/Mods/Unamiga_mando_Sega/Modificar%20Unamiga%20para%20tener%206%20botones%2B%20Start%20%2B%20Men%C3%BA%20(norma%20megadrive%206%20buttons).md) por @luyixyto
 
 
 
