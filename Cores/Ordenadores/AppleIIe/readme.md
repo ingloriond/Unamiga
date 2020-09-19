@@ -27,8 +27,6 @@
 
 Uso
 ---
-#### Colocar el archivo ".RBF" en la tarjeta SD para iniciar. Las imágenes de disco son ".NIB", convertidas con el programa DSK2NIB.
-#### Las imágenes convertidas pueden ser organizadas en carpetas dentro de la tarjeta SD.
-#### Las imágenes .NIB pueden ser cargadas desde el menú pulsando la tecla F12 y seleccionadas con las flechas y ENTER. Después, ejecutar um "Hard Reset" desde el menú para que ####cargue el disco.
+#### Colocar el archivo ".RBF" en la tarjeta SD para iniciar. Las imágenes de disco son ".NIB", deben de ser convertidas con el programa DSK2NIB. Las imágenes pueden ser organizadas en carpetas dentro de la tarjeta SD(STM32). Las imágenes *.NIB pueden ser cargadas desde el menú pulsando la tecla F12 y seleccionadas con las flechas y ENTER. Después, ejecuta un "Hard Reset" desde el menú para que cargue el disco.
 
 
