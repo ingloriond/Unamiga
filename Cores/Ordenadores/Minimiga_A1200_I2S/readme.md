@@ -1,23 +1,60 @@
-# Amiga 1200 con Dac I2S
+# Amiga A1200
+### Core por Jepalza, mejoras por @NeuroRulez(Twitter @Neuro_999, Github: https://github.com/neurorulez) y Edu Arana @eduarana ( https://arananet.net/ ) preparando el entorno de compilacion para el osd y la traducción.
 
-#### Implementación por Fernando Mosquera @benitoss https://github.com/benitoss
+![a1200foto](https://user-images.githubusercontent.com/31018768/71215821-17188b00-22b9-11ea-8033-4ef7fa745241.jpg)
 
-http://www.forofpga.es/viewtopic.php?f=141&t=355
+### Requerimientos: 
+#### SRAM: NO
+#### MULTICORE: NO
+#### SOPORTE PAD 6 BOTONES: NO
+#### SALIDA DE VIDEO : VGA,RGB
+#### SOPORTE I2S: SI
 
-Gracias a Fernando Mosquera ( @benitoss ) por implementar el dac al core de Unamiga y a Jose Manuel ( @delgrom ) por buscar los pines libres para ello, podemos disfrutar de una calidad de audio brutal muy superior al Delta Sigma ;). Los pines elegidos para ello se encuentran debajo del addon ps2/vga de Antonio villena, son los siguientes:
+### Instrucciones:
 
-I2S MCLK pin R6 Unamiga (solo CS4344 y PCM5102, no usado en la ES2093)
+#### El fichero de1_boot.bin (es el encargado de mostrar el menú OSD de selección de ficheros) debe estar en la tarjeta SD junto a una Rom valida, por defecto nombrada KICK.rom (KickStart 1.3 para el A500 ECS o kickstart 3.1 para el A1200 AGA) no suminstrada por temas de copyright. con la tecla F12 podemos acceder al menú OSD en cualquier momento. Con la tecla SCROLL-LOCK elegimos entre modo 15khz y modo VGA. Por defecto entra en modo VGA. En esta versión del código AGA, se han hecho varias mejoras, como poder emplear hasta 16+4 megas de RAM formato "FAST" (dos ampliaciones tipo ZORRO-II y III de 4mb mas 16mb). Ademas, se ha traducido el menú a Español.
+## Características:
 
-I2S BCLK pin T5 Unamiga
+#### CPU: Motorola MC68EC020 a 14.32 MHz (NTSC) o 14.18 MHz (PAL)
+#### Chipset: AGA (Advanced Graphics Architecture)
+#### Audio (Paula):
+#### 4 voces / 2 canales (Stereo)
+#### 8-bits de resolución / 6-bits de volumen
+#### Frecuencia de muestreo de 28 kHz (normal), 56 kHz (Modo Productivity)
+#### 70 dB S/N Ratio
+#### Video (Lisa):
+#### Paleta de 24-bits (16.7 Millones de colores)
+#### 256 colores simultáneos (262'144 en HAM-8)
+#### Rango de resoluciones de 320x200 a 1280x512i (entrelazado)
+#### Memoria:
+#### 512 KiB de ROM para el Kickstart code
+#### 2 MiB de CHIP RAM
+#### Hasta 8 MiB de Fast RAM en el slot de expansión
+#### Hasta 256 MiB de Fast RAM con tarjetas aceleradoras
+#### Almacenamiento Removible:
+#### Unidad de disquete de 3.5" Doble Densidad, con capacidad de 880 KiB
+#### Almacenamiento interno:
+#### Emplazamiento para disco duro 2.5" (Controladora IDE PIO-0)
+#### Conectores de Entrada/Salida:
+#### Salida vídeo compuesto TV (PAL en las versiones vendidas en Europa, Australia y parte de Asia, NTSC el resto)
+#### Conector de video RGB analógico a 15 kHz (DB-23)
+#### Conectores RCA audio estéreo
+#### 2 conectores Joystick/mouse (DE-9)
+#### Puerto serie RS-232 (DB-25)
+#### Puerto de impresora paralelo Centronics (DB-25)
+#### Puerto de unidad de disquete externa (DB-23)
+#### Puerto PCMCIA Type II de 16-bits
+#### Puerto de expansión local de 150 pines (compuerta inferior)
+#### Puerto de 22 pines para reloj interno
+#### Otras características
+#### Fuente de alimentación externa 23W, 220-240V/50Hz(PAL), 110V/60Hz(NTSC)
+#### Peso: 8 libras (3.6Kg)
+#### Tamaño: 9.5" profundo x 18.5" ancho x 3" alto (250 x 490 x 70 mm)
+#### Teclado estándar Amiga QWERTY/QWERTZ/AZERTY integrado con 96 teclas (incluyendo 19 teclas de función y el keypad numérico)
+#### Software (incluido):
+#### Sistema operativo AmigaOS 3.0-3.1. (Kickstart 3.0-3.1/Workbench 3.0-3.1)
 
-I2S LRCLK pin T6 Unamiga
+##### Fuente: Wikipedia https://es.wikipedia.org/wiki/Commodore_Amiga_1200
 
-I2S DATA pin T7 Unamiga
 
-Para usuarios con MC usar el core UnAmiga_MIST_AGA_I2S.rbf usuarios sin MC UnAmiga_MIST_AGA_I2S.jic
 
-![Esquema ES2093](https://user-images.githubusercontent.com/31018768/83967558-08537e00-a8c3-11ea-829a-a84d1da4b66b.jpg)
-
-![ES9023](https://user-images.githubusercontent.com/31018768/83967489-3dab9c00-a8c2-11ea-864e-163e48195298.jpg)
-
-![Esquema CS4344 y PCM5102](https://user-images.githubusercontent.com/31018768/83967494-55832000-a8c2-11ea-8d66-49dc219cf3b8.jpg)
