@@ -138,32 +138,32 @@ Irem M62 Hardware
 
 IremM52 Hardware
 ----------------------------------
-* Tropical Angel [Info]()
+* Tropical Angel [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Tropicalangel.md)
 * Tropang [Info]()
 
 Konami Classic
 ----------------------------------
-* Time Pilot [Info]()
+* Time Pilot [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Time%20Pilot.md)
 
 Konami Green Beret Hardware
 ----------------------------------
-* Green Beret OSD / No OSD [Info]()
-* Mr Goemon [Info]()
+* Green Beret OSD / No OSD [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/GreenBeret.md)
+* Mr Goemon [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Mrgoemon.md)
 
 Konami Scramble Hardware
 ----------------------------------
-* Amidar [Info]()
-* Armored Car [Info]()
-* Frogger [Info]()
-* Super Cobra [Info]()
-* Scramble [Info]()
-* Speed Coin [Info]()
-* Tazzmania [Info]()
-* The End [Info]()
+* Amidar [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Amidar.md)
+* Armored Car [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Armoredcar.md)
+* Frogger [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Frogger.md)
+* Super Cobra [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Super_Cobra.md)
+* Scramble [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/scramble.md)
+* Speed Coin [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Speed_Coin.md)
+* Tazzmania [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/TazzMania.md)
+* The End [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/The%20End.md)
 
 Midway  Taito 8080 Hardware
 ----------------------------------
-* Lunar Rescue [Info]()
+* Lunar Rescue [Info]
 * Space Invaders [Info]()
 
 Midway MCR 2 [Info]()
