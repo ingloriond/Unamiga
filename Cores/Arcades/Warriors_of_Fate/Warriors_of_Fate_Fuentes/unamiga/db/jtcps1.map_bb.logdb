@@ -1,3 +1,0 @@
-v1
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,jtcps1_game:u_game|jtcps1_video:u_video|jtcps1_mmr:u_mmr|lpm_mult:Mult0|mult_7dt:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,jtcps1_game:u_game|jtcps1_sound:u_sound|jt6295:u_adpcm|jt6295_adpcm:u_adpcm|lpm_mult:Mult0|mult_l4t:auto_generated|mac_out2,

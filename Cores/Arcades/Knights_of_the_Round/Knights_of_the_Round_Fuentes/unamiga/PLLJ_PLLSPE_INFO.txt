@@ -1,5 +1,0 @@
-PLL_Name	jtframe_pll96:u_pll_game|altpll:altpll_component|jtframe_pll96_altpll:auto_generated|pll1
-PLLJITTER	36
-PLLSPEmax	84
-PLLSPEmin	-53
-
