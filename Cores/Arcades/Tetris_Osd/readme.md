@@ -1,4 +1,4 @@
-# Tetris
+# Tetris + I2S
 
 ### Port por Jose Manuel @delgrom :+1: 
 #### Fuentes:
@@ -15,7 +15,7 @@
 
 #### SALIDA DE VIDEO : VGA,RGB
 
-#### SOPORTE I2S: NO
+#### SOPORTE I2S: SI
 
 ## Teclas:
 
