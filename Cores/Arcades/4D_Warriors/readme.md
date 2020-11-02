@@ -1,7 +1,7 @@
 # 4D Warriors
 
 ### Port por Jose Manuel @delgrom :+1: 
-#### Fuentes:
+#### Fuentes: Victor Trucco's MC2+ port
 
 ![4dwarriors](https://user-images.githubusercontent.com/31018768/97863726-babf2e00-1d07-11eb-9d47-067546de8686.jpg)
 
