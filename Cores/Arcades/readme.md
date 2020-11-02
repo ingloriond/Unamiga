@@ -45,7 +45,7 @@ Atari Tetris
 
 Berzek Hardware
 ----------------------------------
-* Moon War [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Moonwar.md)
+* Moon War [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Moonwar.md)
 
 Capcom CPS1 Hardware
 ----------------------------------
@@ -54,45 +54,45 @@ Capcom CPS1 Hardware
 * Carrier Air Wing [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/CarrierAirWing.md)
 * Dynasty Wars [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/.md)
 * Final Fight [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/FinalFight.md)
-* Forgotten Worlds [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/ForgottenWorlds.md)
-* Ghouls'n Ghost [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Ghouls'nghost.md)
-* Knight of the Round [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Knightoftheround.md)
-* Magic Sword [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/MagicSword.md)
-* Mega Man [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Megaman.md)
-* Mega Twins [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Megatwins.md)
-* Mercs [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Mercs.md)
-* Nemo [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Nemo.md)
-* Pang 3 [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Pang3.md)
-* Pnickies [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Pnickies.md)
-* Pokonyan Ballon [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Pokonyan_Balloon.md)
-* Quiz and Dragons [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Quizanddragons.md)
-* SF Alpha Warriors Dreams [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF_Alpha_Warriors_Dreams.md)
-* SF Zero [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF_Zero.md)
-* SF Champion Edition[Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF2_Champion_Edition.md)
-* SF2 Hyper Fighting [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF2_Turbo_Hyper_Fighting.md)
-* SF2 The World Warrior [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF2_The_World_Warrior.md)
-* SF2 Turbo Hyper Fighting [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF2_Turbo_Hyper_Fighting.md)
-* Strider [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Strider.md)
-* The King of Dragons [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/The_King_of_Dragons.md)
-* Three Wonders [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Three_Wonders.md)
-* UN Squadrons [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/UN_Squadron.md)
-* Varth [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Varth.md)
-* Warriors of Fate [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Warriors_of_Fate.md)
-* Willow [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Willow.md)
+* Forgotten Worlds [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/ForgottenWorlds.md)
+* Ghouls'n Ghost [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Ghouls'nghost.md)
+* Knight of the Round [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Knightoftheround.md)
+* Magic Sword [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/MagicSword.md)
+* Mega Man [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Megaman.md)
+* Mega Twins [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Megatwins.md)
+* Mercs [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Mercs.md)
+* Nemo [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Nemo.md)
+* Pang 3 [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Pang3.md)
+* Pnickies [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Pnickies.md)
+* Pokonyan Ballon [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Pokonyan_Balloon.md)
+* Quiz and Dragons [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Quizanddragons.md)
+* SF Alpha Warriors Dreams [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/SF_Alpha_Warriors_Dreams.md)
+* SF Zero [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/SF_Zero.md)
+* SF Champion Edition[Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/SF2_Champion_Edition.md)
+* SF2 Hyper Fighting [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/SF2_Turbo_Hyper_Fighting.md)
+* SF2 The World Warrior [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/SF2_The_World_Warrior.md)
+* SF2 Turbo Hyper Fighting [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/SF2_Turbo_Hyper_Fighting.md)
+* Strider [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Strider.md)
+* The King of Dragons [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/The_King_of_Dragons.md)
+* Three Wonders [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Three_Wonders.md)
+* UN Squadrons [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/UN_Squadron.md)
+* Varth [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Varth.md)
+* Warriors of Fate [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Warriors_of_Fate.md)
+* Willow [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Willow.md)
 
 Capcom SonSon Hardware
 ----------------------------------
-* SonSon [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Sonson.md)
+* SonSon [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Sonson.md)
 
 Crazy Climber Hardware
 ----------------------------------
-* Crazy Climber [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/CrazyClimber.md)
-* Crazy Kong [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Crazykong.md)
+* Crazy Climber [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/CrazyClimber.md)
+* Crazy Kong [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Crazykong.md)
 
 Data East Burger Time Hardware
 ----------------------------------
-* Burguer Time [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Burguertime.md)
-* Burning Rubber [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Burninrubber.md)
+* Burguer Time [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Burguertime.md)
+* Burning Rubber [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Burninrubber.md)
 
 Double Dragon Hardware
 ----------------------------------
