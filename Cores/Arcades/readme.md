@@ -45,83 +45,83 @@ Atari Tetris
 
 Berzek Hardware
 ----------------------------------
-* Moon War [Info]()
+* Moon War [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Moonwar.md)
 
 Capcom CPS1 Hardware
 ----------------------------------
-* 1941 Counter Attack [Info]()
-* Captain Commando [Info]()
-* Carrier Air Wing [Info]()
-* Dynasty Wars [Info]()
-* Final Fight [Info]()
-* Forgotten Worlds [Info]()
-* Ghouls'n Ghost [Info]()
-* Knight of the Round [Info]()
-* Magic Sword [Info]()
-* Mega Man [Info]()
-* Mega Twins [Info]()
-* Mercs [Info]()
-* Nemo [Info]()
-* Pang 3 [Info]()
-* Pnickies [Info]()
-* Pokonyan Ballon [Info]()
-* Quiz and Dragons [Info]()
-* SF Alpha Warriors Dreams [Info]()
-* SF Zero [Info]()
-* SF Champion Edition[Info]()
-* SF2 Hyper Fighting [Info]()
-* SF2 The World Warrior [Info]()
-* SF2 Turbo Hyper Fighting [Info]()
-* Strider [Info]()
-* The King of Dragons [Info]()
-* Three Wonders [Info]()
-* UN Squadrons [Info]()
-* Varth [Info]()
-* Warriors of Fate [Info]()
-* Willow [Info]()
+* 1941 Counter Attack [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/1941.md)
+* Captain Commando [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Capitancommando.md)
+* Carrier Air Wing [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/CarrierAirWing.md)
+* Dynasty Wars [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Dynastywars.md)
+* Final Fight [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/FinalFight.md)
+* Forgotten Worlds [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/ForgottenWorlds.md)
+* Ghouls'n Ghost [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Ghouls'nghost.md)
+* Knight of the Round [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Knightoftheround.md)
+* Magic Sword [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/MagicSword.md)
+* Mega Man [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Megaman.md)
+* Mega Twins [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Megatwins.md)
+* Mercs [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Mercs.md)
+* Nemo [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Nemo.md)
+* Pang 3 [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Pang3.md)
+* Pnickies [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Pnickies.md)
+* Pokonyan Ballon [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Pokonyan_Balloon.md)
+* Quiz and Dragons [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Quizanddragons.md)
+* SF Alpha Warriors Dreams [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF_Alpha_Warriors_Dreams.md)
+* SF Zero [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF_Zero.md)
+* SF Champion Edition[Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF2_Champion_Edition.md)
+* SF2 Hyper Fighting [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF2_Turbo_Hyper_Fighting.md)
+* SF2 The World Warrior [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF2_The_World_Warrior.md)
+* SF2 Turbo Hyper Fighting [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/SF2_Turbo_Hyper_Fighting.md)
+* Strider [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Strider.md)
+* The King of Dragons [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/The_King_of_Dragons.md)
+* Three Wonders [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Three_Wonders.md)
+* UN Squadrons [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/UN_Squadron.md)
+* Varth [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Varth.md)
+* Warriors of Fate [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Warriors_of_Fate.md)
+* Willow [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Willow.md)
 
 Capcom SonSon Hardware
 ----------------------------------
-* SonSon [Info]()
+* SonSon [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Sonson.md)
 
 Crazy Climber Hardware
 ----------------------------------
-* Crazy Climber [Info]()
-* Crazy Kong [Info]()
+* Crazy Climber [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/CrazyClimber.md)
+* Crazy Kong [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Crazykong.md)
 
 Data East Burger Time Hardware
 ----------------------------------
-* Burguer Time [Info]()
-* Burning Rubber [Info]()
+* Burguer Time [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Burguertime.md)
+* Burning Rubber [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Burninrubber.md)
 
 Double Dragon Hardware
 ----------------------------------
-* Double Dragon [Info]()
-* Double Dragon 2 [Info]()
+* Double Dragon [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Doubledragon.md)
+* Double Dragon 2 [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Doubledragon2.md)
 
 Galaga Hardware
 ----------------------------------
-* Galaga [Info]()
-* Dig Dug [Info]()
+* Galaga [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Galaga.md)
+* Dig Dug [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Digdug.md)
 
 Galaxian Hardware
 ----------------------------------
-* Z80 Based [Info]()
-  *  Azurian [Info]()
-  * BalckHole [Info]()
-  * Catacomb [Info]()
-  * Chewing Gum [Info]()
-  * Devil Fish [Info]()
-  * Galaxian [Info]()
-  * King Ballon [Info]()
-  * Moon Cresta [Info]()
-  * Mrdo Nightmare [Info]()
-  * Omega [Info]()
-  * Pisces [Info]()
-  * Triple Draw Poker [Info]()
-  * Uniwars [Info]()
-  * Victory [Info]()
-  * War of the Bugs [Info]()
+* Z80 Based 
+  *  Azurian [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Azurian.md)
+  * BalckHole [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/BlackHole.md)
+  * Catacomb [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Catacomb.md)
+  * Chewing Gum [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Chewinggum.md)
+  * Devil Fish [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Devilfish.md)
+  * Galaxian [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Galaxian.md)
+  * King Ballon [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/KingBallon.md)
+  * Moon Cresta [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Mooncreta.md)
+  * Mrdo Nightmare [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Mrdonightmare.md)
+  * Omega [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Omega.md)
+  * Pisces [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Pisces.md)
+  * Triple Draw Poker [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Triple_Draw_Poker.md)
+  * Uniwars [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Uniwars.md)
+  * Victory [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Victory.md)
+  * War of the Bugs [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/War_of_the_Bugs.md)
 
 Irem M62 Hardware
 ----------------------------------
