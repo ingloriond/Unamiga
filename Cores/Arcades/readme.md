@@ -49,11 +49,11 @@ Berzek Hardware
 
 Capcom CPS1 Hardware
 ----------------------------------
-* 1941 Counter Attack [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/1941.md)
-* Captain Commando [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Capitancommando.md)
-* Carrier Air Wing [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/CarrierAirWing.md)
-* Dynasty Wars [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Dynastywars.md)
-* Final Fight [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/FinalFight.md)
+* 1941 Counter Attack [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/1941.md)
+* Captain Commando [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Capitancommando.md)
+* Carrier Air Wing [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/CarrierAirWing.md)
+* Dynasty Wars [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/.md)
+* Final Fight [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/FinalFight.md)
 * Forgotten Worlds [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/ForgottenWorlds.md)
 * Ghouls'n Ghost [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Ghouls'nghost.md)
 * Knight of the Round [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Knightoftheround.md)
@@ -96,36 +96,36 @@ Data East Burger Time Hardware
 
 Double Dragon Hardware
 ----------------------------------
-* Double Dragon [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Doubledragon.md)
-* Double Dragon 2 [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Doubledragon2.md)
+* Double Dragon [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Doubledragon.md)
+* Double Dragon 2 [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Doubledragon2.md)
 
 Galaga Hardware
 ----------------------------------
-* Galaga [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Galaga.md)
-* Dig Dug [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Digdug.md)
+* Galaga [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Galaga.md)
+* Dig Dug [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Digdug.md)
 
 Galaxian Hardware
 ----------------------------------
 * Z80 Based 
-  *  Azurian [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Azurian.md)
-  * BalckHole [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/BlackHole.md)
-  * Catacomb [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Catacomb.md)
-  * Chewing Gum [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Chewinggum.md)
-  * Devil Fish [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Devilfish.md)
-  * Galaxian [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Galaxian.md)
-  * King Ballon [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/KingBallon.md)
-  * Moon Cresta [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Mooncreta.md)
-  * Mrdo Nightmare [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Mrdonightmare.md)
-  * Omega [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Omega.md)
-  * Pisces [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Pisces.md)
-  * Triple Draw Poker [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Triple_Draw_Poker.md)
-  * Uniwars [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Uniwars.md)
-  * Victory [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/Victory.md)
-  * War of the Bugs [Info](https://github.com/ingloriond/Organizacion_Arcades/blob/main/Z--Infojuegos/War_of_the_Bugs.md)
+  *  Azurian [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Azurian.md)
+  * BalckHole [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/BlackHole.md)
+  * Catacomb [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Catacomb.md)
+  * Chewing Gum [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Chewinggum.md)
+  * Devil Fish [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Devilfish.md)
+  * Galaxian [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Galaxian.md)
+  * King Ballon [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/KingBallon.md)
+  * Moon Cresta [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Mooncreta.md)
+  * Mrdo Nightmare [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Mrdonightmare.md)
+  * Omega [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Omega.md)
+  * Pisces [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Pisces.md)
+  * Triple Draw Poker [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Triple_Draw_Poker.md)
+  * Uniwars [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Uniwars.md)
+  * Victory [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Victory.md)
+  * War of the Bugs [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/War_of_the_Bugs.md)
 
 Irem M62 Hardware
 ----------------------------------
-* Battle Road [Info]()
+* Battle Road [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/BattleRoad.md)
 * Horizon [Info]()
 * Kid Niki [Info]()
 * Kung Fu Master [Info]()
