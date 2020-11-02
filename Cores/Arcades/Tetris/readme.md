@@ -1,4 +1,4 @@
-# Tetris
+# Tetris + I2S
 
 ### Port por Jose Manuel @delgrom :+1: 
 #### Fuentes:
@@ -9,13 +9,13 @@
 
 #### SRAM: SI
 
-#### MULTICORE: SI 
+#### MULTICORE: SI , Core: 1.03 o superior , STM: 1.06 o superior
 
 #### SOPORTE PAD 6 BOTONES: NO
 
 #### SALIDA DE VIDEO : VGA,RGB
 
-#### SOPORTE I2S: NO
+#### SOPORTE I2S: SI
 
 ## Teclas:
 
