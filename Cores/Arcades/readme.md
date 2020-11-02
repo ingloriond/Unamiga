@@ -126,20 +126,20 @@ Galaxian Hardware
 Irem M62 Hardware
 ----------------------------------
 * Battle Road [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/BattleRoad.md)
-* Horizon [Info]()
-* Kid Niki [Info]()
-* Kung Fu Master [Info]()
-* Lode Runner [Info]()
-* Lode Runner 2 [Info]()
-* Lode Runner 3 [Info]()
-* Lode Runner 4 [Info]()
-* Spelunker [Info]()
-* Youjudn [Info]()
+* Horizon [Info]
+* Kid Niki [Info]
+* Kung Fu Master [Info]
+* Lode Runner [Info]
+* Lode Runner 2 [Info]
+* Lode Runner 3 [Info]
+* Lode Runner 4 [Info]
+* Spelunker [Info]
+* Youjudn [Info]
 
 IremM52 Hardware
 ----------------------------------
 * Tropical Angel [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Tropicalangel.md)
-* Tropang [Info]()
+* Tropang [Info]
 
 Konami Classic
 ----------------------------------
@@ -164,92 +164,92 @@ Konami Scramble Hardware
 Midway  Taito 8080 Hardware
 ----------------------------------
 * Lunar Rescue [Info]
-* Space Invaders [Info]()
+* Space Invaders [Info]
 
-Midway MCR 2 [Info]()
+Midway MCR 2
 ----------------------------------
-* Domino Man [Info]()
-* Journey [Info]()
-* Kozmik Kroozr [Info]()
-* Satans Hollow [Info]()
-* Tron [Info]()
-* Two Tigers [Info]()
-* Wacko [Info]()
+* Domino Man [Info]
+* Journey [Info]
+* Kozmik Kroozr [Info]
+* Satans Hollow [Info]
+* Tron [Info]
+* Two Tigers [Info]
+* Wacko [Info]
 
 Namco Pacman Hardware
 ----------------------------------
-* Alibaba [Info]()
-* Birdiy [Info]()
-* CrushRoller [Info]()
-* Dream Shopper [Info]()
-* Eeeek [Info]()
-* Eggor [Info]()
-* Eyes [Info]()
-* Gorkans [Info]()
-* Lizard Wizzard [Info]()
-* Maniac Miner [Info]()
-* Mr TNT [Info]()
-* MS Pacman [Info]()
-* Pacman [Info]()
-* Pacman Club [Info]()
-* Pacman Plus [Info]()
-* Pengo [Info]()
-* Ponpoko [Info]()
-* SuperGlob [Info]()
-* VanvanCar [Info]()
-* Woodpecker [Info]()
+* Alibaba [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Alibaba.md)
+* Birdiy [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Birsiy.md)
+* CrushRoller [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/CrushRoller.md)
+* Dream Shopper [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Dreamshopper.md)
+* Eeeek [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Eeekk.md)
+* Eggor [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Eggor.md)
+* Eyes [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Eyes.md)
+* Gorkans [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Gorkans.md)
+* Lizard Wizzard [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Lizardwizzard.md)
+* Maniac Miner [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/ManiacMiner.md)
+* Mr TNT [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/MrTNT.md)
+* MS Pacman [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/MSpacman.md)
+* Pacman [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Pacman.md)
+* Pacman Club [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Pacmanclub.md)
+* Pacman Plus [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Pacmanplus.md)
+* Pengo [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Pengo.md)
+* Ponpoko [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Ponpoko.md)
+* SuperGlob [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/SuperGlob.md)
+* VanvanCar [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/VanVanCar.md)
+* Woodpecker [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Woodpecker.md)
 
 Namco Rally X Hardware
 ----------------------------------
-* Rally X [Info]()
+* Rally X [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Newrallyx.md)
 
 Namco Super Pacman Hardware
 ----------------------------------
-* Dig Dug 2 [Info]()
-* Mappy [Info]()
-* Motos [Info]()
-* Tower of Druaga [Info]()
+* Dig Dug 2 [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Digdug2.md)
+* Mappy [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Mappy.md)
+* Motos [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Motos.md)
+* Tower of Druaga [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/TowerofDruaga.md)
 
 Nintendo Popeye Hardware
 ----------------------------------
-* Popeye [Info]()
-* SkySkipper [Info]()
+* Popeye [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Popeye.md)
+* SkySkipper [Info]
 
 Nintendo Radar Scope Hardware
 ----------------------------------
-* Donkey Kong [Info]()
-* Donkey King jr [Info]()
+* Donkey Kong [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Donkeykong.md)
+* Donkey King jr [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Donkeykongjr.md)
 
 Phoenix Hardware
 ----------------------------------
-* Capitol [Info]()
-* Phoenix [Info]()
-* Pleiads [Info]()
+* Capitol [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Capitol.md)
+* Phoenix [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Phoenix.md)
+* Pleiads [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/PleiadsCapitol.md)
 
 Sega System 1 Hardware
 ----------------------------------
-* 4D Warriors [Info]()
-* Flicky [Info]()
-* I'm Sorry [Info]()
-* Mister Viking [Info]()
-* My Hero [Info]()
-* Pitfall II [Info]()
-* Regulus [Info]()
-* Sega Ninja [Info]()
-* Spatter [Info]()
-* Star Jacker [Info]()
-* Teddy Boy Blues [Info]()
-* Up'n down [Info]()
-* Wonderboy [Info]()
+* 4D Warriors [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/4DWarriors.md)
+* Flicky [Info]
+* I'm Sorry [Info]
+* Mister Viking [Info]
+* My Hero [Info]
+* Pitfall II [Info]
+* Regulus [Info]
+* Sega Ninja [Info]
+* Spatter [Info]
+* Star Jacker [Info]
+* Teddy Boy Blues [Info]
+* Up'n down [Info]
+* Wonderboy [Info]
 
 Sega Zaxxon Hardware
 ----------------------------------
-* Super Zaxxon [Info]()
-* Zaxxon [Info]()
+* Super Zaxxon [Info]
+* Zaxxon [Info]
 
 Tehkan Bombjack Hardware
 ----------------------------------
-* Bomb Jack [Info]()
+* Bomb Jack [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Bombjack.md)
 
 
 
