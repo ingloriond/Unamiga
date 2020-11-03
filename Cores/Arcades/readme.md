@@ -10,15 +10,9 @@ Varios
 
 * Black Tiguer [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Blacktiguer.md)
 
-* Commando [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Commando.md)
-
 * Crush 2 [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Crush2.md)
 
 * F1 Dream [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/F1dream.md)
-
-* Ghost'n Goblins [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Ghost'ngoblins.md)
-
-* Gun Smoke [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Gunsmoke.md)
 
 * Moon Patrol [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Moonpatrol.md)
 
@@ -32,8 +26,6 @@ Varios
 
 * Triple Draw Poker [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Triple_Draw_Poker.md)
 
-* Vulgus [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Vulgus.md)
-
 
 Atari Centipede Hardware
 ----------------------------------
@@ -46,6 +38,20 @@ Atari Tetris
 Berzek Hardware
 ----------------------------------
 * Moon War [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Moonwar.md)
+
+Capcom CPS0 Hardware
+----------------------------------
+* 1942 [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/1942.md)
+
+* 1943 [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/1943.md)
+
+* Commando [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Commando.md)
+
+* Ghost'n Goblins [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Ghost'ngoblins.md)
+
+* Gun Smoke [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Gunsmoke.md)
+
+* Vulgus [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Vulgus.md)
 
 Capcom CPS1 Hardware
 ----------------------------------
