@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.730
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 3.969
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 3.847
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_50_i'
+Slack : 9.864
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 10.027
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 2.772
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 4.467
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 3.446
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_50_i'
+Slack : 9.866
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 9.965
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 7.279
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 7.159
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.675
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_50_i'
+Slack : 9.413
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_pll_game|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 10.164
+TNS   : 0.000
+
+------------------------------------------------------------

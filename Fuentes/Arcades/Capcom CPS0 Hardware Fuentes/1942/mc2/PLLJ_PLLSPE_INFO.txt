@@ -1,0 +1,5 @@
+PLL_Name	jtgng_pll0:u_pll_game|altpll:altpll_component|jtgng_pll0_altpll:auto_generated|pll1
+PLLJITTER	32
+PLLSPEmax	84
+PLLSPEmin	-53
+

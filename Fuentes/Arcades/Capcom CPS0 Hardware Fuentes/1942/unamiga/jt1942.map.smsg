@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at jtgng_char.v(32): object "VFLIP_EN" differs only in case from object "vflip_en" in the same scope
+Info (10281): Verilog HDL Declaration information at jtgng_char.v(33): object "HFLIP_EN" differs only in case from object "hflip_en" in the same scope

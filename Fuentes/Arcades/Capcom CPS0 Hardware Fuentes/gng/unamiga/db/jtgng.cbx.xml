@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="jtgng">
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm0|jt12_top:u_jt12|jt12_op:u_op|jt12_exprom:u_exprom|altsyncram:explut_jt51_rtl_0" CBX_FILE_NAME="altsyncram_kv71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_char:u_char|jtgng_tilemap:u_tilemap|jtgng_ram:u_ram_low|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_9g41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_obj:u_obj|jtgng_objdma:u_dma|jtgng_dual_ram:u_objram|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_qsg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_scroll:u_scroll|jtgng_tilemap:u_tilemap|jtgng_ram:u_ram_high|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_t691.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_main:u_main|jtgng_ram:u_ram|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_pg41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm0|jt12_top:u_jt12|jt12_op:u_op|jt12_logsin:u_logsin|altsyncram:sinelut_rtl_0" CBX_FILE_NAME="altsyncram_6u71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm0|jt12_top:u_jt12|jt12_op:u_op|jt12_sh:phasemod_sh|altshift_taps:bits_rtl_0" CBX_FILE_NAME="shift_taps_dnm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm1|jt12_top:u_jt12|jt12_op:u_op|jt12_exprom:u_exprom|altsyncram:explut_jt51_rtl_0" CBX_FILE_NAME="altsyncram_kv71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jtgng_ram:u_ram|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_hg41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_colmix:u_colmix|jtgng_dual_ram:u_redgreen|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_1tg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm1|jt12_top:u_jt12|jt12_op:u_op|jt12_logsin:u_logsin|altsyncram:sinelut_rtl_0" CBX_FILE_NAME="altsyncram_6u71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm1|jt12_top:u_jt12|jt12_op:u_op|jt12_sh:phasemod_sh|altshift_taps:bits_rtl_0" CBX_FILE_NAME="shift_taps_dnm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_obj:u_obj|jtgng_objbuf:u_buf|jtgng_ram:objbuf_a|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_jd41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_obj:u_obj|jtgng_objpxl:u_pxlbuf|jtgng_ram:lineA_buf|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_kd41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_scroll:u_scroll|jtgng_tilemap:u_tilemap|jtgng_ram:u_ram_low|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_9g41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_scan2x:u_scan2x|altsyncram:mem0_rtl_0" CBX_FILE_NAME="altsyncram_4fi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_obj:u_obj|jtgng_objbuf:u_buf|jtgng_ram:objbuf_b|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_jd41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_obj:u_obj|jtgng_objpxl:u_pxlbuf|jtgng_ram:lineB_buf|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_kd41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_scan2x:u_scan2x|altsyncram:mem1_rtl_0" CBX_FILE_NAME="altsyncram_4fi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt12_mixer:u_mixer|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_i9h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm0|jt12_top:u_jt12|jt12_pg:u_pg|jt12_pg_comb:u_comb|jt12_pg_sum:u_sum|lpm_mult:Mult0" CBX_FILE_NAME="mult_ibt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt12_mixer:u_mixer|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_ckh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_colmix:u_colmix|jtgng_dual_ram:u_blue|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_psg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_pll0:u_pll_game|altpll:altpll_component" CBX_FILE_NAME="jtgng_pll0_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm0|jt12_top:u_jt12|jt12_eg:u_eg|altshift_taps:eg_V_rtl_0" CBX_FILE_NAME="shift_taps_cnm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm1|jt12_top:u_jt12|jt12_pg:u_pg|jt12_pg_comb:u_comb|jt12_pg_sum:u_sum|lpm_mult:Mult0" CBX_FILE_NAME="mult_ibt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt12_mixer:u_mixer|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gkh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_char:u_char|jtgng_tilemap:u_tilemap|jtgng_ram:u_ram_high|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_t691.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm0|jt12_top:u_jt12|jt12_eg:u_eg|altshift_taps:ssg_inv_II_rtl_0" CBX_FILE_NAME="shift_taps_gnm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm1|jt12_top:u_jt12|jt12_eg:u_eg|altshift_taps:eg_V_rtl_0" CBX_FILE_NAME="shift_taps_cnm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_obj:u_obj|jtgng_sh:u_sh|altshift_taps:bits_rtl_0" CBX_FILE_NAME="shift_taps_3mm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_sound:u_sound|jt03:u_fm1|jt12_top:u_jt12|jt12_eg:u_eg|altshift_taps:ssg_inv_II_rtl_0" CBX_FILE_NAME="shift_taps_gnm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jtgng_mc2|jtgng_game:u_game|jtgng_video:u_video|jtgng_charmsg:u_msg|jtgng_ram:u_char_msg|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_8v61.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

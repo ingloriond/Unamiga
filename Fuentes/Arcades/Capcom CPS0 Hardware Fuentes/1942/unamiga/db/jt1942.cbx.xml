@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="jt1942">
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jt1942_obj:u_obj|jt1942_objram:u_ram|jtgng_ram:u_ram|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_jd41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jtframe_mc2:u_frame|jtframe_board:u_board|jtgng_vga:u_gngvga|jtgng_dual_clk_ram:ram1|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_t2d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_main:u_main|jtgng_ram:RAM|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_ng41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jt1942_colmix:u_colmix|jtgng_prom:u_red|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_fpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jtgng_prom:u_prom_d1|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_bpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jtgng_pll0:u_pll_game|altpll:altpll_component" CBX_FILE_NAME="jtgng_pll0_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jt1942_colmix:u_colmix|jtgng_prom:u_blue|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_fpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jt1942_obj:u_obj|jt1942_objtiming:u_timing|jtgng_prom:u_prom_m11|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_bpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jt1942_obj:u_obj|jtgng_objpxl:u_pxlbuf|jtgng_ram:lineA_buf|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_kd41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jtgng_char:u_char|jtgng_prom:u_vprom|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_fpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jtgng_char:u_char|jtgng_tilemap:u_tilemap|jtgng_ram:u_ram_high|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_h391.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jtgng_prom:u_prom_d2|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_fpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jtgng_prom:u_prom_d6|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_fpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jtgng_scroll:u_scroll|jtgng_tilemap:u_tilemap|jtgng_ram:u_ram_low|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_id41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_main:u_main|jtgng_prom:u_vprom|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_fpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jt1942_colmix:u_colmix|jtgng_prom:u_green|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_fpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jt1942_obj:u_obj|jtgng_objpxl:u_pxlbuf|jtgng_ram:lineB_buf|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_kd41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jtframe_mc2:u_frame|jtframe_board:u_board|jtgng_vga:u_gngvga|jtgng_dual_clk_ram:ram0|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_t2d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jtgng_char:u_char|jtgng_tilemap:u_tilemap|jtgng_ram:u_ram_low|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_9g41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jtgng_scroll:u_scroll|jtgng_tilemap:u_tilemap|jtgng_ram:u_ram_high|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_p091.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_sound:u_sound|jtgng_ram:u_ram|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_hg41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jt1942_obj:u_obj|jt1942_objdraw:u_draw|jtgng_prom:u_prom_k3|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_fpd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|jt1942_mc2|jt1942_game:u_game|jt1942_video:u_video|jtgng_ram:u_char_msg|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_sr61.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

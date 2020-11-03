@@ -1,0 +1,5 @@
+Info (10281): Verilog HDL Declaration information at mc6809i.v(49): object "ADDR" differs only in case from object "addr" in the same scope
+Info (10281): Verilog HDL Declaration information at jtgng_video.v(84): object "SCRWIN" differs only in case from object "scrwin" in the same scope
+Info (10281): Verilog HDL Declaration information at jtgng_char.v(32): object "VFLIP_EN" differs only in case from object "vflip_en" in the same scope
+Info (10281): Verilog HDL Declaration information at jtgng_char.v(33): object "HFLIP_EN" differs only in case from object "hflip_en" in the same scope
+Info (10281): Verilog HDL Declaration information at jtgng_colmix.v(62): object "SCRWIN" differs only in case from object "scrwin" in the same scope

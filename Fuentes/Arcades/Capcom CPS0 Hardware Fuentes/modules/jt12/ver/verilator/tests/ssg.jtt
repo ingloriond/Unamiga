@@ -1,0 +1,77 @@
+blk_fnum 3f # block=1, fnum hi=100b
+fnum_lsb ff
+
+tl 0,0,0
+
+fb_con 0,7
+
+amon_dr 0,0,12	# decay rate
+sr 0,0,18	# sustain rate, 5 bits
+sl_rr 0,0,3f	# sl_rr 4 bits / RR 4 bits
+ks_ar 0,0,1f	# direct attack
+
+
+lr_ams_pms 0,c0
+
+# |\|\|\
+lr_ams_pms 40
+ssg 0,0,8
+kon 10
+wait 4000
+kon 0
+wait 200
+
+lr_ams_pms 80
+ssg 0,0,9
+# |\_
+kon 10
+wait 2000
+kon 0
+wait 200
+
+# |\/\/\/
+lr_ams_pms 40
+ssg 0,0,a
+kon 10
+wait 4000
+kon 0
+wait 200
+
+# |\|---
+lr_ams_pms 80
+ssg 0,0,b
+kon 10
+wait 4000
+kon 0
+wait 200
+
+# /|/|/|
+lr_ams_pms 40
+ssg 0,0,c
+kon 10
+wait 4000
+kon 0
+wait 200
+
+# /------
+lr_ams_pms 80
+ssg 0,0,d
+kon 10
+wait 4000
+kon 0
+wait 200
+
+# /\/\/\
+lr_ams_pms 40
+ssg 0,0,e
+kon 10
+wait 4000
+kon 0
+wait 200
+
+# /|_______
+lr_ams_pms 80
+ssg 0,0,f
+kon 10
+wait 4000
+kon 0

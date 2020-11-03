@@ -1,0 +1,67 @@
+ym2610
+astart_lsb 0,00
+astart_msb 0,0
+aend_lsb 0,0F
+aend_msb 0,0
+atl 3f
+
+aend_msb   0,F
+aend_msb   1,F
+aend_msb   2,F
+aend_msb   3,F
+aend_msb   4,F
+aend_msb   5,F
+aend_lsb   0,FF
+aend_lsb   1,FF
+aend_lsb   2,FF
+aend_lsb   3,FF
+aend_lsb   4,FF
+aend_lsb   5,FF
+
+alr 0,d0
+alr 1,d1
+alr 2,d2
+alr 3,d3
+alr 4,d4
+alr 5,d5
+
+aon 1
+wait 800
+
+aon 81
+aon 2
+wait 800
+
+aon 82
+aon 4
+wait 800
+
+aon 84
+aon 8
+wait 800
+
+aon 88
+aon 10
+wait 800
+
+aon 90
+aon 20
+wait 800
+
+aon a0
+wait 800
+
+# all channels now
+atl 30
+aon 1
+wait 1000
+aon 2
+wait 1000
+aon 4
+wait 1000
+aon 8
+wait 1000
+aon 10
+wait 1000
+aon 20
+wait 1000

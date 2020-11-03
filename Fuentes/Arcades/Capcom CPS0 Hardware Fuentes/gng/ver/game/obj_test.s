@@ -1,0 +1,352 @@
+	ORG $8000
+
+SCR_PALRAM	EQU $3800
+OBJ_PALRAM	EQU $3840
+CHR_PALRAM	EQU $38C0
+HPOS_LOW	EQU $3B08
+HPOS_HIGH	EQU $3B09
+VPOS_LOW	EQU $3B0A
+VPOS_HIGH	EQU $3B0B
+OKOUT		EQU $3C00
+BANK		EQU $3E00
+FLIP		EQU $3D00
+JOY1		EQU $3001
+JOY2		EQU $3002
+CRC			EQU $3005
+
+CHR			EQU $2000
+CHR_ATT		EQU $2400
+SCR			EQU $2800
+SCR_ATT		EQU $2C00
+
+FLIPVAR		EQU $1010
+
+PAL_DONE	EQU $0
+
+RESET: 
+	ORCC #$10
+	LDS	#$1E00-1
+	LDA #$18
+	TFR A,DP
+	CLRA
+	STA	BANK
+	LDA #0
+	STA FLIP
+	CLRA
+	STA FLIPVAR
+	CLRA
+	STA HPOS_LOW
+	STA HPOS_HIGH
+	STA VPOS_LOW
+	STA VPOS_HIGH
+
+;	LDX #$1E00
+;	LDA #$F8
+;	LDB #$F8
+;@L:
+;	STD ,X++
+;	CMPX #$2000
+;	BLT @L
+
+;	LDX #$1E3C
+;	LDY #(OBJ_SAMPLE+4)
+;	LDB #4
+;@L:
+;	LDA ,Y+
+;	STA ,X+
+;	DECB
+;	BNE @L
+	BSR DRAW_OBJ_SAMPLE
+
+	LBSR SETUP_PAL
+FIN:
+	BRA FIN
+
+DRAW_OBJ_SAMPLE:
+	;LDY #OBJ_SAMPLE
+	;LDY #OBJ_ZOMBIES
+	LDY #OBJ_FULL
+	LDX #$1E3C
+@L2:
+	LDA ,Y+
+	CMPA #$FA
+	BEQ @LFIN
+	STA ,X+
+	BRA @L2
+@LFIN:
+	RTS
+
+OBJ_FULL:
+	FCB $00,$00,$14,$00
+	FCB $01,$01,$14,$01
+	FCB $02,$02,$14,$02
+	FCB $03,$03,$14,$03
+	FCB $04,$04,$14,$04
+	FCB $05,$05,$15,$05
+	FCB $06,$06,$16,$06
+	FCB $07,$07,$17,$07
+	FCB $08,$08,$18,$08
+	FCB $09,$09,$19,$09
+	FCB $0A,$0A,$1A,$0A
+	FCB $0B,$0B,$1B,$0B
+	FCB $0C,$0C,$1C,$0C
+	FCB $0D,$0D,$1D,$0D
+	FCB $0E,$0E,$1F,$0E
+	FCB $0F,$0F,$20,$0F
+	FCB $10,$10,$21,$10
+	FCB $11,$11,$22,$11
+	FCB $12,$12,$23,$12
+	FCB $13,$13,$24,$13
+	FCB $14,$14,$25,$14
+	FCB $15,$15,$26,$15
+	FCB $16,$16,$26,$16
+	FCB $17,$17,$26,$17
+	FCB $18,$18,$26,$18
+	FCB $19,$19,$26,$19
+	FCB $FA
+OBJ_SAMPLE2:
+	FCB $1,$0,$B1,$4F
+OBJ_SAMPLE:
+	FCB $68,$90,$C2,$C5
+	FCB $55,$04,$B1,$4F
+	FCB $54,$04,$B1,$5F
+	FCB $55,$04,$B1,$21
+	FCB $54,$04,$B1,$31
+	FCB $BE,$30,$C2,$75
+	FCB $BF,$30,$C2,$85
+	FCB $30,$00,$C2,$18
+	FCB $7E,$70,$C2,$C2
+	FCB $76,$70,$B2,$C2
+	FCB $7F,$70,$C2,$D2
+	FCB $77,$70,$B2,$D2
+	FCB $7A,$70,$C2,$52
+	FCB $72,$70,$B2,$52
+	FCB $7B,$70,$C2,$62
+	FCB $73,$70,$B2,$62
+	FCB $2B,$04,$C2,$70
+	FCB $23,$04,$B2,$70
+	FCB $2A,$04,$C2,$80
+	FCB $22,$04,$B2,$80
+	FCB $21,$04,$F8,$70
+	FCB $28,$04,$F8,$80
+	FCB $20,$04,$F8,$80
+	FCB $22,$00,$F8,$70
+	FCB $2B,$00,$F8,$80
+	FCB $23,$00,$F8,$80
+	FCB $FA
+
+; 1E3C onwards
+OBJ_LEFT: 
+	FCB $7C,$70,$C2,$F0
+	FCB $74,$70,$B2,$F0
+	FCB $7D,$71,$C2,$00	;hover
+	FCB $75,$71,$B2,$00	;hover
+	FCB $7A,$79,$C2,$20
+	FCB $72,$70,$B2,$20
+	FCB $7B,$70,$C2,$30
+	FCB $73,$70,$B2,$30
+	FCB $18,$01,$C2,$FF	;hover
+	FCB $10,$01,$B2,$FF	;hover
+	FCB $19,$00,$C2,$0F
+	FCB $11,$00,$B2,$0F
+	FCB $11,$00,$F8,$0F
+	FCB $2F,$00,$F8,$0F
+	FCB $27,$00,$F8,$0F
+	FCB $2E,$01,$F8,$FF	;hover
+	FCB $26,$01,$F8,$FF	;hover
+	FCB $2F,$00,$F8,$0F
+	FCB $27,$00,$F8,$0F
+	FCB $25,$00,$F8,$0F
+	FCB $17,$00,$F8,$0F
+	FCB $10,$04,$F8,$0C
+	FCB $2B,$00,$F8,$11
+	FCB $23,$00,$F8,$11
+	FCB $28,$00,$F8,$01
+	FCB $20,$00,$F8,$01
+	FCB $28,$00,$F8,$11
+	FCB $21,$00,$F8,$11
+	FCB $FA
+
+; 1E3C onwards
+OBJ_INTRO:
+	FCB $6E,$80,$C0,$50
+	FCB $66,$80,$B0,$50
+	FCB $6F,$80,$C0,$60
+	FCB $67,$80,$B0,$60
+	FCB $3B,$A0,$C0,$68
+	FCB $33,$A0,$B0,$68
+	FCB $B0,$A0,$68,$AD
+	FCB $A8,$A0,$58,$AD
+	FCB $A0,$A0,$48,$AD
+	FCB $B1,$A0,$68,$BD
+	FCB $A9,$A0,$58,$BD 
+	FCB $A1,$A0,$48,$BD 
+	FCB $B2,$A0,$68,$CD
+	FCB $AA,$A0,$58,$CD
+	FCB $A2,$A0,$48,$CD 
+	FCB $3D,$40,$C0,$48 
+	FCB $34,$40,$B8,$48
+	FCB $FA
+
+; 1E3C onwards
+OBJ_ZOMBIES:
+	FCB $BA,$30,$C2,$84
+	FCB $B2,$30,$B2,$84 
+	FCB $BB,$30,$C2,$94 
+	FCB $B3,$30,$B2,$94 
+	FCB $B8,$30,$CA,$C0
+	FCB $B0,$30,$BA,$C0 
+	FCB $B9,$30,$CA,$D0 
+	FCB $B1,$30,$BA,$D0 
+	FCB $B8,$30,$C2,$60
+	FCB $B0,$30,$B2,$60 
+	FCB $B9,$30,$C2,$70 
+	FCB $B1,$30,$B2,$70 
+	FCB $7C,$70,$C2,$F0
+	FCB $74,$70,$B2,$F0 
+	FCB $7D,$71,$C2,$00 
+	FCB $75,$71,$B2,$00 
+	FCB $7A,$70,$C2,$20
+	FCB $72,$70,$B2,$20 
+	FCB $7B,$70,$C2,$30 
+	FCB $73,$70,$B2,$30 
+	FCB $18,$00,$C2,$50
+	FCB $10,$00,$B2,$50 
+	FCB $19,$00,$C2,$60 
+	FCB $11,$00,$B2,$60
+	FCB $FA
+
+; 1E3C onwards
+OBJ_BRIDGE:
+	FCB $68,$50,$D4,$75
+	FCB $69,$50,$D4,$85
+	FCB $18,$00,$C4,$70
+	FCB $10,$00,$B4,$70
+	FCB $19,$00,$C4,$80
+	FCB $11,$00,$B4,$80
+	FCB $18,$00,$F8,$70
+	FCB $10,$00,$F8,$70
+	FCB $19,$00,$F8,$80
+	FCB $11,$00,$F8,$80
+	FCB $03,$00,$F8,$80
+	FCB $03,$00,$F8,$80
+	FCB $0F,$00,$F8,$80
+	FCB $07,$00,$F8,$80
+	FCB $0C,$00,$F8,$70
+	FCB $04,$00,$F8,$70
+	FCB $0D,$00,$F8,$80
+	FCB $05,$00,$F8,$80
+	FCB $21,$00,$F8,$80
+	FCB $21,$00,$F8,$80
+	FCB $03,$00,$F8,$80
+	FCB $0B,$00,$F8,$80
+	FCB $03,$00,$F8,$80
+	FCB $0C,$00,$F8,$70
+	FCB $04,$00,$F8,$70
+	FCB $0D,$00,$F8,$80
+	FCB $05,$00,$F8,$70
+	FCB $08,$00,$F8,$70
+	FCB $00,$00,$F8,$70
+	FCB $09,$00,$F8,$80
+	FCB $01,$00,$F8,$80
+	FCB $10,$04,$F8,$80
+	FCB $1B,$00,$F8,$80
+	FCB $03,$00,$F8,$80
+	FCB $FA
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+SETUP_PAL:
+	; primero la paleta
+	LDA #1
+	STA >PAL_DONE	; FLAG
+	ANDCC #$EF
+@PAL:
+	LDA >PAL_DONE
+	CMPA #1
+	BEQ @PAL
+	RTS
+
+CHAR_PALETTE:
+	; Characters. 16 palettes
+	FDB $F000,$A000,$5000,$0000	; Red   tones
+	FDB $0F00,$0A00,$0500,$0000	; Green tones
+	FDB $00F0,$00A0,$0050,$0000	; Blue  tones
+	FDB $FFF0,$AAA0,$5550,$0000	; Gray  tones
+
+	FDB $F000,$A000,$5000,$0000	; Red   tones
+	FDB $0F00,$0A00,$0500,$0000	; Green tones
+	FDB $00F0,$00A0,$0050,$0000	; Blue  tones
+	FDB $FFF0,$AAA0,$5550,$0000	; Gray  tones
+
+	FDB $F000,$A000,$5000,$0000	; Red   tones
+	FDB $0F00,$0A00,$0500,$0000	; Green tones
+	FDB $00F0,$00A0,$0050,$0000	; Blue  tones
+	FDB $FFF0,$AAA0,$5550,$0000	; Gray  tones
+
+	FDB $F000,$A000,$5000,$0000	; Red   tones
+	FDB $0F00,$0A00,$0500,$0000	; Green tones
+	FDB $00F0,$00A0,$0050,$0000	; Blue  tones
+	FDB $FFF0,$AAA0,$5550,$0000	; Gray  tones
+
+; Scroll. 8 palettes
+SCROLL_PALETTE:
+	FDB $F000,$A000,$5000,$0000	; Red   tones
+	FDB $0F00,$0A00,$0500,$0000	; Green tones
+	FDB $00F0,$00A0,$0050,$0000	; Blue  tones
+	FDB $FFF0,$AAA0,$5550,$0000	; Gray  tones
+
+	FDB $F000,$A000,$5000,$0000	; Red   tones
+	FDB $0F00,$0A00,$0500,$0000	; Green tones
+	FDB $00F0,$00A0,$0050,$0000	; Blue  tones
+	FDB $FFF0,$AAA0,$5550,$0000	; Gray  tones
+OBJECT_PALETTE: ; 4 paletas de 16 colores
+	FDB $FFF0,$EEE0,$DDD0,$CCC0	; Gray  tones
+	FDB $BBB0,$AAA0,$9990,$8880	; Gray  tones
+	FDB $7770,$6660,$5550,$4440	; Gray  tones
+	FDB $3330,$2220,$1110,$0000	; Gray  tones
+
+	FDB $FFF0,$EEE0,$DDD0,$CCC0	; Gray  tones
+	FDB $BBB0,$AAA0,$9990,$8880	; Gray  tones
+	FDB $7770,$6660,$5550,$4440	; Gray  tones
+	FDB $3330,$2220,$1110,$0000	; Gray  tones
+
+	FDB $FFF0,$EEE0,$DDD0,$CCC0	; Gray  tones
+	FDB $BBB0,$AAA0,$9990,$8880	; Gray  tones
+	FDB $7770,$6660,$5550,$4440	; Gray  tones
+	FDB $3330,$2220,$1110,$0000	; Gray  tones
+
+	FDB $FFF0,$EEE0,$DDD0,$CCC0	; Gray  tones
+	FDB $BBB0,$AAA0,$9990,$8880	; Gray  tones
+	FDB $7770,$6660,$5550,$4440	; Gray  tones
+	FDB $3330,$2220,$1110,$0000	; Gray  tones
+
+IRQSERVICE:
+	; ORCC #$10
+	; fill palette
+	; RG mem test
+	CLRA	; Is the palette already filled?
+	CMPA >PAL_DONE
+	BNE @DOWORK
+	CLR OKOUT
+	RTI
+@DOWORK:
+	LDX #OBJ_PALRAM
+	LDY #OBJECT_PALETTE	
+@L:	LDD ,Y++
+	STA ,X
+	STB $100,X
+	LEAX 1,X
+	CMPY #(OBJECT_PALETTE+4*8*4)
+	BNE @L
+
+	CLR >PAL_DONE
+	CLR OKOUT
+	RTI
+
+	FILL $FF,$FFF8-*
+
+	ORG $FFF8
+	.DW IRQSERVICE
+	FILL $FF,$FFFE-*
+	ORG $FFFE
+	.DW	RESET	; Reset vector

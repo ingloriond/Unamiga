@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Oct 12 19:25:55 2019
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : jtgng
+Top-level Entity Name : jtgng_mc2
+Family : Cyclone IV E
+Device : EP4CE22F17C8
+Timing Models : Final
+Total logic elements : 12,877 / 22,320 ( 58 % )
+    Total combinational functions : 12,102 / 22,320 ( 54 % )
+    Dedicated logic registers : 5,563 / 22,320 ( 25 % )
+Total registers : 5620
+Total pins : 132 / 154 ( 86 % )
+Total virtual pins : 0
+Total memory bits : 156,076 / 608,256 ( 26 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

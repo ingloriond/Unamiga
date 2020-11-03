@@ -1,0 +1,7 @@
+
+State Machine - |jt1942_mc2|jtframe_mc2:u_frame|jtframe_board:u_board|jtgng_vga:u_gngvga|state
+Name state.BACK state.LINE state.FRONT state.SYNC 
+state.SYNC 0 0 0 0 
+state.FRONT 0 0 1 1 
+state.LINE 0 1 0 1 
+state.BACK 1 0 0 1 

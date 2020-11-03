@@ -1,0 +1,57 @@
+ym2610
+load_adpcma 2.rom
+
+# INFO: read 4864 bytes into ADPCM ROM at 0x2b1b00 (ADDR 0x2b1b - 0x2b2e) 
+# INFO: read 4608 bytes into ADPCM ROM at 0x2b3d00 (ADDR 0x2b3d - 0x2b4f) 
+# INFO: read 16640 bytes into ADPCM ROM at 0x2be700 (ADDR 0x2be7 - 0x2c28) 
+# INFO: read 15872 bytes into ADPCM ROM at 0x2cc000 (ADDR 0x2cc0 - 0x2cfe) 
+
+atl 3f
+alr 0,ff
+alr 1,ff
+alr 2,ff
+alr 3,ff
+alr 4,ff
+alr 5,ff
+
+astart_msb 0,2b
+astart_lsb 0,1b
+aend_msb   0,2b
+aend_lsb   0,2e
+
+aon 1
+wait 35000
+
+astart_msb 1,2b
+astart_lsb 1,1b
+aend_msb   1,2b
+aend_lsb   1,2e
+
+aon 2
+wait 25000
+
+aon 82
+aon 2
+wait 10000
+
+aon 82
+aon 2
+wait 10000
+
+aon 82
+aon 2
+wait 10000
+
+aon 82
+aon 2
+wait 10000
+
+aon 81
+aon 1
+wait 10000
+
+aon 82
+aon 2
+wait 10000
+
+wait 10000
