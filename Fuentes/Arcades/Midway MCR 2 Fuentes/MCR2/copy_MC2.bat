@@ -1,0 +1,6 @@
+copy output_files\mcr2.rbf "Domino Man.mc2"
+copy output_files\mcr2.rbf "Kozmik Kroozr.mc2"
+copy output_files\mcr2.rbf "Satans Hollow.mc2"
+copy output_files\mcr2.rbf "Tron.mc2"
+copy output_files\mcr2.rbf "Two Tigers.mc2"
+copy output_files\mcr2.rbf "Wacko.mc2"

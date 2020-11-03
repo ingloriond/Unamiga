@@ -1,0 +1,3 @@
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) jtframe_rom.v     ]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) jtframe_romrq.v   ]
+# set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) jtframe_romflex.v ]
