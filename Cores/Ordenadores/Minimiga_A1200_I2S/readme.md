@@ -1,4 +1,8 @@
-# Amiga A1200
+# Amiga A1200 + I2S (*)
+
+## I2S Implementado por Jose Manuel @delgrom
+
+### (*) Necesario el addon I2S [Tutorial](https://github.com/ingloriond/Unamiga/wiki/DAC-2-I2S)
 ### Core por Jepalza, mejoras por @NeuroRulez(Twitter @Neuro_999, Github: https://github.com/neurorulez) y Edu Arana @eduarana ( https://arananet.net/ ) preparando el entorno de compilacion para el osd y la traducción.
 
 ![a1200foto](https://user-images.githubusercontent.com/31018768/71215821-17188b00-22b9-11ea-8033-4ef7fa745241.jpg)
