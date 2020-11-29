@@ -8,10 +8,6 @@ You can show your appreciation through
 * Patreon: https://patreon.com/topapate
 * Paypal: https://paypal.me/topapate
 
-Yes, you always wanted to have a Bubble Bobble arcade board at home. First you couldn't get it because your parents somehow did not understand you. Then you grow up and your wife doesn't understand you either. Don't worry, MiST(er) is here to the rescue.
-
-I hope you will have as much fun with it as I had it while making it!
-
 ## Supported Games
 
 In chronological order:
@@ -67,5 +63,3 @@ For MiST and MiSTer: games can be controlled with both game pads and keyboard. T
 Jose Tejada Gomez. Twitter @topapate
 Project is hosted in http://www.github.com/jotego/jt_gng
 License: GPL3, you are obligued to publish your code if you use mine
-
-Thank you to June 2020 patrons for supporting this development and esp
