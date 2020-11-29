@@ -24,6 +24,11 @@ Berzek Hardware
 ----------------------------------
 * Moon War [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Moonwar.md)
 
+Bubble Bobble hardware
+----------------------------------
+* Bubble Bobble
+* Tokio
+
 Capcom CPS0 Hardware
 ----------------------------------
 * 1942 [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/1942.md)
