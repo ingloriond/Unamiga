@@ -1,0 +1,430 @@
+#!/bin/bash
+
+function show_usage() {
+    cat << EOF
+JTCORE compilation tool. (c) Jose Tejada 2019, @topapate
+    First argument is the project name, like gng, or 1943
+
+    -skip       skips compilation and goes directly to prepare the release file
+                using the RBF file available.
+    -d          Defines a verilog macro. Macros are removed from qsf file after
+                compilation.
+                Useful macros:
+                    NOSOUND             the core is compiled without sound (faster)
+                    MISTER_VIDEO_MIXER  uses the Mr video modules
+                    JTFRAME_SCAN2X      uses simple scan doubler from JTFRAME
+                    DEBUG_NOHDMI        skips MiSTer HDMI related logic. Speeds up compilation.
+    -qq         very quick compilation. Defines NOSUND and DEBUG_NOHDMI. Sets MiSTer as target.
+    -credits    Defines NOSOUND, DEBUG_NOHDMI and NOMAIN. Sets MiSTer as target.
+    -q | -quick quick compilation. Defines NOSUND and OSD_NOBCK
+    -ftp-folder Destination folder in MiSTer FTP to which final RBF will be copied
+                The full name is made by preceding this by a _
+                and adding /cores after it.
+    -git        adds the release file to git
+    -mister     compiles MiSTer version. Default is MiST.
+    -seed       sets random seed for compilation
+    -sidi       compiles SIDI version. This uses MiST's folders and settings but different pinout
+    -prog       programs the FPGA
+    -prog-only  skips compilations and directly programs the FPGA
+    -sim        prepare quartus simulation
+    -rename     name used for copying the RBF file into the SD card
+    -help       displays this message
+EOF
+   exit 0
+}
+
+# Is the root folder environment variable set?
+
+if [ "$JTROOT" = "" ]; then
+    cd ${0%%modules/jtframe/bin/jtcore}
+    if [ -e setprj.sh ]; then
+        source setprj.sh --quiet
+    else
+        echo "WARNING: cannot find setprj.sh in " $(pwd)
+    fi
+fi
+
+if [ "$JTROOT" = "" ]; then
+    echo "ERROR: Missing JTROOT environment variable. Define it to"
+    echo "point to the root folder of the project to compile."
+    exit 1
+fi
+
+cd $JTROOT
+MODULES=$JTROOT/modules
+JTFRAME=$MODULES/jtframe
+# This is the FTP host to which files will be copied
+HOST=mr
+FTP_FOLDER=JT
+CORESTAMP=$(date +"%Y%m%d")
+
+if [ ! -e "$JTFRAME" ]; then
+    echo "ERROR: cannot locate jtframe folder."
+    echo "       It should be at $JTFRAME"
+    exit 1
+fi
+
+# Is the project defined?
+PRJ=$1
+
+case "$PRJ" in
+    "")
+        echo "ERROR: Missing project name."
+        show_usage
+        exit 1;;
+    -help | -h | --help)
+        show_usage;;
+esac
+
+if [ ${PRJ:0:1} = - ]; then
+    echo "ERROR: Missing project name."
+    exit 1
+fi    
+
+if [ -e $JTROOT/cores/$PRJ ]; then
+    PRJPATH=$JTROOT/cores/$PRJ
+elif [ -e $JTROOT/$PRJ ]; then
+    PRJPATH=$JTROOT/$PRJ
+elif [ -e $JTROOT/hdl ]; then
+    PRJPATH=$JTROOT
+else
+    echo "ERROR: Cannot find a valid project path"
+    exit 1
+fi
+shift
+
+SIM=FALSE
+GIT=FALSE
+PROG=FALSE
+TARGET=mist
+SKIP_COMPILE=FALSE
+RENAME=
+
+# Verilog macros
+MACROS=
+SEED=1
+OUTPUTDIR=output_files
+
+function parse_args {
+    while [ $# -gt 0 ]; do
+        case "$1" in
+            -skip | -s) SKIP_COMPILE=TRUE;;
+            -git | -g) GIT=TRUE;;
+            -prog | -p) PROG=TRUE;;
+            -prog-only | -w)
+                PROG=TRUE
+                SKIP_COMPILE=TRUE;;
+            -mister | -mr)
+                TARGET=mister;;
+            -mist)
+                TARGET=mist;;
+            -sidi)
+                TARGET=sidi;;
+            -sim)
+                SIM=TRUE;;
+            -rename)
+                shift
+                RENAME=$1;;
+            -ftp-folder)
+                shift
+                FTP_FOLDER=$1;;
+            -seed | -s)
+                shift
+                SEED=$1;;
+            -showmacros)
+                SHOWMACROS=1;;
+            -gngvga)
+                MACROS="JTFRAME_VGA SCAN2X_TYPE=1 $MACROS";;
+            -d)
+                shift
+                MACROS="$1 $MACROS"
+                ;;
+            -q|-quick)
+                MACROS="$MACROS NOSOUND OSD_NOBCK";;
+            -qq|-veryquick)
+                MACROS="$MACROS NOSOUND OSD_NOBCK DEBUG_NOHDMI"
+                TARGET=mister;;
+            -credits)
+                MACROS="$MACROS NOSOUND DEBUG_NOHDMI NOMAIN"
+                TARGET=mister;;
+            -help | -h)
+                show_usage;;
+            *)  echo "ERROR: Unknown option $1";
+                exit 1;;
+        esac
+        shift
+    done
+}
+
+parse_args $JTCORE_DEFAULT
+parse_args $*
+
+OUTPUTDIR=output_${SEED}
+
+# Check Quartus path
+case $TARGET in
+    mister)
+        if ! (which quartus_sh|grep 17 -q); then
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.
+            PATH=$PATH:$(locate intelFPGA_lite/17.1/quartus/bin | head -1)
+            export PATH
+        fi;;
+    mist|sidi)
+        if ! (which quartus_sh|grep 13 -q); then
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.
+            PATH=$PATH:$(locate altera/13.1/quartus/bin | head -1)
+            export PATH
+        fi;;
+esac
+
+function escape_bars {
+    echo ${1//\//\\/}
+}
+
+# qsf line to disable SOUND synthesis
+# set_global_assignment -name VERILOG_MACRO "NOSOUND=<None>"
+function copy_templates {
+    datestr=$(date "+%H:%M:%S %B %e, %Y")
+    # Replace core name and path to modules
+    # do not leave a space in the line below sedstr!
+    sedstr='s/${CORENAME}/'${PRJ}'/g;s/${DATE}/'${datestr}'/g;s/${MODULES}/'$(escape_bars ${MODULES})'/g;s/${PRJPATH}/'$(escape_bars ${PRJPATH})'/g;'\
+'s/${OUTPUTDIR}/'${OUTPUTDIR}'/g'
+    sed "$sedstr" $JTFRAME/hdl/$TARGET/$TARGET.qpf > $PRJPATH/$TARGET/jt${PRJ}.qpf
+    sed "$sedstr" $JTFRAME/hdl/$TARGET/$TARGET.qsf > $PRJPATH/$TARGET/jt${PRJ}.qsf
+    # TCL in HDL folder is always appended
+    TCL=$PRJPATH/hdl/jt${PRJ}.tcl
+    MACROS_FILE=$PRJPATH/hdl/jt${PRJ}.def
+    QSF=$PRJPATH/$TARGET/jt${PRJ}.qsf
+    if [ -e $TCL ]; then
+        cat $TCL >> $QSF
+    fi
+    # TCL in platform folder is added if it exists
+    if [ -e $PRJPATH/$TARGET/jt${PRJ}.tcl ]; then
+        cat $PRJPATH/$TARGET/jt${PRJ}.tcl >> $QSF
+    fi
+    # Add definitions in "macros" files
+    if [ -e $MACROS_FILE ]; then
+        gawk -f $JTFRAME/bin/jtmacros.awk target=$TARGET $MACROS_FILE >> $QSF
+        if [ -n "$SHOWMACROS" ]; then
+            gawk -f $JTFRAME/bin/jtmacros.awk target=$TARGET $MACROS_FILE
+            exit 0
+        fi
+    fi
+    # Copy SDC file and SDRAM constraints
+    if [ $TARGET = mister ]; then
+        if grep JTFRAME_CLK96 $PRJPATH/$TARGET/jt${PRJ}.qsf; then
+            cp $JTFRAME/hdl/mister/sys/sdram_clk96.sdc $PRJPATH/$TARGET/sys_top.sdc
+        else
+            cp $JTFRAME/hdl/mister/sys/sdram_clk48.sdc $PRJPATH/$TARGET/sys_top.sdc
+        fi
+        cat $JTFRAME/hdl/mister/sys/sys_top.sdc >> $PRJPATH/$TARGET/sys_top.sdc
+    fi
+}
+
+function link_if_missing {
+    if [ ! -e $1 ]; then
+        if [ -e ../mist/$1 ]; then
+            ln -sr ../mist/$1 && echo "Linked file $1" && git add $1 -f
+        else 
+            echo WARNING: Missing $1
+        fi
+    fi
+}
+
+function report {
+    PRJCOMMIT=$(git rev-parse --short HEAD)
+    cd $JTFRAME
+    JTFRAMECOMMIT=$(git rev-parse --short HEAD)
+    cd -
+    printf "%-14s\t%s\t%s\t%s\t%s\t%s\t%s\n" \
+        $PRJ $TARGET $CORESTAMP $SEED $1 \
+        $PRJCOMMIT $JTFRAMECOMMIT >> $JTROOT/log/builds.log
+}
+
+echo ==============================================
+echo jt$PRJ $TARGET compilation starts at $(date +%T) with seed $SEED on $(hostname)
+if [ "$MACROS" != "" ]; then
+    echo Explicit macros: $MACROS
+fi
+
+################ compilation
+if [ $SKIP_COMPILE = FALSE ]; then
+    if ! which quartus_sh>/dev/null; then 
+        echo "ERROR: cannot find quartus_sh in the path. Please add the correct path"
+        echo "to the PATH environment variable"
+        exit 1
+    fi
+    # Create MiST(er) folders if they don't exist
+    mkdir -p $PRJPATH/{mist,mister,sidi}
+    # Update message file
+    if [ -e bin/jt${PRJ}_msg.py ]; then
+        cd bin
+        jt${PRJ}_msg.py || echo "WARNING: No message file"
+    fi
+    cd $PRJPATH/$TARGET || exit 1
+    ############################################3
+    # Credits via jtframe_credits:
+    MSGFILE=msg
+    if [[ -e $PRJPATH/patrons/msg && ! -e $MSGFILE ]]; then
+        MSGFILE=$PRJPATH/patrons/msg
+    fi
+    if [ -e $MSGFILE ]; then
+        $JTFRAME/bin/msg2hex $MSGFILE
+        # cp ${MSGFILE}.bin $PRJPATH/$TARGET
+    fi
+    # Update Avatars
+    if [ -e $PRJPATH/patrons/lut ]; then
+        $JTFRAME/bin/lut2hex $PRJPATH/patrons/lut || (echo while running lut2hex on patrons/lut; exit $? )
+        if [ -e $PRJPATH/patrons/avatars ]; then
+            $JTFRAME/bin/avatar.py $PRJ > /tmp/avatar_$PRJ.log || ( cat /tmp/avatar_$PRJ.log; exit 1 )
+            cp $PRJPATH/patrons/avatar{,_pal}.hex $PRJPATH/$TARGET || exit $?
+        fi
+    fi
+    if [ ! -e font0.hex ]; then
+        ln -srf $JTFRAME/bin/font0.hex
+    fi
+    ############################################3
+    # Recompile
+    rm -rf db incremental_db output_files
+    mkdir -p $JTROOT/log/$TARGET
+    LOG="$JTROOT/log/$TARGET/jt$PRJ.log"
+    echo Log file: $LOG
+    copy_templates
+    # Prepare macros
+    for m in $MACROS; do
+        echo -e "\n" set_global_assignment -name VERILOG_MACRO \"$m\" >> jt$PRJ.qsf
+    done
+    echo -e "\nset_global_assignment -name seed $SEED" >> jt$PRJ.qsf
+    if [ $SIM = FALSE ]; then
+        # Compilation
+        quartus_sh --flow compile jt$PRJ > "$LOG"
+        if ! grep "Full Compilation was successful" "$LOG"; then
+            grep -i error "$LOG" -A 2
+            echo "ERROR while compiling the project. Aborting"
+            report FAIL
+            exit 1
+        fi
+        if grep "Worst-case.*-[0-9.]*" "$LOG"; then
+            report FAIL
+        else
+            figlet PASS
+            report PASS
+        fi
+    else
+        # Simulation
+        echo Preparing simulation netlist. Logfile:
+        echo $LOG
+        quartus_map jt$PRJ --64bit --parallel=1 --efort=fast > "$LOG"
+        exit $?
+    fi
+fi
+
+function append_if_exists {
+    val=
+    while [ $# -gt 0 ]; do
+        if [ -e "$1" ]; then
+            val="$val $1"
+        fi
+        shift
+    done
+    echo $val
+}
+
+################# Store output file
+# Rename output file
+cd $JTROOT
+mkdir -p releases
+if [ -z $RENAME ]; then
+    SHORT=jt${PRJ}
+else
+    SHORT=jt$RENAME
+fi
+RELEASE=${SHORT}_$CORESTAMP
+
+if [ $SEED != 1 ]; then
+    SEED_SUFFIX=_$SEED
+fi
+if [ $TARGET = mister ]; then
+    RBF=$PRJPATH/${TARGET}/$OUTPUTDIR/jt$PRJ.rbf
+else
+    RBF=$PRJPATH/${TARGET}/jt$PRJ.rbf
+fi
+if [ ! -e $RBF ]; then
+    echo "ERROR: file $RBF does not exist. You need to recompile."
+    exit 1
+fi
+cp $RBF $RELEASE.rbf
+ZIPFOLDER=$TARGET
+mkdir -p releases/$ZIPFOLDER
+# zip --update --junk-paths releases/$ZIPFOLDER/${RELEASE}.zip ${RELEASE}.rbf README.txt $* \
+#     $(append_if_exists rom/{$PRJ/build_rom.sh,$PRJ/build_rom.ini,build_rom_$PRJ.bat} doc/jt$PRJ.txt )
+if [ -e $JTROOT/../jtbin ]; then
+    BINFOLDER=$JTROOT/../jtbin/$ZIPFOLDER/$PRJ
+    BINRBF=$BINFOLDER/releases/${RELEASE}
+    mkdir -p $BINFOLDER
+    mkdir -p $BINFOLDER/releases    
+    cp $RELEASE.rbf ${BINRBF}.rbf -v
+    if [ -n "$SEED_SUFFIX" ]; then
+        cp $RELEASE.rbf ${BINRBF}${SEED_SUFFIX}.rbf -v
+    fi
+    OTHER=$(append_if_exists rom/{$PRJ/build_rom.sh,$PRJ/build_rom.ini,build_rom_$PRJ.bat} doc/jt$PRJ.txt )
+    if [ "$OTHER" != "" ]; then cp $OTHER $BINFOLDER; fi
+    # If there is a mounted SD card with the right name, copy the file to it too
+    if [ -d /media/$USER/${TARGET^^} ]; then
+        if [ -z $RENAME ]; then
+            RENAME=JT${PRJ^^}.rbf
+        else
+            RENAME=$RENAME.rbf
+        fi
+        # copy the file in three forms:
+        # with full date for reference, as core.rbf to start up with it
+        # and inside its own folder for use with ARC files
+        #cp -v $RELEASE.rbf /media/$USER/${TARGET^^}
+        cp -v $RELEASE.rbf /media/$USER/${TARGET^^}/${SHORT^^}.rbf
+        # Copy the file to the core folder so it can be used by ARC files
+        if [ -d /media/$USER/${TARGET^^}/JT${PRJ^^} ]; then
+            cp -v $RELEASE.rbf /media/$USER/${TARGET^^}/${SHORT^^}/$RENAME
+        fi
+    fi
+    if [ $TARGET = mister ]; then
+        # If Mr is online, copy the file to the _Arcade/cores folder
+        if ping $HOST -w 1 -c 1 > /dev/null; then
+            sshpass -p 1 scp $RELEASE.rbf root@mr:/media/fat/_${FTP_FOLDER}/cores
+        fi
+    fi
+    # Add to git but don't commit
+    if [ $GIT = TRUE ]; then
+        cd $JTROOT/../jtbin
+        git add -f ${BINRBF}.rbf
+        cd - > /dev/null
+    fi
+fi
+rm $RELEASE.rbf
+
+
+if [ $PROG = TRUE ]; then
+    if [ $TARGET = mister ]; then
+        CABLE="DE-SoC"
+        cd $PRJPATH/mister
+        FILE=jtag.cdf
+    else
+        CABLE="USB-Blaster(Altera)"
+        FILE=$PRJPATH/${TARGET}/jt$PRJ.cdf
+        if [ ! -e $FILE ]; then
+            cat > $FILE << EOF
+JedecChain;
+    FileRevision(JESD32A);
+    DefaultMfr(6E);
+    P ActionCode(Cfg)
+        Device PartName(EP3C25E144) Path("") File("jt$PRJ.sof") MfrSpec(OpMask(1));
+ChainEnd;
+
+AlteraBegin;
+    ChainType(JTAG);
+AlteraEnd;
+EOF
+        fi
+    fi
+    quartus_pgm -c "$CABLE" $FILE
+fi
+echo completed at $(date)

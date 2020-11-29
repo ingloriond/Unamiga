@@ -1,0 +1,8 @@
+Info (10281): Verilog HDL Declaration information at jtframe_board.v(63): object "SDRAM_A" differs only in case from object "sdram_a" in the same scope
+Info (10281): Verilog HDL Declaration information at jtframe_board.v(64): object "SDRAM_DQML" differs only in case from object "sdram_dqml" in the same scope
+Info (10281): Verilog HDL Declaration information at jtframe_board.v(65): object "SDRAM_DQMH" differs only in case from object "sdram_dqmh" in the same scope
+Info (10281): Verilog HDL Declaration information at jtframe_credits.v(36): object "HB" differs only in case from object "hb" in the same scope
+Info (10281): Verilog HDL Declaration information at jtframe_credits.v(37): object "VB" differs only in case from object "vb" in the same scope
+Info (10281): Verilog HDL Declaration information at jtframe_vtimer.v(41): object "Hinit" differs only in case from object "HINIT" in the same scope
+Warning (10273): Verilog HDL warning at tv80_core.v(300): extended using "x" or "z"
+Info (10281): Verilog HDL Declaration information at jt49.v(46): object "COMP" differs only in case from object "comp" in the same scope

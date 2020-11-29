@@ -1,0 +1,27 @@
+-- begin_signature
+-- jtopl_pg_sum
+-- end_signature
+WIDTH=5;
+DEPTH=16;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	15 :	11110;
+	14 :	11110;
+	13 :	11000;
+	12 :	11000;
+	11 :	10100;
+	10 :	10100;
+	9 :	10010;
+	8 :	10000;
+	7 :	01110;
+	6 :	01100;
+	5 :	01010;
+	4 :	01000;
+	3 :	00110;
+	2 :	00100;
+	1 :	00010;
+	0 :	00001;
+END;

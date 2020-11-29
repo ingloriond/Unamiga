@@ -1,0 +1,96 @@
+#!/bin/bash
+TARGET=
+EXTRA="-d JTFRAME_RELEASE -g"
+NETWORK=
+DRYRUN=
+CORES=".*"
+MAX_JOBS=
+
+while [ $# -gt 0 ]; do
+    case "$1" in
+        -mister|-mist|-sidi)
+            TARGET="$TARGET ${1:1}"
+            ;;
+        -target)
+            shift
+            TARGET="$1"
+            ;;
+        -all | -a)
+			TARGET="mist mister sidi";;
+        -test)
+            EXTRA="-d NOSOUND -d MISTER_NOHDMI";;
+        -dry|--dry-run)
+            DRYRUN=--dry-run;;
+        -cores)
+            shift
+            for i in $1; do
+                if [ "$CORES" = ".*" ]; then
+                    CORES="$i"
+                else
+                    CORES="$CORES\|$i"
+                fi
+            done
+            ;;
+        -jobs)
+            shift
+            MAX_JOBS="--jobs $1"
+            ;;
+        -network)
+            shift
+            if [ ! -e "$1" ]; then
+                echo "Specify the name of the hosts file to use after -network"
+                exit 1
+            fi
+            NETWORK="--sshloginfile $1"
+            ;;
+        -h | -help | --help)
+            cat <<EOF
+Updates all JT cores. Usage:
+    jtupdate    -mist -sidi ...
+
+    -mist   updates MiST target (uses all CPU cores, paralel compilation)
+    -sidi   updates MiST target (uses all CPU cores, paralel compilation)
+    -mister updates MiSTer target (one JT core at a time)
+    -all    updates both MiST and MiSTer
+    -cores  list of cores to update as \"gng 1943\"
+    -dry    dry run
+    -test   test build. Disables sound and HDMI. Does not define JTFRAME_RELEASE.
+    -jobs   Maximum number of jobs to run in parallel. For MiSTer 2 is recommended.
+    :       options for jtcore script can be added after a colon
+EOF
+        exit 0;
+        ;;
+        :)
+            # the remaining argument will be passed directly to the compilation
+            shift
+            EXTRA="$EXTRA $*"
+            break;;
+        *)  echo "ERROR: jtupdate does not know option $1";
+            exit 1;;
+    esac
+    shift
+done
+
+if [ -z "$TARGET" ]; then
+    echo You need to specify a target platform.
+    exit 1
+fi
+
+TASKS=/tmp/$RANDOM_$RANDOM
+
+(
+    for i in $TARGET; do
+        if [ -e $i.cores ]; then cat $i.cores; echo ; fi;
+    done
+) | grep "$CORES" > $TASKS
+
+if [ $(cat $TASKS|wc -l) = 0 ]; then
+    echo no target.cores files were found. For example mister.cores.
+    echo jtupdate must be called from the folder where these files exist.
+    exit 1
+fi
+
+cat $TASKS | parallel --no-run-if-empty --colsep " "  --shuf  --workdir $JTROOT \
+    $DRYRUN $NETWORK $MAX_JOBS\
+    --delay 0.25 $JTFRAME/bin/jtcore {} $EXTRA | tee $JTROOT/log/update.log
+

@@ -1,0 +1,841 @@
+Analysis & Synthesis report for jtbubl
+Sun Nov 29 18:35:56 2020
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis IP Cores Summary
+  6. Analysis & Synthesis Messages
+  7. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Sun Nov 29 18:35:56 2020          ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; jtbubl                                     ;
+; Top-level Entity Name              ; mist_top                                   ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE22F17C8       ;                    ;
+; Top-level entity name                                                      ; mist_top           ; jtbubl             ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Verilog Show LMF Mapping Messages                                          ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                             ;
++--------+--------------+---------+--------------+--------------+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                   ; IP Include File                                                                                                                               ;
++--------+--------------+---------+--------------+--------------+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Altera ; ALTPLL       ; 13.1    ; N/A          ; N/A          ; |mist_top|jtframe_pll0:u_pll_game ; D:/cores/PORTANDO7/Unamiga_Arcades-Bubble Bobble hardware - copia/Arcades/Bubble Bobble hardware/modules/jtframe/hdl/mc2/pll48/jtframe_pll0.v ;
+; Altera ; ALTPLL       ; 13.1    ; N/A          ; N/A          ; |mist_top|jtframe_pll1:u_pll_vga  ; D:/cores/PORTANDO7/Unamiga_Arcades-Bubble Bobble hardware - copia/Arcades/Bubble Bobble hardware/modules/jtframe/hdl/mc2/pll48/jtframe_pll1.v ;
++--------+--------------+---------+--------------+--------------+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Sun Nov 29 18:35:48 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off jtbubl -c jtbubl
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/mc2/jtframe_mc2_top.sv
+    Info (12023): Found entity 1: mist_top
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/mc2/pll48/jtframe_pll0.v
+    Info (12023): Found entity 1: jtframe_pll0
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/mc2/pll48/jtframe_pll96.v
+    Info (12023): Found entity 1: jtframe_pll96
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/mc2/pll48/jtframe_pll1.v
+    Info (12023): Found entity 1: jtframe_pll1
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/mc2/jtframe_mc2.sv
+    Info (12023): Found entity 1: jtframe_mc2
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/mc2/jtframe_mc2_base.v
+    Info (12023): Found entity 1: jtframe_mc2_base
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/mc2/osd.sv
+    Info (12023): Found entity 1: osd
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/mc2/user_io.v
+    Info (12023): Found entity 1: user_io
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/mc2/data_io_mc2.sv
+    Info (12023): Found entity 1: data_io
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/mc2/rgb2ypbpr.sv
+    Info (12023): Found entity 1: rgb2ypbpr
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/sound/hybrid_pwm_sd.v
+    Info (12023): Found entity 1: hybrid_pwm_sd
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/sound/hifi_1bit_dac.v
+    Info (12023): Found entity 1: hifi_1bit_dac
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/sdram/jtframe_sdram.v
+    Info (12023): Found entity 1: jtframe_sdram
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/ram/jtframe_dual_clk_ram.v
+    Info (12023): Found entity 1: jtframe_dual_clk_ram
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/keyboard/jtframe_keyboard.v
+    Info (12023): Found entity 1: jtframe_keyboard
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/keyboard/jtframe_4wayjoy.v
+    Info (12023): Found entity 1: jtframe_4wayjoy
+Info (12021): Found 2 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/keyboard/ps2_intf.vhd
+    Info (12022): Found design unit 1: ps2_intf-ps2_intf_arch
+    Info (12023): Found entity 1: ps2_intf
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/jtframe_board.v
+    Info (12023): Found entity 1: jtframe_board
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/jtframe_dip.v
+    Info (12023): Found entity 1: jtframe_dip
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/video/jtframe_credits.v
+    Info (12023): Found entity 1: jtframe_credits
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/video/jtframe_scan2x.v
+    Info (12023): Found entity 1: jtframe_scan2x
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/ram/jtframe_dual_ram.v
+    Info (12023): Found entity 1: jtframe_dual_ram
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/hdl/jtbubl_game.v
+    Info (12023): Found entity 1: jtbubl_game
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/hdl/jtbubl_main.v
+    Info (12023): Found entity 1: jtbubl_main
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/hdl/jtbubl_colmix.v
+    Info (12023): Found entity 1: jtbubl_colmix
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/hdl/jtbubl_video.v
+    Info (12023): Found entity 1: jtbubl_video
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/hdl/jtbubl_gfx.v
+    Info (12023): Found entity 1: jtbubl_gfx
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/hdl/jtbubl_sound.v
+    Info (12023): Found entity 1: jtbubl_sound
+Info (12021): Found 4 design units, including 4 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/clocking/jtframe_cen48.v
+    Info (12023): Found entity 1: jtframe_cen48
+    Info (12023): Found entity 2: jtframe_cen3p57
+    Info (12023): Found entity 3: jtframe_cenp384
+    Info (12023): Found entity 4: jtframe_cen10
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/clocking/jtframe_cen24.v
+    Info (12023): Found entity 1: jtframe_cen24
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/clocking/jtframe_frac_cen.v
+    Info (12023): Found entity 1: jtframe_frac_cen
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/jtframe_sh.v
+    Info (12023): Found entity 1: jtframe_sh
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/jtframe_ff.v
+    Info (12023): Found entity 1: jtframe_ff
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/ram/jtframe_ram.v
+    Info (12023): Found entity 1: jtframe_ram
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/ram/jtframe_obj_buffer.v
+    Info (12023): Found entity 1: jtframe_obj_buffer
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/ram/jtframe_prom.v
+    Info (12023): Found entity 1: jtframe_prom
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/video/jtframe_vtimer.v
+    Info (12023): Found entity 1: jtframe_vtimer
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/video/jtframe_blank.v
+    Info (12023): Found entity 1: jtframe_blank
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/sdram/jtframe_rom.v
+    Info (12023): Found entity 1: jtframe_rom
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/sdram/jtframe_romrq.v
+    Info (12023): Found entity 1: jtframe_romrq
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/sdram/jtframe_dwnld.v
+    Info (12023): Found entity 1: jtframe_dwnld
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/sdram/jtframe_gatecen.v
+    Info (12023): Found entity 1: jtframe_gatecen
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/cpu/tv80/tv80n.v
+    Info (12023): Found entity 1: tv80n
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/cpu/tv80/tv80_reg.v
+    Info (12023): Found entity 1: tv80_reg
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/cpu/tv80/tv80_mcode.v
+    Info (12023): Found entity 1: tv80_mcode
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/cpu/tv80/tv80_core.v
+    Info (12023): Found entity 1: tv80_core
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/cpu/tv80/tv80_alu.v
+    Info (12023): Found entity 1: tv80_alu
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/cpu/tv80/tv80s.v
+    Info (12023): Found entity 1: tv80s
+Info (12021): Found 3 design units, including 3 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/jtframe_z80wait.v
+    Info (12023): Found entity 1: jtframe_rom_wait
+    Info (12023): Found entity 2: jtframe_dual_wait
+    Info (12023): Found entity 3: jtframe_z80wait
+Info (12021): Found 3 design units, including 3 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/cpu/jtframe_z80.v
+    Info (12023): Found entity 1: jtframe_sysz80
+    Info (12023): Found entity 2: jtframe_z80_romwait
+    Info (12023): Found entity 3: jtframe_z80
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/mixer/jt12_mixer.v
+    Info (12023): Found entity 1: jt12_mixer
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/jt49/hdl/filter/jt49_dcrm2.v
+    Info (12023): Found entity 1: jt49_dcrm2
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt03.v
+    Info (12023): Found entity 1: jt03
+Info (12021): Found 1 design units, including 0 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12.vhd
+    Info (12022): Found design unit 1: jt12
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_top.v
+    Info (12023): Found entity 1: jt12_top
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt03_acc.v
+    Info (12023): Found entity 1: jt03_acc
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_single_acc.v
+    Info (12023): Found entity 1: jt12_single_acc
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_eg.v
+    Info (12023): Found entity 1: jt12_eg
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_eg_cnt.v
+    Info (12023): Found entity 1: jt12_eg_cnt
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_eg_comb.v
+    Info (12023): Found entity 1: jt12_eg_comb
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_eg_step.v
+    Info (12023): Found entity 1: jt12_eg_step
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_eg_pure.v
+    Info (12023): Found entity 1: jt12_eg_pure
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_eg_final.v
+    Info (12023): Found entity 1: jt12_eg_final
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_eg_ctrl.v
+    Info (12023): Found entity 1: jt12_eg_ctrl
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_exprom.v
+    Info (12023): Found entity 1: jt12_exprom
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_kon.v
+    Info (12023): Found entity 1: jt12_kon
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_lfo.v
+    Info (12023): Found entity 1: jt12_lfo
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_mmr.v
+    Info (12023): Found entity 1: jt12_mmr
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_div.v
+    Info (12023): Found entity 1: jt12_div
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_mod.v
+    Info (12023): Found entity 1: jt12_mod
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_op.v
+    Info (12023): Found entity 1: jt12_op
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_csr.v
+    Info (12023): Found entity 1: jt12_csr
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_pg.v
+    Info (12023): Found entity 1: jt12_pg
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_pg_inc.v
+    Info (12023): Found entity 1: jt12_pg_inc
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_pg_dt.v
+    Info (12023): Found entity 1: jt12_pg_dt
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_pg_sum.v
+    Info (12023): Found entity 1: jt12_pg_sum
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_pg_comb.v
+    Info (12023): Found entity 1: jt12_pg_comb
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_pm.v
+    Info (12023): Found entity 1: jt12_pm
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_logsin.v
+    Info (12023): Found entity 1: jt12_logsin
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_reg.v
+    Info (12023): Found entity 1: jt12_reg
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_sh.v
+    Info (12023): Found entity 1: jt12_sh
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_sh_rst.v
+    Info (12023): Found entity 1: jt12_sh_rst
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_sh24.v
+    Info (12023): Found entity 1: jt12_sh24
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_sumch.v
+    Info (12023): Found entity 1: jt12_sumch
+Info (12021): Found 2 design units, including 2 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_timers.v
+    Info (12023): Found entity 1: jt12_timers
+    Info (12023): Found entity 2: jt12_timer
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/hdl/jt12_dout.v
+    Info (12023): Found entity 1: jt12_dout
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/jt49/hdl/jt49.v
+    Info (12023): Found entity 1: jt49
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/jt49/hdl/jt49_bus.v
+    Info (12023): Found entity 1: jt49_bus
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/jt49/hdl/jt49_div.v
+    Info (12023): Found entity 1: jt49_div
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/jt49/hdl/jt49_cen.v
+    Info (12023): Found entity 1: jt49_cen
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/jt49/hdl/jt49_eg.v
+    Info (12023): Found entity 1: jt49_eg
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/jt49/hdl/jt49_exp.v
+    Info (12023): Found entity 1: jt49_exp
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jt12/jt49/hdl/jt49_noise.v
+    Info (12023): Found entity 1: jt49_noise
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_acc.v
+    Info (12023): Found entity 1: jtopl_acc
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_csr.v
+    Info (12023): Found entity 1: jtopl_csr
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_div.v
+    Info (12023): Found entity 1: jtopl_div
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_lfo.v
+    Info (12023): Found entity 1: jtopl_lfo
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_pm.v
+    Info (12023): Found entity 1: jtopl_pm
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_eg_cnt.v
+    Info (12023): Found entity 1: jtopl_eg_cnt
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_eg_comb.v
+    Info (12023): Found entity 1: jtopl_eg_comb
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_eg_ctrl.v
+    Info (12023): Found entity 1: jtopl_eg_ctrl
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_eg_final.v
+    Info (12023): Found entity 1: jtopl_eg_final
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_eg_pure.v
+    Info (12023): Found entity 1: jtopl_eg_pure
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_eg_step.v
+    Info (12023): Found entity 1: jtopl_eg_step
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_eg.v
+    Info (12023): Found entity 1: jtopl_eg
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_exprom.v
+    Info (12023): Found entity 1: jtopl_exprom
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_logsin.v
+    Info (12023): Found entity 1: jtopl_logsin
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_mmr.v
+    Info (12023): Found entity 1: jtopl_mmr
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_op.v
+    Info (12023): Found entity 1: jtopl_op
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_pg_comb.v
+    Info (12023): Found entity 1: jtopl_pg_comb
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_pg_inc.v
+    Info (12023): Found entity 1: jtopl_pg_inc
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_pg_sum.v
+    Info (12023): Found entity 1: jtopl_pg_sum
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_pg_rhy.v
+    Info (12023): Found entity 1: jtopl_pg_rhy
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_pg.v
+    Info (12023): Found entity 1: jtopl_pg
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_reg.v
+    Info (12023): Found entity 1: jtopl_reg
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_sh_rst.v
+    Info (12023): Found entity 1: jtopl_sh_rst
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_sh.v
+    Info (12023): Found entity 1: jtopl_sh
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_single_acc.v
+    Info (12023): Found entity 1: jtopl_single_acc
+Info (12021): Found 2 design units, including 2 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_timers.v
+    Info (12023): Found entity 1: jtopl_timers
+    Info (12023): Found entity 2: jtopl_timer
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl_noise.v
+    Info (12023): Found entity 1: jtopl_noise
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtopl/hdl/jtopl.v
+    Info (12023): Found entity 1: jtopl
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/cpu/6801_core.sv
+    Info (12023): Found entity 1: m6801
+Info (12021): Found 1 design units, including 1 entities, in source file /cores/portando7/unamiga_arcades-bubble bobble hardware - copia/arcades/bubble bobble hardware/modules/jtframe/hdl/cpu/jtframe_6801mcu.v
+    Info (12023): Found entity 1: jtframe_6801mcu
+Warning (10222): Verilog HDL Parameter Declaration warning at jtframe_mc2_base.v(367): Parameter Declaration in module "jtframe_mc2_base" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Info (12127): Elaborating entity "mist_top" for the top level hierarchy
+Warning (10034): Output port "sram_addr_o" at jtframe_mc2_top.sv(30) has no driver
+Warning (10034): Output port "tmds_o" at jtframe_mc2_top.sv(89) has no driver
+Warning (10034): Output port "sd_cs_n_o" at jtframe_mc2_top.sv(55) has no driver
+Warning (10034): Output port "sd_sclk_o" at jtframe_mc2_top.sv(56) has no driver
+Warning (10034): Output port "sd_mosi_o" at jtframe_mc2_top.sv(57) has no driver
+Warning (10034): Output port "mic_o" at jtframe_mc2_top.sv(79) has no driver
+Warning (10034): Output port "stm_rx_o" at jtframe_mc2_top.sv(93) has no driver
+Info (12128): Elaborating entity "jtframe_pll0" for hierarchy "jtframe_pll0:u_pll_game"
+Info (12128): Elaborating entity "altpll" for hierarchy "jtframe_pll0:u_pll_game|altpll:altpll_component"
+Info (12130): Elaborated megafunction instantiation "jtframe_pll0:u_pll_game|altpll:altpll_component"
+Info (12133): Instantiated megafunction "jtframe_pll0:u_pll_game|altpll:altpll_component" with the following parameter:
+    Info (12134): Parameter "bandwidth_type" = "AUTO"
+    Info (12134): Parameter "clk1_divide_by" = "25"
+    Info (12134): Parameter "clk1_duty_cycle" = "50"
+    Info (12134): Parameter "clk1_multiply_by" = "24"
+    Info (12134): Parameter "clk1_phase_shift" = "0"
+    Info (12134): Parameter "clk2_divide_by" = "25"
+    Info (12134): Parameter "clk2_duty_cycle" = "50"
+    Info (12134): Parameter "clk2_multiply_by" = "24"
+    Info (12134): Parameter "clk2_phase_shift" = "10417"
+    Info (12134): Parameter "clk3_divide_by" = "25"
+    Info (12134): Parameter "clk3_duty_cycle" = "50"
+    Info (12134): Parameter "clk3_multiply_by" = "12"
+    Info (12134): Parameter "clk3_phase_shift" = "0"
+    Info (12134): Parameter "clk4_divide_by" = "25"
+    Info (12134): Parameter "clk4_duty_cycle" = "50"
+    Info (12134): Parameter "clk4_multiply_by" = "3"
+    Info (12134): Parameter "clk4_phase_shift" = "0"
+    Info (12134): Parameter "compensate_clock" = "CLK1"
+    Info (12134): Parameter "inclk0_input_frequency" = "20000"
+    Info (12134): Parameter "intended_device_family" = "Cyclone III"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=jtframe_pll0"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "AUTO"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_configupdate" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_USED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasecounterselect" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasedone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasestep" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phaseupdown" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclkena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk1" = "PORT_USED"
+    Info (12134): Parameter "port_clk2" = "PORT_USED"
+    Info (12134): Parameter "port_clk3" = "PORT_USED"
+    Info (12134): Parameter "port_clk4" = "PORT_USED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "self_reset_on_loss_lock" = "ON"
+    Info (12134): Parameter "width_clock" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/jtframe_pll0_altpll.v
+    Info (12023): Found entity 1: jtframe_pll0_altpll
+Info (12128): Elaborating entity "jtframe_pll0_altpll" for hierarchy "jtframe_pll0:u_pll_game|altpll:altpll_component|jtframe_pll0_altpll:auto_generated"
+Info (12128): Elaborating entity "jtframe_pll1" for hierarchy "jtframe_pll1:u_pll_vga"
+Info (12128): Elaborating entity "altpll" for hierarchy "jtframe_pll1:u_pll_vga|altpll:altpll_component"
+Info (12130): Elaborated megafunction instantiation "jtframe_pll1:u_pll_vga|altpll:altpll_component"
+Info (12133): Instantiated megafunction "jtframe_pll1:u_pll_vga|altpll:altpll_component" with the following parameter:
+    Info (12134): Parameter "bandwidth_type" = "AUTO"
+    Info (12134): Parameter "clk0_divide_by" = "48"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "25"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "clk1_divide_by" = "6"
+    Info (12134): Parameter "clk1_duty_cycle" = "50"
+    Info (12134): Parameter "clk1_multiply_by" = "5"
+    Info (12134): Parameter "clk1_phase_shift" = "0"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "inclk0_input_frequency" = "20833"
+    Info (12134): Parameter "intended_device_family" = "Cyclone III"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=jtframe_pll1"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "AUTO"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_USED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_configupdate" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasecounterselect" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasedone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasestep" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phaseupdown" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclkena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_USED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "width_clock" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/jtframe_pll1_altpll.v
+    Info (12023): Found entity 1: jtframe_pll1_altpll
+Info (12128): Elaborating entity "jtframe_pll1_altpll" for hierarchy "jtframe_pll1:u_pll_vga|altpll:altpll_component|jtframe_pll1_altpll:auto_generated"
+Info (12128): Elaborating entity "jtframe_mc2" for hierarchy "jtframe_mc2:u_frame"
+Info (12128): Elaborating entity "jtframe_mc2_base" for hierarchy "jtframe_mc2:u_frame|jtframe_mc2_base:u_base"
+Warning (10036): Verilog HDL or VHDL warning at jtframe_mc2_base.v(251): object "HSync" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at jtframe_mc2_base.v(252): object "VSync" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at jtframe_mc2_base.v(254): object "CSync_osd" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at jtframe_mc2_base.v(378): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at jtframe_mc2_base.v(402): truncated value with size 32 to match size of target (8)
+Warning (10034): Output port "joystick1[31..7]" at jtframe_mc2_base.v(69) has no driver
+Warning (10034): Output port "joystick2[31..7]" at jtframe_mc2_base.v(70) has no driver
+Warning (10034): Output port "joystick3" at jtframe_mc2_base.v(71) has no driver
+Warning (10034): Output port "joystick4" at jtframe_mc2_base.v(72) has no driver
+Warning (10034): Output port "joystick_analog_0" at jtframe_mc2_base.v(73) has no driver
+Warning (10034): Output port "joystick_analog_1" at jtframe_mc2_base.v(74) has no driver
+Warning (10034): Output port "ps2_kbd_clk" at jtframe_mc2_base.v(75) has no driver
+Warning (10034): Output port "ps2_kbd_data" at jtframe_mc2_base.v(76) has no driver
+Info (12128): Elaborating entity "hifi_1bit_dac" for hierarchy "jtframe_mc2:u_frame|jtframe_mc2_base:u_base|hifi_1bit_dac:u_dac_left"
+Info (12128): Elaborating entity "data_io" for hierarchy "jtframe_mc2:u_frame|jtframe_mc2_base:u_base|data_io:u_datain"
+Warning (10034): Output port "ioctl_fileext" at data_io_mc2.sv(50) has no driver
+Warning (10034): Output port "ioctl_filesize" at data_io_mc2.sv(52) has no driver
+Info (12128): Elaborating entity "osd" for hierarchy "jtframe_mc2:u_frame|jtframe_mc2_base:u_base|osd:osd"
+Warning (10030): Net "back_buffer.data_a" at osd.sv(213) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "back_buffer.waddr_a" at osd.sv(213) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "back_buffer.we_a" at osd.sv(213) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "jtframe_board" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board"
+Warning (10036): Verilog HDL or VHDL warning at jtframe_board.v(151): object "scandoubler" assigned a value but never read
+Info (12128): Elaborating entity "jtframe_keyboard" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_keyboard:u_keyboard"
+Warning (10272): Verilog HDL Case Statement warning at jtframe_keyboard.v(112): case item expression covers a value already covered by a previous case item
+Info (12128): Elaborating entity "ps2_intf" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_keyboard:u_keyboard|ps2_intf:ps2_keyboard"
+Info (12128): Elaborating entity "jtframe_4wayjoy" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_4wayjoy:u_4way_1p"
+Info (12128): Elaborating entity "jtframe_dip" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_dip:u_dip"
+Info (12128): Elaborating entity "jtframe_sdram" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_sdram:u_sdram"
+Info (12128): Elaborating entity "jtframe_credits" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_credits:u_credits"
+Warning (10230): Verilog HDL assignment warning at jtframe_credits.v(53): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at jtframe_credits.v(335): truncated value with size 24 to match size of target (12)
+Info (12128): Elaborating entity "jtframe_ram" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_credits:u_credits|jtframe_ram:u_msg"
+Warning (10850): Verilog HDL warning at jtframe_ram.v(75): number of words (16384) in memory file does not match the number of elements in the address range [0:4095]
+Info (12128): Elaborating entity "jtframe_ram" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_credits:u_credits|jtframe_ram:u_font"
+Info (12128): Elaborating entity "jtframe_scan2x" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_scan2x:u_scan2x"
+Warning (10230): Verilog HDL assignment warning at jtframe_scan2x.v(55): truncated value with size 5 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at jtframe_scan2x.v(130): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at jtframe_scan2x.v(134): truncated value with size 32 to match size of target (9)
+Info (12128): Elaborating entity "jtframe_dual_ram" for hierarchy "jtframe_mc2:u_frame|jtframe_board:u_board|jtframe_scan2x:u_scan2x|jtframe_dual_ram:u_buffer"
+Info (12128): Elaborating entity "jtbubl_game" for hierarchy "jtbubl_game:u_game"
+Info (12128): Elaborating entity "jtframe_cen24" for hierarchy "jtbubl_game:u_game|jtframe_cen24:u_cen"
+Info (12128): Elaborating entity "jtframe_dwnld" for hierarchy "jtbubl_game:u_game|jtframe_dwnld:u_dwnld"
+Info (12128): Elaborating entity "jtbubl_main" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main"
+Warning (10240): Verilog HDL Always Construct warning at jtbubl_main.v(153): inferring latch(es) for variable "cabinet_cs", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "cabinet_cs" at jtbubl_main.v(166)
+Info (12128): Elaborating entity "jtframe_ff" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_ff:u_flag"
+Info (12128): Elaborating entity "jtframe_ram" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_ram:u_work"
+Info (12128): Elaborating entity "jtframe_z80" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_z80:u_maincpu"
+Info (12128): Elaborating entity "tv80s" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_z80:u_maincpu|tv80s:u_cpu"
+Info (12128): Elaborating entity "tv80_core" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_z80:u_maincpu|tv80s:u_cpu|tv80_core:i_tv80_core"
+Warning (10230): Verilog HDL assignment warning at tv80_core.v(614): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at tv80_core.v(1342): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at tv80_core.v(1360): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at tv80_core.v(1366): truncated value with size 32 to match size of target (16)
+Info (12128): Elaborating entity "tv80_mcode" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_z80:u_maincpu|tv80s:u_cpu|tv80_core:i_tv80_core|tv80_mcode:i_mcode"
+Info (12128): Elaborating entity "tv80_alu" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_z80:u_maincpu|tv80s:u_cpu|tv80_core:i_tv80_core|tv80_alu:i_alu"
+Warning (10230): Verilog HDL assignment warning at tv80_alu.v(234): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at tv80_alu.v(240): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at tv80_alu.v(252): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at tv80_alu.v(256): truncated value with size 32 to match size of target (9)
+Info (12128): Elaborating entity "tv80_reg" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_z80:u_maincpu|tv80s:u_cpu|tv80_core:i_tv80_core|tv80_reg:i_reg"
+Info (12128): Elaborating entity "jtframe_rom_wait" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_rom_wait:u_mainwait"
+Info (12128): Elaborating entity "jtframe_z80wait" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_rom_wait:u_mainwait|jtframe_z80wait:u_wait"
+Info (12128): Elaborating entity "jtframe_ram" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_ram:u_comm"
+Info (12128): Elaborating entity "jtframe_6801mcu" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_6801mcu:u_mcu"
+Info (12128): Elaborating entity "jtframe_ram" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_6801mcu:u_mcu|jtframe_ram:u_intram"
+Info (12128): Elaborating entity "jtframe_gatecen" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_6801mcu:u_mcu|jtframe_gatecen:u_gatecen"
+Info (12128): Elaborating entity "m6801" for hierarchy "jtbubl_game:u_game|jtbubl_main:u_main|jtframe_6801mcu:u_mcu|m6801:u_mcu"
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(223): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(237): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(271): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(280): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(312): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(327): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(341): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(356): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(373): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(407): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(422): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(442): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(457): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(490): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(510): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(559): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(597): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(635): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(662): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(683): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(697): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(711): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(793): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at 6801_core.sv(807): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "jtbubl_video" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video"
+Info (12128): Elaborating entity "jtframe_cen48" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtframe_cen48:u_cen"
+Info (12128): Elaborating entity "jtframe_vtimer" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtframe_vtimer:u_timer"
+Info (12128): Elaborating entity "jtbubl_gfx" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_gfx:u_gfx"
+Info (10264): Verilog HDL Case Statement information at jtbubl_gfx.v(68): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "jtframe_dual_ram" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_gfx:u_gfx|jtframe_dual_ram:u_ram0"
+Info (12128): Elaborating entity "jtframe_dual_ram" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_gfx:u_gfx|jtframe_dual_ram:u_ram1"
+Info (12128): Elaborating entity "jtframe_dual_ram" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_gfx:u_gfx|jtframe_dual_ram:u_ram2"
+Info (12128): Elaborating entity "jtframe_dual_ram" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_gfx:u_gfx|jtframe_dual_ram:u_ram3"
+Info (12128): Elaborating entity "jtframe_prom" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_gfx:u_gfx|jtframe_prom:u_prom"
+Info (12128): Elaborating entity "jtframe_obj_buffer" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_gfx:u_gfx|jtframe_obj_buffer:u_line"
+Info (12128): Elaborating entity "jtframe_dual_ram" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_gfx:u_gfx|jtframe_obj_buffer:u_line|jtframe_dual_ram:u_line"
+Info (12128): Elaborating entity "jtbubl_colmix" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_colmix:u_colmix"
+Info (12128): Elaborating entity "jtframe_dual_ram" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_colmix:u_colmix|jtframe_dual_ram:u_ram0"
+Info (12128): Elaborating entity "jtframe_dual_ram" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_colmix:u_colmix|jtframe_dual_ram:u_ram1"
+Info (12128): Elaborating entity "jtframe_blank" for hierarchy "jtbubl_game:u_game|jtbubl_video:u_video|jtbubl_colmix:u_colmix|jtframe_blank:u_blank"
+Info (12128): Elaborating entity "jtbubl_sound" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound"
+Info (12128): Elaborating entity "jtframe_sysz80" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtframe_sysz80:u_cpu"
+Info (12128): Elaborating entity "jtframe_z80_romwait" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtframe_sysz80:u_cpu|jtframe_z80_romwait:u_z80wait"
+Info (12128): Elaborating entity "jt49_dcrm2" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt49_dcrm2:u_dcrm"
+Info (12128): Elaborating entity "jt12_mixer" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt12_mixer:u_mixer"
+Info (12128): Elaborating entity "jt03" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203"
+Info (12128): Elaborating entity "jt12_top" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12"
+Info (12128): Elaborating entity "jt12_dout" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_dout:u_dout"
+Info (12128): Elaborating entity "jt12_mmr" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_mmr:u_mmr"
+Info (12128): Elaborating entity "jt12_div" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_mmr:u_mmr|jt12_div:u_div"
+Info (12128): Elaborating entity "jt12_reg" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_mmr:u_mmr|jt12_reg:u_reg"
+Info (12128): Elaborating entity "jt12_sumch" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_mmr:u_mmr|jt12_reg:u_reg|jt12_sumch:u_opch_II"
+Info (12128): Elaborating entity "jt12_kon" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_mmr:u_mmr|jt12_reg:u_reg|jt12_kon:u_kon"
+Info (12128): Elaborating entity "jt12_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_mmr:u_mmr|jt12_reg:u_reg|jt12_kon:u_kon|jt12_sh_rst:u_konch1"
+Info (12128): Elaborating entity "jt12_mod" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_mmr:u_mmr|jt12_reg:u_reg|jt12_mod:u_mod"
+Info (10264): Verilog HDL Case Statement information at jt12_mod.v(117): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "jt12_csr" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_mmr:u_mmr|jt12_reg:u_reg|jt12_csr:u_csr0"
+Info (12128): Elaborating entity "jt12_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_mmr:u_mmr|jt12_reg:u_reg|jt12_csr:u_csr0|jt12_sh_rst:u_regch"
+Info (12128): Elaborating entity "jt12_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_mmr:u_mmr|jt12_reg:u_reg|jt12_sh_rst:u_regch"
+Info (12128): Elaborating entity "jt12_timers" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_timers:u_timers"
+Info (12128): Elaborating entity "jt12_timer" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_timers:u_timers|jt12_timer:timer_A"
+Info (12128): Elaborating entity "jt12_timer" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_timers:u_timers|jt12_timer:timer_B"
+Info (12128): Elaborating entity "jt49" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt49:gen_ssg.u_psg"
+Info (10264): Verilog HDL Case Statement information at jt49.v(175): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "jt49_cen" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt49:gen_ssg.u_psg|jt49_cen:u_cen"
+Info (12128): Elaborating entity "jt49_div" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt49:gen_ssg.u_psg|jt49_div:u_chA"
+Info (12128): Elaborating entity "jt49_noise" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt49:gen_ssg.u_psg|jt49_noise:u_ng"
+Info (12128): Elaborating entity "jt49_div" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt49:gen_ssg.u_psg|jt49_noise:u_ng|jt49_div:u_div"
+Info (12128): Elaborating entity "jt49_div" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt49:gen_ssg.u_psg|jt49_div:u_envdiv"
+Info (12128): Elaborating entity "jt49_eg" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt49:gen_ssg.u_psg|jt49_eg:u_env"
+Info (12128): Elaborating entity "jt49_exp" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt49:gen_ssg.u_psg|jt49_exp:u_exp"
+Warning (10030): Net "lut.data_a" at jt49_exp.v(39) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "lut.waddr_a" at jt49_exp.v(39) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "lut.we_a" at jt49_exp.v(39) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "jt12_pg" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_pg:u_pg"
+Info (12128): Elaborating entity "jt12_pg_comb" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_pg:u_pg|jt12_pg_comb:u_comb"
+Info (12128): Elaborating entity "jt12_pm" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_pg:u_pg|jt12_pg_comb:u_comb|jt12_pm:u_pm"
+Warning (10030): Net "lfo_sh1_lut.data_a" at jt12_pm.v(39) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "lfo_sh1_lut.waddr_a" at jt12_pm.v(39) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "lfo_sh2_lut.data_a" at jt12_pm.v(40) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "lfo_sh2_lut.waddr_a" at jt12_pm.v(40) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "lfo_sh1_lut.we_a" at jt12_pm.v(39) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "lfo_sh2_lut.we_a" at jt12_pm.v(40) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "jt12_pg_dt" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_pg:u_pg|jt12_pg_comb:u_comb|jt12_pg_dt:u_dt"
+Info (12128): Elaborating entity "jt12_pg_inc" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_pg:u_pg|jt12_pg_comb:u_comb|jt12_pg_inc:u_inc"
+Info (12128): Elaborating entity "jt12_pg_sum" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_pg:u_pg|jt12_pg_comb:u_comb|jt12_pg_sum:u_sum"
+Info (12128): Elaborating entity "jt12_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_pg:u_pg|jt12_sh_rst:u_phsh"
+Info (12128): Elaborating entity "jt12_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_pg:u_pg|jt12_sh_rst:u_pad"
+Info (12128): Elaborating entity "jt12_eg" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg"
+Info (12128): Elaborating entity "jt12_eg_cnt" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg|jt12_eg_cnt:u_egcnt"
+Info (12128): Elaborating entity "jt12_eg_comb" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg|jt12_eg_comb:u_comb"
+Info (12128): Elaborating entity "jt12_eg_ctrl" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg|jt12_eg_comb:u_comb|jt12_eg_ctrl:u_ctrl"
+Info (12128): Elaborating entity "jt12_eg_step" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg|jt12_eg_comb:u_comb|jt12_eg_step:u_step"
+Info (12128): Elaborating entity "jt12_eg_pure" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg|jt12_eg_comb:u_comb|jt12_eg_pure:u_pure"
+Info (12128): Elaborating entity "jt12_eg_final" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg|jt12_eg_comb:u_comb|jt12_eg_final:u_final"
+Info (12128): Elaborating entity "jt12_sh" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg|jt12_sh:u_cntsh"
+Info (12128): Elaborating entity "jt12_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg|jt12_sh_rst:u_egsh"
+Info (12128): Elaborating entity "jt12_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg|jt12_sh_rst:u_egstate"
+Info (12128): Elaborating entity "jt12_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_eg:u_eg|jt12_sh_rst:u_ssg_inv"
+Info (12128): Elaborating entity "jt12_sh" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_sh:u_egpad"
+Info (12128): Elaborating entity "jt12_op" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_op:u_op"
+Info (12128): Elaborating entity "jt12_sh" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_op:u_op|jt12_sh:prev1_buffer"
+Info (12128): Elaborating entity "jt12_sh" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_op:u_op|jt12_sh:phasemod_sh"
+Info (12128): Elaborating entity "jt12_logsin" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_op:u_op|jt12_logsin:u_logsin"
+Info (12128): Elaborating entity "jt12_exprom" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt12_op:u_op|jt12_exprom:u_exprom"
+Info (12128): Elaborating entity "jt03_acc" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt03_acc:gen_2203_acc.u_acc"
+Info (12128): Elaborating entity "jt12_single_acc" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jt03:u_2203|jt12_top:u_jt12|jt03_acc:gen_2203_acc.u_acc|jt12_single_acc:u_mono"
+Info (12128): Elaborating entity "jtopl" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl"
+Warning (10034): Output port "sample" at jtopl.v(35) has no driver
+Info (12128): Elaborating entity "jtopl_mmr" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_mmr:u_mmr"
+Info (12128): Elaborating entity "jtopl_div" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_mmr:u_mmr|jtopl_div:u_div"
+Info (12128): Elaborating entity "jtopl_reg" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_mmr:u_mmr|jtopl_reg:u_reg"
+Info (10264): Verilog HDL Case Statement information at jtopl_reg.v(189): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "jtopl_csr" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_mmr:u_mmr|jtopl_reg:u_reg|jtopl_csr:u_csr"
+Info (12128): Elaborating entity "jtopl_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_mmr:u_mmr|jtopl_reg:u_reg|jtopl_csr:u_csr|jtopl_sh_rst:u_regch"
+Info (12128): Elaborating entity "jtopl_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_mmr:u_mmr|jtopl_reg:u_reg|jtopl_sh_rst:u_group0"
+Info (12128): Elaborating entity "jtopl_timers" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_timers:u_timers"
+Info (12128): Elaborating entity "jtopl_timer" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_timers:u_timers|jtopl_timer:timer_A"
+Info (12128): Elaborating entity "jtopl_timer" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_timers:u_timers|jtopl_timer:timer_B"
+Info (12128): Elaborating entity "jtopl_lfo" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_lfo:u_lfo"
+Info (12128): Elaborating entity "jtopl_pg" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_pg:u_pg"
+Info (12128): Elaborating entity "jtopl_noise" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_pg:u_pg|jtopl_noise:u_noise"
+Info (12128): Elaborating entity "jtopl_pg_comb" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_pg:u_pg|jtopl_pg_comb:u_comb"
+Info (12128): Elaborating entity "jtopl_pm" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_pg:u_pg|jtopl_pg_comb:u_comb|jtopl_pm:u_pm"
+Warning (10240): Verilog HDL Always Construct warning at jtopl_pm.v(34): inferring latch(es) for variable "pm_offset", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "pm_offset[0]" at jtopl_pm.v(37)
+Info (10041): Inferred latch for "pm_offset[1]" at jtopl_pm.v(37)
+Info (10041): Inferred latch for "pm_offset[2]" at jtopl_pm.v(37)
+Info (10041): Inferred latch for "pm_offset[3]" at jtopl_pm.v(37)
+Info (12128): Elaborating entity "jtopl_pg_inc" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_pg:u_pg|jtopl_pg_comb:u_comb|jtopl_pg_inc:u_inc"
+Info (12128): Elaborating entity "jtopl_pg_sum" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_pg:u_pg|jtopl_pg_comb:u_comb|jtopl_pg_sum:u_sum"
+Warning (10230): Verilog HDL assignment warning at jtopl_pg_sum.v(41): truncated value with size 32 to match size of target (19)
+Warning (10030): Net "factor.data_a" at jtopl_pg_sum.v(37) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "factor.waddr_a" at jtopl_pg_sum.v(37) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "factor.we_a" at jtopl_pg_sum.v(37) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "jtopl_pg_rhy" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_pg:u_pg|jtopl_pg_comb:u_comb|jtopl_pg_rhy:u_rhy"
+Info (12128): Elaborating entity "jtopl_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_pg:u_pg|jtopl_sh_rst:u_phsh"
+Info (12128): Elaborating entity "jtopl_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_pg:u_pg|jtopl_sh_rst:u_pad"
+Info (12128): Elaborating entity "jtopl_eg" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg"
+Info (12128): Elaborating entity "jtopl_eg_cnt" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_eg_cnt:u_egcnt"
+Info (12128): Elaborating entity "jtopl_eg_comb" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_eg_comb:u_comb"
+Info (12128): Elaborating entity "jtopl_eg_ctrl" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_eg_comb:u_comb|jtopl_eg_ctrl:u_ctrl"
+Info (12128): Elaborating entity "jtopl_eg_step" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_eg_comb:u_comb|jtopl_eg_step:u_step"
+Info (12128): Elaborating entity "jtopl_eg_pure" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_eg_comb:u_comb|jtopl_eg_pure:u_pure"
+Info (12128): Elaborating entity "jtopl_eg_final" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_eg_comb:u_comb|jtopl_eg_final:u_final"
+Warning (10030): Net "ksl_lut.data_a" at jtopl_eg_final.v(39) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "ksl_lut.waddr_a" at jtopl_eg_final.v(39) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "ksl_lut.we_a" at jtopl_eg_final.v(39) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "jtopl_sh" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_sh:u_cntsh"
+Info (12128): Elaborating entity "jtopl_sh" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_sh:u_fnumsh"
+Info (12128): Elaborating entity "jtopl_sh" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_sh:u_blocksh"
+Info (12128): Elaborating entity "jtopl_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_sh_rst:u_egsh"
+Info (12128): Elaborating entity "jtopl_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_sh_rst:u_egstate"
+Info (12128): Elaborating entity "jtopl_sh_rst" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_eg:u_eg|jtopl_sh_rst:u_konsh"
+Info (12128): Elaborating entity "jtopl_op" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_op:u_op"
+Info (10264): Verilog HDL Case Statement information at jtopl_op.v(83): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "jtopl_sh" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_op:u_op|jtopl_sh:u_delay"
+Info (12128): Elaborating entity "jtopl_sh" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_op:u_op|jtopl_sh:u_condly"
+Info (12128): Elaborating entity "jtopl_sh" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_op:u_op|jtopl_sh:u_csr0"
+Info (12128): Elaborating entity "jtopl_logsin" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_op:u_op|jtopl_logsin:u_logsin"
+Info (12128): Elaborating entity "jtopl_exprom" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_op:u_op|jtopl_exprom:u_exprom"
+Info (12128): Elaborating entity "jtopl_acc" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_acc:u_acc"
+Info (12128): Elaborating entity "jtopl_single_acc" for hierarchy "jtbubl_game:u_game|jtbubl_sound:u_sound|jtopl:u_opl|jtopl_acc:u_acc|jtopl_single_acc:u_acc"
+Info (12128): Elaborating entity "jtframe_rom" for hierarchy "jtbubl_game:u_game|jtframe_rom:u_rom"
+Warning (10230): Verilog HDL assignment warning at jtframe_rom.v(35): truncated value with size 25 to match size of target (22)
+Warning (10230): Verilog HDL assignment warning at jtframe_rom.v(36): truncated value with size 25 to match size of target (22)
+Warning (10230): Verilog HDL assignment warning at jtframe_rom.v(37): truncated value with size 25 to match size of target (22)
+Warning (10230): Verilog HDL assignment warning at jtframe_rom.v(38): truncated value with size 25 to match size of target (22)
+Info (12128): Elaborating entity "jtframe_romrq" for hierarchy "jtbubl_game:u_game|jtframe_rom:u_rom|jtframe_romrq:u_slot0"
+Info (12128): Elaborating entity "jtframe_romrq" for hierarchy "jtbubl_game:u_game|jtframe_rom:u_rom|jtframe_romrq:u_slot1"
+Info (12128): Elaborating entity "jtframe_romrq" for hierarchy "jtbubl_game:u_game|jtframe_rom:u_rom|jtframe_romrq:u_slot2"
+Info (12128): Elaborating entity "jtframe_romrq" for hierarchy "jtbubl_game:u_game|jtframe_rom:u_rom|jtframe_romrq:u_slot4"
+Warning (10036): Verilog HDL or VHDL warning at jtframe_romrq.v(43): object "subaddr" assigned a value but never read
+Info (12128): Elaborating entity "jtframe_romrq" for hierarchy "jtbubl_game:u_game|jtframe_rom:u_rom|jtframe_romrq:u_slot5"
+Error (12006): Node instance "framebuffer" instantiates undefined entity "framebuffer" File: D:/cores/PORTANDO7/Unamiga_Arcades-Bubble Bobble hardware - copia/Arcades/Bubble Bobble hardware/modules/jtframe/hdl/mc2/jtframe_mc2_base.v Line: 292
+Error (12006): Node instance "scanlines" instantiates undefined entity "scanlines" File: D:/cores/PORTANDO7/Unamiga_Arcades-Bubble Bobble hardware - copia/Arcades/Bubble Bobble hardware/modules/jtframe/hdl/mc2/jtframe_mc2_base.v Line: 337
+Error (12006): Node instance "PumpSignal" instantiates undefined entity "PumpSignal" File: D:/cores/PORTANDO7/Unamiga_Arcades-Bubble Bobble hardware - copia/Arcades/Bubble Bobble hardware/modules/jtframe/hdl/mc2/jtframe_mc2_base.v Line: 359
+Info (144001): Generated suppressed messages file D:/cores/PORTANDO7/Unamiga_Arcades-Bubble Bobble hardware - copia/Arcades/Bubble Bobble hardware/multicore 2/jtbubl.map.smsg
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 67 warnings
+    Error: Peak virtual memory: 4720 megabytes
+    Error: Processing ended: Sun Nov 29 18:35:56 2020
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:05
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/cores/PORTANDO7/Unamiga_Arcades-Bubble Bobble hardware - copia/Arcades/Bubble Bobble hardware/multicore 2/jtbubl.map.smsg.
+
+

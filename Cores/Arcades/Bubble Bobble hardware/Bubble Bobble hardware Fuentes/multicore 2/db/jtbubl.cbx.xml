@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="jtbubl">
+		<CBX_INST_ENTRY INSTANCE_NAME="|mist_top|jtframe_pll0:u_pll_game|altpll:altpll_component" CBX_FILE_NAME="jtframe_pll0_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mist_top|jtframe_pll1:u_pll_vga|altpll:altpll_component" CBX_FILE_NAME="jtframe_pll1_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>
