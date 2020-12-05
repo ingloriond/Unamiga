@@ -27,7 +27,7 @@ Berzek Hardware
 Bubble Bobble hardware
 ----------------------------------
 * Bubble Bobble [info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Bubble%20Bobble.md)
-* Tokio [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Bubble%20Tokio.md)
+* Tokio [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Tokio.md)
 
 Capcom CPS0 Hardware
 ----------------------------------
