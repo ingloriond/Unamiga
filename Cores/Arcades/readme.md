@@ -217,6 +217,11 @@ Phoenix Hardware
 * Phoenix [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Phoenix.md)
 * Pleiads [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/PleiadsCapitol.md)
 
+Bubble Bobble Hardware
+-----------------------------------
+* Bubble Bobble hardware_Fuentes [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Bubble%20Bobble.md)
+* Tokio [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/Bubble%20Tokio.md)
+
 Sega System 1 Hardware
 ----------------------------------
 * 4D Warriors [Info](https://github.com/ingloriond/Unamiga/blob/master/Cores/Arcades/Z--Infojuegos/4DWarriors.md)
