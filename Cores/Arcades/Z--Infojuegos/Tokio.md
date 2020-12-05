@@ -3,7 +3,7 @@
 ### Port por Jose Manuel @delgrom :+1: 
 #### Fuentes:
 
-![Captain Commando](https://user-images.githubusercontent.com/31018768/93020698-be271a80-f5de-11ea-9cac-2fac07ba6e15.jpg)
+![tokia](https://user-images.githubusercontent.com/31018768/101239644-82858380-36e9-11eb-8aed-f9b74a9f26cd.jpg)
 
 ### Requerimientos: 
 
