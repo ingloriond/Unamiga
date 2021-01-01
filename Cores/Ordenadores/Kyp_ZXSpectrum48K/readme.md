@@ -1,6 +1,6 @@
 ## Kyp ZX Spectrum 48k Core
 
-### Portado por NeuroRulez
+### Portado por Jose Manuel @delfgrom del port de NeuroRulez nept-UNO y Unamiga Reloaded
 
 ![logokyp](https://user-images.githubusercontent.com/31018768/103444077-81526280-4c65-11eb-81e1-bd79ce680ad2.jpg)
 
