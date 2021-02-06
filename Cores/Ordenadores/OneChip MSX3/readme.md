@@ -1,5 +1,5 @@
 # OneChip MSX3
-## Port por Jepalza, Código original de Sorgelig modificando el core de Renaud Helias. La versión Unamiga proviene del port a multicore 2 realizado por Victor Trucco. :+1:
+## Port por Jepalza :+1:
 ### Fuente: http://www.forofpga.es/viewtopic.php?f=17&t=15
 
 ### Requerimientos: 
