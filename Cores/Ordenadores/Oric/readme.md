@@ -1,4 +1,4 @@
-# Oric 48K en MiST y SiDi FPGA
+# Oric 1/Atmos
 fuente: https://github.com/rampa069/Oric_Mist_48K
 ## Reimplementación de Oric-1 y Oric Atmos en una FPGA moderna.
 
