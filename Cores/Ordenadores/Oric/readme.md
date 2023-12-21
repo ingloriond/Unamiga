@@ -28,7 +28,7 @@ F10 - Botón NMI, actúa como ORIC NMI original
 F11 - Restablecer. Utilice F11 para reiniciar una vez que se seleccione un DSK en OSD
 F12 - Menú principal OSD.
 
-FOTO
+![oric](https://github.com/ingloriond/Unamiga/assets/31018768/d87b3c3a-f650-4b43-9c3b-d5345bd48756)
 
 Activar el controlador FDC en el MENÚ OSD
 Seleccione una imagen del directorio /ORIC, salga de OSD y presione F11. El sistema arrancará inmediatamente
